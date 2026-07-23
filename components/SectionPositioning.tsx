@@ -4,10 +4,10 @@ import Reveal from "./Reveal";
 export default function SectionPositioning() {
   return (
     <section id="approach" className="relative bg-paper text-ink stack-y">
-      <div className="edge mx-auto max-w-[68rem] flex flex-col items-center text-center">
+      <div className="edge mx-auto max-w-[68rem]">
         <Reveal>
           <h2
-            className="max-w-full leading-[1.02]"
+            className="max-w-full leading-[1.02] text-center"
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "clamp(2.6rem, 5vw, 4.5rem)",
@@ -19,26 +19,15 @@ export default function SectionPositioning() {
           </h2>
         </Reveal>
 
-        <Reveal delay={90} className="mt-8 md:mt-10">
-          <p
-            className="serif-italic max-w-full text-moss leading-[1.25]"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.35rem, 1.8vw, 1.75rem)",
-            }}
-          >
-            We are deliberately small. That is the point.
-          </p>
-        </Reveal>
-
-        <div className="mt-14 md:mt-16 flex flex-col gap-7 body-lede prose-sage max-w-[62ch] text-left">
-          <Reveal as="p" delay={140}>
+        <div className="mt-14 md:mt-16 flex flex-col gap-7 body-lede prose-sage max-w-full">
+          <Reveal as="p" delay={80} className="max-w-full">
             Sage Psychological Services is a private psychology practice in
             East Fremantle, offering thoughtful, individualised care to adults
-            across the Fremantle and wider Perth community.
+            across the Fremantle and wider Perth community. We are deliberately
+            small. That is the point.
           </Reveal>
 
-          <Reveal as="p" delay={200}>
+          <Reveal as="p" delay={140} className="max-w-full">
             When you come to Sage you work directly with{" "}
             <Link href="/about">Jacob Jones</Link>, a registered psychologist
             who takes the time to understand not just what you are
@@ -48,7 +37,7 @@ export default function SectionPositioning() {
             the pace that feels right for you.
           </Reveal>
 
-          <Reveal as="p" delay={260}>
+          <Reveal as="p" delay={200} className="max-w-full">
             Our approach draws on evidence-based treatments including{" "}
             <Link href="/cbt-therapy-perth">Cognitive Behaviour Therapy</Link>{" "}
             and{" "}
