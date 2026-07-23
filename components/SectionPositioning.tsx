@@ -4,18 +4,37 @@ import Reveal from "./Reveal";
 
 export default function SectionPositioning() {
   return (
-    <section id="approach" className="relative bg-paper text-ink stack-y">
-      <div className="edge mx-auto max-w-[86rem]">
-        <div className="grid md:grid-cols-[1.2fr_1fr] gap-y-14 md:gap-x-24 items-start">
-          <div>
+    <section
+      id="approach"
+      className="relative bg-paper text-ink w-full overflow-hidden"
+    >
+      <div className="flex flex-col md:flex-row md:min-h-[760px] lg:min-h-[820px] xl:min-h-[880px]">
+        {/* Left half — image, bleeds to viewport edge, fills section band */}
+        <Reveal
+          as="div"
+          className="relative w-full md:w-1/2 h-[440px] md:h-auto md:min-h-[760px] lg:min-h-[820px] xl:min-h-[880px] bg-linen"
+        >
+          <Image
+            src="/img/armchairs.jpg"
+            alt="Two chairs facing a curtained window in soft afternoon light"
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover"
+            priority={false}
+          />
+        </Reveal>
+
+        {/* Right half — content, inset with generous padding, vertically centred */}
+        <div className="w-full md:w-1/2 flex items-center py-20 md:py-16 px-6 sm:px-10 md:px-14 lg:px-20 xl:px-28">
+          <div className="max-w-[36rem]">
             <Reveal>
-              <h2 className="display-lg max-w-[16ch]">
+              <h2 className="display-lg leading-[1.02]">
                 A different kind of{" "}
                 <span className="serif-italic">psychology practice</span>.
               </h2>
             </Reveal>
 
-            <div className="mt-12 md:mt-16 flex flex-col gap-7 body-lede prose-sage max-w-[52ch]">
+            <div className="mt-10 md:mt-12 flex flex-col gap-6 body-lede prose-sage max-w-[44ch]">
               <Reveal as="p" delay={80}>
                 Sage Psychological Services is a private psychology practice in
                 East Fremantle, offering thoughtful, individualised care to
@@ -49,18 +68,6 @@ export default function SectionPositioning() {
               </Reveal>
             </div>
           </div>
-
-          <Reveal delay={160}>
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[3px] bg-linen">
-              <Image
-                src="/img/armchairs.jpg"
-                alt="Two chairs facing a curtained window in soft afternoon light"
-                fill
-                sizes="(min-width: 768px) 40vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>
