@@ -62,8 +62,9 @@ export default function ConditionsSlider({
     return () => window.clearInterval(id);
   }, [paused, next, autoIntervalMs, maxIndex]);
 
-  // Translate percent relative to the track (which is total/perView times wider than container)
-  const translatePercent = (index / total) * 100;
+  // Track box is 100% of container width (flex children overflow).
+  // One card = (100 / perView)% of container; translate by that per index step.
+  const translatePercent = index * (100 / perView);
 
   return (
     <div
