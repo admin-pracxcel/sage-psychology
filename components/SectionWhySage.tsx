@@ -11,7 +11,7 @@ type Reason = {
 
 function IconContinuity() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <circle cx="7" cy="12" r="2.4" />
       <circle cx="17" cy="12" r="2.4" />
       <path d="M9.4 12 H14.6" />
@@ -20,7 +20,7 @@ function IconContinuity() {
 }
 function IconTailored() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <circle cx="12" cy="12" r="8" />
       <circle cx="12" cy="12" r="4" />
       <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
@@ -29,7 +29,7 @@ function IconTailored() {
 }
 function IconFees() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <path d="M6 4 H16 L18 6 V20 H6 Z" />
       <path d="M9 10 H15" />
       <path d="M9 14 H13" />
@@ -38,7 +38,7 @@ function IconFees() {
 }
 function IconRoom() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
       <path d="M12 21 V10" />
       <path d="M12 12 C 9 12 6 10 5 6 C 8 6 11 8 12 12 Z" fill="currentColor" fillOpacity="0.12" />
       <path d="M12 14 C 15 14 18 12 19 8 C 16 8 13 10 12 14 Z" fill="currentColor" fillOpacity="0.12" />
