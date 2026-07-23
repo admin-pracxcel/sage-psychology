@@ -11,46 +11,27 @@ function Chip({
   variant?: "light" | "dark";
 }) {
   const base =
-    "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[0.72rem] tracking-[0.02em] uppercase font-medium backdrop-blur-md";
+    "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[0.7rem] tracking-[0.04em] uppercase font-medium backdrop-blur-md";
   const styles =
     variant === "dark"
-      ? "bg-ink/60 text-paper border border-paper/25"
-      : "bg-paper/95 text-ink border border-ink/10";
+      ? "bg-ink/55 text-paper border border-paper/20"
+      : "bg-paper/95 text-ink border border-ink/8";
   return <span className={`${base} ${styles}`}>{children}</span>;
 }
 
 export default function SectionPositioning() {
   return (
-    <section
-      id="approach"
-      className="relative bg-paper text-ink stack-y"
-    >
+    <section id="approach" className="relative bg-paper text-ink stack-y">
       <div className="edge mx-auto max-w-[92rem]">
-        {/* Header block */}
-        <div className="max-w-[68rem] mx-auto text-center mb-14 md:mb-20">
-          <Reveal>
-            <h2 className="display-lg max-w-[18ch] mx-auto leading-[1.02]">
-              A different kind of{" "}
-              <span className="serif-italic">psychology practice</span>.
-            </h2>
-          </Reveal>
-          <Reveal delay={90} className="mt-6 md:mt-8">
-            <p className="display-sm serif-italic max-w-[36ch] mx-auto text-moss leading-[1.25]">
-              We are deliberately small. That is the point.
-            </p>
-          </Reveal>
-        </div>
-
-        {/* 3-card bento grid */}
-        <div className="grid gap-6 md:gap-7 md:grid-cols-3">
-          {/* Card 1 — Inside the practice */}
-          <Reveal className="flex flex-col gap-6">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[8px] bg-linen">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-6 lg:gap-7 items-stretch">
+          {/* ── COLUMN 1 · Practice image + text below (narrow) ───────── */}
+          <Reveal className="md:col-span-3 flex flex-col gap-5 min-w-0">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[10px] bg-linen">
               <Image
                 src="/img/armchairs.jpg"
                 alt="Two chairs facing a curtained window in soft afternoon light"
                 fill
-                sizes="(min-width: 768px) 30vw, 90vw"
+                sizes="(min-width: 768px) 22vw, 90vw"
                 className="object-cover"
               />
               <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
@@ -58,92 +39,123 @@ export default function SectionPositioning() {
                 <Chip variant="dark">East Fremantle</Chip>
               </div>
             </div>
-            <div className="pl-1">
+            <div>
               <h3 className="display-sm leading-[1.15]">
                 Inside the practice.
               </h3>
-              <p className="mt-3 body-lede prose-sage max-w-[36ch] opacity-85">
-                A calm, private space within Silas Street Specialists — designed
-                to feel welcoming and safe from the moment you arrive.
+              <p className="mt-3 text-[0.98rem] leading-relaxed opacity-80 max-w-[28ch]">
+                A calm, private space within Silas Street Specialists —
+                designed to feel welcoming from the moment you arrive.
               </p>
             </div>
           </Reveal>
 
-          {/* Card 2 — Signature pull, warm accent */}
-          <Reveal delay={100} className="flex flex-col gap-6">
-            <div
-              className="relative overflow-hidden rounded-[8px] aspect-[4/5] flex flex-col justify-between p-7 md:p-8 text-paper"
-              style={{
-                background:
-                  "radial-gradient(120% 90% at 30% 20%, rgba(181,138,92,0.55), transparent 55%), radial-gradient(100% 80% at 80% 100%, rgba(86,107,87,0.65), transparent 55%), linear-gradient(160deg, #354a3a 0%, #2E3E33 55%, #1f2c22 100%)",
-              }}
-            >
-              <div className="flex justify-end">
-                <Chip variant="dark">How we work</Chip>
-              </div>
+          {/* ── COLUMN 2 · Section heading + signature gradient card ──── */}
+          <div className="md:col-span-4 flex flex-col gap-6 md:gap-7 min-w-0">
+            <Reveal delay={80}>
+              <h2 className="display-lg leading-[0.98] max-w-[14ch]">
+                A different kind of{" "}
+                <span className="serif-italic">psychology practice</span>.
+              </h2>
+              <p className="mt-6 serif-italic text-moss text-[1.15rem] md:text-[1.3rem] leading-snug max-w-[26ch]">
+                We are deliberately small. That is the point.
+              </p>
+            </Reveal>
 
-              <div className="flex-1 flex items-center justify-center text-center">
-                <p
-                  className="serif-italic leading-[0.98] text-paper"
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "clamp(2.4rem, 4.2vw, 3.6rem)",
-                  }}
-                >
-                  Shaped
-                  <br />
-                  around you.
+            <Reveal delay={140} className="flex-1 min-h-[340px]">
+              <div
+                className="relative h-full overflow-hidden rounded-[10px] flex flex-col justify-between p-6 md:p-7 text-paper"
+                style={{
+                  background:
+                    "radial-gradient(120% 90% at 25% 15%, rgba(201,164,125,0.55), transparent 55%), radial-gradient(120% 90% at 85% 100%, rgba(86,107,87,0.75), transparent 60%), linear-gradient(160deg, #3d5343 0%, #2E3E33 55%, #1e2b21 100%)",
+                }}
+              >
+                <div className="flex justify-end">
+                  <Chip variant="dark">How we work</Chip>
+                </div>
+
+                <div className="flex-1 flex items-center justify-center text-center">
+                  <p
+                    className="serif-italic leading-[0.98] text-paper"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "clamp(2.2rem, 3.8vw, 3.2rem)",
+                    }}
+                  >
+                    Shaped
+                    <br />
+                    around <span className="not-italic">you.</span>
+                  </p>
+                </div>
+
+                <p className="text-paper/85 text-[0.72rem] tracking-[0.24em] uppercase text-center">
+                  Considered · Collaborative · Unhurried
                 </p>
               </div>
+            </Reveal>
+          </div>
 
-              <p className="text-paper/80 text-[0.78rem] tracking-[0.22em] uppercase text-center">
-                Considered · Collaborative · Unhurried
-              </p>
-            </div>
-            <div className="pl-1">
-              <h3 className="display-sm leading-[1.15]">
-                How we work.
-              </h3>
-              <p className="mt-3 body-lede prose-sage max-w-[36ch] opacity-85">
-                One psychologist, every session. No revolving door of
-                practitioners, no one-size-fits-all programme.
-              </p>
-            </div>
-          </Reveal>
+          {/* ── COLUMN 3 · Meet Jacob wide card, text-left / photo-right ─ */}
+          <Reveal delay={200} className="md:col-span-5 min-w-0">
+            <div className="relative h-full bg-paper-soft rounded-[10px] p-5 md:p-6 border border-ink/6">
+              <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr] gap-5 md:gap-6 h-full">
+                {/* Text side */}
+                <div className="flex flex-col justify-between gap-6 py-2 md:py-4 md:pl-3">
+                  <div className="flex flex-wrap gap-2">
+                    <Chip variant="light">Registered Psychologist</Chip>
+                  </div>
 
-          {/* Card 3 — Meet Jacob (placeholder until real portrait arrives) */}
-          <Reveal delay={200} className="flex flex-col gap-6">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[8px] bg-linen">
-              <Image
-                src="/img/window-light.jpg"
-                alt="Afternoon light through a lace curtain in the practice"
-                fill
-                sizes="(min-width: 768px) 30vw, 90vw"
-                className="object-cover"
-              />
-              <div className="absolute top-4 left-4">
-                <Chip variant="light">Registered Psychologist</Chip>
+                  <div>
+                    <h3 className="display-md leading-[1.02] max-w-[12ch]">
+                      Meet Jacob.
+                    </h3>
+                    <p className="mt-4 text-[1.02rem] leading-relaxed opacity-85 max-w-[26ch]">
+                      Jacob takes the time to understand not just what you are
+                      experiencing, but why — with particular expertise in{" "}
+                      CBT and EMDR.
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col gap-3">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <div className="display-sm leading-none">
+                          AHPRA
+                        </div>
+                        <div className="mt-1 text-[0.78rem] tracking-[0.14em] uppercase opacity-65">
+                          Registered
+                        </div>
+                      </div>
+                      <div>
+                        <div className="display-sm leading-none">
+                          CBT · EMDR
+                        </div>
+                        <div className="mt-1 text-[0.78rem] tracking-[0.14em] uppercase opacity-65">
+                          Trained
+                        </div>
+                      </div>
+                    </div>
+
+                    <Link
+                      href="/about"
+                      className="mt-2 inline-flex items-center gap-2 text-[0.95rem] font-medium text-evergreen link self-start"
+                    >
+                      About Jacob <Arrow />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Photo side (placeholder — swap for Jacob's real portrait) */}
+                <div className="relative min-h-[280px] rounded-[7px] overflow-hidden bg-linen">
+                  <Image
+                    src="/img/window-light.jpg"
+                    alt="Afternoon light through a lace curtain in the practice"
+                    fill
+                    sizes="(min-width: 768px) 28vw, 90vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="pl-1">
-              <h3 className="display-sm leading-[1.15]">Meet Jacob.</h3>
-              <p className="mt-3 body-lede prose-sage max-w-[36ch] opacity-85">
-                Jacob Jones takes the time to understand not just what you are
-                experiencing, but why — with particular expertise in{" "}
-                <Link href="/cbt-therapy-perth">CBT</Link> and{" "}
-                <Link href="/emdr-therapy-perth">EMDR</Link>.
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                <span className="text-[0.78rem] tracking-[0.12em] uppercase opacity-70">
-                  AHPRA PSY0002462461
-                </span>
-              </div>
-              <Link
-                href="/about"
-                className="mt-6 inline-flex items-center gap-2 text-[0.95rem] font-medium text-evergreen link"
-              >
-                About Jacob <Arrow />
-              </Link>
             </div>
           </Reveal>
         </div>
