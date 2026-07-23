@@ -110,7 +110,7 @@ export default function Header() {
             width={1920}
             height={639}
             className={[
-              "h-10 md:h-11 w-auto object-contain transition-[filter] duration-500",
+              "h-12 md:h-14 w-auto object-contain transition-[filter] duration-500",
               scrolled || dropdown ? "" : "[filter:brightness(0)_invert(1)]",
             ].join(" ")}
             priority
