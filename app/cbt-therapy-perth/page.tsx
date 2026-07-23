@@ -1,0 +1,477 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Reveal from "@/components/Reveal";
+import { Arrow } from "@/components/Icons";
+
+export const metadata: Metadata = {
+  title: "CBT Therapy Perth | Cognitive Behaviour Therapy | Sage",
+  description:
+    "Evidence-based CBT in East Fremantle with registered psychologist Jacob Jones. A practical, structured therapy for anxiety, depression and more. Medicare rebates available.",
+};
+
+/* ─────────────────────────────────────────────────────────────
+   HERO
+────────────────────────────────────────────────────────────── */
+
+function CbtHero() {
+  return (
+    <section className="relative bg-paper text-ink pt-[124px] md:pt-[140px] pb-0">
+      <div className="edge mx-auto max-w-[92rem]">
+        {/* Breadcrumb */}
+        <Reveal>
+          <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            <Link href="/" className="opacity-80 hover:opacity-100">
+              Sage
+            </Link>
+            <span className="opacity-40 mx-2">/</span>
+            <span>Services</span>
+            <span className="opacity-40 mx-2">/</span>
+            <span className="text-evergreen">CBT Therapy</span>
+          </div>
+        </Reveal>
+
+        {/* H1 + subhead + CTAs */}
+        <div className="mt-10 md:mt-14 max-w-[56rem]">
+          <Reveal delay={60}>
+            <h1
+              className="max-w-full leading-[0.98]"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2.75rem, 6.4vw, 5.75rem)",
+                letterSpacing: "-0.025em",
+              }}
+            >
+              CBT Therapy{" "}
+              <span className="serif-italic">in Perth</span>.
+            </h1>
+          </Reveal>
+
+          <Reveal delay={140}>
+            <p
+              className="mt-8 serif-italic text-moss max-w-[52ch] leading-snug"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.2rem, 1.6vw, 1.55rem)",
+              }}
+            >
+              A practical, structured, and proven approach to changing the
+              thoughts and behaviours that keep you stuck. Delivered
+              one-to-one in East Fremantle.
+            </p>
+          </Reveal>
+
+          <Reveal delay={220}>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link href="/book" className="btn btn-primary">
+                Book a CBT Session <Arrow />
+              </Link>
+              <Link href="/contact" className="btn btn-ghost">
+                Ask about CBT
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </div>
+
+      {/* Full-width atmospheric image */}
+      <Reveal className="mt-16 md:mt-20 relative w-full aspect-[16/8] md:aspect-[21/9] overflow-hidden">
+        <Image
+          src="/img/mist-forest.jpg"
+          alt="Warm morning light through misty forest trees"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, transparent 45%, rgba(241,235,221,0.8) 100%)",
+          }}
+        />
+      </Reveal>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION 1 · What is CBT
+────────────────────────────────────────────────────────────── */
+
+function WhatIsCbt() {
+  return (
+    <section className="relative bg-paper text-ink stack-y">
+      <div className="edge mx-auto max-w-[68rem]">
+        <Reveal>
+          <h2
+            className="max-w-full leading-[1.02] text-center"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
+              letterSpacing: "-0.02em",
+            }}
+          >
+            What is{" "}
+            <span className="serif-italic">Cognitive Behaviour Therapy</span>?
+          </h2>
+        </Reveal>
+
+        <div className="mt-14 md:mt-16 flex flex-col gap-7 body-lede prose-sage max-w-full">
+          <Reveal as="p" delay={80} className="max-w-full">
+            Cognitive Behaviour Therapy, or CBT, is one of the most extensively
+            researched forms of psychological treatment in the world. It rests
+            on a simple but powerful idea: our thoughts, feelings, and
+            behaviours are connected, and by learning to recognise and reshape
+            unhelpful patterns of thinking, we can change how we feel and how
+            we act. Rather than dwelling indefinitely on the past, CBT focuses
+            on the difficulties you are facing now and equips you with
+            practical strategies you can use for the rest of your life.
+          </Reveal>
+
+          <Reveal as="p" delay={140} className="max-w-full">
+            At Sage Psychological Services, CBT is delivered one-to-one by
+            registered psychologist <Link href="/about">Jacob Jones</Link>,
+            who tailors each session to your circumstances rather than working
+            through a rigid manual. The result is a structured yet genuinely
+            personal course of therapy.
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION 2 · What CBT helps with
+────────────────────────────────────────────────────────────── */
+
+const HELPS: { text: React.ReactNode; href?: string }[] = [
+  {
+    text: (
+      <>
+        Anxiety, panic, and excessive worry, the focus of our dedicated{" "}
+        <Link href="/anxiety-therapy-perth" className="link">
+          anxiety therapy
+        </Link>{" "}
+        page.
+      </>
+    ),
+  },
+  { text: "Depression and persistent low mood." },
+  { text: "Stress and burnout, including work-related stress." },
+  { text: "Low self-esteem and unhelpful core beliefs." },
+  { text: "Sleep difficulties and rumination." },
+  { text: "Phobias and avoidance patterns." },
+];
+
+function WhatCbtHelpsWith() {
+  return (
+    <section className="relative bg-paper-soft text-ink stack-y">
+      <div className="edge mx-auto max-w-[86rem]">
+        <div className="max-w-[62rem] mx-auto text-center">
+          <Reveal>
+            <h2
+              className="max-w-full leading-[1.02]"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              What CBT can{" "}
+              <span className="serif-italic">help with</span>.
+            </h2>
+          </Reveal>
+
+          <Reveal as="p" delay={80} className="mt-8 body-lede max-w-full">
+            CBT is considered a first-line treatment for a number of common
+            psychological concerns, and it is flexible enough to support many
+            others. Jacob uses CBT, often alongside other approaches, to help
+            clients experiencing:
+          </Reveal>
+        </div>
+
+        <ul className="mt-14 md:mt-16 grid gap-x-10 gap-y-0 md:grid-cols-2 lg:grid-cols-3">
+          {HELPS.map((h, i) => (
+            <Reveal
+              as="li"
+              key={i}
+              delay={i * 55}
+              className="border-t border-ink/15 py-6 text-[1.02rem] md:text-[1.08rem] leading-relaxed"
+            >
+              {h.text}
+            </Reveal>
+          ))}
+        </ul>
+
+        <Reveal
+          as="p"
+          delay={80}
+          className="mt-14 md:mt-16 body-lede max-w-[62ch] mx-auto text-center opacity-85"
+        >
+          Because CBT is practical and skills-based, many clients find they
+          leave therapy with a toolkit they continue to draw on long after
+          their sessions end.
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION 3 · How CBT Works at Sage
+────────────────────────────────────────────────────────────── */
+
+const PROCESS: string[] = [
+  "Understanding the link between your thoughts, emotions, and behaviours.",
+  "Identifying the specific patterns keeping difficulties in place.",
+  "Learning and practising practical strategies between sessions.",
+  "Gradually facing avoided situations in a safe, structured way.",
+  "Building lasting skills to manage setbacks independently.",
+];
+
+function HowCbtWorks() {
+  return (
+    <section className="relative bg-paper text-ink stack-y">
+      <div className="edge mx-auto max-w-[86rem]">
+        <div className="max-w-[68rem] mx-auto">
+          <Reveal>
+            <h2
+              className="max-w-full leading-[1.02]"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              How CBT{" "}
+              <span className="serif-italic">works at Sage</span>.
+            </h2>
+          </Reveal>
+
+          <Reveal as="p" delay={80} className="mt-8 body-lede max-w-full prose-sage">
+            CBT is a collaborative process. In your early sessions, Jacob will
+            work with you to understand the challenges you are facing and to
+            identify the patterns of thought and behaviour that may be
+            maintaining them. From there, you will begin to test and gently
+            challenge those patterns, building more balanced and helpful ways
+            of thinking and responding.
+          </Reveal>
+
+          <Reveal delay={140} className="mt-14 md:mt-16">
+            <p
+              className="serif-italic text-moss"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.15rem, 1.4vw, 1.35rem)",
+              }}
+            >
+              A typical course of CBT might involve:
+            </p>
+          </Reveal>
+
+          <ol className="mt-8 grid gap-0">
+            {PROCESS.map((step, i) => (
+              <Reveal
+                as="li"
+                key={i}
+                delay={i * 80}
+                className="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-10 py-7 md:py-8 border-t border-ink/15"
+              >
+                <span
+                  className="text-moss"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "clamp(1.5rem, 2vw, 2.25rem)",
+                    fontStyle: "italic",
+                    lineHeight: 1,
+                  }}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[1.05rem] md:text-[1.15rem] leading-snug self-center max-w-[52ch]">
+                  {step}
+                </span>
+              </Reveal>
+            ))}
+          </ol>
+
+          <Reveal as="p" delay={80} className="mt-14 md:mt-16 body-lede max-w-full prose-sage">
+            The pace is always set with you. Some clients find meaningful
+            change within a handful of sessions, while others prefer a longer,
+            deeper course of work. Jacob will discuss what is likely to suit
+            you during your first appointment.
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION 4 · Why Sage for CBT
+────────────────────────────────────────────────────────────── */
+
+function WhySageCbt() {
+  return (
+    <section className="relative bg-paper-soft text-ink stack-y">
+      <div className="edge mx-auto max-w-[86rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch">
+          {/* Left · Image */}
+          <Reveal className="lg:col-span-5 min-w-0 lg:h-full">
+            <div className="relative w-full h-[300px] lg:h-full lg:min-h-full overflow-hidden rounded-[16px] bg-linen">
+              <Image
+                src="/img/window-light.jpg"
+                alt="Warm sunlight through a lace curtain in the practice"
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
+
+          {/* Right · Content */}
+          <div className="lg:col-span-7 min-w-0">
+            <Reveal>
+              <h2
+                className="max-w-full leading-[1.02]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(2.4rem, 4.2vw, 3.75rem)",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Why choose Sage{" "}
+                <span className="serif-italic">for CBT</span>.
+              </h2>
+            </Reveal>
+
+            <div className="mt-8 flex flex-col gap-6 body-lede prose-sage max-w-full">
+              <Reveal as="p" delay={80} className="max-w-full">
+                CBT is most effective in the hands of a skilled, attentive
+                practitioner who can adapt it to the person in the room. At
+                Sage you work directly with Jacob throughout, so your therapy
+                builds on a consistent, trusting relationship. Jacob integrates
+                CBT with other evidence-based approaches where it helps,
+                including Schema Therapy and, for trauma,{" "}
+                <Link href="/emdr-therapy-perth">EMDR</Link>, ensuring your
+                treatment reflects the full picture rather than a single
+                technique.
+              </Reveal>
+
+              <Reveal as="p" delay={140} className="max-w-full">
+                Sessions are held in a calm, private setting in East Fremantle,
+                with a low out-of-pocket fee under a Mental Health Care Plan.
+                See our <Link href="/fees">fees and rebates</Link> page for
+                details.
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION 5 · Begin CBT (CTA)
+────────────────────────────────────────────────────────────── */
+
+function BeginCbt() {
+  return (
+    <section className="relative text-paper overflow-hidden">
+      <div className="absolute inset-0" aria-hidden>
+        <Image
+          src="/img/wa-sunrise.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(20,22,20,0.72) 0%, rgba(20,22,20,0.55) 45%, rgba(20,22,20,0.85) 100%)",
+          }}
+        />
+      </div>
+
+      <div className="relative edge mx-auto max-w-[86rem] stack-y flex flex-col items-center text-center gap-10">
+        <Reveal>
+          <h2
+            className="max-w-[20ch] text-paper leading-[1.02]"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(2.6rem, 5vw, 4.5rem)",
+              letterSpacing: "-0.02em",
+            }}
+          >
+            Begin CBT{" "}
+            <span className="serif-italic">in East Fremantle</span>.
+          </h2>
+        </Reveal>
+
+        <Reveal
+          as="p"
+          delay={140}
+          className="body-lede max-w-[54ch] text-paper prose-sage"
+          style={{ textShadow: "0 1px 20px rgba(0,0,0,0.4)" }}
+        >
+          If a practical, evidence-based approach sounds like the right fit,
+          Jacob would be glad to help. You can{" "}
+          <Link
+            href="/book"
+            style={{ color: "var(--paper)" }}
+            className="font-medium"
+          >
+            book a session
+          </Link>{" "}
+          or{" "}
+          <Link
+            href="/contact"
+            style={{ color: "var(--paper)" }}
+            className="font-medium"
+          >
+            get in touch
+          </Link>{" "}
+          with any questions about whether CBT is right for you.
+        </Reveal>
+
+        <Reveal delay={220} className="flex flex-wrap gap-3 justify-center">
+          <Link href="/book" className="btn btn-on-video">
+            Book a CBT Session <Arrow />
+          </Link>
+          <Link href="/contact" className="btn btn-on-video-ghost">
+            Ask about CBT
+          </Link>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────
+   PAGE
+────────────────────────────────────────────────────────────── */
+
+export default function CbtTherapyPage() {
+  return (
+    <>
+      <Header alwaysSolid />
+      <main>
+        <CbtHero />
+        <WhatIsCbt />
+        <WhatCbtHelpsWith />
+        <HowCbtWorks />
+        <WhySageCbt />
+        <BeginCbt />
+      </main>
+      <Footer />
+    </>
+  );
+}

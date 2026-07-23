@@ -6,7 +6,7 @@ const NBSP = " ";
 const HEADLINE_LINES: string[][] = [
   ["Psychology", "in", "East"],
   ["Fremantle,"],
-  ["built", "around", "you."],
+  ["Built", "Around", "You."],
 ];
 
 export default function Hero() {

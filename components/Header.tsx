@@ -57,7 +57,9 @@ function Caret({ open }: { open: boolean }) {
   );
 }
 
-export default function Header() {
+export default function Header({
+  alwaysSolid = false,
+}: { alwaysSolid?: boolean } = {}) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [dropdown, setDropdown] = useState<string | null>(null);
@@ -68,11 +70,14 @@ export default function Header() {
   const dropdownTimer = useRef<number | null>(null);
 
   useEffect(() => {
+    if (alwaysSolid) return;
     const onScroll = () => setScrolled(window.scrollY > 60);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [alwaysSolid]);
+
+  const solid = alwaysSolid || scrolled || dropdown !== null;
 
   const openDropdown = (label: string) => {
     if (dropdownTimer.current) {
@@ -93,7 +98,7 @@ export default function Header() {
       className={[
         "fixed top-0 left-0 right-0 z-50",
         "transition-[background-color,color,border-color,backdrop-filter] duration-500",
-        scrolled || dropdown
+        solid
           ? "bg-paper/94 text-ink backdrop-blur-md border-b border-hairline"
           : "bg-transparent text-paper border-b border-transparent",
       ].join(" ")}
@@ -111,7 +116,7 @@ export default function Header() {
             height={639}
             className={[
               "h-12 md:h-14 w-auto object-contain transition-[filter] duration-500",
-              scrolled || dropdown ? "" : "[filter:brightness(0)_invert(1)]",
+              solid ? "" : "[filter:brightness(0)_invert(1)]",
             ].join(" ")}
             priority
           />
@@ -186,7 +191,7 @@ export default function Header() {
           <Link
             href="/book"
             className={
-              scrolled || dropdown ? "btn btn-primary" : "btn btn-on-video"
+              solid ? "btn btn-primary" : "btn btn-on-video"
             }
           >
             Book Now <Arrow />
@@ -203,21 +208,21 @@ export default function Header() {
           <span
             className={[
               "block h-[1.4px] w-6 transition-transform duration-300",
-              scrolled ? "bg-ink" : "bg-paper",
+              solid ? "bg-ink" : "bg-paper",
               open ? "translate-y-[7.4px] rotate-45" : "",
             ].join(" ")}
           />
           <span
             className={[
               "block h-[1.4px] w-6 transition-opacity duration-300",
-              scrolled ? "bg-ink" : "bg-paper",
+              solid ? "bg-ink" : "bg-paper",
               open ? "opacity-0" : "opacity-100",
             ].join(" ")}
           />
           <span
             className={[
               "block h-[1.4px] w-6 transition-transform duration-300",
-              scrolled ? "bg-ink" : "bg-paper",
+              solid ? "bg-ink" : "bg-paper",
               open ? "-translate-y-[7.4px] -rotate-45" : "",
             ].join(" ")}
           />
