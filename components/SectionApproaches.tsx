@@ -55,15 +55,15 @@ export default function SectionApproaches() {
       </div>
 
       <div className="relative edge mx-auto max-w-[86rem]">
-        <div className="max-w-[64rem]">
-          <Reveal as="h2" className="display-lg max-w-[20ch]">
+        <div className="max-w-full">
+          <Reveal as="h2" className="display-lg max-w-full">
             Our therapeutic{" "}
             <span className="serif-italic">approaches</span>.
           </Reveal>
           <Reveal
             as="p"
             delay={80}
-            className="mt-8 body-lede max-w-[58ch] text-paper"
+            className="mt-8 body-lede max-w-full text-paper"
           >
             At Sage we believe therapy is not a one-size-fits-all solution. We
             take a personalised approach that draws on several evidence-based
@@ -79,10 +79,17 @@ export default function SectionApproaches() {
               delay={i * 120}
               className="flex flex-col gap-7 border-t border-paper/25 pt-10"
             >
-              <h3 className="display-md max-w-[16ch] text-paper leading-[1.1]">
+              <h3
+                className="max-w-full text-paper leading-[1.15]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "36px",
+                  letterSpacing: "-0.015em",
+                }}
+              >
                 {a.name}
               </h3>
-              <p className="body-lede text-paper max-w-[46ch]">{a.body}</p>
+              <p className="body-lede text-paper max-w-full">{a.body}</p>
               <div>
                 <Link href={a.href} className="btn btn-on-video-ghost">
                   {a.linkLabel} <Arrow />
@@ -95,7 +102,7 @@ export default function SectionApproaches() {
         <Reveal
           as="p"
           delay={200}
-          className="mt-20 md:mt-28 body-lede max-w-[68ch] text-paper opacity-90"
+          className="mt-20 md:mt-28 body-lede max-w-full text-paper opacity-90"
         >
           Alongside these, Jacob draws on Schema Therapy, Dialectical Behaviour
           Therapy (DBT), Acceptance and Commitment Therapy (ACT),
