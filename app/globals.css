@@ -1,26 +1,284 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────────
+   SAGE PSYCHOLOGICAL SERVICES — design tokens
+   Palette: deep evergreen + warm cream + brass accent
+   Type:    Instrument Serif (display) / Inter Tight (body)
+────────────────────────────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* colour */
+  --ink:          #1B1E1B;
+  --evergreen:    #2E3E33;
+  --evergreen-2:  #3A4E3F;
+  --moss:         #566B57;
+  --paper:        #F1EBDD;
+  --paper-soft:   #E9E1CB;
+  --linen:        #DDD3B6;
+  --brass:        #B58A5C;
+  --brass-soft:   #C9A47D;
+  --hairline:     rgba(27, 30, 27, 0.14);
+  --hairline-lite: rgba(27, 30, 27, 0.08);
+
+  /* type */
+  --font-display: var(--font-instrument-serif), "Times New Roman", serif;
+  --font-body:    var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+
+  /* rhythm */
+  --edge: clamp(1.25rem, 4vw, 3rem);
+  --stack: clamp(4.5rem, 10vw, 8.5rem);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-evergreen: var(--evergreen);
+  --color-evergreen-2: var(--evergreen-2);
+  --color-moss: var(--moss);
+  --color-paper: var(--paper);
+  --color-paper-soft: var(--paper-soft);
+  --color-linen: var(--linen);
+  --color-brass: var(--brass);
+  --color-brass-soft: var(--brass-soft);
+  --color-hairline: var(--hairline);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-feature-settings: "ss01", "cv11", "calt";
+  line-height: 1.55;
+}
+
+/* ─── Type scale ─────────────────────────────────────────── */
+
+.display-xl {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(3.5rem, 10.5vw, 9.75rem);
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+}
+
+.display-lg {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.75rem, 6.2vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.display-md {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+
+.display-sm {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.serif-italic { font-style: italic; }
+
+.eyebrow {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--moss);
+}
+
+.chapter-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--brass);
+  letter-spacing: 0.02em;
+}
+
+.body-lede {
+  font-size: clamp(1.1rem, 1.35vw, 1.25rem);
+  line-height: 1.62;
+  color: var(--ink);
+  opacity: 0.86;
+}
+
+.body-quiet {
+  color: var(--ink);
+  opacity: 0.74;
+}
+
+/* ─── Links inside prose ─────────────────────────────────── */
+
+.prose-sage a,
+a.link {
+  color: var(--evergreen);
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 92%;
+  transition: background-size 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.prose-sage a:hover,
+a.link:hover {
+  background-size: 100% 2px;
+}
+
+/* ─── Buttons ───────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.6rem 0.95rem 1.7rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform;
+}
+.btn .arrow {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.btn:hover .arrow { transform: translateX(4px); }
+
+.btn-primary {
+  background: var(--evergreen);
+  color: var(--paper);
+  border: 1px solid var(--evergreen);
+}
+.btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--hairline);
+}
+.btn-ghost:hover {
+  background: rgba(27, 30, 27, 0.04);
+  border-color: rgba(27, 30, 27, 0.35);
+}
+
+.btn-on-video {
+  background: rgba(241, 235, 221, 0.94);
+  color: var(--ink);
+  border: 1px solid transparent;
+  backdrop-filter: blur(8px);
+}
+.btn-on-video:hover { background: var(--paper); }
+
+.btn-on-video-ghost {
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid rgba(241, 235, 221, 0.55);
+}
+.btn-on-video-ghost:hover {
+  background: rgba(241, 235, 221, 0.12);
+  border-color: rgba(241, 235, 221, 0.85);
+}
+
+/* ─── Hairlines ─────────────────────────────────────────── */
+
+.hairline { border-color: var(--hairline); }
+.hairline-lite { border-color: var(--hairline-lite); }
+
+/* ─── Motion primitives ─────────────────────────────────── */
+
+@keyframes rise {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes hero-video-in {
+  from { opacity: 0; transform: scale(1.06); filter: blur(10px); }
+  to   { opacity: 1; transform: scale(1);    filter: blur(0); }
+}
+@keyframes draw-line {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.hero-video-in {
+  animation: hero-video-in 1.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0s);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* word-by-word hero stagger */
+.stagger-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(0, 0.7em, 0);
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  animation-delay: calc(var(--i, 0) * 70ms + 400ms);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade 1.2s ease forwards;
+  animation-delay: var(--fade-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .stagger-word, .fade-in, .hero-video-in {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ─── Utilities ─────────────────────────────────────────── */
+
+.edge { padding-left: var(--edge); padding-right: var(--edge); }
+.stack-y { padding-top: var(--stack); padding-bottom: var(--stack); }
+
+/* selection */
+::selection { background: var(--evergreen); color: var(--paper); }
+
+/* focus */
+:focus-visible {
+  outline: 2px solid var(--evergreen);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
