@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Arrow } from "./Icons";
 
-// Non-breaking space, guaranteed not to collapse inside inline-block.
 const NBSP = " ";
 
 const HEADLINE_LINES: string[][] = [
@@ -17,7 +16,6 @@ export default function Hero() {
       id="top"
       className="relative w-full h-[100svh] max-h-[100svh] overflow-hidden bg-ink"
     >
-      {/* Video */}
       <div className="absolute inset-0 hero-video-in">
         <video
           className="absolute inset-0 h-full w-full object-cover"
@@ -32,12 +30,11 @@ export default function Hero() {
         </video>
       </div>
 
-      {/* Overlays — stronger scrim so cream text sits crisply. */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(20,22,20,0.55) 0%, rgba(20,22,20,0.15) 22%, rgba(20,22,20,0.10) 42%, rgba(20,22,20,0.55) 72%, rgba(20,22,20,0.82) 100%)",
+            "linear-gradient(180deg, rgba(20,22,20,0.45) 0%, rgba(20,22,20,0.12) 22%, rgba(20,22,20,0.08) 42%, rgba(20,22,20,0.55) 72%, rgba(20,22,20,0.82) 100%)",
         }}
         aria-hidden
       />
@@ -45,26 +42,12 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(90deg, rgba(20,22,20,0.35) 0%, rgba(20,22,20,0.05) 55%, transparent 100%)",
+            "linear-gradient(90deg, rgba(20,22,20,0.28) 0%, rgba(20,22,20,0.04) 55%, transparent 100%)",
         }}
         aria-hidden
       />
 
-      {/* Top row: eyebrow */}
-      <div className="relative z-10 edge mx-auto max-w-[92rem] pt-[96px] md:pt-[110px]">
-        <div
-          className="flex items-center gap-4 text-paper fade-in"
-          style={{ ["--fade-delay" as string]: "200ms" } as React.CSSProperties}
-        >
-          <span className="inline-block h-px w-8 bg-paper/70" />
-          <span className="eyebrow" style={{ color: "var(--paper)" }}>
-            Registered Psychologist{NBSP}·{NBSP}Est. 2023
-          </span>
-        </div>
-      </div>
-
-      {/* Headline block */}
-      <div className="relative z-10 edge mx-auto max-w-[92rem] flex flex-col justify-end h-[calc(100svh-110px)] pb-[8vh] md:pb-[7vh]">
+      <div className="relative z-10 edge mx-auto max-w-[92rem] flex flex-col justify-end h-full pb-[9vh] md:pb-[8vh] pt-[110px]">
         <h1 className="display-xl text-paper max-w-[19ch]">
           {HEADLINE_LINES.map((line, li) => (
             <span key={li} className="block">
@@ -114,16 +97,6 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-      </div>
-
-      {/* Corner meta — bottom right */}
-      <div
-        className="absolute bottom-5 right-[var(--edge)] z-10 hidden md:flex items-center gap-4 text-paper/90 text-[0.7rem] tracking-[0.24em] uppercase fade-in"
-        style={{ ["--fade-delay" as string]: "1500ms" } as React.CSSProperties}
-      >
-        <span>Silas St · East Fremantle</span>
-        <span className="h-px w-8 bg-paper/50" />
-        <span>WA</span>
       </div>
     </section>
   );
