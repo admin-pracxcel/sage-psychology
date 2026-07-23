@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 
 function AboutHero() {
   return (
-    <section className="relative bg-paper text-ink w-full pt-[92px] md:pt-[110px] overflow-hidden">
-      {/* Small breadcrumb inside the edge container */}
+    <section className="relative bg-paper text-ink pt-[110px] md:pt-[128px] pb-16 md:pb-20 lg:pb-24 overflow-hidden">
       <div className="edge mx-auto max-w-[92rem]">
+        {/* Breadcrumb */}
         <Reveal>
           <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
             <Link href="/" className="opacity-80 hover:opacity-100">
@@ -30,51 +30,65 @@ function AboutHero() {
             <span className="text-evergreen">Jacob Jones</span>
           </div>
         </Reveal>
-      </div>
 
-      {/* Full-width bleed split: photo left, content right */}
-      <div className="mt-8 md:mt-10 flex flex-col lg:flex-row lg:min-h-[640px] xl:min-h-[720px]">
-        {/* Left half — photo, bleeds to viewport edge */}
-        <Reveal className="relative w-full lg:w-1/2 h-[520px] sm:h-[600px] lg:h-auto lg:min-h-[640px] xl:min-h-[720px] bg-linen">
-          <Image
-            src="/img/jacob.webp"
-            alt="Jacob Jones, registered psychologist and founder of Sage Psychological Services"
-            fill
-            priority
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover object-center"
-          />
-        </Reveal>
-
-        {/* Right half — content, inset with generous padding */}
-        <div className="w-full lg:w-1/2 flex items-center py-14 lg:py-0 px-6 sm:px-10 lg:px-14 xl:px-20">
-          <div className="max-w-[38rem]">
-            <Reveal>
-              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss mb-6">
-                About the psychologist
-              </div>
-            </Reveal>
-
-            <Reveal delay={80}>
-              <h1
-                className="max-w-full leading-[0.98]"
+        {/* Editorial banner headline — spans full width */}
+        <div className="mt-10 md:mt-12">
+          <Reveal delay={60}>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="inline-block h-px w-10 md:w-16 bg-moss/60" />
+              <span
+                className="serif-italic text-moss"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(2.75rem, 5.6vw, 5rem)",
-                  letterSpacing: "-0.025em",
+                  fontSize: "clamp(0.95rem, 1.05vw, 1.1rem)",
                 }}
               >
-                Jacob{" "}
-                <span className="serif-italic">Jones</span>.
-              </h1>
-            </Reveal>
+                About the psychologist
+              </span>
+            </div>
+          </Reveal>
 
-            <Reveal delay={160}>
+          <Reveal delay={100}>
+            <h1
+              className="leading-[0.94] max-w-full"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(3.25rem, 8.4vw, 8.5rem)",
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Meet Jacob{" "}
+              <span className="serif-italic">Jones</span>.
+            </h1>
+          </Reveal>
+        </div>
+
+        {/* Editorial split: photo left, prose + CTAs right */}
+        <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-start">
+          {/* Left · Photo */}
+          <Reveal delay={160} className="lg:col-span-5 min-w-0">
+            <figure className="relative">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[20px] bg-linen shadow-[0_24px_60px_-24px_rgba(20,22,20,0.28)]">
+                <Image
+                  src="/img/jacob.webp"
+                  alt="Jacob Jones, registered psychologist and founder of Sage Psychological Services"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 40vw, 100vw"
+                  className="object-cover object-center"
+                />
+              </div>
+            </figure>
+          </Reveal>
+
+          {/* Right · Credentials + intro + CTAs */}
+          <div className="lg:col-span-7 min-w-0 lg:pt-6">
+            <Reveal delay={200}>
               <p
-                className="mt-6 serif-italic text-moss max-w-[42ch] leading-snug"
+                className="serif-italic text-ink max-w-[38ch] leading-snug"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(1.1rem, 1.4vw, 1.35rem)",
+                  fontSize: "clamp(1.35rem, 1.9vw, 1.85rem)",
                 }}
               >
                 Registered Psychologist &nbsp;·&nbsp; BA (Psych), GradDip
@@ -82,7 +96,11 @@ function AboutHero() {
               </p>
             </Reveal>
 
-            <Reveal delay={220}>
+            <Reveal delay={280}>
+              <div className="mt-10 h-px w-16 bg-ink/25" />
+            </Reveal>
+
+            <Reveal delay={340}>
               <div className="mt-10 flex flex-wrap gap-3">
                 <Link href="/book" className="btn btn-primary">
                   Book a Session with Jacob <Arrow />
@@ -395,8 +413,8 @@ function WhySage() {
           </Reveal>
         </div>
 
-        {/* Triptych */}
-        <div className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
+        {/* Triptych — constrained to intro paragraph width */}
+        <div className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7 max-w-[68rem] mx-auto">
           {SAGE_MEANINGS.map((m, i) => (
             <Reveal key={m.title} delay={i * 120}>
               <div className="h-full flex flex-col gap-4 p-8 md:p-9 rounded-[16px] bg-paper-soft border border-ink/8">
