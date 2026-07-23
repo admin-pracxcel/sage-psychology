@@ -223,7 +223,7 @@ function HowTherapyHelpsAnxiety() {
   return (
     <section className="relative bg-paper text-ink stack-y">
       <div className="edge mx-auto max-w-[86rem]">
-        <div className="max-w-[68rem] mx-auto">
+        <div className="max-w-[68rem]">
           <Reveal>
             <h2
               className="max-w-full leading-[1.02]"
@@ -238,29 +238,97 @@ function HowTherapyHelpsAnxiety() {
             </h2>
           </Reveal>
 
-          <div className="mt-10 md:mt-12 flex flex-col gap-7 body-lede prose-sage max-w-full">
-            <Reveal as="p" delay={80} className="max-w-full">
-              The most effective anxiety treatment is evidence-based and
-              tailored to the individual. Jacob most often draws on{" "}
-              <Link href="/cbt-therapy-perth">
-                Cognitive Behaviour Therapy (CBT)
-              </Link>
-              , which is considered a first-line treatment for anxiety. CBT
-              helps you identify the thoughts and behaviours that fuel
-              anxiety, gently test the fears driving it, and build practical
-              strategies for calming both mind and body.
-            </Reveal>
-
-            <Reveal as="p" delay={140} className="max-w-full">
-              Where anxiety is rooted in past experiences or trauma, Jacob may
-              also incorporate <Link href="/emdr-therapy-perth">EMDR</Link> or
-              psychodynamic approaches to address the underlying causes rather
-              than the symptoms alone. As always, the approach is shaped
-              around you, and Jacob will explain what is likely to help during
-              your first session.
-            </Reveal>
-          </div>
+          <Reveal
+            as="p"
+            delay={80}
+            className="mt-8 serif-italic text-moss leading-snug max-w-full"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.2rem, 1.4vw, 1.4rem)",
+            }}
+          >
+            The most effective anxiety treatment is evidence-based and
+            tailored to the individual.
+          </Reveal>
         </div>
+
+        <div className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7">
+          {/* Card 1 · CBT */}
+          <Reveal>
+            <div className="h-full flex flex-col gap-6 p-8 md:p-10 rounded-[16px] bg-paper-soft border border-ink/8 hover:border-ink/20 transition-colors">
+              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                Primary approach
+              </div>
+              <h3
+                className="max-w-full leading-[1.15]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(1.65rem, 2.4vw, 2.25rem)",
+                  letterSpacing: "-0.015em",
+                }}
+              >
+                Cognitive Behaviour Therapy
+              </h3>
+              <p className="body-lede prose-sage max-w-full flex-1">
+                Jacob most often draws on{" "}
+                <Link href="/cbt-therapy-perth">
+                  Cognitive Behaviour Therapy (CBT)
+                </Link>
+                , which is considered a first-line treatment for anxiety. CBT
+                helps you identify the thoughts and behaviours that fuel
+                anxiety, gently test the fears driving it, and build practical
+                strategies for calming both mind and body.
+              </p>
+              <Link
+                href="/cbt-therapy-perth"
+                className="inline-flex items-center gap-2 text-[0.95rem] font-medium text-evergreen link self-start"
+              >
+                CBT therapy in Perth <Arrow />
+              </Link>
+            </div>
+          </Reveal>
+
+          {/* Card 2 · EMDR / psychodynamic */}
+          <Reveal delay={120}>
+            <div className="h-full flex flex-col gap-6 p-8 md:p-10 rounded-[16px] bg-paper-soft border border-ink/8 hover:border-ink/20 transition-colors">
+              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                Where anxiety runs deeper
+              </div>
+              <h3
+                className="max-w-full leading-[1.15]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(1.65rem, 2.4vw, 2.25rem)",
+                  letterSpacing: "-0.015em",
+                }}
+              >
+                EMDR and psychodynamic approaches
+              </h3>
+              <p className="body-lede prose-sage max-w-full flex-1">
+                Where anxiety is rooted in past experiences or trauma, Jacob
+                may also incorporate{" "}
+                <Link href="/emdr-therapy-perth">EMDR</Link> or psychodynamic
+                approaches to address the underlying causes rather than the
+                symptoms alone.
+              </p>
+              <Link
+                href="/emdr-therapy-perth"
+                className="inline-flex items-center gap-2 text-[0.95rem] font-medium text-evergreen link self-start"
+              >
+                EMDR therapy in Perth <Arrow />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal
+          as="p"
+          delay={80}
+          className="mt-14 md:mt-16 body-lede max-w-[64ch] opacity-85"
+        >
+          As always, the approach is shaped around you, and Jacob will explain
+          what is likely to help during your first session.
+        </Reveal>
       </div>
     </section>
   );

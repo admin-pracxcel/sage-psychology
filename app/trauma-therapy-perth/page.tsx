@@ -215,7 +215,7 @@ function HowTraumaTherapyHelps() {
   return (
     <section className="relative bg-paper text-ink stack-y">
       <div className="edge mx-auto max-w-[86rem]">
-        <div className="max-w-[68rem] mx-auto">
+        <div className="max-w-[68rem]">
           <Reveal>
             <h2
               className="max-w-full leading-[1.02]"
@@ -230,30 +230,97 @@ function HowTraumaTherapyHelps() {
             </h2>
           </Reveal>
 
-          <div className="mt-10 md:mt-12 flex flex-col gap-7 body-lede prose-sage max-w-full">
-            <Reveal as="p" delay={80} className="max-w-full">
-              Effective trauma therapy is careful, evidence-based, and always
-              paced to the individual. One of the most well-researched
-              treatments for trauma is{" "}
-              <Link href="/emdr-therapy-perth">
-                Eye Movement Desensitisation and Reprocessing (EMDR)
-              </Link>
-              , a therapy Jacob trained in during his postgraduate research
-              and uses regularly in his practice. EMDR helps the brain
-              reprocess distressing memories so they lose their intensity and
-              settle into the past.
-            </Reveal>
-
-            <Reveal as="p" delay={140} className="max-w-full">
-              Jacob also draws on psychodynamic therapy and, where helpful,{" "}
-              <Link href="/cbt-therapy-perth">CBT-based</Link> approaches,
-              always beginning with safety and stability before any deeper
-              processing work. His focus is not only on your presenting
-              symptoms but on the underlying mechanisms beneath them, which is
-              where lasting change tends to come from.
-            </Reveal>
-          </div>
+          <Reveal
+            as="p"
+            delay={80}
+            className="mt-8 serif-italic text-moss leading-snug max-w-full"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.2rem, 1.4vw, 1.4rem)",
+            }}
+          >
+            Effective trauma therapy is careful, evidence-based, and always
+            paced to the individual.
+          </Reveal>
         </div>
+
+        <div className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7">
+          {/* Card 1 · EMDR */}
+          <Reveal>
+            <div className="h-full flex flex-col gap-6 p-8 md:p-10 rounded-[16px] bg-paper-soft border border-ink/8 hover:border-ink/20 transition-colors">
+              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                Primary approach
+              </div>
+              <h3
+                className="max-w-full leading-[1.15]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(1.65rem, 2.4vw, 2.25rem)",
+                  letterSpacing: "-0.015em",
+                }}
+              >
+                Eye Movement Desensitisation and Reprocessing (EMDR)
+              </h3>
+              <p className="body-lede prose-sage max-w-full flex-1">
+                One of the most well-researched treatments for trauma is{" "}
+                <Link href="/emdr-therapy-perth">
+                  Eye Movement Desensitisation and Reprocessing (EMDR)
+                </Link>
+                , a therapy Jacob trained in during his postgraduate research
+                and uses regularly in his practice. EMDR helps the brain
+                reprocess distressing memories so they lose their intensity
+                and settle into the past.
+              </p>
+              <Link
+                href="/emdr-therapy-perth"
+                className="inline-flex items-center gap-2 text-[0.95rem] font-medium text-evergreen link self-start"
+              >
+                EMDR therapy in Perth <Arrow />
+              </Link>
+            </div>
+          </Reveal>
+
+          {/* Card 2 · Psychodynamic / CBT */}
+          <Reveal delay={120}>
+            <div className="h-full flex flex-col gap-6 p-8 md:p-10 rounded-[16px] bg-paper-soft border border-ink/8 hover:border-ink/20 transition-colors">
+              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                Alongside, where helpful
+              </div>
+              <h3
+                className="max-w-full leading-[1.15]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(1.65rem, 2.4vw, 2.25rem)",
+                  letterSpacing: "-0.015em",
+                }}
+              >
+                Psychodynamic and CBT-based approaches
+              </h3>
+              <p className="body-lede prose-sage max-w-full flex-1">
+                Jacob also draws on psychodynamic therapy and, where helpful,{" "}
+                <Link href="/cbt-therapy-perth">CBT-based</Link> approaches,
+                always beginning with safety and stability before any deeper
+                processing work.
+              </p>
+              <Link
+                href="/cbt-therapy-perth"
+                className="inline-flex items-center gap-2 text-[0.95rem] font-medium text-evergreen link self-start"
+              >
+                CBT therapy in Perth <Arrow />
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal
+          as="p"
+          delay={80}
+          className="mt-14 md:mt-16 body-lede max-w-[68ch] opacity-85"
+        >
+          His focus is not only on your presenting symptoms but on the
+          underlying mechanisms beneath them, which is where lasting change
+          tends to come from.
+        </Reveal>
       </div>
     </section>
   );
