@@ -1,21 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
 import Reveal from "./Reveal";
-import { Arrow } from "./Icons";
+import ConditionsSlider, { type ConditionCard } from "./ConditionsSlider";
 
-type Card = {
-  title: string;
-  body: string;
-  image: string;
-  alt: string;
-  href?: string;
-};
-
-const CARDS: Card[] = [
+const CARDS: ConditionCard[] = [
   {
     title: "Anxiety, panic, and chronic worry",
     body:
-      "Support for anxious thinking, panic, and the kind of worry that won't settle on its own.",
+      "For anxious thinking, panic, and the kind of worry that won't settle on its own.",
     image: "/img/mist-forest.jpg",
     alt: "Warm morning light through misty forest trees",
     href: "/anxiety-therapy-perth",
@@ -37,11 +27,46 @@ const CARDS: Card[] = [
     href: "/depression-counselling-perth",
   },
   {
+    title: "Grief, loss, and bereavement",
+    body:
+      "Room to sit with loss and everything that surrounds it, without a timeline.",
+    image: "/img/lone-tree.jpg",
+    alt: "A single tree lit by a soft sunrise across a meadow",
+  },
+  {
     title: "Work-related stress and burnout",
     body:
       "For burnout, chronic work stress, and the moments when nothing seems to recharge you.",
     image: "/img/meadow.jpg",
     alt: "Wildflower meadow at golden hour",
+  },
+  {
+    title: "Confidence, self-esteem, and identity",
+    body:
+      "For working with self-esteem, identity, and the quieter questions of who you are.",
+    image: "/img/forest-path.jpg",
+    alt: "A tranquil forest path bathed in warm sunlight",
+  },
+  {
+    title: "Relationship difficulties and interpersonal patterns",
+    body:
+      "For interpersonal patterns and the same kinds of difficulty that keep showing up.",
+    image: "/img/olive-branches.jpg",
+    alt: "Olive tree branches lit by warm evening light",
+  },
+  {
+    title: "Anger and emotional regulation",
+    body:
+      "For emotional regulation and the reactions that get in the way of the life you want.",
+    image: "/img/still-lake.jpg",
+    alt: "Sunset reflections on a still lake surface",
+  },
+  {
+    title: "Alcohol, substance, and other dependencies",
+    body:
+      "Support for alcohol, substance, and habits that have grown bigger than they were meant to.",
+    image: "/img/dew-grass.jpg",
+    alt: "Dew-covered grasses at sunrise",
   },
 ];
 
@@ -49,7 +74,7 @@ export default function SectionHelp() {
   return (
     <section className="relative bg-paper-soft text-ink stack-y">
       <div className="edge mx-auto max-w-[92rem]">
-        {/* Header block, centered, Holistic-style */}
+        {/* Header */}
         <div className="max-w-[52rem] mx-auto text-center">
           <Reveal>
             <div
@@ -84,81 +109,14 @@ export default function SectionHelp() {
           </Reveal>
         </div>
 
-        {/* 4-card row */}
-        <div className="mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
-          {CARDS.map((card, i) => {
-            const inner = (
-              <>
-                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[10px] bg-linen">
-                  <Image
-                    src={card.image}
-                    alt={card.alt}
-                    fill
-                    sizes="(min-width: 1024px) 22vw, (min-width: 640px) 45vw, 90vw"
-                    className="object-cover transition-transform duration-[900ms] group-hover:scale-[1.04]"
-                  />
-                </div>
-                <div className="mt-5">
-                  <h3
-                    className="leading-[1.15]"
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: "clamp(1.25rem, 1.5vw, 1.55rem)",
-                    }}
-                  >
-                    {card.title}
-                  </h3>
-                  <p className="mt-2 text-[0.98rem] leading-relaxed opacity-75 max-w-[32ch]">
-                    {card.body}
-                  </p>
-                  {card.href && (
-                    <span className="mt-4 inline-flex items-center gap-1.5 text-[0.85rem] font-medium text-evergreen opacity-0 group-hover:opacity-100 transition-opacity">
-                      Read more <Arrow />
-                    </span>
-                  )}
-                </div>
-              </>
-            );
-
-            return (
-              <Reveal key={i} delay={i * 90}>
-                {card.href ? (
-                  <Link href={card.href} className="group block">
-                    {inner}
-                  </Link>
-                ) : (
-                  <div className="group">{inner}</div>
-                )}
-              </Reveal>
-            );
-          })}
-        </div>
-
-        {/* Remaining 5 conditions as a compact list */}
-        <div className="mt-14 md:mt-18">
-          <Reveal>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-3 max-w-[80rem] mx-auto">
-              {[
-                "Grief, loss, and bereavement",
-                "Confidence, self-esteem, and identity",
-                "Relationship difficulties and interpersonal patterns",
-                "Anger and emotional regulation",
-                "Alcohol, substance, and other dependencies",
-              ].map((c) => (
-                <li
-                  key={c}
-                  className="text-[0.95rem] leading-snug border-t border-ink/15 pt-3 opacity-85"
-                >
-                  {c}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-        </div>
+        {/* Slider */}
+        <Reveal className="mt-16 md:mt-20">
+          <ConditionsSlider cards={CARDS} autoIntervalMs={3000} />
+        </Reveal>
 
         {/* Closing */}
         <div className="mt-16 md:mt-20 max-w-[62ch] mx-auto text-center">
-          <Reveal delay={80}>
+          <Reveal>
             <p className="serif-italic text-moss text-[1.15rem] md:text-[1.3rem] leading-snug max-w-[46ch] mx-auto">
               Each of these is met with the same principle: therapy is tailored
               to the individual, drawing on the treatment approaches best
