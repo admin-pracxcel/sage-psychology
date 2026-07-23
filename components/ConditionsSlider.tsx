@@ -142,7 +142,7 @@ export default function ConditionsSlider({
             {cards.map((card, i) => {
               const inner = (
                 <>
-                  <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[10px] bg-linen">
+                  <div className="relative aspect-square md:aspect-[5/6] lg:aspect-[4/5] w-full overflow-hidden rounded-[10px] bg-linen">
                     <Image
                       src={card.image}
                       alt={card.alt}
@@ -207,27 +207,21 @@ export default function ConditionsSlider({
 
       {/* Mobile-only bottom arrows for 'sides' mode */}
       {arrowPosition === "sides" && maxIndex > 0 && (
-        <div className="md:hidden mt-8 flex items-center justify-center gap-4">
+        <div className="md:hidden mt-4 mb-0 flex items-center justify-center gap-4">
           <button
             type="button"
             onClick={prev}
             aria-label="Previous conditions"
-            className="grid place-items-center h-12 w-12 rounded-full border border-ink/20 text-ink hover:bg-ink hover:text-paper transition-colors"
+            className="grid place-items-center h-11 w-11 rounded-full border border-ink/20 text-ink hover:bg-ink hover:text-paper transition-colors"
           >
             <ArrowLeftSvg />
           </button>
-
-          <div className="text-[0.78rem] tracking-[0.2em] uppercase opacity-70 min-w-[5rem] text-center">
-            {String(index + 1).padStart(2, "0")}{" "}
-            <span className="opacity-50">/</span>{" "}
-            {String(maxIndex + 1).padStart(2, "0")}
-          </div>
 
           <button
             type="button"
             onClick={next}
             aria-label="Next conditions"
-            className="grid place-items-center h-12 w-12 rounded-full border border-ink/20 text-ink hover:bg-ink hover:text-paper transition-colors"
+            className="grid place-items-center h-11 w-11 rounded-full border border-ink/20 text-ink hover:bg-ink hover:text-paper transition-colors"
           >
             <ArrowRightSvg />
           </button>

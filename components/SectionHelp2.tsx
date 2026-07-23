@@ -119,7 +119,7 @@ export default function SectionHelp2() {
         </Reveal>
 
         {/* Closing */}
-        <div className="mt-16 md:mt-20 max-w-[62ch] mx-auto text-center">
+        <div className="mt-8 md:mt-20 max-w-[62ch] mx-auto text-center">
           <Reveal>
             <p className="serif-italic text-moss text-[1.15rem] md:text-[1.3rem] leading-snug max-w-[46ch] mx-auto">
               Each of these is met with the same principle: therapy is tailored
