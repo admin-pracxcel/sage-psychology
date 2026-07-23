@@ -1,9 +1,54 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
+import { Arrow } from "./Icons";
 
-const REASONS: { title: string; body: React.ReactNode }[] = [
+type Reason = {
+  icon: React.ReactNode;
+  title: string;
+  body: React.ReactNode;
+};
+
+function IconContinuity() {
+  return (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <circle cx="7" cy="12" r="2.4" />
+      <circle cx="17" cy="12" r="2.4" />
+      <path d="M9.4 12 H14.6" />
+    </svg>
+  );
+}
+function IconTailored() {
+  return (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <circle cx="12" cy="12" r="8" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+function IconFees() {
+  return (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M6 4 H16 L18 6 V20 H6 Z" />
+      <path d="M9 10 H15" />
+      <path d="M9 14 H13" />
+    </svg>
+  );
+}
+function IconRoom() {
+  return (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M12 21 V10" />
+      <path d="M12 12 C 9 12 6 10 5 6 C 8 6 11 8 12 12 Z" fill="currentColor" fillOpacity="0.12" />
+      <path d="M12 14 C 15 14 18 12 19 8 C 16 8 13 10 12 14 Z" fill="currentColor" fillOpacity="0.12" />
+    </svg>
+  );
+}
+
+const REASONS: Reason[] = [
   {
+    icon: <IconContinuity />,
     title: "You see the same psychologist every time",
     body: (
       <>
@@ -14,6 +59,7 @@ const REASONS: { title: string; body: React.ReactNode }[] = [
     ),
   },
   {
+    icon: <IconTailored />,
     title: "Genuinely individualised care",
     body: (
       <>
@@ -23,6 +69,7 @@ const REASONS: { title: string; body: React.ReactNode }[] = [
     ),
   },
   {
+    icon: <IconFees />,
     title: "Accessible, transparent fees",
     body: (
       <>
@@ -35,6 +82,7 @@ const REASONS: { title: string; body: React.ReactNode }[] = [
     ),
   },
   {
+    icon: <IconRoom />,
     title: "A calm, private setting",
     body: (
       <>
@@ -50,12 +98,13 @@ export default function SectionWhySage() {
   return (
     <section className="relative bg-paper text-ink stack-y">
       <div className="edge mx-auto max-w-[86rem]">
-        <div className="grid md:grid-cols-[1fr_1.15fr] gap-y-14 md:gap-x-24 items-start">
-          <Reveal>
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[3px] bg-linen">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 lg:gap-16 items-center">
+          {/* Left · Image */}
+          <Reveal className="md:col-span-5 min-w-0">
+            <div className="relative aspect-[4/5] md:aspect-[5/6] w-full overflow-hidden rounded-[16px] bg-linen">
               <Image
-                src="/img/window-light.jpg"
-                alt="Afternoon light through a lace curtain in the practice"
+                src="/img/armchairs.jpg"
+                alt="A quiet interior at the Silas Street practice, soft afternoon light"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
                 className="object-cover"
@@ -63,28 +112,54 @@ export default function SectionWhySage() {
             </div>
           </Reveal>
 
-          <div>
+          {/* Right · Content */}
+          <div className="md:col-span-7 min-w-0">
             <Reveal>
-              <h2 className="display-lg max-w-[16ch]">
+              <h2
+                className="leading-[1.02] max-w-[16ch]"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(2.4rem, 4.2vw, 4rem)",
+                  letterSpacing: "-0.02em",
+                }}
+              >
                 Why choose <span className="serif-italic">Sage</span>.
               </h2>
             </Reveal>
 
-            <ol className="mt-12 md:mt-14 grid gap-0">
+            {/* 2×2 feature grid */}
+            <div className="mt-10 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-9">
               {REASONS.map((r, i) => (
                 <Reveal
-                  as="li"
                   key={i}
                   delay={i * 90}
-                  className="py-8 md:py-9 border-t border-ink/15 first:border-t-0 first:pt-0"
+                  className="flex flex-col gap-3 max-w-[36ch]"
                 >
-                  <h3 className="display-sm max-w-[22ch]">{r.title}</h3>
-                  <p className="mt-4 body-lede max-w-[44ch] prose-sage opacity-90">
+                  <span className="text-moss" aria-hidden>
+                    {r.icon}
+                  </span>
+                  <h3
+                    className="leading-[1.2]"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "clamp(1.2rem, 1.5vw, 1.5rem)",
+                    }}
+                  >
+                    {r.title}
+                  </h3>
+                  <p className="text-[0.98rem] leading-relaxed opacity-80 prose-sage">
                     {r.body}
                   </p>
                 </Reveal>
               ))}
-            </ol>
+            </div>
+
+            {/* CTA */}
+            <Reveal delay={200} className="mt-12">
+              <Link href="/book" className="btn btn-primary">
+                Book an appointment <Arrow />
+              </Link>
+            </Reveal>
           </div>
         </div>
       </div>
