@@ -24,8 +24,9 @@ export default function SectionLocation() {
       </Reveal>
 
       <div className="edge mx-auto max-w-[86rem] stack-y">
-        <div className="grid md:grid-cols-[1.1fr_1fr] gap-y-12 md:gap-x-20 items-start">
-          <div>
+        <div className="grid md:grid-cols-[1.1fr_1fr] gap-y-12 md:gap-x-20 items-stretch">
+          {/* Left · content */}
+          <div className="flex flex-col">
             <Reveal>
               <h2 className="display-lg max-w-[16ch]">
                 Serving East Fremantle{" "}
@@ -52,14 +53,9 @@ export default function SectionLocation() {
               delay={140}
               className="mt-10 flex flex-wrap gap-3"
             >
-              <Link
-                href="https://maps.apple.com/?q=7B+Silas+Street+East+Fremantle+WA+6158"
-                className="btn btn-ghost"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Get directions <Arrow />
-              </Link>
+              <a href="tel:0480425776" className="btn btn-primary">
+                Call 0480 425 776 <Arrow />
+              </a>
               <Link
                 href="/telehealth-psychologist-perth"
                 className="btn btn-ghost"
@@ -69,25 +65,9 @@ export default function SectionLocation() {
             </Reveal>
           </div>
 
-          <Reveal delay={140} className="md:mt-3">
-            <address className="not-italic display-md leading-[1.15] max-w-[18ch]">
-              7B Silas Street
-              <br />
-              East Fremantle
-              <br />
-              <span className="serif-italic opacity-75">WA 6158</span>
-            </address>
-            <div className="mt-8 flex flex-col gap-1 body-lede">
-              <a href="tel:0480425776" className="link font-medium">
-                0480 425 776
-              </a>
-              <span className="opacity-75 text-[0.95rem]">
-                By appointment only
-              </span>
-            </div>
-
-            {/* Google Maps embed */}
-            <div className="mt-10 relative aspect-[4/3] w-full overflow-hidden rounded-[12px] bg-linen border border-ink/10">
+          {/* Right · Map, matches left column height */}
+          <Reveal delay={140} className="md:h-full min-h-[360px]">
+            <div className="relative h-full w-full overflow-hidden rounded-[12px] bg-linen border border-ink/10">
               <iframe
                 src="https://www.google.com/maps?q=7B+Silas+Street+East+Fremantle+WA+6158&output=embed"
                 title="Map: Sage Psychological Services, 7B Silas Street, East Fremantle WA 6158"
