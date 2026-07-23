@@ -336,7 +336,7 @@ function HowCbtWorks() {
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="text-[1.05rem] md:text-[1.15rem] leading-snug self-center max-w-[52ch]">
+                <span className="text-[1.05rem] md:text-[1.15rem] leading-snug self-center max-w-full">
                   {step}
                 </span>
               </Reveal>
