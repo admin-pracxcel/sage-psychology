@@ -5,6 +5,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import ConditionsSlider, {
+  type ConditionCard,
+} from "@/components/ConditionsSlider";
 
 export const metadata: Metadata = {
   title: "CBT Therapy Perth | Cognitive Behaviour Therapy | Sage",
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
 
 function CbtHero() {
   return (
-    <section className="relative bg-paper text-ink pt-[124px] md:pt-[140px] pb-0">
+    <section className="relative bg-paper text-ink pt-[124px] md:pt-[140px] pb-24 md:pb-28">
       <div className="edge mx-auto max-w-[92rem]">
         {/* Breadcrumb */}
         <Reveal>
@@ -76,24 +79,6 @@ function CbtHero() {
         </div>
       </div>
 
-      {/* Full-width atmospheric image */}
-      <Reveal className="mt-16 md:mt-20 relative w-full aspect-[16/8] md:aspect-[21/9] overflow-hidden">
-        <Image
-          src="/img/mist-forest.jpg"
-          alt="Warm morning light through misty forest trees"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, transparent 45%, rgba(241,235,221,0.8) 100%)",
-          }}
-        />
-      </Reveal>
     </section>
   );
 }
@@ -104,8 +89,26 @@ function CbtHero() {
 
 function WhatIsCbt() {
   return (
-    <section className="relative bg-paper text-ink stack-y">
-      <div className="edge mx-auto max-w-[68rem]">
+    <section className="relative bg-paper text-ink stack-y overflow-hidden">
+      {/* Background image + cream wash for readability */}
+      <div className="absolute inset-0" aria-hidden>
+        <Image
+          src="/img/mist-forest.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(241,235,221,0.92) 0%, rgba(241,235,221,0.82) 50%, rgba(241,235,221,0.94) 100%)",
+          }}
+        />
+      </div>
+
+      <div className="relative edge mx-auto max-w-[68rem]">
         <Reveal>
           <h2
             className="max-w-full leading-[1.02] text-center"
@@ -149,29 +152,57 @@ function WhatIsCbt() {
    SECTION 2 · What CBT helps with
 ────────────────────────────────────────────────────────────── */
 
-const HELPS: { text: React.ReactNode; href?: string }[] = [
+const CBT_HELPS_CARDS: ConditionCard[] = [
   {
-    text: (
-      <>
-        Anxiety, panic, and excessive worry, the focus of our dedicated{" "}
-        <Link href="/anxiety-therapy-perth" className="link">
-          anxiety therapy
-        </Link>{" "}
-        page.
-      </>
-    ),
+    title: "Anxiety, panic, and excessive worry",
+    body:
+      "A first-line CBT approach for panic, chronic worry, and anxious thinking that will not switch off.",
+    image: "/img/dew-grass.jpg",
+    alt: "Dew-covered grasses lit by warm morning sun",
+    href: "/anxiety-therapy-perth",
   },
-  { text: "Depression and persistent low mood." },
-  { text: "Stress and burnout, including work-related stress." },
-  { text: "Low self-esteem and unhelpful core beliefs." },
-  { text: "Sleep difficulties and rumination." },
-  { text: "Phobias and avoidance patterns." },
+  {
+    title: "Depression and persistent low mood",
+    body:
+      "Working with the thought and behaviour patterns that keep low mood in place.",
+    image: "/img/sunset-ocean.jpg",
+    alt: "Ocean surface catching warm evening light",
+    href: "/depression-counselling-perth",
+  },
+  {
+    title: "Stress and burnout, including work-related stress",
+    body:
+      "Practical strategies for chronic stress, exhaustion, and the moments when nothing seems to recharge you.",
+    image: "/img/meadow.jpg",
+    alt: "Wildflower meadow at golden hour",
+  },
+  {
+    title: "Low self-esteem and unhelpful core beliefs",
+    body:
+      "Identifying and gently reshaping the beliefs about yourself that keep you stuck.",
+    image: "/img/forest-path.jpg",
+    alt: "A tranquil forest path bathed in warm sunlight",
+  },
+  {
+    title: "Sleep difficulties and rumination",
+    body:
+      "For nights lost to the same thoughts on repeat, and the sleep that follows.",
+    image: "/img/still-lake.jpg",
+    alt: "Sunset reflections on a still lake surface",
+  },
+  {
+    title: "Phobias and avoidance patterns",
+    body:
+      "Structured, gradual exposure that helps you face what you have been avoiding.",
+    image: "/img/autumn-leaves.jpg",
+    alt: "Golden autumn leaves illuminated by soft sunlight",
+  },
 ];
 
 function WhatCbtHelpsWith() {
   return (
     <section className="relative bg-paper-soft text-ink stack-y">
-      <div className="edge mx-auto max-w-[86rem]">
+      <div className="edge mx-auto max-w-[92rem]">
         <div className="max-w-[62rem] mx-auto text-center">
           <Reveal>
             <h2
@@ -195,23 +226,18 @@ function WhatCbtHelpsWith() {
           </Reveal>
         </div>
 
-        <ul className="mt-14 md:mt-16 grid gap-x-10 gap-y-0 md:grid-cols-2 lg:grid-cols-3">
-          {HELPS.map((h, i) => (
-            <Reveal
-              as="li"
-              key={i}
-              delay={i * 55}
-              className="border-t border-ink/15 py-6 text-[1.02rem] md:text-[1.08rem] leading-relaxed"
-            >
-              {h.text}
-            </Reveal>
-          ))}
-        </ul>
+        <Reveal className="mt-14 md:mt-20">
+          <ConditionsSlider
+            cards={CBT_HELPS_CARDS}
+            autoIntervalMs={3000}
+            arrowPosition="sides"
+          />
+        </Reveal>
 
         <Reveal
           as="p"
           delay={80}
-          className="mt-14 md:mt-16 body-lede max-w-[62ch] mx-auto text-center opacity-85"
+          className="mt-8 md:mt-16 body-lede max-w-[62ch] mx-auto text-center opacity-85"
         >
           Because CBT is practical and skills-based, many clients find they
           leave therapy with a toolkit they continue to draw on long after
