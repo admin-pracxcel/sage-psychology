@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { POSTS } from "@/app/blog/posts";
 
 export const metadata: Metadata = {
   title: "Psychology Blog | Mental Health Insights | Sage",
@@ -71,17 +72,18 @@ function Hero() {
   );
 }
 
-/* ── S1 · Hub introduction ──────────────────────────────────── */
+/* ── Featured post (first article, hero card) ───────────────── */
 
-function Intro() {
+function FeaturedPost() {
+  const featured = POSTS[0];
   return (
-    <section className="relative bg-paper-soft text-ink stack-y">
-      <div className="edge mx-auto max-w-[86rem]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          <div className="lg:col-span-5">
+    <section id="articles" className="relative bg-paper-soft text-ink stack-y">
+      <div className="edge mx-auto max-w-[92rem]">
+        <div className="flex items-end justify-between gap-6 mb-14 md:mb-16">
+          <div>
             <Reveal>
               <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-                Why this exists
+                Featured article
               </div>
             </Reveal>
             <Reveal delay={60}>
@@ -89,269 +91,128 @@ function Intro() {
                 className="mt-6 max-w-full leading-[1.02]"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(2.2rem, 3.6vw, 3rem)",
+                  fontSize: "clamp(2rem, 3.4vw, 3rem)",
                   letterSpacing: "-0.02em",
                 }}
               >
-                Understanding comes{" "}
-                <span className="serif-italic">first</span>.
+                Start <span className="serif-italic">here</span>.
               </h2>
             </Reveal>
           </div>
-          <div className="lg:col-span-7 flex flex-col gap-7">
-            <Reveal as="p" className="body-lede prose-sage max-w-full">
-              A great deal of the difficulty people experience with anxiety,
-              trauma, and low mood comes not from the experience itself but
-              from not understanding what is happening or why. These articles
-              are written to help with that. They are practical rather than
-              academic, grounded in the same evidence base that informs the
-              therapy offered at Sage, and written by registered psychologist{" "}
-              <Link href="/about">Jacob Jones</Link>.
-            </Reveal>
-            <Reveal as="p" delay={80} className="body-lede max-w-full">
-              Nothing here is a substitute for individual psychological
-              support, and reading about a difficulty is not the same as
-              working through it. But understanding the shape of what you are
-              facing is often a genuinely useful first step, and for some
-              people it is what makes reaching out feel possible.
-            </Reveal>
-          </div>
         </div>
-      </div>
-    </section>
-  );
-}
 
-/* ── S2 · Categories ────────────────────────────────────────── */
-
-const CATEGORIES: {
-  kicker: string;
-  heading: string;
-  body: React.ReactNode;
-  image: string;
-}[] = [
-  {
-    kicker: "Silo one",
-    heading: "Anxiety and CBT",
-    image: "/img/eucalyptus.jpg",
-    body: (
-      <>
-        Articles on understanding anxiety, how Cognitive Behaviour Therapy
-        works, and practical approaches to worry, panic, and avoidance.
-        Related service: <Link href="/cbt-therapy-perth">CBT therapy</Link>{" "}
-        and <Link href="/anxiety-therapy-perth">anxiety therapy</Link>.
-      </>
-    ),
-  },
-  {
-    kicker: "Silo two",
-    heading: "Trauma and EMDR",
-    image: "/img/still-lake.jpg",
-    body: (
-      <>
-        Articles on how trauma affects the mind and body, what EMDR involves,
-        and how trauma-focused therapy works in practice. Related service:{" "}
-        <Link href="/emdr-therapy-perth">EMDR therapy</Link> and{" "}
-        <Link href="/trauma-therapy-perth">trauma therapy</Link>.
-      </>
-    ),
-  },
-  {
-    kicker: "Silo three",
-    heading: "Therapy and getting started",
-    image: "/img/window-light.jpg",
-    body: (
-      <>
-        Articles on what therapy actually involves, how Medicare and referrals
-        work, and how to find the right psychologist for you. Related pages:{" "}
-        <Link href="/how-therapy-works">what to expect</Link> and{" "}
-        <Link href="/fees">fees and rebates</Link>.
-      </>
-    ),
-  },
-];
-
-function Categories() {
-  return (
-    <section className="relative bg-paper text-ink stack-y">
-      <div className="edge mx-auto max-w-[86rem]">
-        <div className="max-w-[62rem]">
-          <Reveal>
-            <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-              Browse by topic
+        <Reveal delay={140}>
+          <Link
+            href={`/blog/${featured.slug}`}
+            className="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch rounded-[16px] overflow-hidden bg-paper border border-ink/8 hover:border-ink/25 transition-colors"
+          >
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:min-h-[420px] overflow-hidden">
+              <Image
+                src={featured.image}
+                alt=""
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+                className="object-cover transition-transform duration-[900ms] group-hover:scale-[1.02]"
+              />
             </div>
-          </Reveal>
-          <Reveal delay={60}>
-            <h2
-              className="mt-6 max-w-full leading-[1.02]"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Three <span className="serif-italic">threads</span>.
-            </h2>
-          </Reveal>
-        </div>
-
-        <div className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
-          {CATEGORIES.map((c, i) => (
-            <Reveal key={i} delay={i * 60}>
-              <div className="h-full flex flex-col rounded-[16px] overflow-hidden bg-paper-soft border border-ink/8 hover:border-ink/20 transition-colors">
-                <div className="relative aspect-[4/3] w-full overflow-hidden">
-                  <Image
-                    src={c.image}
-                    alt=""
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col gap-4 p-8 md:p-9 flex-1">
-                  <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-                    {c.kicker}
-                  </div>
-                  <h3
-                    className="max-w-full leading-[1.15]"
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: "clamp(1.5rem, 2.2vw, 2rem)",
-                      letterSpacing: "-0.015em",
-                    }}
-                  >
-                    {c.heading}
-                  </h3>
-                  <div className="body-lede prose-sage max-w-full flex-1">
-                    {c.body}
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ── S3 · Post grid ─────────────────────────────────────────── */
-
-const UPCOMING_POSTS: {
-  title: string;
-  category: string;
-  slug: string;
-}[] = [
-  {
-    title: "What is CBT and how does it help anxiety?",
-    category: "Anxiety & CBT",
-    slug: "/blog/what-is-cbt-anxiety",
-  },
-  {
-    title: "5 signs it might be time to see a psychologist for anxiety",
-    category: "Anxiety & CBT",
-    slug: "/blog/signs-see-psychologist-anxiety",
-  },
-  {
-    title: "CBT vs medication for anxiety: what the evidence says",
-    category: "Anxiety & CBT",
-    slug: "/blog/cbt-vs-medication-anxiety",
-  },
-  {
-    title: "How many therapy sessions do you actually need?",
-    category: "Therapy",
-    slug: "/blog/how-many-therapy-sessions",
-  },
-  {
-    title: "What is EMDR therapy and how does it work?",
-    category: "Trauma & EMDR",
-    slug: "/blog/what-is-emdr-therapy",
-  },
-  {
-    title: "Signs of unresolved trauma in adults",
-    category: "Trauma & EMDR",
-    slug: "/blog/signs-unresolved-trauma-adults",
-  },
-  {
-    title: "EMDR vs talk therapy for trauma: which is right for you?",
-    category: "Trauma & EMDR",
-    slug: "/blog/emdr-vs-talk-therapy-trauma",
-  },
-  {
-    title: "Is it trauma or anxiety? Understanding the difference",
-    category: "Trauma & Anxiety",
-    slug: "/blog/trauma-vs-anxiety",
-  },
-  {
-    title: "Finding the right psychologist in Fremantle: a guide",
-    category: "Local & Trust",
-    slug: "/blog/finding-psychologist-fremantle",
-  },
-  {
-    title: "How Medicare Mental Health Care Plans work in 2026",
-    category: "Local & Trust",
-    slug: "/blog/medicare-mental-health-care-plan",
-  },
-  {
-    title: "What to expect in your first psychology session",
-    category: "Local & Trust",
-    slug: "/blog/first-psychology-session",
-  },
-];
-
-function PostGrid() {
-  return (
-    <section id="articles" className="relative bg-paper-soft text-ink stack-y">
-      <div className="edge mx-auto max-w-[86rem]">
-        <div className="max-w-[62rem]">
-          <Reveal>
-            <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-              Latest articles
-            </div>
-          </Reveal>
-          <Reveal delay={60}>
-            <h2
-              className="mt-6 max-w-full leading-[1.02]"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
-                letterSpacing: "-0.02em",
-              }}
-            >
-              Coming <span className="serif-italic">soon</span>.
-            </h2>
-          </Reveal>
-          <Reveal as="p" delay={140} className="mt-8 body-lede max-w-full">
-            The first tranche of articles is being written now. Below is what
-            is planned. Check back, or ask us to send you a note when new
-            pieces are published.
-          </Reveal>
-        </div>
-
-        <ul className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2">
-          {UPCOMING_POSTS.map((p, i) => (
-            <Reveal
-              as="li"
-              key={i}
-              delay={i * 30}
-              className="border-t border-ink/12 py-8 flex flex-col gap-3"
-            >
+            <div className="lg:col-span-6 p-8 md:p-12 flex flex-col gap-6 justify-center">
               <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-                {p.category}
+                {featured.category} · {featured.readTime}
               </div>
               <h3
-                className="max-w-full leading-[1.2]"
+                className="max-w-full leading-[1.05] transition-colors group-hover:text-evergreen"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(1.25rem, 1.5vw, 1.5rem)",
-                  letterSpacing: "-0.01em",
+                  fontSize: "clamp(1.75rem, 3vw, 2.75rem)",
+                  letterSpacing: "-0.015em",
                 }}
               >
-                {p.title}
+                {featured.title}
               </h3>
-              <span className="mt-1 text-[0.85rem] tracking-[0.2em] uppercase text-ink/40">
-                In progress
-              </span>
+              <p className="body-lede max-w-full">{featured.excerpt}</p>
+              <div className="mt-2 flex items-center gap-2 text-evergreen text-[0.85rem] tracking-[0.2em] uppercase">
+                <span>Read article</span>
+                <span className="transition-transform group-hover:translate-x-1">
+                  <Arrow />
+                </span>
+              </div>
+            </div>
+          </Link>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ── All posts grid ─────────────────────────────────────────── */
+
+function AllPosts() {
+  const rest = POSTS.slice(1);
+  return (
+    <section className="relative bg-paper text-ink stack-y">
+      <div className="edge mx-auto max-w-[92rem]">
+        <div className="max-w-[62rem]">
+          <Reveal>
+            <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              All articles
+            </div>
+          </Reveal>
+          <Reveal delay={60}>
+            <h2
+              className="mt-6 max-w-full leading-[1.02]"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Written by <span className="serif-italic">Jacob</span>.
+            </h2>
+          </Reveal>
+        </div>
+
+        <ul className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
+          {rest.map((p, i) => (
+            <Reveal as="li" key={p.slug} delay={i * 40}>
+              <Link
+                href={`/blog/${p.slug}`}
+                className="group h-full flex flex-col rounded-[16px] overflow-hidden bg-paper-soft border border-ink/8 hover:border-ink/25 transition-colors"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <Image
+                    src={p.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-[900ms] group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="flex flex-col gap-4 p-7 md:p-8 flex-1">
+                  <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                    {p.category} · {p.readTime}
+                  </div>
+                  <h3
+                    className="max-w-full leading-[1.2] transition-colors group-hover:text-evergreen"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontSize: "clamp(1.35rem, 1.8vw, 1.65rem)",
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    {p.title}
+                  </h3>
+                  <p className="text-[0.98rem] leading-snug text-ink/70 flex-1">
+                    {p.excerpt}
+                  </p>
+                  <div className="mt-2 flex items-center gap-2 text-moss text-[0.85rem] tracking-[0.2em] uppercase">
+                    <span>Read article</span>
+                    <span className="transition-transform group-hover:translate-x-1">
+                      <Arrow />
+                    </span>
+                  </div>
+                </div>
+              </Link>
             </Reveal>
           ))}
         </ul>
@@ -450,9 +311,8 @@ export default function BlogPage() {
       <Header alwaysSolid />
       <main>
         <Hero />
-        <Intro />
-        <Categories />
-        <PostGrid />
+        <FeaturedPost />
+        <AllPosts />
         <WhenReadingIsNotEnough />
       </main>
       <Footer />
