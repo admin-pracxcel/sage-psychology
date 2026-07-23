@@ -89,21 +89,21 @@ function CbtHero() {
 
 function WhatIsCbt() {
   return (
-    <section className="relative bg-paper text-ink stack-y overflow-hidden">
-      {/* Background image + cream wash for readability */}
+    <section className="relative bg-evergreen text-paper stack-y overflow-hidden">
+      {/* Background image + evergreen wash for readability */}
       <div className="absolute inset-0" aria-hidden>
         <Image
           src="/img/mist-forest.jpg"
           alt=""
           fill
           sizes="100vw"
-          className="object-cover"
+          className="object-cover opacity-55"
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(241,235,221,0.92) 0%, rgba(241,235,221,0.82) 50%, rgba(241,235,221,0.94) 100%)",
+              "linear-gradient(180deg, rgba(46,62,51,0.72) 0%, rgba(46,62,51,0.6) 50%, rgba(46,62,51,0.82) 100%)",
           }}
         />
       </div>
@@ -111,7 +111,7 @@ function WhatIsCbt() {
       <div className="relative edge mx-auto max-w-[68rem]">
         <Reveal>
           <h2
-            className="max-w-full leading-[1.02] text-center"
+            className="max-w-full leading-[1.02] text-center text-paper"
             style={{
               fontFamily: "var(--font-display)",
               fontSize: "clamp(2.4rem, 4.4vw, 3.75rem)",
@@ -123,8 +123,13 @@ function WhatIsCbt() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 md:mt-16 flex flex-col gap-7 body-lede prose-sage max-w-full">
-          <Reveal as="p" delay={80} className="max-w-full">
+        <div className="mt-14 md:mt-16 flex flex-col gap-7 body-lede text-paper max-w-full">
+          <Reveal
+            as="p"
+            delay={80}
+            className="max-w-full"
+            style={{ textShadow: "0 1px 20px rgba(0,0,0,0.35)" }}
+          >
             Cognitive Behaviour Therapy, or CBT, is one of the most extensively
             researched forms of psychological treatment in the world. It rests
             on a simple but powerful idea: our thoughts, feelings, and
@@ -135,12 +140,24 @@ function WhatIsCbt() {
             practical strategies you can use for the rest of your life.
           </Reveal>
 
-          <Reveal as="p" delay={140} className="max-w-full">
+          <Reveal
+            as="p"
+            delay={140}
+            className="max-w-full"
+            style={{ textShadow: "0 1px 20px rgba(0,0,0,0.35)" }}
+          >
             At Sage Psychological Services, CBT is delivered one-to-one by
-            registered psychologist <Link href="/about">Jacob Jones</Link>,
-            who tailors each session to your circumstances rather than working
-            through a rigid manual. The result is a structured yet genuinely
-            personal course of therapy.
+            registered psychologist{" "}
+            <Link
+              href="/about"
+              style={{ color: "var(--paper)" }}
+              className="font-medium"
+            >
+              Jacob Jones
+            </Link>
+            , who tailors each session to your circumstances rather than
+            working through a rigid manual. The result is a structured yet
+            genuinely personal course of therapy.
           </Reveal>
         </div>
       </div>
