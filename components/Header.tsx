@@ -103,7 +103,7 @@ export default function Header({
           : "bg-transparent text-paper border-b border-transparent",
       ].join(" ")}
     >
-      <div className="edge mx-auto max-w-[92rem] flex items-center justify-between h-[76px]">
+      <div className="edge mx-auto max-w-[92rem] flex items-center justify-between py-[15px]">
         <Link
           href="/"
           aria-label="Sage Psychological Services — home"
