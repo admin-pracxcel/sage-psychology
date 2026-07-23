@@ -39,7 +39,15 @@ export default function SectionClosing() {
           Reaching out is often the hardest part. When you are ready, booking a
           session is straightforward, and Jacob will guide you through what to
           expect from there. If you would like to understand the process first,
-          our <Link href="/how-therapy-works">what to expect</Link> page walks
+          our{" "}
+          <Link
+            href="/how-therapy-works"
+            style={{ color: "var(--paper)" }}
+            className="font-medium"
+          >
+            what to expect
+          </Link>{" "}
+          page walks
           through your first appointment.
         </Reveal>
 
