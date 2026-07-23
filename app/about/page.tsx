@@ -61,12 +61,26 @@ function AboutHero() {
               <span className="serif-italic">Jones</span>.
             </h1>
           </Reveal>
+
+          {/* Credentials line — sits directly under the banner headline */}
+          <Reveal delay={160}>
+            <p
+              className="mt-8 md:mt-10 serif-italic text-ink max-w-full leading-snug"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(1.25rem, 1.7vw, 1.75rem)",
+              }}
+            >
+              Registered Psychologist &nbsp;·&nbsp; BA (Psych), GradDip
+              (Psych) &nbsp;·&nbsp; Founder of Sage Psychological Services
+            </p>
+          </Reveal>
         </div>
 
-        {/* Editorial split: photo left, prose + CTAs right */}
+        {/* Editorial split: photo left, collaborative intro + CTAs right */}
         <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-start">
           {/* Left · Photo */}
-          <Reveal delay={160} className="lg:col-span-5 min-w-0">
+          <Reveal delay={200} className="lg:col-span-5 min-w-0">
             <figure className="relative">
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[20px] bg-linen shadow-[0_24px_60px_-24px_rgba(20,22,20,0.28)]">
                 <Image
@@ -81,26 +95,43 @@ function AboutHero() {
             </figure>
           </Reveal>
 
-          {/* Right · Credentials + intro + CTAs */}
-          <div className="lg:col-span-7 min-w-0 lg:pt-6">
-            <Reveal delay={200}>
-              <p
-                className="serif-italic text-ink max-w-[38ch] leading-snug"
+          {/* Right · Collaborative approach + CTAs */}
+          <div className="lg:col-span-7 min-w-0 lg:pt-4">
+            <Reveal delay={240}>
+              <h2
+                className="max-w-full leading-[1.05]"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(1.35rem, 1.9vw, 1.85rem)",
+                  fontSize: "clamp(2rem, 3vw, 2.75rem)",
+                  letterSpacing: "-0.02em",
                 }}
               >
-                Registered Psychologist &nbsp;·&nbsp; BA (Psych), GradDip
-                (Psych) &nbsp;·&nbsp; Founder of Sage Psychological Services
-              </p>
+                A collaborative,{" "}
+                <span className="serif-italic">non-judgemental</span> approach.
+              </h2>
             </Reveal>
 
-            <Reveal delay={280}>
+            <Reveal
+              as="p"
+              delay={300}
+              className="mt-8 body-lede prose-sage max-w-full"
+            >
+              My name is Jacob, and I am a registered psychologist working with
+              adults across a wide range of psychological concerns, including
+              anxiety, depression, trauma, addiction, and grief. My approach is
+              compassionate, non-judgemental, and empathetic, and it centres on
+              collaboration. I see my role not as telling you what to do, but
+              as working alongside you to understand what is happening and to
+              help you get the most out of our sessions together. Every person
+              arrives with a unique history, and I believe therapy should
+              honour that rather than force it into a fixed template.
+            </Reveal>
+
+            <Reveal delay={360}>
               <div className="mt-10 h-px w-16 bg-ink/25" />
             </Reveal>
 
-            <Reveal delay={340}>
+            <Reveal delay={400}>
               <div className="mt-10 flex flex-wrap gap-3">
                 <Link href="/book" className="btn btn-primary">
                   Book a Session with Jacob <Arrow />
@@ -545,7 +576,6 @@ export default function AboutPage() {
       <Header alwaysSolid />
       <main>
         <AboutHero />
-        <CollaborativeApproach />
         <TrainingExperience />
         <FindingMyFocus />
         <WhySage />
