@@ -5,9 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
-import ConditionsSlider, {
-  type ConditionCard,
-} from "@/components/ConditionsSlider";
 
 export const metadata: Metadata = {
   title: "Anxiety Therapy Perth | Anxiety Psychologist | Sage",
@@ -157,56 +154,14 @@ function UnderstandingAnxiety() {
 
 /* ── S2 · How Anxiety Can Show Up ───────────────────────────── */
 
-const ANXIETY_SIGNS: ConditionCard[] = [
-  {
-    title: "Persistent, hard-to-control worry about everyday things",
-    body:
-      "The kind of worry that circles the same subjects and does not switch off with rest.",
-    image: "/img/mist-forest.jpg",
-    alt: "Warm morning light through misty forest trees",
-  },
-  {
-    title: "A racing heart, tight chest, shortness of breath, or restlessness",
-    body:
-      "The physical signals of a body that has stayed too long in alert.",
-    image: "/img/sunset-ocean.jpg",
-    alt: "Ocean surface catching warm evening light",
-  },
-  {
-    title: "Panic attacks that arrive suddenly and feel overwhelming",
-    body:
-      "Sudden, intense waves that can feel frightening in the moment but respond well to the right support.",
-    image: "/img/dew-grass.jpg",
-    alt: "Dew-covered grasses lit by warm morning sun",
-  },
-  {
-    title: "Trouble sleeping because your mind will not settle",
-    body:
-      "For the hours lost to the same thoughts on loop, and the tiredness that follows.",
-    image: "/img/still-lake.jpg",
-    alt: "Sunset reflections on a still lake surface",
-  },
-  {
-    title: "Avoiding situations, places, or people that trigger unease",
-    body:
-      "The quiet narrowing of your life as more things start to feel off-limits.",
-    image: "/img/forest-path.jpg",
-    alt: "A tranquil forest path bathed in warm sunlight",
-  },
-  {
-    title: "A constant sense of dread or feeling permanently on edge",
-    body:
-      "The background hum of something being wrong, even when nothing obvious is.",
-    image: "/img/lone-tree.jpg",
-    alt: "A single tree lit by a soft sunrise across a meadow",
-  },
-  {
-    title: "Difficulty concentrating or a mind that feels perpetually busy",
-    body:
-      "For attention that keeps slipping, and thoughts that seem to have their own agenda.",
-    image: "/img/meadow.jpg",
-    alt: "Wildflower meadow at golden hour",
-  },
+const ANXIETY_SIGNS: string[] = [
+  "Persistent, hard-to-control worry about everyday things",
+  "A racing heart, tight chest, shortness of breath, or restlessness",
+  "Panic attacks that arrive suddenly and feel overwhelming",
+  "Trouble sleeping because your mind will not settle",
+  "Avoiding situations, places, or people that trigger unease",
+  "A constant sense of dread or feeling permanently on edge",
+  "Difficulty concentrating or a mind that feels perpetually busy",
 ];
 
 function HowAnxietyShowsUp() {
@@ -234,13 +189,18 @@ function HowAnxietyShowsUp() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-14 md:mt-20">
-          <ConditionsSlider
-            cards={ANXIETY_SIGNS}
-            autoIntervalMs={3000}
-            arrowPosition="sides"
-          />
-        </Reveal>
+        <ul className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-14 max-w-[68rem] mx-auto">
+          {ANXIETY_SIGNS.map((sign, i) => (
+            <Reveal
+              as="li"
+              key={i}
+              delay={i * 50}
+              className="border-t border-ink/15 py-6 text-[1.05rem] md:text-[1.15rem] leading-snug"
+            >
+              {sign}
+            </Reveal>
+          ))}
+        </ul>
 
         <Reveal
           as="p"

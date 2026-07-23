@@ -5,9 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
-import ConditionsSlider, {
-  type ConditionCard,
-} from "@/components/ConditionsSlider";
 
 export const metadata: Metadata = {
   title: "Trauma Therapy Perth | Trauma Counselling | Sage Psychological",
@@ -160,56 +157,14 @@ function UnderstandingTrauma() {
 
 /* ── S2 · Signs Trauma May Be Affecting You ─────────────────── */
 
-const TRAUMA_SIGNS: ConditionCard[] = [
-  {
-    title: "Intrusive memories, flashbacks, or distressing dreams",
-    body:
-      "For images and sensations that push into the present without warning.",
-    image: "/img/autumn-leaves.jpg",
-    alt: "Golden autumn leaves illuminated by soft sunlight",
-  },
-  {
-    title: "Feeling constantly alert, tense, or easily startled",
-    body:
-      "The body braced for danger, even in surroundings that are safe.",
-    image: "/img/mist-forest.jpg",
-    alt: "Warm morning light through misty forest trees",
-  },
-  {
-    title: "Avoiding people, places, or conversations that are reminders",
-    body:
-      "The quiet steering away from anything that might bring the experience back.",
-    image: "/img/forest-path.jpg",
-    alt: "A tranquil forest path bathed in warm sunlight",
-  },
-  {
-    title: "Emotional numbness or feeling disconnected from others",
-    body:
-      "A flatness, a distance, a difficulty feeling as much as you used to.",
-    image: "/img/still-lake.jpg",
-    alt: "Sunset reflections on a still lake surface",
-  },
-  {
-    title: "Difficulty trusting, or feeling unsafe even when you are not in danger",
-    body:
-      "The world reading as risky when it is not, and the toll that takes.",
-    image: "/img/olive-branches.jpg",
-    alt: "Olive tree branches lit by warm evening light",
-  },
-  {
-    title: "Anxiety, low mood, or anger that feels difficult to explain",
-    body:
-      "Reactions that seem out of proportion, arriving without a clear reason.",
-    image: "/img/sunset-ocean.jpg",
-    alt: "Ocean surface catching warm evening light",
-  },
-  {
-    title: "A sense that a past experience is still shaping your present",
-    body:
-      "The feeling that something behind you is still, quietly, in charge.",
-    image: "/img/lone-tree.jpg",
-    alt: "A single tree lit by a soft sunrise across a meadow",
-  },
+const TRAUMA_SIGNS: string[] = [
+  "Intrusive memories, flashbacks, or distressing dreams",
+  "Feeling constantly alert, tense, or easily startled",
+  "Avoiding people, places, or conversations that are reminders",
+  "Emotional numbness or feeling disconnected from others",
+  "Difficulty trusting, or feeling unsafe even when you are not in danger",
+  "Anxiety, low mood, or anger that feels difficult to explain",
+  "A sense that a past experience is still shaping your present",
 ];
 
 function SignsTraumaAffecting() {
@@ -237,13 +192,18 @@ function SignsTraumaAffecting() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-14 md:mt-20">
-          <ConditionsSlider
-            cards={TRAUMA_SIGNS}
-            autoIntervalMs={3000}
-            arrowPosition="sides"
-          />
-        </Reveal>
+        <ul className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-14 max-w-[68rem] mx-auto">
+          {TRAUMA_SIGNS.map((sign, i) => (
+            <Reveal
+              as="li"
+              key={i}
+              delay={i * 50}
+              className="border-t border-ink/15 py-6 text-[1.05rem] md:text-[1.15rem] leading-snug"
+            >
+              {sign}
+            </Reveal>
+          ))}
+        </ul>
       </div>
     </section>
   );
