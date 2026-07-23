@@ -16,7 +16,8 @@ export const metadata: Metadata = {
 
 function AboutHero() {
   return (
-    <section className="relative bg-paper text-ink pt-[124px] md:pt-[140px] pb-16 md:pb-24 lg:pb-28">
+    <section className="relative bg-paper text-ink w-full pt-[92px] md:pt-[110px] overflow-hidden">
+      {/* Small breadcrumb inside the edge container */}
       <div className="edge mx-auto max-w-[92rem]">
         <Reveal>
           <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
@@ -29,26 +30,48 @@ function AboutHero() {
             <span className="text-evergreen">Jacob Jones</span>
           </div>
         </Reveal>
+      </div>
 
-        <div className="mt-10 md:mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-          {/* Left · Content */}
-          <div className="lg:col-span-7 min-w-0">
-            <Reveal delay={60}>
+      {/* Full-width bleed split: photo left, content right */}
+      <div className="mt-8 md:mt-10 flex flex-col lg:flex-row lg:min-h-[640px] xl:min-h-[720px]">
+        {/* Left half — photo, bleeds to viewport edge */}
+        <Reveal className="relative w-full lg:w-1/2 h-[520px] sm:h-[600px] lg:h-auto lg:min-h-[640px] xl:min-h-[720px] bg-linen">
+          <Image
+            src="/img/jacob.webp"
+            alt="Jacob Jones, registered psychologist and founder of Sage Psychological Services"
+            fill
+            priority
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-center"
+          />
+        </Reveal>
+
+        {/* Right half — content, inset with generous padding */}
+        <div className="w-full lg:w-1/2 flex items-center py-14 lg:py-0 px-6 sm:px-10 lg:px-14 xl:px-20">
+          <div className="max-w-[38rem]">
+            <Reveal>
+              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss mb-6">
+                About the psychologist
+              </div>
+            </Reveal>
+
+            <Reveal delay={80}>
               <h1
                 className="max-w-full leading-[0.98]"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(2.75rem, 6.4vw, 5.75rem)",
+                  fontSize: "clamp(2.75rem, 5.6vw, 5rem)",
                   letterSpacing: "-0.025em",
                 }}
               >
-                Meet <span className="serif-italic">Jacob Jones</span>.
+                Jacob{" "}
+                <span className="serif-italic">Jones</span>.
               </h1>
             </Reveal>
 
-            <Reveal delay={140}>
+            <Reveal delay={160}>
               <p
-                className="mt-6 md:mt-8 serif-italic text-moss max-w-[54ch] leading-snug"
+                className="mt-6 serif-italic text-moss max-w-[42ch] leading-snug"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontSize: "clamp(1.1rem, 1.4vw, 1.35rem)",
@@ -70,20 +93,6 @@ function AboutHero() {
               </div>
             </Reveal>
           </div>
-
-          {/* Right · Photo */}
-          <Reveal delay={100} className="lg:col-span-5 min-w-0">
-            <div className="relative aspect-[4/5] md:aspect-[5/6] w-full overflow-hidden rounded-[16px] bg-linen">
-              <Image
-                src="/img/jacob.webp"
-                alt="Jacob Jones, registered psychologist and founder of Sage Psychological Services"
-                fill
-                priority
-                sizes="(min-width: 1024px) 40vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
         </div>
       </div>
     </section>
@@ -250,15 +259,6 @@ function TrainingExperience() {
 
 /* ── S3 · Finding my focus (evergreen + image bg) ───────────── */
 
-const MODALITIES: { label: string; href?: string }[] = [
-  { label: "EMDR", href: "/emdr-therapy-perth" },
-  { label: "Schema Therapy" },
-  { label: "Psychodynamic" },
-  { label: "CBT", href: "/cbt-therapy-perth" },
-  { label: "DBT" },
-  { label: "ERP" },
-];
-
 function FindingMyFocus() {
   return (
     <section className="relative bg-evergreen text-paper stack-y overflow-hidden">
@@ -340,32 +340,6 @@ function FindingMyFocus() {
           </Reveal>
         </div>
 
-        {/* Modality tag chips */}
-        <Reveal delay={200} className="mt-12">
-          <div className="text-[0.72rem] tracking-[0.24em] uppercase text-brass-soft mb-4">
-            Modalities
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {MODALITIES.map((m) =>
-              m.href ? (
-                <Link
-                  key={m.label}
-                  href={m.href}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[0.78rem] tracking-[0.06em] uppercase font-medium border border-paper/25 text-paper hover:bg-paper hover:text-evergreen transition-colors"
-                >
-                  {m.label}
-                </Link>
-              ) : (
-                <span
-                  key={m.label}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[0.78rem] tracking-[0.06em] uppercase font-medium border border-paper/25 text-paper"
-                >
-                  {m.label}
-                </span>
-              )
-            )}
-          </div>
-        </Reveal>
       </div>
     </section>
   );
@@ -373,20 +347,17 @@ function FindingMyFocus() {
 
 /* ── S4 · Why Sage (triptych) ───────────────────────────────── */
 
-const SAGE_MEANINGS: { numeral: string; title: string; body: string }[] = [
+const SAGE_MEANINGS: { title: string; body: string }[] = [
   {
-    numeral: "I",
     title: "A protective herb",
     body:
       "Sage is a protective herb, long associated with cleansing, healing, and purification.",
   },
   {
-    numeral: "II",
     title: "A word for wisdom",
     body: "Sage is a word for wisdom, insight, and experience.",
   },
   {
-    numeral: "III",
     title: "A colour of peace and growth",
     body: "Sage, as a colour, communicates peace and growth.",
   },
@@ -427,19 +398,8 @@ function WhySage() {
         {/* Triptych */}
         <div className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-7">
           {SAGE_MEANINGS.map((m, i) => (
-            <Reveal key={m.numeral} delay={i * 120}>
-              <div className="h-full flex flex-col gap-5 p-8 md:p-9 rounded-[16px] bg-paper-soft border border-ink/8">
-                <div
-                  className="text-moss"
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontStyle: "italic",
-                    fontSize: "clamp(1.5rem, 2vw, 2rem)",
-                    lineHeight: 1,
-                  }}
-                >
-                  N&deg; {m.numeral}
-                </div>
+            <Reveal key={m.title} delay={i * 120}>
+              <div className="h-full flex flex-col gap-4 p-8 md:p-9 rounded-[16px] bg-paper-soft border border-ink/8">
                 <h3
                   className="max-w-full leading-[1.15]"
                   style={{
