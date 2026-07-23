@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <SectionPositioning />
-        <SectionHelp />
+        {/* <SectionHelp /> */}
         <SectionHelp2 />
         <SectionApproaches />
         <SectionWhySage />
