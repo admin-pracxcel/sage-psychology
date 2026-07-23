@@ -65,7 +65,7 @@ const cols: { heading: string; items: { label: string; href: string }[] }[] = [
     items: [
       { label: "Book Now", href: "/book" },
       { label: "Contact", href: "/contact" },
-      { label: "Journal", href: "/blog" },
+      { label: "Blog", href: "/blog" },
     ],
   },
 ];
