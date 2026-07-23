@@ -102,7 +102,7 @@ export default function ConditionsSlider({
   const translatePercent = index * (100 / perView);
 
   const sideArrowClass =
-    "grid place-items-center h-12 w-12 md:h-14 md:w-14 rounded-full bg-paper/95 text-ink border border-ink/10 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.15)] hover:bg-paper hover:text-evergreen transition-colors backdrop-blur-md";
+    "shrink-0 grid place-items-center h-12 w-12 md:h-14 md:w-14 rounded-full bg-paper text-ink border border-ink/15 shadow-[0_4px_18px_-6px_rgba(0,0,0,0.14)] hover:bg-evergreen hover:text-paper hover:border-evergreen transition-colors self-center";
 
   return (
     <div
@@ -112,9 +112,29 @@ export default function ConditionsSlider({
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      {/* Slider + optional side-arrow wrapper */}
-      <div className="relative">
-        <div className="overflow-hidden">
+      {/* Slider + optional side-arrow wrapper.
+          In 'sides' mode the arrows are flex siblings of the viewport, so they
+          sit outside the card area entirely (never over the images). */}
+      <div
+        className={
+          arrowPosition === "sides"
+            ? "flex items-stretch gap-3 md:gap-5"
+            : "relative"
+        }
+      >
+        {arrowPosition === "sides" && maxIndex > 0 && (
+          <button
+            type="button"
+            onClick={prev}
+            aria-label="Previous conditions"
+            className={sideArrowClass}
+            style={{ alignSelf: "center" }}
+          >
+            <ArrowLeftSvg />
+          </button>
+        )}
+
+        <div className="overflow-hidden flex-1 min-w-0">
           <div
             className="flex transition-transform duration-[700ms] ease-[cubic-bezier(0.2,0.7,0.2,1)]"
             style={{ transform: `translateX(-${translatePercent}%)` }}
@@ -173,24 +193,15 @@ export default function ConditionsSlider({
         </div>
 
         {arrowPosition === "sides" && maxIndex > 0 && (
-          <>
-            <button
-              type="button"
-              onClick={prev}
-              aria-label="Previous conditions"
-              className={`${sideArrowClass} absolute left-3 md:left-5 top-[38%] -translate-y-1/2 z-10`}
-            >
-              <ArrowLeftSvg />
-            </button>
-            <button
-              type="button"
-              onClick={next}
-              aria-label="Next conditions"
-              className={`${sideArrowClass} absolute right-3 md:right-5 top-[38%] -translate-y-1/2 z-10`}
-            >
-              <ArrowRightSvg />
-            </button>
-          </>
+          <button
+            type="button"
+            onClick={next}
+            aria-label="Next conditions"
+            className={sideArrowClass}
+            style={{ alignSelf: "center" }}
+          >
+            <ArrowRightSvg />
+          </button>
         )}
       </div>
 
