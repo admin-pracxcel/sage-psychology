@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import { Arrow } from "./Icons";
 
 export default function SectionPositioning() {
   return (
@@ -50,6 +51,12 @@ export default function SectionPositioning() {
             that is safe, unhurried, and genuinely tailored to you.
           </Reveal>
         </div>
+
+        <Reveal delay={260} className="mt-12 md:mt-14 flex justify-center">
+          <Link href="/book" className="btn btn-primary">
+            Book an appointment <Arrow />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
