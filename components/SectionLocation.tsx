@@ -85,6 +85,19 @@ export default function SectionLocation() {
                 By appointment only
               </span>
             </div>
+
+            {/* Google Maps embed */}
+            <div className="mt-10 relative aspect-[4/3] w-full overflow-hidden rounded-[12px] bg-linen border border-ink/10">
+              <iframe
+                src="https://www.google.com/maps?q=7B+Silas+Street+East+Fremantle+WA+6158&output=embed"
+                title="Map: Sage Psychological Services, 7B Silas Street, East Fremantle WA 6158"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full"
+                style={{ border: 0 }}
+              />
+            </div>
           </Reveal>
         </div>
       </div>
