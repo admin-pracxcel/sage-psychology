@@ -80,10 +80,9 @@ export default function SectionApproaches() {
               className="flex flex-col gap-7 border-t border-paper/25 pt-10"
             >
               <h3
-                className="max-w-full text-paper leading-[1.15]"
+                className="max-w-full text-paper leading-[1.15] text-[28px] md:text-[36px]"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "36px",
                   letterSpacing: "-0.015em",
                 }}
               >

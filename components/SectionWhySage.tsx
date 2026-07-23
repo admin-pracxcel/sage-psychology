@@ -98,22 +98,24 @@ export default function SectionWhySage() {
   return (
     <section className="relative bg-paper text-ink stack-y">
       <div className="edge mx-auto max-w-[86rem]">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 lg:gap-16 items-stretch">
-          {/* Left · Image (matches height of right content column on md+) */}
-          <Reveal className="md:col-span-5 min-w-0 md:h-full">
-            <div className="relative aspect-[4/5] md:aspect-auto md:h-full w-full overflow-hidden rounded-[16px] bg-linen">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch">
+          {/* Left · Image
+              Below lg (mobile + tablet): full width, fixed 300px height
+              lg+ desktop: side-by-side, stretched to match content height */}
+          <Reveal className="lg:col-span-5 min-w-0 lg:h-full">
+            <div className="relative w-full h-[300px] lg:h-full lg:min-h-full overflow-hidden rounded-[16px] bg-linen">
               <Image
                 src="/img/armchairs.jpg"
                 alt="A quiet interior at the Silas Street practice, soft afternoon light"
                 fill
-                sizes="(min-width: 768px) 40vw, 100vw"
+                sizes="(min-width: 1024px) 40vw, 100vw"
                 className="object-cover"
               />
             </div>
           </Reveal>
 
           {/* Right · Content */}
-          <div className="md:col-span-7 min-w-0">
+          <div className="lg:col-span-7 min-w-0">
             <Reveal>
               <h2
                 className="leading-[1.02] max-w-[16ch]"
