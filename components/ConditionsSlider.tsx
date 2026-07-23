@@ -102,7 +102,7 @@ export default function ConditionsSlider({
   const translatePercent = index * (100 / perView);
 
   const sideArrowClass =
-    "shrink-0 grid place-items-center h-12 w-12 md:h-14 md:w-14 rounded-full bg-paper text-ink border border-ink/15 shadow-[0_4px_18px_-6px_rgba(0,0,0,0.14)] hover:bg-evergreen hover:text-paper hover:border-evergreen transition-colors self-center";
+    "shrink-0 hidden md:grid place-items-center h-12 w-12 md:h-14 md:w-14 rounded-full bg-paper text-ink border border-ink/15 shadow-[0_4px_18px_-6px_rgba(0,0,0,0.14)] hover:bg-evergreen hover:text-paper hover:border-evergreen transition-colors self-center";
 
   return (
     <div
@@ -204,6 +204,35 @@ export default function ConditionsSlider({
           </button>
         )}
       </div>
+
+      {/* Mobile-only bottom arrows for 'sides' mode */}
+      {arrowPosition === "sides" && maxIndex > 0 && (
+        <div className="md:hidden mt-8 flex items-center justify-center gap-4">
+          <button
+            type="button"
+            onClick={prev}
+            aria-label="Previous conditions"
+            className="grid place-items-center h-12 w-12 rounded-full border border-ink/20 text-ink hover:bg-ink hover:text-paper transition-colors"
+          >
+            <ArrowLeftSvg />
+          </button>
+
+          <div className="text-[0.78rem] tracking-[0.2em] uppercase opacity-70 min-w-[5rem] text-center">
+            {String(index + 1).padStart(2, "0")}{" "}
+            <span className="opacity-50">/</span>{" "}
+            {String(maxIndex + 1).padStart(2, "0")}
+          </div>
+
+          <button
+            type="button"
+            onClick={next}
+            aria-label="Next conditions"
+            className="grid place-items-center h-12 w-12 rounded-full border border-ink/20 text-ink hover:bg-ink hover:text-paper transition-colors"
+          >
+            <ArrowRightSvg />
+          </button>
+        </div>
+      )}
 
       {arrowPosition === "bottom" && maxIndex > 0 && (
         <div className="mt-10 md:mt-12 flex items-center justify-center gap-4">
