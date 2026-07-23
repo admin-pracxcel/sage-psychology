@@ -111,7 +111,11 @@ export default function SectionHelp2() {
 
         {/* Slider */}
         <Reveal className="mt-16 md:mt-20">
-          <ConditionsSlider cards={CARDS} autoIntervalMs={3000} />
+          <ConditionsSlider
+            cards={CARDS}
+            autoIntervalMs={3000}
+            arrowPosition="sides"
+          />
         </Reveal>
 
         {/* Closing */}
