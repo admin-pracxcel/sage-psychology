@@ -1,20 +1,39 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 import { Arrow, Sprig } from "./Icons";
 
 export default function SectionClosing() {
   return (
-    <section className="relative bg-ink text-paper stack-y overflow-hidden">
-      {/* soft evergreen wash */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-70"
-        style={{
-          background:
-            "radial-gradient(80% 60% at 50% 100%, rgba(46,62,51,0.7), transparent 55%)",
-        }}
-        aria-hidden
-      />
-      <div className="relative edge mx-auto max-w-[92rem] flex flex-col items-center text-center gap-14">
+    <section className="relative text-paper overflow-hidden">
+      {/* Background sunrise image */}
+      <div className="absolute inset-0" aria-hidden>
+        <Image
+          src="/img/wa-sunrise.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* Strong ink overlay for legibility */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(20,22,20,0.75) 0%, rgba(20,22,20,0.55) 45%, rgba(20,22,20,0.85) 100%)",
+          }}
+        />
+        {/* Evergreen wash for warmth */}
+        <div
+          className="absolute inset-0 mix-blend-multiply"
+          style={{
+            background:
+              "radial-gradient(80% 60% at 50% 100%, rgba(46,62,51,0.55), transparent 60%)",
+          }}
+        />
+      </div>
+
+      <div className="relative edge mx-auto max-w-[92rem] stack-y flex flex-col items-center text-center gap-12">
         <Reveal className="flex items-center gap-4 text-brass-soft">
           <span className="chapter-mark">N&deg; 06</span>
           <span className="eyebrow" style={{ color: "var(--brass-soft)" }}>
@@ -23,7 +42,7 @@ export default function SectionClosing() {
         </Reveal>
 
         <Reveal delay={90}>
-          <h2 className="display-xl max-w-[16ch]">
+          <h2 className="display-xl max-w-[16ch] text-paper">
             When you are <span className="serif-italic">ready</span>,
             <br />
             we are here.
@@ -33,7 +52,8 @@ export default function SectionClosing() {
         <Reveal
           as="p"
           delay={180}
-          className="body-lede max-w-[52ch] opacity-85 prose-sage"
+          className="body-lede max-w-[52ch] text-paper/95 prose-sage"
+          style={{ textShadow: "0 1px 20px rgba(0,0,0,0.4)" }}
         >
           Reaching out is often the hardest part. Booking a session is
           straightforward, and Jacob will guide you through what to expect from
@@ -51,7 +71,7 @@ export default function SectionClosing() {
           </Link>
         </Reveal>
 
-        <Reveal delay={340} className="mt-6 text-brass-soft">
+        <Reveal delay={340} className="mt-4 text-brass-soft">
           <Sprig />
         </Reveal>
       </div>

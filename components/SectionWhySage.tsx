@@ -1,10 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 
-const REASONS: {
-  heading: React.ReactNode;
-  body: React.ReactNode;
-}[] = [
+const REASONS: { heading: React.ReactNode; body: React.ReactNode }[] = [
   {
     heading: (
       <>
@@ -42,10 +40,10 @@ const REASONS: {
     body: (
       <>
         Sage is a private billing practice with a deliberately low gap fee of{" "}
-        <span className="text-evergreen font-medium">$78.45</span>
-        {" "}per session under a Mental Health Care Plan, well below the
-        Australian Psychological Society&rsquo;s recommended fee. Full details
-        are on our <Link href="/fees" className="link">fees and rebates</Link>{" "}
+        <span className="text-evergreen font-medium">$78.45</span>{" "}
+        per session under a Mental Health Care Plan, well below the Australian
+        Psychological Society&rsquo;s recommended fee. Full details are on our{" "}
+        <Link href="/fees" className="link">fees and rebates</Link>{" "}
         page.
       </>
     ),
@@ -83,25 +81,45 @@ export default function SectionWhySage() {
           </Reveal>
         </div>
 
-        <div className="grid md:grid-cols-[220px_1fr] gap-y-10 md:gap-x-16">
-          <div className="hidden md:block" aria-hidden />
+        {/* Two-column: image + list */}
+        <div className="grid md:grid-cols-[minmax(0,0.9fr)_1.1fr] gap-y-14 md:gap-x-16 items-start">
+          <Reveal className="md:sticky md:top-28">
+            <figure className="relative aspect-[4/5] w-full overflow-hidden rounded-[2px] bg-linen">
+              <Image
+                src="/img/window-light.jpg"
+                alt="Soft afternoon light through a lace curtain in the practice"
+                fill
+                sizes="(min-width: 768px) 42vw, 100vw"
+                className="object-cover"
+              />
+            </figure>
+            <figcaption className="mt-4 flex items-baseline gap-3 chapter-mark">
+              <span>Fig. 02</span>
+              <span className="eyebrow" style={{ color: "var(--moss)" }}>
+                Afternoon, Silas Street
+              </span>
+            </figcaption>
+          </Reveal>
+
           <ol className="grid gap-0">
             {REASONS.map((r, i) => (
               <Reveal
                 as="li"
                 key={i}
                 delay={i * 90}
-                className="grid grid-cols-[auto_1fr] md:grid-cols-[100px_1fr_1fr] gap-x-6 md:gap-x-10 py-10 md:py-14 border-t hairline"
+                className="grid grid-cols-[auto_1fr] gap-x-6 py-9 md:py-11 border-t border-ink/15 first:border-t-0 first:pt-0"
               >
-                <span className="chapter-mark self-start">
+                <span className="chapter-mark self-start pt-1">
                   0{i + 1}
                 </span>
-                <h3 className="display-sm md:display-md max-w-[18ch] col-span-1">
-                  {r.heading}
-                </h3>
-                <p className="body-lede body-quiet max-w-[46ch] mt-4 md:mt-1 col-span-2 md:col-span-1 prose-sage">
-                  {r.body}
-                </p>
+                <div className="flex flex-col gap-4">
+                  <h3 className="display-sm md:display-md max-w-[20ch] leading-[1.1]">
+                    {r.heading}
+                  </h3>
+                  <p className="body-lede max-w-[46ch] prose-sage">
+                    {r.body}
+                  </p>
+                </div>
               </Reveal>
             ))}
           </ol>

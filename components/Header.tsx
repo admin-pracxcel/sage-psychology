@@ -29,7 +29,7 @@ export default function Header() {
         "fixed top-0 left-0 right-0 z-50",
         "transition-[background-color,color,border-color,backdrop-filter] duration-500",
         scrolled
-          ? "bg-paper/90 text-ink backdrop-blur-md border-b border-hairline"
+          ? "bg-paper/94 text-ink backdrop-blur-md border-b border-hairline"
           : "bg-transparent text-paper border-b border-transparent",
       ].join(" ")}
     >
@@ -37,31 +37,19 @@ export default function Header() {
         <Link
           href="/"
           aria-label="Sage Psychological Services — home"
-          className="flex items-center gap-3"
+          className="flex items-center"
         >
-          <span
+          <Image
+            src="/logo.webp"
+            alt="Sage Psychological Services"
+            width={1920}
+            height={639}
             className={[
-              "inline-block h-9 w-9 rounded-full transition-colors duration-500",
-              scrolled ? "bg-evergreen" : "bg-paper/95",
+              "h-10 md:h-11 w-auto object-contain transition-[filter] duration-500",
+              scrolled ? "" : "[filter:brightness(0)_invert(1)]",
             ].join(" ")}
-            aria-hidden
-          >
-            <Image
-              src="/logo.webp"
-              alt=""
-              width={40}
-              height={40}
-              className={[
-                "h-9 w-9 object-contain p-1 transition-[filter] duration-500",
-                scrolled ? "invert" : "",
-              ].join(" ")}
-              priority
-            />
-          </span>
-          <span className="display-sm leading-none tracking-tight hidden sm:inline">
-            Sage<span className="opacity-60"> · </span>
-            <span className="serif-italic opacity-90">Psychology</span>
-          </span>
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-9 text-[0.92rem]">

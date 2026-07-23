@@ -7,6 +7,7 @@ type Props = {
   as?: "div" | "section" | "p" | "span" | "li" | "h2" | "h3";
   delay?: number;
   className?: string;
+  style?: React.CSSProperties;
 };
 
 export default function Reveal({
@@ -14,6 +15,7 @@ export default function Reveal({
   as = "div",
   delay = 0,
   className = "",
+  style: styleProp,
 }: Props) {
   const ref = useRef<HTMLElement | null>(null);
 
@@ -36,7 +38,10 @@ export default function Reveal({
   }, []);
 
   const Tag = as as React.ElementType;
-  const style = delay ? ({ ["--reveal-delay" as string]: `${delay}ms` } as React.CSSProperties) : undefined;
+  const delayStyle = delay
+    ? ({ ["--reveal-delay" as string]: `${delay}ms` } as React.CSSProperties)
+    : {};
+  const style = { ...delayStyle, ...(styleProp ?? {}) };
 
   return (
     <Tag ref={ref as never} className={`reveal ${className}`} style={style}>

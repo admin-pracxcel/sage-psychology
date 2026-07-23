@@ -114,15 +114,12 @@ body {
 }
 
 .body-lede {
-  font-size: clamp(1.1rem, 1.35vw, 1.25rem);
-  line-height: 1.62;
-  color: var(--ink);
-  opacity: 0.86;
+  font-size: clamp(1.1rem, 1.35vw, 1.24rem);
+  line-height: 1.6;
 }
 
 .body-quiet {
-  color: var(--ink);
-  opacity: 0.74;
+  opacity: 0.82;
 }
 
 /* ─── Links inside prose ─────────────────────────────────── */
