@@ -83,17 +83,27 @@ export default function Footer() {
               height={639}
               className="h-14 md:h-16 w-auto object-contain object-left mb-8"
             />
-            <address className="not-italic text-[1.02rem] leading-relaxed flex items-start gap-3">
-              <IconPin className="mt-1.5 shrink-0 text-moss" />
-              <span>
-                7B Silas Street
-                <br />
-                East Fremantle WA 6158
-              </span>
+            <address className="not-italic text-[1.02rem] leading-relaxed">
+              <a
+                href="https://maps.app.goo.gl/NoWCWRPuBQun5GFS9"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-start gap-3 hover:text-evergreen transition-colors"
+              >
+                <IconPin className="mt-1.5 shrink-0 text-moss" />
+                <span>
+                  7B Silas Street
+                  <br />
+                  East Fremantle WA 6158
+                </span>
+              </a>
             </address>
             <div className="mt-5 flex items-center gap-3 text-[1rem]">
               <IconPhone className="shrink-0 text-moss" />
-              <a href="tel:0480425776" className="link font-medium">
+              <a
+                href="tel:0480425776"
+                className="font-medium hover:text-evergreen transition-colors"
+              >
                 0480 425 776
               </a>
             </div>
