@@ -57,6 +57,7 @@ const cols: { heading: string; items: { label: string; href: string }[] }[] = [
       { label: "EMDR therapy", href: "/emdr-therapy-perth" },
       { label: "Anxiety therapy", href: "/anxiety-therapy-perth" },
       { label: "Trauma therapy", href: "/trauma-therapy-perth" },
+      { label: "Depression counselling", href: "/depression-counselling-perth" },
       { label: "Telehealth", href: "/telehealth-psychologist-perth" },
     ],
   },
