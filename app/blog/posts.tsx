@@ -12,6 +12,9 @@ export type PostMeta = {
   publishedAt: string;
   publishedLabel: string;
   image: string;
+  imageAlt: string;
+  ctaImage: string;
+  ctaAlt: string;
   excerpt: string;
   linksUp: { label: string; href: string }[];
   ctaHeading: ReactNode;
@@ -158,7 +161,10 @@ export const POSTS: PostMeta[] = [
     readTime: "7 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/eucalyptus.jpg",
+    image: "/img/cbt-anxiety-hero-worksheet-hands-desk.webp",
+    imageAlt: "Working through a CBT thought record at a desk",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
     excerpt:
       "A plain-English explanation of Cognitive Behaviour Therapy: the anxiety cycle, what happens in a session, and why it is so widely recommended.",
     linksUp: [
@@ -205,7 +211,10 @@ export const POSTS: PostMeta[] = [
     readTime: "5 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/dew-grass.jpg",
+    image: "/img/signs-anxiety-hero-declining-invitation-phone.webp",
+    imageAlt: "Looking at a phone at the kitchen table in the evening",
+    ctaImage: "/img/signs-anxiety-cta-front-door-stepping-out.webp",
+    ctaAlt: "Stepping out the front door into the morning",
     excerpt:
       "There is no severity threshold for therapy. Five signs worth taking seriously, and the one thought that keeps most people waiting too long.",
     linksUp: [
@@ -243,7 +252,10 @@ export const POSTS: PostMeta[] = [
     readTime: "6 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/meadow.jpg",
+    image: "/img/therapy-medication-hero-writing-questions-gp.webp",
+    imageAlt: "Writing down questions before a GP appointment",
+    ctaImage: "/img/therapy-medication-cta-waiting-room-chairs-daylight.webp",
+    ctaAlt: "Chairs in a quiet waiting area by a window",
     excerpt:
       "A balanced overview of what the research shows, so you can have a better-informed conversation with your GP. Not a recommendation either way.",
     linksUp: [
@@ -274,7 +286,10 @@ export const POSTS: PostMeta[] = [
     readTime: "6 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/autumn-leaves.jpg",
+    image: "/img/how-many-sessions-hero-diary-one-appointment.webp",
+    imageAlt: "Writing an appointment into a paper diary",
+    ctaImage: "/img/how-many-sessions-cta-single-chair-window.webp",
+    ctaAlt: "A chair by a window in the consulting room",
     excerpt:
       "The honest answer: it depends. Here is what it depends on, what the research suggests, and how Medicare's ten rebated sessions fit in.",
     linksUp: [
@@ -305,7 +320,10 @@ export const POSTS: PostMeta[] = [
     readTime: "8 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/still-lake.jpg",
+    image: "/img/emdr-blog-cta-swan-river-morning.webp",
+    imageAlt: "The Swan River from a jetty on a clear morning",
+    ctaImage: "/img/wa-sunrise.jpg",
+    ctaAlt: "Warm sunrise over the Western Australian coast",
     excerpt:
       "A therapy that sounds implausible until you understand the mechanism. The eight phases explained, what a session feels like, and what it treats.",
     linksUp: [
@@ -351,7 +369,10 @@ export const POSTS: PostMeta[] = [
     readTime: "7 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/mist-forest.jpg",
+    image: "/img/unresolved-trauma-hero-window-open-morning.webp",
+    imageAlt: "A window standing open onto the morning",
+    ctaImage: "/img/sage-psychology-practice.webp",
+    ctaAlt: "The Sage Psychological Services consulting room in East Fremantle",
     excerpt:
       "Unresolved trauma does not always look like flashbacks. A careful, non-diagnostic look at how it can quietly shape adult life.",
     linksUp: [
@@ -389,7 +410,10 @@ export const POSTS: PostMeta[] = [
     readTime: "6 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/lone-tree.jpg",
+    image: "/img/emdr-vs-talk-cta-two-chairs-daylight.webp",
+    imageAlt: "Two chairs turned toward each other by a window",
+    ctaImage: "/img/wa-sunrise.jpg",
+    ctaAlt: "Warm sunrise over the Western Australian coast",
     excerpt:
       "How they differ, what each does well, and why the choice is less either-or than it appears. Most trauma work draws on both.",
     linksUp: [
@@ -428,7 +452,10 @@ export const POSTS: PostMeta[] = [
     readTime: "6 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/forest-path.jpg",
+    image: "/img/trauma-vs-anxiety-hero-hands-mug-window.webp",
+    imageAlt: "Holding a warm mug by a window in the morning",
+    ctaImage: "/img/trauma-vs-anxiety-cta-notepad-chair-arm.webp",
+    ctaAlt: "A notepad resting on the arm of a chair in the consulting room",
     excerpt:
       "From the inside they can feel identical, but the treatments differ. Where each is pointing, and why the distinction changes what helps.",
     linksUp: [
@@ -477,7 +504,10 @@ export const POSTS: PostMeta[] = [
     readTime: "6 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/fremantle-coast.jpg",
+    image: "/img/finding-psychologist-hero-east-fremantle-street.webp",
+    imageAlt: "A quiet street in East Fremantle on a clear morning",
+    ctaImage: "/img/sage-psychology-practice.webp",
+    ctaAlt: "The Sage Psychological Services consulting room in East Fremantle",
     excerpt:
       "How to choose a psychologist in Fremantle: checking registration, matching the approach to the problem, the questions worth asking, and the one factor that matters most.",
     linksUp: [
@@ -522,7 +552,10 @@ export const POSTS: PostMeta[] = [
     readTime: "6 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/olive-branches.jpg",
+    image: "/img/medicare-plan-hero-paperwork-kitchen-table.webp",
+    imageAlt: "Paperwork and a diary on the kitchen table",
+    ctaImage: "/img/medicare-plan-cta-desk-diary-daylight.webp",
+    ctaAlt: "A diary and phone on a desk by a window",
     excerpt:
       "The main way Australians access subsidised psychology. How to get a plan, how the six-plus-four sessions structure catches people out, and what you will actually pay.",
     linksUp: [
@@ -552,7 +585,10 @@ export const POSTS: PostMeta[] = [
     readTime: "5 min read",
     publishedAt: "2026-07-23",
     publishedLabel: "23 July 2026",
-    image: "/img/window-light.jpg",
+    image: "/img/sage-psychology-practice.webp",
+    imageAlt: "The Sage Psychological Services consulting room in East Fremantle",
+    ctaImage: "/img/first-session-cta-walking-toward-entrance.webp",
+    ctaAlt: "Walking up the path toward the practice entrance",
     excerpt:
       "The honest version: the ten minutes before, the fears people rarely mention, what the hour actually feels like, and how you might feel afterwards.",
     linksUp: [

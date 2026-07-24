@@ -154,8 +154,8 @@ function WhenReadingIsNotEnough() {
     <section className="relative bg-evergreen text-paper stack-y overflow-hidden">
       <div className="absolute inset-0" aria-hidden>
         <Image
-          src="/img/wa-sunrise.jpg"
-          alt=""
+          src="/img/blog-index-cta-desk-reading-daylight.webp"
+          alt="An open notebook and a mug on a desk by a window"
           fill
           sizes="100vw"
           className="object-cover opacity-50"

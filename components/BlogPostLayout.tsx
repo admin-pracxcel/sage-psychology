@@ -83,7 +83,7 @@ function ArticleHero({ post }: { post: PostMeta }) {
           <div className="relative aspect-[16/8] md:aspect-[16/6] w-full rounded-[16px] overflow-hidden">
             <Image
               src={post.image}
-              alt=""
+              alt={post.imageAlt}
               fill
               sizes="100vw"
               priority
@@ -159,8 +159,8 @@ function ArticleCta({ post }: { post: PostMeta }) {
     <section className="relative bg-evergreen text-paper stack-y overflow-hidden">
       <div className="absolute inset-0" aria-hidden>
         <Image
-          src="/img/wa-sunrise.jpg"
-          alt=""
+          src={post.ctaImage}
+          alt={post.ctaAlt}
           fill
           sizes="100vw"
           className="object-cover opacity-50"
