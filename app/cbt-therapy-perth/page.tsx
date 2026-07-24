@@ -368,8 +368,8 @@ function WhySageCbt() {
           <Reveal className="lg:col-span-5 min-w-0 lg:h-full">
             <div className="relative w-full h-[300px] lg:h-full lg:min-h-full overflow-hidden rounded-[16px] bg-linen">
               <Image
-                src="/img/window-light.jpg"
-                alt="Warm sunlight through a lace curtain in the practice"
+                src="/img/sage-psychology-practice.webp"
+                alt="The Sage Psychological Services consulting room in East Fremantle"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 className="object-cover"
