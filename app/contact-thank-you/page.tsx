@@ -140,7 +140,7 @@ function WhileYouWait() {
             <Reveal delay={280}>
               <p className="mt-10 body-lede prose-sage max-w-full">
                 If you already know you would like to go ahead, you are
-                welcome to <Link href="/book">book an appointment</Link>{" "}
+                welcome to <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book an appointment</Link>{" "}
                 directly rather than waiting for a reply.
               </p>
             </Reveal>
