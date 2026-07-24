@@ -279,3 +279,8 @@ a.link:hover {
   outline-offset: 3px;
   border-radius: 2px;
 }
+
+/* Hide reCAPTCHA v3 badge on pages that show attribution text instead */
+body.recaptcha-hide-badge .grecaptcha-badge {
+  visibility: hidden !important;
+}

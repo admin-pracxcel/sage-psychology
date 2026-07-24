@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, Inter_Tight } from "next/font/google";
 import "./globals.css";
+import AttributionCapture from "@/components/AttributionCapture";
 
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -39,7 +40,10 @@ export default function RootLayout({
       lang="en-AU"
       className={`${instrumentSerif.variable} ${interTight.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <AttributionCapture />
+        {children}
+      </body>
     </html>
   );
 }
