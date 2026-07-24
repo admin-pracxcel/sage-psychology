@@ -105,12 +105,27 @@ export default function ContactForm() {
         body: JSON.stringify(payload),
       });
 
-      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+      if (!res.ok) {
+        let detail = "";
+        try {
+          const data = (await res.json()) as { error?: string };
+          detail = data.error ?? "";
+        } catch {
+          /* ignore */
+        }
+        throw new Error(
+          detail ? `${detail} (${res.status})` : `Request failed (${res.status})`
+        );
+      }
       router.push("/contact-thank-you");
     } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error("[contact form]", err);
       setSubmitting(false);
+      const message =
+        err instanceof Error ? err.message : "Unknown error.";
       setError(
-        "Something went wrong sending your message. Please try again, or call 0480 425 776 if the problem persists."
+        `Something went wrong sending your message: ${message}. Please try again, or call 0480 425 776 if the problem persists.`
       );
     }
   }
