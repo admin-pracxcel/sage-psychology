@@ -58,7 +58,7 @@ function ContactHero() {
 
           <Reveal delay={220}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book Now <Arrow />
               </Link>
               <Link href="#enquiry" className="btn btn-ghost">
@@ -387,7 +387,7 @@ function NotSureWhereToStart() {
         </Reveal>
         <Reveal delay={160}>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Link href="/book" className="btn btn-on-video">
+            <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
               Book Now <Arrow />
             </Link>
             <Link href="#enquiry" className="btn btn-on-video-ghost">

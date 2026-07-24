@@ -141,7 +141,7 @@ function ArticleBody({
                   When you are ready
                 </div>
                 <div className="mt-4 flex flex-col gap-3">
-                  <Link href="/book" className="btn btn-primary w-fit">
+                  <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary w-fit">
                     Book a session <Arrow />
                   </Link>
                   <Link href="/contact" className="btn btn-ghost w-fit">
@@ -203,7 +203,7 @@ function ArticleCta({ post }: { post: PostMeta }) {
         </Reveal>
         <Reveal delay={160}>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Link href="/book" className="btn btn-on-video">
+            <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
               Book a session <Arrow />
             </Link>
             <Link href="/contact" className="btn btn-on-video-ghost">

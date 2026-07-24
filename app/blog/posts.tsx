@@ -527,7 +527,7 @@ export const POSTS: PostMeta[] = [
       "The main way Australians access subsidised psychology. How to get a plan, how the six-plus-four sessions structure catches people out, and what you will actually pay.",
     linksUp: [
       { label: "Fees & Rebates", href: "/fees" },
-      { label: "Book an Appointment", href: "/book" },
+      { label: "Book an Appointment", href: "https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" },
     ],
     ctaHeading: (
       <>
@@ -557,7 +557,7 @@ export const POSTS: PostMeta[] = [
       "The honest version: the ten minutes before, the fears people rarely mention, what the hour actually feels like, and how you might feel afterwards.",
     linksUp: [
       { label: "What to Expect", href: "/how-therapy-works" },
-      { label: "Book an Appointment", href: "/book" },
+      { label: "Book an Appointment", href: "https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" },
     ],
     ctaHeading: (
       <>
@@ -737,7 +737,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         approaches offered for{" "}
         <Link href="/anxiety-therapy-perth">anxiety</Link>. If you would like
         to talk about whether it might suit you, you can{" "}
-        <Link href="/book">book a session</Link> or{" "}
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book a session</Link> or{" "}
         <Link href="/contact">get in touch</Link> with a question first.
       </P>
     </>
@@ -855,7 +855,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         Psychological Services offers{" "}
         <Link href="/anxiety-therapy-perth">anxiety therapy</Link> in East
         Fremantle and by telehealth across Western Australia. You can{" "}
-        <Link href="/book">book a session</Link> when you are ready, or{" "}
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book a session</Link> when you are ready, or{" "}
         <Link href="/contact">get in touch</Link> with a question first.
       </P>
       <CrisisFootnote />
@@ -983,7 +983,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       <P>
         Jacob works alongside GPs regularly and is comfortable coordinating
         care where that is useful. You can{" "}
-        <Link href="/book">book a session</Link> or{" "}
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book a session</Link> or{" "}
         <Link href="/contact">get in touch</Link> to discuss whether therapy
         would suit your situation.
       </P>
@@ -1106,7 +1106,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       <P>
         Our <Link href="/how-therapy-works">what to expect</Link> page
         explains how sessions run and how therapy typically progresses.
-        When you are ready you can <Link href="/book">book an appointment</Link>{" "}
+        When you are ready you can <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book an appointment</Link>{" "}
         or <Link href="/contact">get in touch</Link> with a question.
       </P>
     </>
@@ -1291,7 +1291,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       <P>
         A first session is simply a conversation about what has been
         happening and whether this approach suits. You can{" "}
-        <Link href="/book">book a consultation</Link> or{" "}
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book a consultation</Link> or{" "}
         <Link href="/contact">get in touch</Link> with questions first.
       </P>
       <CrisisFootnote />
@@ -1433,7 +1433,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         Sage Psychological Services offers{" "}
         <Link href="/trauma-therapy-perth">trauma therapy</Link> for adults
         in East Fremantle and by telehealth across Western Australia, at a
-        pace you set. You can <Link href="/book">book a session</Link> or{" "}
+        pace you set. You can <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book a session</Link> or{" "}
         <Link href="/contact">get in touch</Link> to ask whether it might
         help.
       </P>
@@ -1565,7 +1565,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         drawing on <Link href="/emdr-therapy-perth">EMDR</Link>,
         psychodynamic therapy, and{" "}
         <Link href="/cbt-therapy-perth">CBT</Link> as the situation calls
-        for. You can <Link href="/book">book a session</Link> or{" "}
+        for. You can <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book a session</Link> or{" "}
         <Link href="/contact">get in touch</Link> to discuss which approach
         might suit.
       </P>
@@ -1693,7 +1693,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         Fremantle and by telehealth across Western Australia. If you are
         unsure which you are facing, that is a perfectly reasonable thing
         to bring to a first session. You can{" "}
-        <Link href="/book">book an appointment</Link> or{" "}
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book an appointment</Link> or{" "}
         <Link href="/contact">get in touch</Link>.
       </P>
       <CrisisFootnote />
@@ -1874,7 +1874,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         If you would like to ask any of the questions above,{" "}
         <Link href="/contact">get in touch</Link> and Jacob will answer
         them directly. When you are ready, you can{" "}
-        <Link href="/book">book an appointment</Link>.
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book an appointment</Link>.
       </P>
     </>
   ),
@@ -2013,7 +2013,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       <H2>Getting started</H2>
       <P>
         If you already have a plan and referral, you can{" "}
-        <Link href="/book">book an appointment</Link> straight away. If you
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book an appointment</Link> straight away. If you
         do not, your GP is the place to start, and you are welcome to{" "}
         <Link href="/contact">get in touch</Link> first with any questions
         about how it works at Sage.
@@ -2159,7 +2159,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       </P>
       <P>
         When you feel ready, you can{" "}
-        <Link href="/book">book an appointment</Link> with Jacob, or{" "}
+        <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer">book an appointment</Link> with Jacob, or{" "}
         <Link href="/contact">get in touch</Link> with a question first.
         There is no pressure either way.
       </P>

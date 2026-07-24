@@ -158,7 +158,7 @@ export default function SectionWhySage() {
 
             {/* CTA */}
             <Reveal delay={200} className="mt-12">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book an appointment <Arrow />
               </Link>
             </Reveal>

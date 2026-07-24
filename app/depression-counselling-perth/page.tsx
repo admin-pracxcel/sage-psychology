@@ -61,7 +61,7 @@ function DepressionHero() {
 
           <Reveal delay={220}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book an Appointment <Arrow />
               </Link>
               <Link href="/contact" className="btn btn-ghost">
@@ -557,7 +557,7 @@ function TakeFirstStepDepression() {
           If depression has been weighing on you, a conversation is a
           reasonable place to start. You can{" "}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             style={{ color: "var(--paper)" }}
             className="font-medium"
           >
@@ -584,7 +584,7 @@ function TakeFirstStepDepression() {
         </Reveal>
 
         <Reveal delay={220} className="flex flex-wrap gap-3 justify-center">
-          <Link href="/book" className="btn btn-on-video">
+          <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
             Book an Appointment <Arrow />
           </Link>
           <Link href="/contact" className="btn btn-on-video-ghost">

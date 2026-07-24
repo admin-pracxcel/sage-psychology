@@ -89,7 +89,7 @@ export default function Hero() {
               { ["--fade-delay" as string]: "1300ms" } as React.CSSProperties
             }
           >
-            <Link href="/book" className="btn btn-on-video">
+            <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
               Book Now <Arrow />
             </Link>
             <Link href="/contact" className="btn btn-on-video-ghost">

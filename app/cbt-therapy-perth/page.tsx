@@ -68,7 +68,7 @@ function CbtHero() {
 
           <Reveal delay={220}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book a CBT Session <Arrow />
               </Link>
               <Link href="/contact" className="btn btn-ghost">
@@ -468,7 +468,7 @@ function BeginCbt() {
           If a practical, evidence-based approach sounds like the right fit,
           Jacob would be glad to help. You can{" "}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             style={{ color: "var(--paper)" }}
             className="font-medium"
           >
@@ -486,7 +486,7 @@ function BeginCbt() {
         </Reveal>
 
         <Reveal delay={220} className="flex flex-wrap gap-3 justify-center">
-          <Link href="/book" className="btn btn-on-video">
+          <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
             Book a CBT Session <Arrow />
           </Link>
           <Link href="/contact" className="btn btn-on-video-ghost">

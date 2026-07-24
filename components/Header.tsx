@@ -189,7 +189,7 @@ export default function Header({
 
         <div className="hidden md:block">
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             className={
               solid ? "btn btn-primary" : "btn btn-on-video"
             }
@@ -290,7 +290,7 @@ export default function Header({
             );
           })}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="btn btn-primary self-start mt-6"
           >

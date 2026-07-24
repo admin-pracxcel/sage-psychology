@@ -63,7 +63,7 @@ const cols: { heading: string; items: { label: string; href: string }[] }[] = [
   {
     heading: "Contact",
     items: [
-      { label: "Book Now", href: "/book" },
+      { label: "Book Now", href: "https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" },
       { label: "Contact", href: "/contact" },
       { label: "Blog", href: "/blog" },
     ],

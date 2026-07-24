@@ -115,7 +115,7 @@ function TelehealthHero() {
 
           <Reveal delay={260}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book a Telehealth Session <Arrow />
               </Link>
               <Link href="/contact" className="btn btn-ghost">
@@ -646,7 +646,7 @@ function BookTelehealthCTA() {
           If distance, schedule, or circumstance has been standing between you
           and consistent support, telehealth may be the answer. You can{" "}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             style={{ color: "var(--paper)" }}
             className="font-medium"
           >
@@ -664,7 +664,7 @@ function BookTelehealthCTA() {
         </Reveal>
 
         <Reveal delay={220} className="flex flex-wrap gap-3 justify-center">
-          <Link href="/book" className="btn btn-on-video">
+          <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
             Book a Telehealth Session <Arrow />
           </Link>
           <Link href="/contact" className="btn btn-on-video-ghost">

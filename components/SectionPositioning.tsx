@@ -53,7 +53,7 @@ export default function SectionPositioning() {
         </div>
 
         <Reveal delay={260} className="mt-12 md:mt-14 flex justify-center">
-          <Link href="/book" className="btn btn-primary">
+          <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
             Book an appointment <Arrow />
           </Link>
         </Reveal>

@@ -61,7 +61,7 @@ function Hero() {
               <a href="#articles" className="btn btn-primary">
                 Browse articles <Arrow />
               </a>
-              <Link href="/book" className="btn btn-ghost">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
                 Book an appointment
               </Link>
             </div>
@@ -72,85 +72,11 @@ function Hero() {
   );
 }
 
-/* ── Featured post (first article, hero card) ───────────────── */
-
-function FeaturedPost() {
-  const featured = POSTS[0];
-  return (
-    <section id="articles" className="relative bg-paper-soft text-ink stack-y">
-      <div className="edge mx-auto max-w-[92rem]">
-        <div className="flex items-end justify-between gap-6 mb-14 md:mb-16">
-          <div>
-            <Reveal>
-              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-                Featured article
-              </div>
-            </Reveal>
-            <Reveal delay={60}>
-              <h2
-                className="mt-6 max-w-full leading-[1.02]"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(2rem, 3.4vw, 3rem)",
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                Start <span className="serif-italic">here</span>.
-              </h2>
-            </Reveal>
-          </div>
-        </div>
-
-        <Reveal delay={140}>
-          <Link
-            href={`/blog/${featured.slug}`}
-            className="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch rounded-[16px] overflow-hidden bg-paper border border-ink/8 hover:border-ink/25 transition-colors"
-          >
-            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:min-h-[420px] overflow-hidden">
-              <Image
-                src={featured.image}
-                alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
-                className="object-cover transition-transform duration-[900ms] group-hover:scale-[1.02]"
-              />
-            </div>
-            <div className="lg:col-span-6 p-8 md:p-12 flex flex-col gap-6 justify-center">
-              <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
-                {featured.category} · {featured.readTime}
-              </div>
-              <h3
-                className="max-w-full leading-[1.05] transition-colors group-hover:text-evergreen"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(1.75rem, 3vw, 2.75rem)",
-                  letterSpacing: "-0.015em",
-                }}
-              >
-                {featured.title}
-              </h3>
-              <p className="body-lede max-w-full">{featured.excerpt}</p>
-              <div className="mt-2 flex items-center gap-2 text-evergreen text-[0.85rem] tracking-[0.2em] uppercase">
-                <span>Read article</span>
-                <span className="transition-transform group-hover:translate-x-1">
-                  <Arrow />
-                </span>
-              </div>
-            </div>
-          </Link>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
 /* ── All posts grid ─────────────────────────────────────────── */
 
 function AllPosts() {
-  const rest = POSTS.slice(1);
   return (
-    <section className="relative bg-paper text-ink stack-y">
+    <section id="articles" className="relative bg-paper-soft text-ink stack-y">
       <div className="edge mx-auto max-w-[92rem]">
         <div className="max-w-[62rem]">
           <Reveal>
@@ -173,11 +99,11 @@ function AllPosts() {
         </div>
 
         <ul className="mt-14 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
-          {rest.map((p, i) => (
+          {POSTS.map((p, i) => (
             <Reveal as="li" key={p.slug} delay={i * 40}>
               <Link
                 href={`/blog/${p.slug}`}
-                className="group h-full flex flex-col rounded-[16px] overflow-hidden bg-paper-soft border border-ink/8 hover:border-ink/25 transition-colors"
+                className="group h-full flex flex-col rounded-[16px] overflow-hidden bg-paper border border-ink/8 hover:border-ink/25 transition-colors"
               >
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Image
@@ -274,7 +200,7 @@ function WhenReadingIsNotEnough() {
           </Link>{" "}
           across Western Australia. You can{" "}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             style={{ color: "var(--paper)" }}
             className="font-medium"
           >
@@ -292,7 +218,7 @@ function WhenReadingIsNotEnough() {
         </Reveal>
         <Reveal delay={160}>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Link href="/book" className="btn btn-on-video">
+            <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
               Book an appointment <Arrow />
             </Link>
             <Link href="/contact" className="btn btn-on-video-ghost">
@@ -311,7 +237,6 @@ export default function BlogPage() {
       <Header alwaysSolid />
       <main>
         <Hero />
-        <FeaturedPost />
         <AllPosts />
         <WhenReadingIsNotEnough />
       </main>

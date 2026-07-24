@@ -318,7 +318,7 @@ function Hero() {
 
           <Reveal delay={220}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book an appointment <Arrow />
               </Link>
               <Link href="/contact" className="btn btn-ghost">
@@ -442,7 +442,7 @@ function StillHaveQuestion() {
           and we will respond as soon as we can, usually within one business
           day. When you are ready, you can{" "}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             style={{ color: "var(--paper)" }}
             className="font-medium"
           >
@@ -452,7 +452,7 @@ function StillHaveQuestion() {
         </Reveal>
         <Reveal delay={160}>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Link href="/book" className="btn btn-on-video">
+            <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
               Book an appointment <Arrow />
             </Link>
             <Link href="/contact" className="btn btn-on-video-ghost">

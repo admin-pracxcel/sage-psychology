@@ -57,7 +57,7 @@ function FeesHero() {
 
           <Reveal delay={220}>
             <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/book" className="btn btn-primary">
+              <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 Book Now <Arrow />
               </Link>
               <Link href="/contact" className="btn btn-ghost">
@@ -495,7 +495,7 @@ function ReadyToBegin() {
           like to ask a question about fees or rebates, we are happy to help.
           You can{" "}
           <Link
-            href="/book"
+            href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer"
             style={{ color: "var(--paper)" }}
             className="font-medium"
           >
@@ -513,7 +513,7 @@ function ReadyToBegin() {
         </Reveal>
         <Reveal delay={160}>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Link href="/book" className="btn btn-on-video">
+            <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
               Book Now <Arrow />
             </Link>
             <Link href="/contact" className="btn btn-on-video-ghost">

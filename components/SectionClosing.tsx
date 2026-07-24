@@ -52,7 +52,7 @@ export default function SectionClosing() {
         </Reveal>
 
         <Reveal delay={220} className="flex flex-wrap gap-3 justify-center">
-          <Link href="/book" className="btn btn-on-video">
+          <Link href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices" target="_blank" rel="noopener noreferrer" className="btn btn-on-video">
             Book Now <Arrow />
           </Link>
           <Link href="/contact" className="btn btn-on-video-ghost">
