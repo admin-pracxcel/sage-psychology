@@ -176,44 +176,44 @@ const EMDR_HELPS_CARDS: ConditionCard[] = [
     title: "Post-traumatic stress and the effects of trauma",
     body:
       "Explored further on our dedicated trauma therapy page.",
-    image: "/img/autumn-leaves.jpg",
-    alt: "Golden autumn leaves illuminated by soft sunlight",
+    image: "/img/trauma-man-walking-coastal-path-morning.webp",
+    alt: "A person walking a coastal path near Fremantle in the morning",
     href: "/trauma-therapy-perth",
   },
   {
     title: "Distressing or intrusive memories",
     body:
       "Helping memories that push into the present settle back into the past where they belong.",
-    image: "/img/sunset-ocean.jpg",
-    alt: "Ocean surface catching warm evening light",
+    image: "/img/dependency-kitchen-bench-morning-tea.webp",
+    alt: "A kitchen bench in the morning with tea and the day ahead",
   },
   {
     title: "Childhood experiences that continue to affect adult life",
     body:
       "Working through the early events whose weight has followed you into now.",
-    image: "/img/lone-tree.jpg",
-    alt: "A single tree lit by a soft sunrise across a meadow",
+    image: "/img/emdr-childhood-backyard-swing-afternoon.webp",
+    alt: "An old swing in a suburban backyard",
   },
   {
     title: "Grief and loss",
     body:
       "Making room for the memories and the meaning that surround them.",
-    image: "/img/olive-branches.jpg",
-    alt: "Olive tree branches lit by warm evening light",
+    image: "/img/grief-two-people-garden-chairs-afternoon.webp",
+    alt: "Two people sitting together in a backyard in the late afternoon",
   },
   {
     title: "Anxiety rooted in past experiences",
     body:
       "For anxiety that seems to trace back to something specific, rather than the everyday kind.",
-    image: "/img/mist-forest.jpg",
-    alt: "Warm morning light through misty forest trees",
+    image: "/img/anxiety-woman-back-step-morning-coffee.webp",
+    alt: "A person sitting on their back step with a coffee in the morning",
   },
   {
     title: "Phobias and specific fears",
     body:
       "Reprocessing the moment a fear took hold, so it loses its intensity.",
-    image: "/img/forest-path.jpg",
-    alt: "A tranquil forest path bathed in warm sunlight",
+    image: "/img/self-esteem-woman-leaving-house-doorway.webp",
+    alt: "Stepping out the front door on a clear morning",
   },
 ];
 

@@ -6,67 +6,67 @@ const CARDS: ConditionCard[] = [
     title: "Anxiety, panic, and chronic worry",
     body:
       "For anxious thinking, panic, and the kind of worry that won't settle on its own.",
-    image: "/img/mist-forest.jpg",
-    alt: "Warm morning light through misty forest trees",
+    image: "/img/anxiety-woman-back-step-morning-coffee.webp",
+    alt: "A person sitting on their back step with a coffee in the morning",
     href: "/anxiety-therapy-perth",
   },
   {
     title: "Trauma and post-traumatic stress",
     body:
       "Working through post-traumatic stress and difficult past experiences at your pace.",
-    image: "/img/autumn-leaves.jpg",
-    alt: "Golden autumn leaves illuminated by soft sunlight",
+    image: "/img/trauma-man-walking-coastal-path-morning.webp",
+    alt: "A person walking a coastal path near Fremantle in the morning",
     href: "/trauma-therapy-perth",
   },
   {
     title: "Depression and persistent low mood",
     body:
       "Space for persistent low mood, lost motivation, and the quieter kinds of unwell.",
-    image: "/img/sunset-ocean.jpg",
-    alt: "Ocean surface catching warm evening light",
+    image: "/img/depression-hands-opening-curtains-morning.webp",
+    alt: "Someone opening the curtains onto a bright morning",
     href: "/depression-counselling-perth",
   },
   {
     title: "Grief, loss, and bereavement",
     body:
       "Room to sit with loss and everything that surrounds it, without a timeline.",
-    image: "/img/lone-tree.jpg",
-    alt: "A single tree lit by a soft sunrise across a meadow",
+    image: "/img/grief-two-people-garden-chairs-afternoon.webp",
+    alt: "Two people sitting together in a backyard in the late afternoon",
   },
   {
     title: "Work-related stress and burnout",
     body:
       "For burnout, chronic work stress, and the moments when nothing seems to recharge you.",
-    image: "/img/meadow.jpg",
-    alt: "Wildflower meadow at golden hour",
+    image: "/img/burnout-person-closing-laptop-desk.webp",
+    alt: "Closing a laptop at the end of the working day",
   },
   {
     title: "Confidence, self-esteem, and identity",
     body:
       "For working with self-esteem, identity, and the quieter questions of who you are.",
-    image: "/img/forest-path.jpg",
-    alt: "A tranquil forest path bathed in warm sunlight",
+    image: "/img/self-esteem-woman-leaving-house-doorway.webp",
+    alt: "Stepping out the front door on a clear morning",
   },
   {
     title: "Relationship difficulties and interpersonal patterns",
     body:
       "For interpersonal patterns and the same kinds of difficulty that keep showing up.",
-    image: "/img/olive-branches.jpg",
-    alt: "Olive tree branches lit by warm evening light",
+    image: "/img/relationships-two-people-kitchen-talking.webp",
+    alt: "Two people talking in a kitchen in the evening",
   },
   {
     title: "Anger and emotional regulation",
     body:
       "For emotional regulation and the reactions that get in the way of the life you want.",
-    image: "/img/still-lake.jpg",
-    alt: "Sunset reflections on a still lake surface",
+    image: "/img/anger-man-walking-dog-street-evening.webp",
+    alt: "Walking the dog on a suburban street in the evening",
   },
   {
     title: "Alcohol, substance, and other dependencies",
     body:
       "Support for alcohol, substance, and habits that have grown bigger than they were meant to.",
-    image: "/img/dew-grass.jpg",
-    alt: "Dew-covered grasses at sunrise",
+    image: "/img/dependency-kitchen-bench-morning-tea.webp",
+    alt: "A kitchen bench in the morning with tea and the day ahead",
   },
 ];
 

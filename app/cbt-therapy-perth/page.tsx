@@ -174,45 +174,45 @@ const CBT_HELPS_CARDS: ConditionCard[] = [
     title: "Anxiety, panic, and excessive worry",
     body:
       "A first-line CBT approach for panic, chronic worry, and anxious thinking that will not switch off.",
-    image: "/img/dew-grass.jpg",
-    alt: "Dew-covered grasses lit by warm morning sun",
+    image: "/img/anxiety-woman-back-step-morning-coffee.webp",
+    alt: "A person sitting on their back step with a coffee in the morning",
     href: "/anxiety-therapy-perth",
   },
   {
     title: "Depression and persistent low mood",
     body:
       "Working with the thought and behaviour patterns that keep low mood in place.",
-    image: "/img/sunset-ocean.jpg",
-    alt: "Ocean surface catching warm evening light",
+    image: "/img/depression-hands-opening-curtains-morning.webp",
+    alt: "Someone opening the curtains onto a bright morning",
     href: "/depression-counselling-perth",
   },
   {
     title: "Stress and burnout, including work-related stress",
     body:
       "Practical strategies for chronic stress, exhaustion, and the moments when nothing seems to recharge you.",
-    image: "/img/meadow.jpg",
-    alt: "Wildflower meadow at golden hour",
+    image: "/img/burnout-person-closing-laptop-desk.webp",
+    alt: "Closing a laptop at the end of the working day",
   },
   {
     title: "Low self-esteem and unhelpful core beliefs",
     body:
       "Identifying and gently reshaping the beliefs about yourself that keep you stuck.",
-    image: "/img/forest-path.jpg",
-    alt: "A tranquil forest path bathed in warm sunlight",
+    image: "/img/self-esteem-woman-leaving-house-doorway.webp",
+    alt: "Stepping out the front door on a clear morning",
   },
   {
     title: "Sleep difficulties and rumination",
     body:
       "For nights lost to the same thoughts on repeat, and the sleep that follows.",
-    image: "/img/still-lake.jpg",
-    alt: "Sunset reflections on a still lake surface",
+    image: "/img/cbt-sleep-bedroom-morning-light.webp",
+    alt: "A bedroom with the blinds opened in the morning",
   },
   {
     title: "Phobias and avoidance patterns",
     body:
       "Structured, gradual exposure that helps you face what you have been avoiding.",
-    image: "/img/autumn-leaves.jpg",
-    alt: "Golden autumn leaves illuminated by soft sunlight",
+    image: "/img/cbt-exposure-stepping-out-front-door.webp",
+    alt: "Stepping out the front door into the morning",
   },
 ];
 
