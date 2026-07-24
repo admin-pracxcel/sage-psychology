@@ -22,6 +22,7 @@ export default function BlogPostLayout({
       <main>
         <ArticleHero post={post} />
         <ArticleBody post={post} body={children} />
+        <AuthorBox />
         <ArticleCta post={post} />
         <RelatedPosts posts={related} />
         <Disclaimer />
@@ -69,14 +70,6 @@ function ArticleHero({ post }: { post: PostMeta }) {
           </Reveal>
           <Reveal delay={180}>
             <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 text-moss text-[0.95rem]">
-              <span>
-                Written by{" "}
-                <Link href="/about" className="underline decoration-hairline underline-offset-4 hover:text-evergreen">
-                  Jacob Jones
-                </Link>
-                , Registered Psychologist
-              </span>
-              <span className="opacity-40">·</span>
               <span>{post.readTime}</span>
               <span className="opacity-40">·</span>
               <span>Published {post.publishedLabel}</span>
@@ -285,6 +278,82 @@ function RelatedPosts({ posts }: { posts: PostMeta[] }) {
             </Reveal>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+function AuthorBox() {
+  return (
+    <section className="relative bg-paper text-ink pb-16 md:pb-20">
+      <div className="edge mx-auto max-w-[86rem]">
+        <Reveal>
+          <div className="rounded-[16px] border border-hairline bg-paper-soft p-7 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-start">
+              <div className="md:col-span-4 lg:col-span-3">
+                <div className="relative aspect-[4/5] w-full max-w-[240px] overflow-hidden rounded-[14px] bg-linen">
+                  <Image
+                    src="/img/jacob.webp"
+                    alt="Jacob Jones, registered psychologist and founder of Sage Psychological Services in East Fremantle"
+                    fill
+                    sizes="(min-width: 768px) 240px, 60vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
+
+              <div className="md:col-span-8 lg:col-span-9 min-w-0">
+                <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                  About the author
+                </div>
+                <h2
+                  className="mt-4 leading-[1.05]"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "clamp(1.75rem, 2.6vw, 2.4rem)",
+                    letterSpacing: "-0.015em",
+                  }}
+                >
+                  Jacob Jones
+                </h2>
+                <div className="mt-3 text-[0.95rem] text-moss leading-snug">
+                  Registered Psychologist · BA (Psychology), GradDip
+                  (Psychology) · AHPRA PSY0002462461
+                </div>
+
+                <div className="mt-6 body-lede prose-sage max-w-[62ch]">
+                  <p>
+                    Jacob is a registered psychologist and founder of Sage
+                    Psychological Services in East Fremantle, Western
+                    Australia. He works with adults across{" "}
+                    <Link href="/anxiety-therapy-perth">anxiety</Link>,{" "}
+                    <Link href="/trauma-therapy-perth">trauma</Link>,{" "}
+                    <Link href="/depression-counselling-perth">
+                      depression
+                    </Link>
+                    , addiction and grief, with particular expertise in
+                    psychodynamic approaches and evidence-based therapies
+                    including{" "}
+                    <Link href="/cbt-therapy-perth">CBT</Link> and{" "}
+                    <Link href="/emdr-therapy-perth">EMDR</Link>.
+                  </p>
+                </div>
+
+                <div className="mt-7">
+                  <Link
+                    href="/about"
+                    className="inline-flex items-center gap-2 text-moss text-[0.85rem] tracking-[0.2em] uppercase group"
+                  >
+                    <span>More about Jacob</span>
+                    <span className="transition-transform group-hover:translate-x-1">
+                      <Arrow />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

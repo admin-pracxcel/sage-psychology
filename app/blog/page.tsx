@@ -93,7 +93,7 @@ function AllPosts() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Written by <span className="serif-italic">Jacob</span>.
+              Recent <span className="serif-italic">writing</span>.
             </h2>
           </Reveal>
         </div>

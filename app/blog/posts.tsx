@@ -152,7 +152,7 @@ export const POSTS: PostMeta[] = [
     title: "What Is CBT and How Does It Help Anxiety?",
     metaTitle: "What Is CBT and How Does It Help Anxiety? | Sage",
     metaDescription:
-      "A plain-English explanation of Cognitive Behaviour Therapy, how it works for anxiety, and what actually happens in a CBT session. Written by a registered psychologist.",
+      "A plain-English explanation of Cognitive Behaviour Therapy, how it works for anxiety, and what actually happens in a CBT session.",
     category: "Anxiety & CBT",
     categoryHref: "/anxiety-therapy-perth",
     readTime: "7 min read",
@@ -299,7 +299,7 @@ export const POSTS: PostMeta[] = [
     title: "What Is EMDR Therapy and How Does It Work?",
     metaTitle: "What Is EMDR Therapy and How Does It Work? | Sage",
     metaDescription:
-      "A clear explanation of EMDR therapy: what it is, the eight phases, what a session actually feels like, and what it treats. Written by a registered psychologist.",
+      "A clear explanation of EMDR therapy: what it is, the eight phases, what a session actually feels like, and what it treats.",
     category: "Trauma & EMDR",
     categoryHref: "/emdr-therapy-perth",
     readTime: "8 min read",
