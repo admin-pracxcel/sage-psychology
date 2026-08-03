@@ -23,6 +23,14 @@ export const metadata: Metadata = {
   description:
     "Compassionate, evidence-based psychology in East Fremantle for adults. Registered psychologist Jacob Jones offers CBT, EMDR and more. Medicare rebates available. Book today.",
   metadataBase: new URL("https://www.sagepsychservices.com.au"),
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
     title: "Psychologist East Fremantle | Sage Psychological Services",
     description:
