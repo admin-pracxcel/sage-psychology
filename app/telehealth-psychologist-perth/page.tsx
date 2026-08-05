@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Telehealth Psychology Perth | Online Sessions | Sage",
@@ -681,6 +683,10 @@ function BookTelehealthCTA() {
 export default function TelehealthPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Telehealth Psychology", url: "/telehealth-psychologist-perth" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <TelehealthHero />

@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About Jacob Jones | Registered Psychologist, East Fremantle",
@@ -573,6 +575,10 @@ function WorkWithJacob() {
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "About Jacob Jones", url: "/about" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <AboutHero />

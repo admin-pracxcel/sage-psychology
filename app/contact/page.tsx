@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import ContactForm from "./ContactForm";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Contact Sage Psychological Services | East Fremantle",
@@ -403,6 +405,10 @@ function NotSureWhereToStart() {
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Contact", url: "/contact" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <ContactHero />

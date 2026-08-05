@@ -3,6 +3,8 @@ import Script from "next/script";
 import { Instrument_Serif, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import AttributionCapture from "@/components/AttributionCapture";
+import { JsonLd } from "@/components/JsonLd";
+import { rootGraph } from "@/lib/schema";
 
 const GTM_ID = "GTM-MB38CTSP";
 const CLARITY_ID = "xxhczhamhl";
@@ -40,6 +42,22 @@ export const metadata: Metadata = {
       "Evidence-based, individualised therapy for adults navigating anxiety, trauma, and life's harder chapters.",
     type: "website",
     locale: "en_AU",
+    siteName: "Sage Psychological Services",
+    images: [
+      {
+        url: "/img/sage-psychology-practice.webp",
+        width: 1200,
+        height: 630,
+        alt: "Sage Psychological Services practice in East Fremantle",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Psychologist East Fremantle | Sage Psychological Services",
+    description:
+      "Evidence-based, individualised therapy for adults navigating anxiety, trauma, and life's harder chapters.",
+    images: ["/img/sage-psychology-practice.webp"],
   },
 };
 
@@ -68,6 +86,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         </Script>
       </head>
       <body>
+        <JsonLd data={rootGraph} />
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}

@@ -8,6 +8,8 @@ import { Arrow } from "@/components/Icons";
 import ConditionsSlider, {
   type ConditionCard,
 } from "@/components/ConditionsSlider";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "EMDR Therapy Perth | Trauma Treatment | Sage Psychological",
@@ -482,6 +484,10 @@ function EnquireEmdr() {
 export default function EmdrTherapyPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "EMDR Therapy", url: "/emdr-therapy-perth" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <EmdrHero />

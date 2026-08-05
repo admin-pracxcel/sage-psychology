@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Fees & Medicare Rebates | Sage Psychological Services",
@@ -529,6 +531,10 @@ function ReadyToBegin() {
 export default function FeesPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Fees & Rebates", url: "/fees" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <FeesHero />

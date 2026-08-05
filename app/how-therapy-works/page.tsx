@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "What to Expect | Your First Session | Sage Psychological",
@@ -361,6 +363,10 @@ function ReadyWhenYouAre() {
 export default function HowTherapyWorksPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "How Therapy Works", url: "/how-therapy-works" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <Hero />

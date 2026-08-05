@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Anxiety Therapy Perth | Anxiety Psychologist | Sage",
@@ -479,6 +481,10 @@ function FirstStepAnxiety() {
 export default function AnxietyTherapyPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Anxiety Therapy", url: "/anxiety-therapy-perth" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <AnxietyHero />

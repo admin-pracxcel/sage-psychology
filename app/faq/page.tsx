@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import FaqAccordion, { type FaqItem } from "./FaqAccordion";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "FAQ | Fees, Referrals & Appointments | Sage Psychological",
@@ -489,6 +491,10 @@ function FaqSchema() {
 export default function FaqPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "FAQ", url: "/faq" },
+      ])} />
       <FaqSchema />
       <Header alwaysSolid />
       <main>

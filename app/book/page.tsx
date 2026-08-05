@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Book an Appointment | Sage Psychological Services",
@@ -361,6 +363,10 @@ function PreferToSpeak() {
 export default function BookPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Book", url: "/book" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <BookHero />

@@ -3,6 +3,8 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Sage Psychological Services",
@@ -250,6 +252,10 @@ function Body() {
 export default function TermsPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Terms of Service", url: "/terms" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <Hero />

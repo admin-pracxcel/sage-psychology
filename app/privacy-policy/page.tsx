@@ -3,6 +3,8 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Sage Psychological Services",
@@ -370,6 +372,10 @@ function SectionHeading({
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Privacy Policy", url: "/privacy-policy" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <Hero />

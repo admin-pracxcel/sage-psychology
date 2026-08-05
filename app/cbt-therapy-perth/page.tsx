@@ -8,6 +8,8 @@ import { Arrow } from "@/components/Icons";
 import ConditionsSlider, {
   type ConditionCard,
 } from "@/components/ConditionsSlider";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "CBT Therapy Perth | Cognitive Behaviour Therapy | Sage",
@@ -505,6 +507,10 @@ function BeginCbt() {
 export default function CbtTherapyPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "CBT Therapy", url: "/cbt-therapy-perth" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <CbtHero />

@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import { POSTS } from "@/app/blog/posts";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Psychology Blog | Mental Health Insights | Sage",
@@ -234,6 +236,10 @@ function WhenReadingIsNotEnough() {
 export default function BlogPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Blog", url: "/blog" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <Hero />

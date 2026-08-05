@@ -5,9 +5,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Trauma Therapy Perth | Trauma Counselling | Sage Psychological",
+  title: "Trauma Therapy Perth | Trauma Counselling | Sage",
   description:
     "Compassionate, evidence-based trauma therapy in East Fremantle with registered psychologist Jacob Jones, including EMDR. Support for PTSD and distressing experiences.",
 };
@@ -466,6 +468,10 @@ function BeginTrauma() {
 export default function TraumaTherapyPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Trauma Therapy", url: "/trauma-therapy-perth" },
+      ])} />
       <Header alwaysSolid />
       <main>
         <TraumaHero />
