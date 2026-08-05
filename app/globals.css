@@ -60,6 +60,13 @@ body {
   line-height: 1.55;
 }
 
+/* Reserve room for the mobile action bar so fixed footer CTAs don't sit under it */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(76px + env(safe-area-inset-bottom));
+  }
+}
+
 /* ─── Type scale ─────────────────────────────────────────── */
 
 .display-xl {

@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Instrument_Serif, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import AttributionCapture from "@/components/AttributionCapture";
+import MobileActionBar from "@/components/MobileActionBar";
 import { JsonLd } from "@/components/JsonLd";
 import { rootGraph } from "@/lib/schema";
 
@@ -97,6 +98,7 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         </noscript>
         <AttributionCapture />
         {children}
+        <MobileActionBar />
       </body>
     </html>
   );
