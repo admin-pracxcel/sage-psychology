@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Psychologist East Fremantle | Sage Psychological Services",
   description:
     "Compassionate, evidence-based psychology in East Fremantle for adults. Registered psychologist Jacob Jones offers CBT, EMDR and more. Medicare rebates available. Book today.",
-  metadataBase: new URL("https://www.sagepsychservices.com.au"),
+  metadataBase: new URL("https://sagepsychservices.com.au"),
   icons: {
     icon: [
       { url: "/img/sage-favicon.webp", type: "image/webp" },

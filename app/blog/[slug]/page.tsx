@@ -20,13 +20,13 @@ export async function generateMetadata({
   return {
     title: post.metaTitle,
     description: post.metaDescription,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `/blog/${post.slug}/` },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
       type: "article",
       publishedTime: post.publishedAt,
-      url: `${SITE_URL}/blog/${post.slug}`,
+      url: `${SITE_URL}/blog/${post.slug}/`,
       images: [
         {
           url: post.image,
@@ -54,13 +54,13 @@ export default async function BlogPostPage({
     description: post.metaDescription,
     image: post.image,
     datePublished: post.publishedAt,
-    url: `/blog/${post.slug}`,
+    url: `/blog/${post.slug}/`,
   });
 
   const crumbs = breadcrumbSchema([
     { name: "Home", url: "/" },
-    { name: "Blog", url: "/blog" },
-    { name: post.title, url: `/blog/${post.slug}` },
+    { name: "Blog", url: "/blog/" },
+    { name: post.title, url: `/blog/${post.slug}/` },
   ]);
 
   return (

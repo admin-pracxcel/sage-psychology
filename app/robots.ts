@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const SITE = "https://www.sagepsychservices.com.au";
+import { SITE_URL } from "@/lib/schema";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,10 +7,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/contact-thank-you", "/booking-thank-you", "/api/"],
+        disallow: ["/contact-thank-you/", "/booking-thank-you/", "/api/"],
       },
     ],
-    sitemap: `${SITE}/sitemap.xml`,
-    host: SITE,
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }

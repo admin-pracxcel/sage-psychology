@@ -1,4 +1,4 @@
-export const SITE_URL = "https://www.sagepsychservices.com.au";
+export const SITE_URL = "https://sagepsychservices.com.au";
 
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const PLACE_ID = `${SITE_URL}/#place`;
@@ -74,7 +74,7 @@ export const personSchema = {
     "Trauma",
     "Depression",
   ],
-  url: `${SITE_URL}/about`,
+  url: `${SITE_URL}/about/`,
   image: `${SITE_URL}/img/jacob.webp`,
 };
 
@@ -94,16 +94,27 @@ export const rootGraph = {
 
 export type Crumb = { name: string; url: string };
 
+function withTrailingSlash(path: string): string {
+  if (path.startsWith("http")) return path;
+  if (path === "/" || path.endsWith("/")) return path;
+  return `${path}/`;
+}
+
 export function breadcrumbSchema(crumbs: Crumb[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: crumbs.map((c, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: c.name,
-      item: c.url.startsWith("http") ? c.url : `${SITE_URL}${c.url}`,
-    })),
+    itemListElement: crumbs.map((c, i) => {
+      const normalised = withTrailingSlash(c.url);
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name: c.name,
+        item: normalised.startsWith("http")
+          ? normalised
+          : `${SITE_URL}${normalised}`,
+      };
+    }),
   };
 }
 
@@ -130,7 +141,9 @@ export function articleSchema(opts: {
     publisher: { "@id": ORG_ID },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": opts.url.startsWith("http") ? opts.url : `${SITE_URL}${opts.url}`,
+      "@id": opts.url.startsWith("http")
+        ? opts.url
+        : `${SITE_URL}${withTrailingSlash(opts.url)}`,
     },
     inLanguage: "en-AU",
   };
