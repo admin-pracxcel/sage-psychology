@@ -35,20 +35,19 @@ declare global {
 }
 
 function formatPerthDate() {
-  const parts = new Intl.DateTimeFormat("en-AU", {
+  const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "Australia/Perth",
     year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
     minute: "2-digit",
-    second: "2-digit",
-    hour12: false,
+    hour12: true,
   }).formatToParts(new Date());
   const get = (t: string) => parts.find((p) => p.type === t)?.value ?? "";
-  return `${get("year")}-${get("month")}-${get("day")}T${get("hour")}:${get(
+  return `${get("month")} ${get("day")}, ${get("year")} at ${get("hour")}:${get(
     "minute"
-  )}:${get("second")}+08:00`;
+  )} ${get("dayPeriod")}`;
 }
 
 function getRecaptchaToken(): Promise<string> {
