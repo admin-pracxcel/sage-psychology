@@ -142,7 +142,7 @@ function BeforeAppointment() {
 
 function NeedToChange() {
   return (
-    <section className="relative bg-paper text-ink stack-y">
+    <section className="relative bg-paper text-ink stack-y border-b border-hairline">
       <div className="edge mx-auto max-w-[68rem] text-center">
         <Reveal>
           <h2

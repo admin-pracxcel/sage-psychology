@@ -48,6 +48,8 @@ const cols: { heading: string; items: { label: string; href: string }[] }[] = [
       { label: "How therapy works", href: "/how-therapy-works" },
       { label: "Fees & rebates", href: "/fees" },
       { label: "FAQ", href: "/faq" },
+      { label: "Privacy", href: "/privacy-policy" },
+      { label: "Terms", href: "/terms" },
     ],
   },
   {
@@ -135,13 +137,16 @@ export default function Footer() {
             </span>
             <span>Jacob Jones · Registered Psychologist · AHPRA PSY0002462461</span>
           </div>
-          <div className="flex gap-6">
-            <Link href="/privacy-policy" className="link">
-              Privacy
-            </Link>
-            <Link href="/terms" className="link">
-              Terms
-            </Link>
+          <div className="opacity-70">
+            Web Design & Digital Marketing by{" "}
+            <a
+              href="https://pracxcel.com.au/"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="link font-medium"
+            >
+              Pracxcel
+            </a>
           </div>
         </div>
       </div>

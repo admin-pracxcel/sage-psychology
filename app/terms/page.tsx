@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: "Terms of Service | Sage Psychological Services",
   description:
     "Terms governing appointments, fees, cancellations and use of the Sage Psychological Services website.",
-  robots: { index: false, follow: true },
 };
 
 const SECTIONS = [

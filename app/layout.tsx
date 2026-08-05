@@ -34,14 +34,6 @@ export const metadata: Metadata = {
     shortcut: "/img/sage-favicon.webp",
     apple: "/img/sage-favicon.webp",
   },
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-    },
-  },
   openGraph: {
     title: "Psychologist East Fremantle | Sage Psychological Services",
     description:

@@ -153,7 +153,7 @@ function WhileYouWait() {
 
 function CrisisBlock() {
   return (
-    <section className="relative bg-paper text-ink stack-y">
+    <section className="relative bg-paper text-ink stack-y border-b border-hairline">
       <div className="edge mx-auto max-w-[68rem]">
         <div className="rounded-[16px] border border-moss/40 bg-paper-soft p-8 md:p-12">
           <Reveal>
