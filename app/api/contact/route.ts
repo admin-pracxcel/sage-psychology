@@ -4,6 +4,43 @@ export const runtime = "nodejs";
 
 const SCORE_THRESHOLD = 0.5;
 
+function getClientIp(request: Request): string | null {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) return forwarded.split(",")[0]?.trim() || null;
+  const real = request.headers.get("x-real-ip");
+  if (real) return real.trim();
+  return null;
+}
+
+async function lookupCountry(
+  ip: string | null
+): Promise<{ leadCountry: string | null; leadCountryCode: string | null }> {
+  if (!ip) return { leadCountry: null, leadCountryCode: null };
+  try {
+    const res = await fetch(
+      `http://ip-api.com/json/${encodeURIComponent(
+        ip
+      )}?fields=status,country,countryCode`,
+      { signal: AbortSignal.timeout(2000) }
+    );
+    if (!res.ok) return { leadCountry: null, leadCountryCode: null };
+    const data = (await res.json()) as {
+      status?: string;
+      country?: string;
+      countryCode?: string;
+    };
+    if (data.status !== "success") {
+      return { leadCountry: null, leadCountryCode: null };
+    }
+    return {
+      leadCountry: data.country ?? null,
+      leadCountryCode: data.countryCode ?? null,
+    };
+  } catch {
+    return { leadCountry: null, leadCountryCode: null };
+  }
+}
+
 export async function POST(request: Request) {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
   const webhookUrl = process.env.N8N_CONTACT_WEBHOOK_URL;
@@ -61,8 +98,14 @@ export async function POST(request: Request) {
   const { recaptchaToken: _t, ...forwardedPayload } = body;
   void _t;
 
+  const ip = getClientIp(request);
+  const { leadCountry, leadCountryCode } = await lookupCountry(ip);
+
   const forwardPayload = {
     ...forwardedPayload,
+    leadCountry,
+    leadCountryCode,
+    leadIp: ip,
     recaptchaScore: verifyData.score,
   };
 

@@ -98,17 +98,30 @@ export function captureFirstTouch(): void {
   if (typeof window === "undefined") return;
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
+    const current = readCurrentTouch();
+    const currentHasValue = hasAnyValue(current);
+
     if (raw) {
       const existing = JSON.parse(raw) as TouchData;
-      if (existing.capturedAt && !isExpired(existing.capturedAt)) return;
-    }
-    const current = readCurrentTouch();
-    if (!hasAnyValue(current)) {
-      if (!raw) {
+      const existingFresh =
+        existing.capturedAt && !isExpired(existing.capturedAt);
+      const existingHasValue = hasAnyValue(existing);
+
+      // Keep the real first-touch: never overwrite a fresh record that
+      // already has attribution values.
+      if (existingFresh && existingHasValue) return;
+
+      // Upgrade an empty prior record if the current visit has attribution.
+      if (existingFresh && !existingHasValue && currentHasValue) {
         window.localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+        return;
       }
-      return;
+
+      // Fresh but empty, and current is also empty → leave as is.
+      if (existingFresh && !existingHasValue && !currentHasValue) return;
     }
+
+    // No record yet, or the existing one has expired — store current.
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
   } catch {
     /* localStorage unavailable — silent */

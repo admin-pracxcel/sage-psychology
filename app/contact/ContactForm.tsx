@@ -86,15 +86,21 @@ export default function ContactForm() {
       const recaptchaToken = await getRecaptchaToken();
       const attribution = readAttribution();
 
+      const clientTimezone =
+        Intl.DateTimeFormat().resolvedOptions().timeZone ?? null;
+      const clientLocale =
+        (typeof navigator !== "undefined" && navigator.language) || null;
+
       const payload = {
         firstName: state.firstName.trim(),
         lastName: state.lastName.trim(),
         email: state.email.trim(),
         phone: state.phone.trim(),
         message: state.message.trim(),
-        leadCountry: "Australia",
         leadSource: attribution.leadSource,
         leadDatePerth: formatPerthDate(),
+        clientTimezone,
+        clientLocale,
         attribution: attribution.attribution,
         recaptchaToken,
       };
