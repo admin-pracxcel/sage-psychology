@@ -85,6 +85,11 @@ t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "${CLARITY_ID}");`}
         </Script>
+        <Script
+          id="callrail-swap"
+          src="//cdn.callrail.com/companies/510483298/fef2ebf7722805023e53/12/swap.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body>
         <JsonLd data={rootGraph} />
