@@ -4,7 +4,7 @@ import { Arrow } from "./Icons";
 const NBSP = " ";
 
 const HEADLINE_LINES: string[][] = [
-  ["Psychology", "in", "East"],
+  ["Psychology", "in"],
   ["Fremantle,"],
   ["Built", "Around", "You."],
 ];

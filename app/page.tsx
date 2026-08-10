@@ -11,7 +11,7 @@ import SectionClosing from "@/components/SectionClosing";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Psychologist East Fremantle | Sage Psychological Services",
+  title: "Psychologist Fremantle | Sage Psychological Services",
   description:
     "Compassionate, evidence-based psychology in East Fremantle for adults. Registered psychologist Jacob Jones offers CBT, EMDR and more. Medicare rebates available.",
   alternates: { canonical: "/" },
