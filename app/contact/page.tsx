@@ -313,13 +313,13 @@ function GettingHere() {
 
           <div className="lg:col-span-7 min-h-[380px] rounded-[16px] overflow-hidden border border-ink/8">
             <iframe
-              src="https://www.google.com/maps?q=7B+Silas+Street,+East+Fremantle+WA+6158&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.3511752519075!2d115.7639976!3d-32.04207529999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a3f56b6e453d%3A0x8d1b1ffa8b307549!2sSage%20Psychological%20Services!5e0!3m2!1sen!2sin!4v1786587009169!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "380px" }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
               title="Sage Psychological Services on Google Maps"
             />
           </div>
