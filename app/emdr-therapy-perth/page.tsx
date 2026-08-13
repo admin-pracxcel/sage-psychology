@@ -9,7 +9,7 @@ import ConditionsSlider, {
   type ConditionCard,
 } from "@/components/ConditionsSlider";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "EMDR Therapy Perth | Trauma Treatment | Sage Psychological",
@@ -488,6 +488,15 @@ export default function EmdrTherapyPage() {
         { name: "Home", url: "/" },
         { name: "EMDR Therapy", url: "/emdr-therapy-perth" },
       ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          path: "/emdr-therapy-perth",
+          name: "EMDR Therapy in Perth",
+          description:
+            "EMDR therapy for trauma and distressing memories, with a registered psychologist in East Fremantle.",
+          therapy: "Eye Movement Desensitisation and Reprocessing",
+        })}
+      />
       <Header alwaysSolid />
       <main>
         <EmdrHero />

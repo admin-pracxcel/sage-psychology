@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Depression Counselling Perth | Sage Psychological Services",
@@ -607,6 +607,15 @@ export default function DepressionCounsellingPage() {
         { name: "Home", url: "/" },
         { name: "Depression Counselling", url: "/depression-counselling-perth" },
       ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          path: "/depression-counselling-perth",
+          name: "Depression Counselling in Perth",
+          description:
+            "Compassionate psychology for adults living with depression and low mood, in East Fremantle.",
+          therapy: "Depression Counselling",
+        })}
+      />
       <Header alwaysSolid />
       <main>
         <DepressionHero />

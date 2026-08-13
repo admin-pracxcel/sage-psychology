@@ -4,8 +4,6 @@ import { Instrument_Serif, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import AttributionCapture from "@/components/AttributionCapture";
 import MobileActionBar from "@/components/MobileActionBar";
-import { JsonLd } from "@/components/JsonLd";
-import { rootGraph } from "@/lib/schema";
 
 const GTM_ID = "GTM-MB38CTSP";
 const CLARITY_ID = "xxhczhamhl";
@@ -92,7 +90,6 @@ y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         />
       </head>
       <body>
-        <JsonLd data={rootGraph} />
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}

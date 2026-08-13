@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Trauma Therapy Perth | Trauma Counselling | Sage",
@@ -472,6 +472,15 @@ export default function TraumaTherapyPage() {
         { name: "Home", url: "/" },
         { name: "Trauma Therapy", url: "/trauma-therapy-perth" },
       ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          path: "/trauma-therapy-perth",
+          name: "Trauma Therapy in Perth",
+          description:
+            "Trauma-informed psychology for adults, drawing on EMDR and psychodynamic approaches, in East Fremantle.",
+          therapy: "Trauma Therapy",
+        })}
+      />
       <Header alwaysSolid />
       <main>
         <TraumaHero />

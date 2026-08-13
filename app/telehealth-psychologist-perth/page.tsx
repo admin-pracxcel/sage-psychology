@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Telehealth Psychology Perth | Online Sessions | Sage",
@@ -687,6 +687,15 @@ export default function TelehealthPage() {
         { name: "Home", url: "/" },
         { name: "Telehealth Psychology", url: "/telehealth-psychologist-perth" },
       ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          path: "/telehealth-psychologist-perth",
+          name: "Telehealth Psychology in Perth",
+          description:
+            "Secure video psychology sessions for adults across Western Australia, with a registered psychologist based in East Fremantle.",
+          therapy: "Telehealth Psychology",
+        })}
+      />
       <Header alwaysSolid />
       <main>
         <TelehealthHero />

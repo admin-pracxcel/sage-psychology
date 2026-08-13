@@ -9,7 +9,7 @@ import ConditionsSlider, {
   type ConditionCard,
 } from "@/components/ConditionsSlider";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "CBT Therapy Perth | Cognitive Behaviour Therapy | Sage",
@@ -511,6 +511,15 @@ export default function CbtTherapyPage() {
         { name: "Home", url: "/" },
         { name: "CBT Therapy", url: "/cbt-therapy-perth" },
       ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          path: "/cbt-therapy-perth",
+          name: "CBT Therapy in Perth",
+          description:
+            "Evidence-based Cognitive Behaviour Therapy for adults in East Fremantle, for anxiety, low mood and stress.",
+          therapy: "Cognitive Behaviour Therapy",
+        })}
+      />
       <Header alwaysSolid />
       <main>
         <CbtHero />

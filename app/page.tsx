@@ -9,6 +9,8 @@ import SectionWhySage from "@/components/SectionWhySage";
 import SectionLocation from "@/components/SectionLocation";
 import SectionClosing from "@/components/SectionClosing";
 import Footer from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { practiceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Psychologist Fremantle | Sage Psychological Services",
@@ -32,6 +34,7 @@ export default function Home() {
         <SectionClosing />
       </main>
       <Footer />
+      <JsonLd data={practiceSchema} />
     </>
   );
 }

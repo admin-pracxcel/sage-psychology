@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import FaqAccordion, { type FaqItem } from "./FaqAccordion";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, SITE_URL } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "FAQ | Fees, Referrals & Appointments | Sage Psychological",
@@ -474,6 +474,8 @@ function FaqSchema() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${SITE_URL}/faq/#faqpage`,
+    url: `${SITE_URL}/faq/`,
     mainEntity: all.map((i) => ({
       "@type": "Question",
       name: i.q,

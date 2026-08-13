@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Anxiety Therapy Perth | Anxiety Psychologist | Sage",
@@ -485,6 +485,15 @@ export default function AnxietyTherapyPage() {
         { name: "Home", url: "/" },
         { name: "Anxiety Therapy", url: "/anxiety-therapy-perth" },
       ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          path: "/anxiety-therapy-perth",
+          name: "Anxiety Therapy in Perth",
+          description:
+            "Evidence-based therapy for anxiety, panic and worry, with a registered psychologist in East Fremantle.",
+          therapy: "Anxiety Therapy",
+        })}
+      />
       <Header alwaysSolid />
       <main>
         <AnxietyHero />
