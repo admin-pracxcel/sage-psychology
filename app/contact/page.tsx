@@ -115,6 +115,26 @@ function IconPhone({ className = "" }: { className?: string }) {
   );
 }
 
+function IconMail({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="22"
+      height="22"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </svg>
+  );
+}
+
 function IconClock({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -209,6 +229,25 @@ function ContactDetails() {
               </Reveal>
 
               <Reveal delay={240}>
+                <div className="flex gap-4 items-start">
+                  <div className="mt-1 text-moss shrink-0">
+                    <IconMail />
+                  </div>
+                  <div>
+                    <div className="text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                      Email
+                    </div>
+                    <a
+                      href="mailto:info@sagepsychservices.com.au"
+                      className="mt-2 block text-[1.05rem] md:text-[1.15rem] leading-snug hover:text-evergreen"
+                    >
+                      info@sagepsychservices.com.au
+                    </a>
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={300}>
                 <div className="flex gap-4 items-start">
                   <div className="mt-1 text-moss shrink-0">
                     <IconClock />

@@ -7,7 +7,7 @@ Single source of truth for anything appearing on more than one page. Read from h
 - Name: Sage Psychological Services
 - Address: 7B Silas Street, East Fremantle, WA 6158 (within Silas Street Specialists)
 - Phone: 0480 425 776
-- Email: TODO. Jacob is creating a new tracked business address and hiding the original. Do not publish an email until confirmed.
+- Email: info@sagepsychservices.com.au
 - Hours: Flexible. TODO. Get concrete days and times before publishing structured `openingHoursSpecification`.
 - Founded: 2023
 - Time zone: AWST

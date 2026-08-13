@@ -21,6 +21,26 @@ function IconPin({ className = "" }: { className?: string }) {
   );
 }
 
+function IconMail({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </svg>
+  );
+}
+
 function IconPhone({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -108,6 +128,15 @@ export default function Footer() {
                 className="font-medium hover:text-evergreen transition-colors"
               >
                 0480 425 776
+              </a>
+            </div>
+            <div className="mt-3 flex items-center gap-3 text-[1rem]">
+              <IconMail className="shrink-0 text-moss" />
+              <a
+                href="mailto:info@sagepsychservices.com.au"
+                className="font-medium hover:text-evergreen transition-colors"
+              >
+                info@sagepsychservices.com.au
               </a>
             </div>
           </div>
