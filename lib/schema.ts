@@ -77,7 +77,7 @@ export const organizationSchema = {
   "@id": ORG_ID,
   name: "Sage Psychological Services",
   url: SITE_URL,
-  telephone: "+61480425776",
+  telephone: "+61 8 6801 1041",
   image: `${SITE_URL}/img/sage-psychology-practice.webp`,
   logo: `${SITE_URL}/logo.webp`,
   priceRange: "$$",

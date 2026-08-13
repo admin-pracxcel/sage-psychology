@@ -63,7 +63,7 @@ const ITEMS: {
   icon: () => React.ReactElement;
   external?: boolean;
 }[] = [
-  { label: "Call", href: "tel:0480425776", icon: IconPhone },
+  { label: "Call", href: "tel:0868011041", icon: IconPhone },
   {
     label: "Book",
     href: "https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices",

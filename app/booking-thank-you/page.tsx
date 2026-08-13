@@ -165,8 +165,8 @@ function NeedToChange() {
           If your confirmation email does not arrive within a few minutes,
           please check your junk folder. If anything needs adjusting, or you
           have a question before your appointment, call{" "}
-          <a href="tel:0480425776" className="link" data-phone>
-            0480 425 776
+          <a href="tel:0868011041" className="link" data-phone>
+            08 6801 1041
           </a>{" "}
           or <Link href="/contact">get in touch</Link> and we will sort it
           out.

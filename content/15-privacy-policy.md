@@ -109,7 +109,7 @@ In limited circumstances, access may be refused where providing it would pose a 
 
 If you have a question about this policy, or a concern about how your information has been handled, please contact the practice in the first instance so we can address it directly.
 
-Sage Psychological Services, 7B Silas Street, East Fremantle WA 6158. Phone 0480 425 776.
+Sage Psychological Services, 7B Silas Street, East Fremantle WA 6158. Phone 08 6801 1041.
 
 If you are not satisfied with our response, you may lodge a complaint with the Office of the Australian Information Commissioner at oaic.gov.au or on 1300 363 992.
 

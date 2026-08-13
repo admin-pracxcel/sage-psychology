@@ -303,8 +303,8 @@ function Body() {
                 <p>
                   Sage Psychological Services, 7B Silas Street, East Fremantle
                   WA 6158. Phone{" "}
-                  <a href="tel:0480425776" className="link" data-phone>
-                    0480 425 776
+                  <a href="tel:0868011041" className="link" data-phone>
+                    08 6801 1041
                   </a>
                   .
                 </p>

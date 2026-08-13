@@ -130,7 +130,7 @@ export default function ContactForm() {
       const message =
         err instanceof Error ? err.message : "Unknown error.";
       setError(
-        `Something went wrong sending your message: ${message}. Please try again, or call 0480 425 776 if the problem persists.`
+        `Something went wrong sending your message: ${message}. Please try again, or call 08 6801 1041 if the problem persists.`
       );
     }
   }
