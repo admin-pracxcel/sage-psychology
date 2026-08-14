@@ -124,10 +124,10 @@ export default function Footer() {
             <div className="mt-5 flex items-center gap-3 text-[1rem]">
               <IconPhone className="shrink-0 text-moss" />
               <a
-                href="tel:0868011041"
+                href="tel:0480425776"
                 className="font-medium hover:text-evergreen transition-colors"
               >
-                08 6801 1041
+                0480 425 776
               </a>
             </div>
             <div className="mt-3 flex items-center gap-3 text-[1rem]">

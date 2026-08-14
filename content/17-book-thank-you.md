@@ -42,7 +42,7 @@ A few things worth doing in the meantime:
 
 **Need to Change Something?**
 
-If your confirmation email does not arrive within a few minutes, please check your junk folder. If anything needs adjusting, or you have a question before your appointment, call 08 6801 1041 or <u>get in touch</u> \[/contact\] and we will sort it out.
+If your confirmation email does not arrive within a few minutes, please check your junk folder. If anything needs adjusting, or you have a question before your appointment, call 0480 425 776 or <u>get in touch</u> \[/contact\] and we will sort it out.
 
 **\[ Secondary link: Return to homepage \]**
 

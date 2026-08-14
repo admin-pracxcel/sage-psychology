@@ -62,8 +62,8 @@ function BookHero() {
               <a href="#booking" className="btn btn-primary">
                 Choose a time below <Arrow />
               </a>
-              <a href="tel:0868011041" className="btn btn-ghost" data-phone>
-                Prefer to call? 08 6801 1041
+              <a href="tel:0480425776" className="btn btn-ghost" data-phone>
+                Prefer to call? 0480 425 776
               </a>
             </div>
           </Reveal>
@@ -124,8 +124,8 @@ function BookingWidget() {
                 Power Diary is live.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <a href="tel:0868011041" className="btn btn-primary" data-phone>
-                  Call to book · 08 6801 1041 <Arrow />
+                <a href="tel:0480425776" className="btn btn-primary" data-phone>
+                  Call to book · 0480 425 776 <Arrow />
                 </a>
                 <Link href="/contact" className="btn btn-ghost">
                   Enquire instead
@@ -336,8 +336,8 @@ function PreferToSpeak() {
           If you would rather ask a question before booking, or you cannot
           find a suitable time, please <Link href="/contact">get in touch</Link>{" "}
           or call{" "}
-          <a href="tel:0868011041" className="link" data-phone>
-            08 6801 1041
+          <a href="tel:0480425776" className="link" data-phone>
+            0480 425 776
           </a>
           . Jacob also offers{" "}
           <Link href="/telehealth-psychologist-perth">

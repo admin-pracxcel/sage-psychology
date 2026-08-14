@@ -21,7 +21,7 @@
 
 **HERO BANNER, call-to-action buttons**
 
-\[ Primary button: **Choose a Time Below** \] \[ Secondary button: **Prefer to Call? 08 6801 1041** \]
+\[ Primary button: **Choose a Time Below** \] \[ Secondary button: **Prefer to Call? 0480 425 776** \]
 
 **SECTION 1, Booking widget (H2 + embed spec)**
 
@@ -55,7 +55,7 @@ Once your booking is confirmed, you will receive an email with the practice addr
 
 **Prefer to Speak to Someone First?**
 
-If you would rather ask a question before booking, or you cannot find a suitable time, please <u>get in touch</u> or call 08 6801 1041. Jacob also offers <u>telehealth appointments</u> if attending in person is difficult.
+If you would rather ask a question before booking, or you cannot find a suitable time, please <u>get in touch</u> or call 0480 425 776. Jacob also offers <u>telehealth appointments</u> if attending in person is difficult.
 
 **\[ Primary button: Choose a Time \] \[ Secondary button: Get In Touch \]**
 

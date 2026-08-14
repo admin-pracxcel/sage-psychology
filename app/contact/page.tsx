@@ -218,11 +218,11 @@ function ContactDetails() {
                       Phone
                     </div>
                     <a
-                      href="tel:0868011041"
+                      href="tel:0480425776"
                       className="mt-2 block text-[1.05rem] md:text-[1.15rem] leading-snug hover:text-evergreen"
                       data-phone
                     >
-                      08 6801 1041
+                      0480 425 776
                     </a>
                   </div>
                 </div>
@@ -343,8 +343,8 @@ function GettingHere() {
             </Reveal>
             <Reveal delay={260}>
               <div className="mt-10 flex flex-wrap gap-3">
-                <a href="tel:0868011041" className="btn btn-primary">
-                  Call 08 6801 1041 <Arrow />
+                <a href="tel:0480425776" className="btn btn-primary">
+                  Call 0480 425 776 <Arrow />
                 </a>
               </div>
             </Reveal>

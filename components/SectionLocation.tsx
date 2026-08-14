@@ -53,8 +53,8 @@ export default function SectionLocation() {
               delay={140}
               className="mt-10 flex flex-wrap gap-3"
             >
-              <a href="tel:0868011041" className="btn btn-primary">
-                Call 08 6801 1041 <Arrow />
+              <a href="tel:0480425776" className="btn btn-primary">
+                Call 0480 425 776 <Arrow />
               </a>
               <Link
                 href="/telehealth-psychologist-perth"
