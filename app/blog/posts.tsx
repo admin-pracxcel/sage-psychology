@@ -892,38 +892,61 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         here&rsquo;s how the main pathways compare.
       </P>
 
-      <H3>Medicare (Mental Health Care Plan)</H3>
-      <P>
-        You need a GP referral and a Mental Health Care Plan. You can access
-        up to 10 sessions per calendar year. The standard fee at Sage is
-        $180 per session, with a Medicare rebate of $101.55, bringing the
-        out-of-pocket cost down. Full detail is on our{" "}
-        <Link href="/fees">fees and rebates</Link> page.
-      </P>
-
-      <H3>Private health insurance</H3>
-      <P>
-        The rebate amount depends on your fund and level of cover. Check
-        directly with your health fund.
-      </P>
-
-      <H3>DVA (White or Gold Card)</H3>
-      <P>
-        You need a GP referral, and up to 12 initial sessions are available
-        with no out-of-pocket cost for eligible veterans.
-      </P>
-
-      <H3>NDIS, Workers&rsquo; Compensation, or ICWA</H3>
-      <P>
-        Confirm eligibility with the relevant scheme. Fees are set according
-        to each scheme&rsquo;s current fee schedule.
-      </P>
-
-      <H3>Self-funded, no referral needed</H3>
-      <P>
-        You can book directly. The standard session fee is invoiced after
-        each appointment.
-      </P>
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Pathway
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            What you need
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Approximate cost
+          </div>
+        </div>
+        {[
+          [
+            "Medicare (Mental Health Care Plan)",
+            "GP referral and a Mental Health Care Plan, up to 10 sessions per calendar year",
+            "Standard fee around $180 per session, with a Medicare rebate of $101.55, bringing the out-of-pocket cost down",
+          ],
+          [
+            "Private health insurance",
+            "Rebate amount depends on your fund and level of cover",
+            "Check directly with your health fund",
+          ],
+          [
+            "DVA (White or Gold Card)",
+            "GP referral, up to 12 initial sessions",
+            "No out-of-pocket cost for eligible veterans",
+          ],
+          [
+            "NDIS, Workers' Compensation, or ICWA",
+            "Confirm eligibility with the relevant scheme",
+            "Set according to each scheme's current fee schedule",
+          ],
+          [
+            "Self-funded, no referral needed",
+            "Book directly",
+            "Standard session fee, invoiced after each appointment",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
 
       <P>If you&rsquo;re going through Medicare, the process usually looks like this:</P>
       <UL>
