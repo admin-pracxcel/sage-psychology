@@ -721,8 +721,15 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         sticks around most days, often for months at a time.
       </P>
       <P>
-        Around 2.7% of Australians experience GAD in any given year, based on
-        RACGP anxiety management guidance. Anxiety disorders as a group,
+        Around 2.7% of Australians experience GAD in any given year, based on{" "}
+        <a
+          href="https://www.racgp.org.au/getattachment/3d88b156-b93f-40ad-98d1-24ea2b0e63d2/Anxiety-disorders.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RACGP anxiety management guidance
+        </a>
+        . Anxiety disorders as a group,
         which include GAD, social anxiety, and panic disorder, affect an
         estimated 14.4% of the population over a 12-month period, making them
         the most common mental health concern in the country.
@@ -845,10 +852,16 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
 
       <H3>Cognitive Behaviour Therapy</H3>
       <P>
-        <Link href="/cbt-therapy-perth">Cognitive Behaviour Therapy</Link>{" "}
-        (CBT) is one of the treatment options recommended for GAD in
-        Australia, according to healthdirect&rsquo;s guide to treating GAD.
-        CBT helps you notice the thought patterns and behaviours that keep
+        Cognitive Behaviour Therapy (CBT) is one of the treatment options
+        recommended for GAD in Australia, according to{" "}
+        <a
+          href="https://www.healthdirect.gov.au/generalised-anxiety-disorder-gad"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          healthdirect&rsquo;s guide to treating GAD
+        </a>
+        . CBT helps you notice the thought patterns and behaviours that keep
         worry going, then build practical, workable ways to respond
         differently.
       </P>
@@ -856,13 +869,10 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       <H3>EMDR and psychodynamic approaches</H3>
       <P>
         Where anxiety seems connected to past experiences, some psychologists
-        also draw on{" "}
-        <Link href="/emdr-therapy-perth">
-          Eye Movement Desensitisation and Reprocessing
-        </Link>{" "}
-        (EMDR) or psychodynamic approaches, alongside other methods such as
-        Exposure and Response Prevention (ERP), to look at what may be
-        driving the worry underneath the surface symptoms.
+        also draw on Eye Movement Desensitisation and Reprocessing (EMDR) or
+        psychodynamic approaches, alongside other methods such as Exposure
+        and Response Prevention (ERP), to look at what may be driving the
+        worry underneath the surface symptoms.
       </P>
       <P>
         Results vary between individuals, and how someone responds to
@@ -994,14 +1004,8 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
           telehealth across WA
         </Link>
         , or{" "}
-        <Link
-          href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          book a session
-        </Link>{" "}
-        with Jacob when you&rsquo;re ready.
+        <Link href="/contact">book a session with Jacob</Link> when
+        you&rsquo;re ready.
       </P>
 
       <H2>Frequently asked questions</H2>
