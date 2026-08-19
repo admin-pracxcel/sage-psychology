@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -150,6 +151,49 @@ export function ComparisonTable({
 /* ── Metadata for all 11 posts ──────────────────────────────── */
 
 export const POSTS: PostMeta[] = [
+  {
+    slug: "generalised-anxiety-disorder-symptoms-wa",
+    title: "Generalised Anxiety Disorder: When Worry Never Switches Off",
+    metaTitle: "Generalised Anxiety Disorder: 7 Signs and What Helps in WA",
+    metaDescription:
+      "Generalised anxiety disorder makes worry impossible to switch off. See the real symptoms, treatment options, and Medicare rebate costs for support in WA today.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "9 min read",
+    publishedAt: "2026-08-19",
+    publishedLabel: "19 August 2026",
+    image: "/img/generalised-anxiety-disorder-coastal-dawn.webp",
+    imageAlt:
+      "Misty coastal path at dawn evoking calm for generalised anxiety disorder",
+    ctaImage: "/img/anxiety-woman-back-step-morning-coffee.webp",
+    ctaAlt: "Sitting on the back step with a morning coffee",
+    excerpt:
+      "Persistent, hard-to-control worry that won't switch off could be generalised anxiety disorder. Here's how to tell the difference from everyday stress, what treatment involves, and how Medicare rebates work for psychology support in Perth and WA.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "Fees & Rebates", href: "/fees" },
+    ],
+    ctaHeading: (
+      <>
+        When worry <span className="serif-italic">won&rsquo;t switch off</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. If GAD
+        might be part of the picture, a first session is simply a
+        conversation about what has been going on.
+      </>
+    ),
+  },
   {
     slug: "what-is-cbt-anxiety",
     title: "What Is CBT and How Does It Help Anxiety?",
@@ -636,6 +680,309 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "generalised-anxiety-disorder-symptoms-wa": () => (
+    <>
+      <P>
+        Your mind won&rsquo;t settle, even when nothing is actually wrong
+        right now. You lie awake running through tomorrow&rsquo;s problems,
+        then next week&rsquo;s, then ones that may never happen at all.
+      </P>
+      <P>
+        If that sounds familiar, you might be dealing with generalised anxiety
+        disorder, a common and treatable mental health condition that affects
+        how your mind and body respond to everyday life.
+      </P>
+      <P>
+        This article explains what GAD is, how it differs from ordinary
+        stress, what it can look like day to day, and what support is actually
+        available here in Western Australia, including how Medicare rebates
+        work.
+      </P>
+
+      <H2>What is generalised anxiety disorder?</H2>
+      <Callout kicker="Quick answer">
+        <p>
+          Generalised anxiety disorder (GAD) is persistent, hard-to-control
+          worry across several areas of life, occurring on most days for six
+          months or more, along with physical symptoms like muscle tension or
+          poor sleep.
+        </p>
+      </Callout>
+      <P>
+        Most people worry sometimes. A work deadline, a medical test, a big
+        decision. That kind of worry usually passes once the situation
+        resolves.
+      </P>
+      <P>
+        GAD is different. The worry doesn&rsquo;t stay tied to one problem.
+        It moves from your finances to your health to your relationships to
+        things that haven&rsquo;t happened yet and probably won&rsquo;t. It
+        sticks around most days, often for months at a time.
+      </P>
+      <P>
+        Around 2.7% of Australians experience GAD in any given year, based on
+        RACGP anxiety management guidance. Anxiety disorders as a group,
+        which include GAD, social anxiety, and panic disorder, affect an
+        estimated 14.4% of the population over a 12-month period, making them
+        the most common mental health concern in the country.
+      </P>
+
+      <H2>What GAD isn&rsquo;t</H2>
+      <P>
+        Generalised anxiety disorder isn&rsquo;t the same as feeling stressed
+        during a hard week or being naturally cautious. It also isn&rsquo;t a
+        personality flaw or a sign you&rsquo;re overreacting.
+      </P>
+      <P>
+        A tough patch at work, a difficult breakup, or nerves before an exam
+        are situational. Once the situation changes, the worry usually eases.
+        With GAD, the worry doesn&rsquo;t need a trigger. It can turn up on
+        an ordinary Tuesday for no clear reason at all.
+      </P>
+
+      <H2>How GAD shows up: symptoms and a quick self-check</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/gad-symptoms-reflection-notebook.webp"
+            alt="Notebook and tea evoking quiet reflection on anxiety symptoms"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        GAD involves both mental and physical symptoms. You might notice a
+        mind that won&rsquo;t switch off alongside a body that feels tense or
+        worn out, even when you haven&rsquo;t done anything strenuous.
+      </P>
+      <P>Common signs include:</P>
+      <UL>
+        <LI>Worry that feels excessive and difficult to control</LI>
+        <LI>Restlessness or a constant sense of being on edge</LI>
+        <LI>Muscle tension, headaches, or an upset stomach</LI>
+        <LI>Trouble falling or staying asleep because your thoughts keep going</LI>
+        <LI>Feeling tired even after a full night&rsquo;s sleep</LI>
+        <LI>Difficulty concentrating, or your mind going blank</LI>
+        <LI>Irritability that feels out of proportion to what&rsquo;s happening</LI>
+      </UL>
+      <P>
+        Clinicians sometimes use a short screening questionnaire, known as
+        the GAD-7, to help understand how severe someone&rsquo;s symptoms
+        are. That kind of assessment should be done with a GP or
+        psychologist, since it forms part of a proper clinical picture
+        rather than a standalone test.
+      </P>
+
+      <H3>Worry vs GAD: a quick self-check</H3>
+      <UL>
+        <LI>My worry has been present most days for six months or more</LI>
+        <LI>I find it hard to control the worry once it starts</LI>
+        <LI>The worry jumps between different topics, rather than staying on one issue</LI>
+        <LI>I notice physical symptoms too, like muscle tension, fatigue, or poor sleep</LI>
+        <LI>The worry is getting in the way of work, study, relationships, or daily tasks</LI>
+      </UL>
+      <P>
+        If several of these sound like you, it&rsquo;s worth raising with
+        your GP. This checklist is a general guide only. It isn&rsquo;t a
+        diagnosis, and only a registered health practitioner can assess
+        whether what you&rsquo;re experiencing meets the criteria for GAD.
+      </P>
+
+      <H2>Why it happens (and why it isn&rsquo;t a personal failing)</H2>
+      <P>
+        There&rsquo;s no single cause of generalised anxiety disorder. Most
+        researchers point to a mix of biological, psychological, and social
+        factors working together.
+      </P>
+      <P>
+        Genetics can play a role, as can temperament. Some people who were
+        more reserved or easily worried as children go on to develop GAD as
+        adults. Ongoing life stress, past difficult experiences, and a
+        tendency to feel uncertain about the future can all contribute as
+        well.
+      </P>
+      <P>
+        None of this means the worry is your fault, or something you should
+        be able to think your way out of on your own.
+      </P>
+
+      <H2>How common is GAD in Australia?</H2>
+      <P>
+        GAD is common, and it&rsquo;s a meaningful part of the country&rsquo;s
+        overall mental health picture. Mental and substance use disorders
+        together account for around 15% of the total disease burden in
+        Australia, ranking second only to cancer.
+      </P>
+      <P>
+        Lifetime prevalence of GAD in Australia has been estimated at around
+        8%, somewhat higher than international estimates of roughly 3.7%.
+        Rates also appear to be rising among younger Australians.
+      </P>
+      <P>
+        Among 15 to 17 year olds, 19% were estimated to have a diagnosed
+        mental illness in 2021, up from 6% in 2009, with anxiety disorders
+        reported by 25% of female adolescents compared with 9% of male
+        adolescents.
+      </P>
+      <P>
+        Despite how common it is, treatment-seeking hasn&rsquo;t kept pace.
+        Between 2006 and 2016, the rate at which Australian GPs managed
+        anxiety in consultations rose only from 2.3% to 3.2%, well below what
+        prevalence figures would suggest. Many people live with GAD for years
+        before getting support.
+      </P>
+
+      <H2>How GAD is treated</H2>
+      <P>
+        GAD responds well to evidence-based psychological treatment. Most
+        people are supported through a combination of talking therapy and
+        practical strategies, sometimes alongside a conversation with their
+        GP about medication if needed.
+      </P>
+
+      <H3>Cognitive Behaviour Therapy</H3>
+      <P>
+        <Link href="/cbt-therapy-perth">Cognitive Behaviour Therapy</Link>{" "}
+        (CBT) is one of the treatment options recommended for GAD in
+        Australia, according to healthdirect&rsquo;s guide to treating GAD.
+        CBT helps you notice the thought patterns and behaviours that keep
+        worry going, then build practical, workable ways to respond
+        differently.
+      </P>
+
+      <H3>EMDR and psychodynamic approaches</H3>
+      <P>
+        Where anxiety seems connected to past experiences, some psychologists
+        also draw on{" "}
+        <Link href="/emdr-therapy-perth">
+          Eye Movement Desensitisation and Reprocessing
+        </Link>{" "}
+        (EMDR) or psychodynamic approaches, alongside other methods such as
+        Exposure and Response Prevention (ERP), to look at what may be
+        driving the worry underneath the surface symptoms.
+      </P>
+      <P>
+        Results vary between individuals, and how someone responds to
+        therapy depends on their own circumstances. A registered psychologist
+        can talk you through which approach is likely to suit your situation,
+        and outcomes aren&rsquo;t promised in advance for any single method.
+      </P>
+      <P>
+        If medication is relevant to your situation, that&rsquo;s a
+        conversation to have with your GP or a psychiatrist, since
+        psychologists in Australia don&rsquo;t prescribe.
+      </P>
+
+      <H2>Getting support in Perth and WA: what it actually costs</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/accessing-psychology-support-wa-steps.webp"
+            alt="Simple icon diagram showing the steps to access psychology support"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Cost and access are often the biggest barriers to getting help, so
+        here&rsquo;s how the main pathways compare.
+      </P>
+
+      <H3>Medicare (Mental Health Care Plan)</H3>
+      <P>
+        You need a GP referral and a Mental Health Care Plan. You can access
+        up to 10 sessions per calendar year. The standard fee at Sage is
+        $180 per session, with a Medicare rebate of $101.55, bringing the
+        out-of-pocket cost down. Full detail is on our{" "}
+        <Link href="/fees">fees and rebates</Link> page.
+      </P>
+
+      <H3>Private health insurance</H3>
+      <P>
+        The rebate amount depends on your fund and level of cover. Check
+        directly with your health fund.
+      </P>
+
+      <H3>DVA (White or Gold Card)</H3>
+      <P>
+        You need a GP referral, and up to 12 initial sessions are available
+        with no out-of-pocket cost for eligible veterans.
+      </P>
+
+      <H3>NDIS, Workers&rsquo; Compensation, or ICWA</H3>
+      <P>
+        Confirm eligibility with the relevant scheme. Fees are set according
+        to each scheme&rsquo;s current fee schedule.
+      </P>
+
+      <H3>Self-funded, no referral needed</H3>
+      <P>
+        You can book directly. The standard session fee is invoiced after
+        each appointment.
+      </P>
+
+      <P>If you&rsquo;re going through Medicare, the process usually looks like this:</P>
+      <UL>
+        <LI>Book a longer appointment with your GP and explain what you&rsquo;ve been experiencing.</LI>
+        <LI>Get your Mental Health Care Plan and referral letter. Your GP will typically issue this for an initial six sessions.</LI>
+        <LI>Attend your sessions with a registered psychologist. After six sessions, you&rsquo;ll return to your GP for a review before accessing the remaining four.</LI>
+        <LI>Receive your rebate, which is usually processed within a couple of days of each appointment.</LI>
+      </UL>
+
+      <H2>When to reach out</H2>
+      <P>
+        You don&rsquo;t need to wait until things feel unbearable before
+        getting support. If worry has been affecting your sleep, work, or
+        relationships for a while, that&rsquo;s already a reasonable reason
+        to talk to someone.
+      </P>
+      <P>
+        If you&rsquo;re in crisis or need to talk to someone urgently, you
+        can contact Lifeline on{" "}
+        <a href="tel:131114" className="link">
+          13 11 14
+        </a>
+        , available 24 hours a day.
+      </P>
+      <P>
+        For non-urgent support, a good starting point is a conversation with
+        your GP about a Mental Health Care Plan, or reaching out directly to
+        a registered psychologist to ask whether therapy is a fit for what
+        you&rsquo;re going through. You can find more detail on{" "}
+        <Link href="/fees">Medicare rebates and fees</Link> and{" "}
+        <Link href="/blog/first-psychology-session">
+          what a first session actually feels like
+        </Link>{" "}
+        before you book.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, the team at Sage Psychological
+        Services is happy to help. You can read more about{" "}
+        <Link href="/anxiety-therapy-perth">anxiety therapy in Perth</Link>,
+        learn about <Link href="/emdr-therapy-perth">EMDR therapy</Link>,
+        check{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth across WA
+        </Link>
+        , or{" "}
+        <Link
+          href="https://clientportal.zandahealth.com/clientportal/sagepsychologicalservices"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          book a session
+        </Link>{" "}
+        with Jacob when you&rsquo;re ready.
+      </P>
+      <CrisisFootnote />
+    </>
+  ),
+
   "what-is-cbt-anxiety": () => (
     <>
       <P>
