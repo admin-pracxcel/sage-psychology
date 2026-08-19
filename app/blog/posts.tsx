@@ -1002,6 +1002,76 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         </Link>{" "}
         with Jacob when you&rsquo;re ready.
       </P>
+
+      <H2>Frequently asked questions</H2>
+
+      <H3>What is the difference between normal worry and generalised anxiety disorder?</H3>
+      <P>
+        Normal worry is usually tied to a specific situation and eases once
+        that situation passes. GAD involves persistent, hard-to-control
+        worry across several areas of life, most days, for six months or
+        more, often alongside physical symptoms like muscle tension or poor
+        sleep.
+      </P>
+
+      <H3>What are the main symptoms of GAD?</H3>
+      <P>
+        Common symptoms include excessive worry, restlessness, muscle
+        tension, fatigue, trouble concentrating, irritability, and sleep
+        difficulties. It&rsquo;s usually the combination of several symptoms
+        together, along with how long they&rsquo;ve lasted, that matters
+        most. Symptoms vary from person to person, and a registered health
+        practitioner can help you understand whether what you&rsquo;re
+        experiencing fits a clinical picture.
+      </P>
+
+      <H3>Can generalised anxiety disorder be cured?</H3>
+      <P>
+        GAD responds well to evidence-based psychological treatment, though
+        results vary between individuals and outcomes can&rsquo;t be promised
+        in advance. Many people find that with the right support, worry
+        becomes far more manageable, though occasional anxiety is a normal
+        part of life for everyone. Speak with a registered practitioner
+        about what to expect in your situation.
+      </P>
+
+      <H3>Do I need a GP referral to see a psychologist for anxiety?</H3>
+      <P>
+        You don&rsquo;t need a referral to see a psychologist privately, but
+        a referral and Mental Health Care Plan from your GP are required to
+        access Medicare rebates. Without a plan, you can still book and pay
+        privately, with an invoice provided after each session.
+      </P>
+
+      <H3>How much does psychology cost with a Medicare rebate?</H3>
+      <P>
+        Standard psychology sessions are often around $180, with a Medicare
+        rebate of $101.55 available under a Mental Health Care Plan. The
+        same rebate applies whether your session is in person or via
+        telehealth. Eligible clients can access up to 10 subsidised sessions
+        per calendar year, with a GP review after the first six. Exact fees
+        vary by practice.
+      </P>
+
+      <H3>How is GAD different from panic disorder or social anxiety?</H3>
+      <P>
+        GAD involves ongoing worry across many areas of life, while panic
+        disorder centres on sudden, intense panic attacks, and social
+        anxiety focuses specifically on fear of social or performance
+        situations. These conditions can overlap, and a registered
+        practitioner can help clarify what&rsquo;s happening for you.
+      </P>
+
+      <H3>Can I access anxiety therapy via telehealth in WA?</H3>
+      <P>
+        Yes. Telehealth psychology sessions are available across Western
+        Australia for people who can&rsquo;t attend in person or prefer the
+        comfort of home, using the same evidence-based approaches offered
+        in-clinic. Sessions are usually held by secure video call, and the
+        same Medicare rebate applies as for an in-person appointment if you
+        have a valid Mental Health Care Plan.
+      </P>
+
       <CrisisFootnote />
     </>
   ),
