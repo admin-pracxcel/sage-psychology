@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { Arrow } from "@/components/Icons";
-import FaqAccordion, { type FaqItem } from "./FaqAccordion";
+import FaqAccordion, { type FaqItem } from "@/components/FaqAccordion";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, SITE_URL } from "@/lib/schema";
 
