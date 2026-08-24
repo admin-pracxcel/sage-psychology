@@ -1039,6 +1039,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
             href="https://www.mbsonline.gov.au/internet/mbsonline/publishing.nsf/Content/news-260701"
             target="_blank"
             rel="noopener noreferrer"
+            className="link"
           >
             Medicare Benefits Schedule
           </a>{" "}
