@@ -153,6 +153,50 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "physical-symptoms-of-anxiety-guide",
+    title: "Physical Symptoms of Anxiety You Might Not Recognise",
+    metaTitle:
+      "Physical Symptoms of Anxiety You Might Not Recognise Today",
+    metaDescription:
+      "Racing heart, jaw pain, or gut trouble? Discover the physical symptoms of anxiety many people miss, plus when to see a GP and how therapy can help you.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "8 min read",
+    publishedAt: "2026-08-24",
+    publishedLabel: "24 August 2026",
+    image: "/img/physical-symptoms-of-anxiety-hero.webp",
+    imageAlt:
+      "Soft morning light through eucalyptus leaves in Australian bushland",
+    ctaImage: "/img/physical-symptoms-of-anxiety-calm-notebook.webp",
+    ctaAlt: "Cup of tea and open notebook on a linen surface",
+    excerpt:
+      "Racing heart, jaw pain, or a stomach that never settles. The physical symptoms of anxiety often go unrecognised until they are connected to the mind. Here is how to spot them, and what to do next.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "Fees & Rebates", href: "/fees" },
+    ],
+    ctaHeading: (
+      <>
+        When the body <span className="serif-italic">signals first</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. If
+        physical symptoms have been part of what you&rsquo;re carrying, a
+        first session is simply a conversation about what has been going on.
+      </>
+    ),
+  },
+  {
     slug: "generalised-anxiety-disorder-symptoms-wa",
     title: "Generalised Anxiety Disorder: When Worry Never Switches Off",
     metaTitle: "Generalised Anxiety Disorder: 7 Signs and What Helps in WA",
@@ -681,6 +725,465 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "physical-symptoms-of-anxiety-guide": () => (
+    <>
+      <P>
+        You&rsquo;ve had headaches for weeks, an unsettled stomach most
+        mornings, and a jaw that aches the moment you wake up. Sleep never
+        feels complete, and none of this feels like the &ldquo;worry&rdquo;
+        that anxiety is supposed to cause.
+      </P>
+      <P>
+        That disconnect is common, because the physical symptoms of anxiety
+        often show up long before any conscious worry does. This article walks
+        through how those symptoms show up in the body, why the body reacts
+        this way, when to see a GP first, and how anxiety is understood and
+        treated in Australia.
+      </P>
+
+      <Callout kicker="Quick answer">
+        <p>
+          Yes, anxiety can cause physical symptoms without you feeling
+          consciously worried or afraid. Common examples include a racing
+          heart, muscle tension, jaw clenching, digestive upset, and disrupted
+          sleep. If a symptom is sudden or severe, such as crushing chest
+          pain, treat it as a medical emergency first.
+        </p>
+      </Callout>
+
+      <H2>When Anxiety Doesn&rsquo;t Feel Like Worry</H2>
+      <P>
+        Anxiety doesn&rsquo;t always feel like worry. It can show up first as
+        physical sensations in the body, with no obvious sense of fear behind
+        them.
+      </P>
+      <P>
+        Anxiety is your body&rsquo;s stress response doing its job a little
+        too often. It&rsquo;s meant to prepare you for danger: heart rate
+        rises, muscles tighten, breathing quickens. That&rsquo;s useful when
+        you need to react fast.
+      </P>
+      <P>
+        The problem is this response can switch on with no clear threat
+        nearby. If it stays switched on, you notice the physical effects long
+        before you notice any conscious worry. You just feel unwell, tired, or
+        on edge, without knowing why.
+      </P>
+      <P>
+        This is sometimes called health anxiety, where the physical symptoms
+        become the main source of concern and create a loop: worry about the
+        symptoms makes the symptoms worse.
+      </P>
+
+      <H2>How the Physical Symptoms of Anxiety Show Up in the Body</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/physical-symptoms-of-anxiety-body-diagram.webp"
+            alt="Illustrated body outline showing common areas affected by physical anxiety symptoms"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Physical symptoms of anxiety can affect nearly every system in the
+        body, not just the heart and hands. They often turn up in ways people
+        never connect to anxiety at all.
+      </P>
+      <P>Physical symptoms of anxiety at a glance:</P>
+      <UL>
+        <LI>Racing, pounding, or fluttering heartbeat</LI>
+        <LI>Tightness or pressure in the chest</LI>
+        <LI>Nausea, cramping, or a change in appetite</LI>
+        <LI>Frequent headaches or a tight band feeling around the head</LI>
+        <LI>Jaw clenching or teeth grinding, especially overnight</LI>
+        <LI>Shoulder, neck, or back tension</LI>
+        <LI>Shortness of breath or trouble getting a full breath</LI>
+        <LI>Dizziness or lightheadedness</LI>
+        <LI>Trouble falling asleep, waking often, or waking tired</LI>
+        <LI>Ongoing fatigue with no clear physical cause</LI>
+        <LI>Sweating or hot flushes unrelated to heat or exercise</LI>
+        <LI>Restlessness or a constant sense of being on edge</LI>
+      </UL>
+
+      <H3>Heart and Chest</H3>
+      <P>
+        A racing or pounding heart is one of the more alarming physical
+        symptoms of anxiety, mainly because it can feel like something is
+        seriously wrong. Chest tightness often comes from the same stress
+        response, combined with shallow or rapid breathing.
+      </P>
+
+      <H3>Digestion and Gut</H3>
+      <P>
+        Anxiety and digestion are closely linked through the connection
+        between the gut and the nervous system. This can show up as nausea,
+        cramping, or a stomach that never quite settles, particularly in the
+        mornings.
+      </P>
+
+      <H3>Muscles, Jaw, and Headaches</H3>
+      <P>
+        Constant low-level muscle tension is common with anxiety, especially
+        through the shoulders, neck, and jaw. Many people only find out
+        they&rsquo;ve been clenching their jaw overnight when a dentist or GP
+        mentions it.
+      </P>
+
+      <H3>Sleep and Energy</H3>
+      <P>
+        Anxiety can disrupt sleep even without racing thoughts to point to.
+        You might fall asleep fine and then wake repeatedly, or sleep the full
+        night and still feel drained the next day.
+      </P>
+
+      <H2>Why the Body Reacts Before the Mind Catches Up</H2>
+      <P>
+        Anxiety symptoms often appear in the body before you consciously
+        register feeling anxious. That&rsquo;s because the stress response
+        starts in a part of the brain that reacts faster than conscious
+        thought does.
+      </P>
+      <P>
+        When your brain perceives a threat, real or not, it triggers the
+        sympathetic nervous system. This releases stress hormones such as
+        adrenaline and cortisol, which raise your heart rate, tense your
+        muscles, and sharpen your senses. It&rsquo;s designed to help you
+        respond to danger quickly, without waiting for you to think it
+        through.
+      </P>
+      <P>
+        That&rsquo;s useful in a genuine emergency. The trouble is the same
+        system can activate in response to ongoing stress or unresolved worry,
+        long after any real trigger has passed. Your body stays braced for
+        something that never arrives, and the physical symptoms are often the
+        clearest sign of it.
+      </P>
+
+      <H2>Anxiety Symptoms vs a Medical Cause: When to See a GP First</H2>
+      <P>
+        If you&rsquo;re experiencing new or ongoing physical symptoms, see
+        your GP before assuming they&rsquo;re caused by anxiety. Some symptoms
+        anxiety produces can also signal something else, so a proper check
+        rules that out first.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Symptom
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            What it can feel like
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            What to do
+          </div>
+        </div>
+        {[
+          [
+            "Racing heart or palpitations",
+            "Fluttering, pounding, or skipped beats",
+            "Mention it to your GP, especially if new or frequent",
+          ],
+          [
+            "Chest tightness",
+            "Pressure or a heavy feeling in the chest",
+            "See your GP; treat sudden, severe, or crushing chest pain as a medical emergency",
+          ],
+          [
+            "Shortness of breath",
+            "Feeling like you can't get a full breath",
+            "Raise it with your GP, particularly if it happens at rest",
+          ],
+          [
+            "Dizziness",
+            "Lightheadedness or unsteadiness",
+            "Get it checked, especially if frequent or severe",
+          ],
+          [
+            "Persistent stomach upset",
+            "Nausea, cramping, changed appetite",
+            "See your GP to rule out other digestive causes",
+          ],
+          [
+            "Ongoing fatigue",
+            "Tiredness with no clear physical cause",
+            "Worth a GP check, particularly if new or worsening",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <Callout kicker="Red flag">
+        <p>
+          Sudden, severe, or crushing chest pain, pain spreading to the arm
+          or jaw, or severe shortness of breath needs urgent medical
+          attention. Call{" "}
+          <a href="tel:000" className="link">
+            000
+          </a>{" "}
+          or go to your nearest emergency department. Don&rsquo;t wait to see
+          if it settles on its own.
+        </p>
+      </Callout>
+
+      <H2>Why These Symptoms Often Go Unrecognised</H2>
+      <P>
+        These symptoms often go unrecognised because anxiety is common, yet
+        Australians are far less confident recognising its physical signs than
+        they are recognising depression.
+      </P>
+      <P>
+        Anxiety disorders affected 17.2% of Australians aged 16 to 85 in the
+        12 months to 2022, the most common mental disorder group in the
+        country. Lifetime prevalence is higher again, at 28.8%. Around 3.4
+        million Australians live with an anxiety disorder at any given time.
+      </P>
+      <P>
+        The rise has been sharpest among younger adults. Among 16 to 24 year
+        olds, the proportion experiencing a mental disorder in the past year
+        climbed from 26% in 2007 to almost 39% in 2020&ndash;2022, with
+        anxiety the most common condition in that age group. Women report
+        roughly double the 12-month anxiety prevalence of men.
+      </P>
+      <P>
+        With numbers like these, someone in your workplace, family, or
+        friendship group is likely dealing with exactly the symptoms described
+        here. Many won&rsquo;t connect them to anxiety until later, often
+        after tests that come back clear.
+      </P>
+
+      <H2>How Anxiety Is Understood and Treated in Australia</H2>
+      <P>
+        Anxiety is generally treated with evidence-based psychological
+        therapy, sometimes alongside support from a GP or psychiatrist
+        depending on what a person needs.
+      </P>
+      <P>
+        <a
+          href="https://www.racgp.org.au/clinical-resources/clinical-guidelines/handi/handi-interventions/cogntive-and-behavioural-therapies/cbt-for-panic-disorder"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CBT is identified as a first-line treatment for anxiety
+        </a>{" "}
+        in Australasian clinical guidelines, including for panic disorder and
+        agoraphobia. It works by helping you identify the thought and
+        behaviour patterns that keep the stress response switched on, and
+        building practical strategies to settle both mind and body.
+      </P>
+      <P>
+        Where anxiety is connected to past experiences or trauma, a
+        psychologist such as{" "}
+        <Link href="/about">Jacob Jones, registered psychologist</Link> may
+        also draw on approaches such as Eye Movement Desensitisation and
+        Reprocessing, known as EMDR, or psychodynamic work that looks at
+        underlying drivers rather than symptoms alone. You can read more
+        about{" "}
+        <Link href="/anxiety-therapy-perth">
+          anxiety therapy approaches in Perth
+        </Link>
+        .
+      </P>
+      <P>
+        If medication is relevant to your situation, that&rsquo;s a
+        conversation for your GP or a psychiatrist, not something a
+        psychologist can prescribe or a blog post can advise on.
+      </P>
+      <P>
+        Results vary and individual circumstances differ. Therapy isn&rsquo;t
+        about eliminating every worry, since no one can promise that.
+        It&rsquo;s about changing your relationship with anxiety so it has
+        less hold over your day. If you&rsquo;re unsure what would help, a
+        registered psychologist or your GP is the right person to ask.
+      </P>
+
+      <H2>Getting Started: GP Referral, Medicare, and What Therapy Involves</H2>
+      <P>
+        In Australia, most people access subsidised psychology sessions
+        through a GP-prepared Mental Health Treatment Plan under
+        Medicare&rsquo;s Better Access initiative.
+      </P>
+      <UL>
+        <LI>
+          <strong>See your GP.</strong> Book a longer appointment and explain
+          what you&rsquo;ve been experiencing, physical symptoms included.
+        </LI>
+        <LI>
+          <strong>Get your Mental Health Treatment Plan and referral.</strong>{" "}
+          Your GP assesses your needs and refers you to a psychologist,
+          usually for an initial six sessions.
+        </LI>
+        <LI>
+          <strong>Attend your sessions.</strong> Medicare provides a rebate
+          for each session with a registered psychologist under a current
+          Mental Health Treatment Plan. The exact rebate amount is set by the{" "}
+          <a
+            href="https://www.mbsonline.gov.au/internet/mbsonline/publishing.nsf/Content/news-260701"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Medicare Benefits Schedule
+          </a>{" "}
+          and is worth checking directly, as rates are reviewed periodically.
+        </LI>
+        <LI>
+          <strong>Return to your GP for a review.</strong> After your initial
+          sessions, a review can lead to further sessions, up to 10
+          individual sessions per calendar year in total.
+        </LI>
+      </UL>
+      <P>
+        Fees and rebates vary between practices, so it&rsquo;s worth checking{" "}
+        <Link href="/fees">current fees and Medicare rebate details</Link>{" "}
+        before your first session. Private health cover, DVA, and NDIS
+        funding may also apply depending on your circumstances. Clients
+        outside East Fremantle can also{" "}
+        <Link href="/contact">book an appointment</Link> for a telehealth
+        session, or find out more about{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth psychology across WA
+        </Link>
+        .
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, the team at Sage Psychological
+        Services is happy to help.
+      </P>
+
+      <H2>Frequently Asked Questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Can you have physical anxiety symptoms without feeling worried?",
+            aText:
+              "Yes. The stress response that drives anxiety can activate without a clear emotional trigger you notice. Your body may show signs such as a racing heart, muscle tension, or stomach upset before your mind registers any worry at all. This is common and doesn't mean something is wrong with you. If it happens often, it's worth discussing with your GP or a registered psychologist.",
+            a: (
+              <p>
+                Yes. The stress response that drives anxiety can activate
+                without a clear emotional trigger you notice. Your body may
+                show signs such as a racing heart, muscle tension, or stomach
+                upset before your mind registers any worry at all. This is
+                common and doesn&rsquo;t mean something is wrong with you. If
+                it happens often, it&rsquo;s worth discussing with your GP or
+                a registered psychologist.
+              </p>
+            ),
+          },
+          {
+            q: "Can anxiety cause chest pain or feel like a heart attack?",
+            aText:
+              "Anxiety can cause chest tightness or pain that feels alarming, often linked to muscle tension and rapid, shallow breathing. Because this can resemble a cardiac event, always get sudden or severe chest pain checked urgently. Once a medical cause has been ruled out, ongoing chest tightness linked to stress can be addressed through psychological support.",
+            a: (
+              <p>
+                Anxiety can cause chest tightness or pain that feels
+                alarming, often linked to muscle tension and rapid, shallow
+                breathing. Because this can resemble a cardiac event, always
+                get sudden or severe chest pain checked urgently. Once a
+                medical cause has been ruled out, ongoing chest tightness
+                linked to stress can be addressed through psychological
+                support.
+              </p>
+            ),
+          },
+          {
+            q: "What are the physical signs of anxiety?",
+            aText:
+              "Common physical signs include a racing or pounding heart, chest tightness, muscle tension, jaw clenching, headaches, digestive upset, dizziness, and disrupted sleep. Symptoms differ from person to person, and not everyone experiences all of them. Persistent or unexplained symptoms are worth raising with your GP.",
+            a: (
+              <p>
+                Common physical signs include a racing or pounding heart,
+                chest tightness, muscle tension, jaw clenching, headaches,
+                digestive upset, dizziness, and disrupted sleep. Symptoms
+                differ from person to person, and not everyone experiences
+                all of them. Persistent or unexplained symptoms are worth
+                raising with your GP.
+              </p>
+            ),
+          },
+          {
+            q: "Why do I feel anxious but don't know why?",
+            aText:
+              "Anxiety doesn't always have an obvious trigger. It can build gradually from ongoing stress or unresolved worry that accumulates over time rather than one single event. A GP or psychologist can help you unpack what might be contributing, even when the cause isn't immediately clear.",
+            a: (
+              <p>
+                Anxiety doesn&rsquo;t always have an obvious trigger. It can
+                build gradually from ongoing stress or unresolved worry that
+                accumulates over time rather than one single event. A GP or
+                psychologist can help you unpack what might be contributing,
+                even when the cause isn&rsquo;t immediately clear.
+              </p>
+            ),
+          },
+          {
+            q: "Can anxiety cause digestive problems?",
+            aText:
+              "Yes. The gut and nervous system are closely connected, so anxiety can affect digestion through nausea, cramping, or appetite changes. This connection is well recognised in general practice. If digestive symptoms are persistent, your GP can check for other causes alongside considering anxiety.",
+            a: (
+              <p>
+                Yes. The gut and nervous system are closely connected, so
+                anxiety can affect digestion through nausea, cramping, or
+                appetite changes. This connection is well recognised in
+                general practice. If digestive symptoms are persistent, your
+                GP can check for other causes alongside considering anxiety.
+              </p>
+            ),
+          },
+          {
+            q: "How many psychology sessions does Medicare cover?",
+            aText:
+              "Under Medicare's Better Access initiative, eligible people can access up to 10 individual psychology sessions per calendar year with a Mental Health Treatment Plan from their GP. Sessions are usually released in an initial block of six, followed by a GP review before further sessions are approved.",
+            a: (
+              <p>
+                Under Medicare&rsquo;s Better Access initiative, eligible
+                people can access up to 10 individual psychology sessions per
+                calendar year with a Mental Health Treatment Plan from their
+                GP. Sessions are usually released in an initial block of six,
+                followed by a GP review before further sessions are
+                approved.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a GP referral to see a psychologist at Sage?",
+            aText:
+              "A GP referral and Mental Health Treatment Plan are needed to access the Medicare rebate for your sessions. You're also welcome to see a psychologist privately without a referral, whether you'd simply prefer to pay independently or you've already used your rebated sessions for the calendar year.",
+            a: (
+              <p>
+                A GP referral and Mental Health Treatment Plan are needed to
+                access the Medicare rebate for your sessions. You&rsquo;re
+                also welcome to see a psychologist privately without a
+                referral, whether you&rsquo;d simply prefer to pay
+                independently or you&rsquo;ve already used your rebated
+                sessions for the calendar year.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "generalised-anxiety-disorder-symptoms-wa": () => (
     <>
       <P>
