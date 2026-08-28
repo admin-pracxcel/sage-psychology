@@ -797,6 +797,17 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       </Callout>
 
       <H2>What is CBT, really?</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/cbt-reflection-notebook-tea-stilllife.webp"
+            alt="Open notebook and pen beside a cup of tea on linen"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
       <P>
         CBT is a structured, practical form of talk therapy based on one
         simple idea: your thoughts, feelings and behaviours are all
@@ -1046,17 +1057,6 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       </P>
 
       <H2>Signs it might be worth talking to someone</H2>
-      <figure className="mt-10">
-        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
-          <Image
-            src="/img/cbt-reflection-notebook-tea-stilllife.webp"
-            alt="Open notebook and pen beside a cup of tea on linen"
-            fill
-            sizes="(max-width: 768px) 100vw, 52rem"
-            className="object-cover"
-          />
-        </div>
-      </figure>
       <P>
         You do not need to be in crisis to see a psychologist, but a few
         common signs suggest it is worth having the conversation. You might
