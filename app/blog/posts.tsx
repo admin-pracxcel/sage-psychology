@@ -153,6 +153,48 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "how-cbt-rewires-thinking",
+    title: "How CBT Rewires Anxious Thinking, Explained Simply",
+    metaTitle: "How Does CBT Work? A Perth Psychologist Explains Simply",
+    metaDescription:
+      "How does CBT work? See how it rewires anxious thinking step by step, what a typical course looks like, and how Medicare rebates can help cover the cost in 2026.",
+    category: "Anxiety & CBT",
+    categoryHref: "/cbt-therapy-perth",
+    readTime: "10 min read",
+    publishedAt: "2026-08-28",
+    publishedLabel: "28 August 2026",
+    image: "/img/how-does-cbt-work-anxious-thinking.webp",
+    imageAlt: "Native Australian eucalyptus leaves in soft morning light",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Anxious thinking can feel automatic and hard to shift. This guide explains how CBT works in plain English, what a typical course looks like, and how Medicare can help cover the cost for people across Australia.",
+    linksUp: [
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When you&rsquo;re ready to <span className="serif-italic">talk it through</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/cbt-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          CBT for anxiety
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going on
+        and whether CBT is likely to suit your situation.
+      </>
+    ),
+  },
+  {
     slug: "physical-symptoms-of-anxiety-guide",
     title: "Physical Symptoms of Anxiety You Might Not Recognise",
     metaTitle:
@@ -725,6 +767,469 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "how-cbt-rewires-thinking": () => (
+    <>
+      <P>
+        If your mind won&rsquo;t switch off, or worry has started running
+        your day instead of the other way around, you have probably already
+        asked yourself one question: how does CBT work, and could it help
+        someone like you?
+      </P>
+      <P>
+        Cognitive Behaviour Therapy (CBT) is one of the most studied forms
+        of psychological treatment available, and it is often the first
+        approach a GP or psychologist suggests for anxiety. This article
+        walks through what CBT actually does, why anxious thinking feels so
+        automatic in the first place, what a course of therapy looks like
+        session by session, and what it costs in Australia. By the end, you
+        should have a clear, honest picture of what actually helps, not
+        just a list of buzzwords.
+      </P>
+
+      <Callout kicker="Quick answer">
+        <p>
+          Here is how CBT works, in short. It helps you notice the thoughts,
+          feelings and behaviours that keep anxiety going, then gives you
+          practical tools to interrupt that pattern. It is structured,
+          skills-based, and considered a first-line treatment for anxiety
+          in Australia.
+        </p>
+      </Callout>
+
+      <H2>What is CBT, really?</H2>
+      <P>
+        CBT is a structured, practical form of talk therapy based on one
+        simple idea: your thoughts, feelings and behaviours are all
+        connected, and changing one can change the others.
+      </P>
+      <P>
+        Rather than spending months unpacking your entire life history, CBT
+        tends to focus on what is happening for you right now. You and your
+        psychologist work together to identify the specific thought
+        patterns and behaviours that are keeping a problem in place, then
+        build practical strategies to shift them.
+      </P>
+      <P>
+        Once you understand how CBT works at this basic level, the rest of
+        therapy tends to make a lot more sense.
+      </P>
+      <P>
+        The Australian Association for Cognitive and Behaviour Therapy
+        describes CBT as a well-planned therapy that is focused on
+        outcomes, with clear goals and regular check-ins on progress. That
+        structure is part of why it suits anxiety so well. Anxious thinking
+        often feels vague and overwhelming, and CBT gives it a shape you
+        can actually work with.
+      </P>
+
+      <H2>Why anxious thinking feels so automatic</H2>
+      <P>
+        Anxious thoughts feel automatic because they are, in a sense,
+        well-practised. The more often your mind takes a particular path,
+        such as assuming the worst will happen, the more familiar and
+        effortless that path becomes.
+      </P>
+      <P>
+        This is sometimes called a cognitive distortion, a pattern of
+        thinking that skews how you interpret a situation. Common examples
+        include catastrophising, all-or-nothing thinking, and assuming you
+        know what other people are thinking without any real evidence.
+      </P>
+      <P>
+        Avoidance plays a role too. When you avoid something that makes you
+        anxious, you get a rush of relief. That relief feels rewarding, so
+        your brain learns that avoidance works, even though it usually
+        makes the anxiety bigger over time. Understanding this cycle is
+        the first step toward changing it, and it is exactly where CBT
+        begins.
+      </P>
+
+      <H2>How does CBT work to change anxious patterns?</H2>
+      <P>
+        CBT works by teaching you to notice unhelpful thought patterns as
+        they happen, test how accurate they really are, and gradually build
+        new, more balanced ways of responding. Two techniques do most of
+        the work: cognitive restructuring and gradual exposure.
+      </P>
+      <P>
+        Cognitive restructuring means taking a distressing thought, writing
+        it down, and honestly weighing up the evidence for and against it.
+        Instead of assuming a thought is true simply because it feels true,
+        you learn to ask what else might explain the situation. Over time,
+        this becomes a habit rather than a conscious effort.
+      </P>
+      <P>
+        Gradual exposure works alongside this. Rather than avoiding the
+        situations that trigger anxiety, you face them in small, manageable
+        steps, at a pace that suits you. Each time you get through a step
+        without the feared outcome happening, your mind collects a bit of
+        evidence that the situation is more manageable than it felt.
+      </P>
+      <P>
+        Research using brain imaging has looked at how psychological
+        therapies like CBT relate to changes in activity in areas of the
+        brain involved in threat response and emotional regulation. This is
+        a genuinely interesting area of study, but it is also still
+        developing, and results vary between individuals.
+      </P>
+      <P>
+        The honest, practical takeaway is simpler: repetition and practice
+        are what make new patterns stick, in much the same way that
+        practising any skill makes it feel more natural over time.
+      </P>
+
+      <H2>What a typical course of CBT looks like</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/cbt-five-step-process-illustration.webp"
+            alt="Numbered illustration of the five-step CBT therapy process"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        CBT usually follows a similar shape from person to person, even
+        though the details are shaped around your own situation. A typical
+        course involves:
+      </P>
+      <UL>
+        <LI>
+          Understanding the link between your thoughts, feelings and
+          behaviours, and how they interact for you specifically.
+        </LI>
+        <LI>
+          Identifying the patterns that are keeping the difficulty in
+          place, such as avoidance, rumination or particular cognitive
+          distortions.
+        </LI>
+        <LI>
+          Learning practical strategies, such as a thought diary or
+          relaxation techniques, and practising them between sessions.
+        </LI>
+        <LI>
+          Gradually facing avoided situations in a structured, paced way,
+          rather than all at once.
+        </LI>
+        <LI>
+          Building lasting skills so you can manage setbacks on your own
+          after therapy ends.
+        </LI>
+      </UL>
+      <P>
+        Many people work within Medicare&rsquo;s funded allocation of up to
+        10 sessions in a calendar year, though some need more support and
+        others feel ready to finish sooner. Results vary and individual
+        circumstances differ, so it is worth discussing likely timeframes
+        with your own psychologist rather than assuming a fixed number
+        applies to you.
+      </P>
+
+      <H2>Is CBT backed by evidence in Australia?</H2>
+      <P>
+        Yes. CBT is recognised as a first-line treatment for anxiety
+        disorders in Australia, and it underpins the approach used in most
+        GP Mental Health Treatment Plans. So how does CBT work within
+        Australia&rsquo;s actual mental health system, not just in theory?
+      </P>
+      <P>
+        Anxiety is, by some distance, the most common mental health concern
+        in the country. An estimated 3.4 million Australians, around 17 per
+        cent of the population, experience an anxiety disorder.
+      </P>
+      <P>
+        Anxiety disorder prevalence has also risen over time, from 13.8 per
+        cent in 2007 to 17.2 per cent in the 2020 to 2022 period, the
+        largest increase of any disorder group measured. It tends to affect
+        younger adults most, with prevalence around 22 per cent in people
+        aged 15 to 34, compared with 15 per cent in those aged 55 and over.
+      </P>
+      <P>
+        The system built to respond to this is well used. In 2023 to 2024,
+        around 2.7 million Australians accessed 12.6 million
+        Medicare-subsidised mental health services, with psychologists
+        delivering the largest share under{" "}
+        <a
+          href="https://www.aihw.gov.au/mental-health/topic-areas/community-based-services/medicare-mental-health"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Medicare&rsquo;s Better Access initiative
+        </a>
+        .
+      </P>
+      <P>
+        <a
+          href="https://www.mindspot.org.au/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MindSpot
+        </a>
+        , a course of online CBT delivered by Macquarie University and
+        funded by the Department of Health, reports an average 50 per cent
+        reduction in symptoms among people who complete it. This is a
+        program-wide average, not a prediction for any individual.
+      </P>
+
+      <H2>How much does CBT cost, and does Medicare help?</H2>
+      <P>
+        Medicare can reduce the cost of CBT if you have a GP Mental Health
+        Treatment Plan, though it usually does not make sessions free. The
+        rebate amount depends on which type of psychologist you see.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Practitioner type
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            2026 Medicare rebate (per session)
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Sessions available per calendar year
+          </div>
+        </div>
+        {[
+          [
+            "Registered psychologist (MBS item 80110)",
+            "$101.55",
+            "Up to 10, referred in blocks of up to 6",
+          ],
+          [
+            "Clinical psychologist (MBS item 80010)",
+            "$149.05",
+            "Up to 10, referred in blocks of up to 6",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <P>
+        Your GP refers you for up to 6 sessions at a time. Once those are
+        used, a review with your GP can extend the referral, up to the
+        yearly cap of 10 rebated sessions. After that, further sessions in
+        the same calendar year are billed at the practice&rsquo;s private
+        fee until the new year begins.
+      </P>
+
+      <H3>Getting a GP Mental Health Treatment Plan</H3>
+      <P>
+        To access these rebates, you first need a Mental Health Treatment
+        Plan from your GP, sometimes called a Mental Health Care Plan or
+        MHCP. Book a longer GP appointment and mention that you would like
+        to discuss your mental health.
+      </P>
+      <P>
+        Your GP will talk through what you are experiencing, prepare the
+        plan, and provide a referral, usually addressed to a specific
+        psychologist or left open if you have not chosen one yet. You will
+        need both the plan and the referral before a psychologist can
+        process your Medicare rebate.
+      </P>
+
+      <H2>Signs it might be worth talking to someone</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/cbt-reflection-notebook-tea-stilllife.webp"
+            alt="Open notebook and pen beside a cup of tea on linen"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        You do not need to be in crisis to see a psychologist, but a few
+        common signs suggest it is worth having the conversation. You might
+        recognise:
+      </P>
+      <UL>
+        <LI>Persistent, hard-to-control worry about everyday things</LI>
+        <LI>
+          A racing heart, tight chest or restlessness that shows up without
+          an obvious cause
+        </LI>
+        <LI>Trouble sleeping because your mind will not settle</LI>
+        <LI>
+          Avoiding places, people or situations that trigger unease
+        </LI>
+        <LI>
+          A constant sense of being on edge, or difficulty concentrating
+        </LI>
+      </UL>
+      <P>
+        If any of this sounds familiar, it does not mean something is
+        wrong with you. It means it might help to talk it through with
+        someone qualified.
+      </P>
+
+      <Callout kicker="If you are in crisis">
+        <p>
+          If you are having thoughts of harming yourself, or you feel
+          unsafe right now, contact Lifeline on{" "}
+          <a href="tel:131114" className="link">
+            13 11 14
+          </a>
+          , available 24 hours a day, or Beyond Blue on{" "}
+          <a href="tel:1300224636" className="link">
+            1300 22 4636
+          </a>
+          .
+        </p>
+      </Callout>
+
+      <H2>CBT at Sage Psychological Services in East Fremantle</H2>
+      <P>
+        Jacob Jones is a registered psychologist working with adults across
+        Fremantle, Melville, Cockburn and the wider Perth area. CBT is one
+        of two core approaches used at the practice, alongside EMDR for
+        trauma, and sessions are delivered one to one rather than through
+        a fixed course.
+      </P>
+      <P>
+        You see the same psychologist at every appointment, which means
+        your therapy builds on a consistent, ongoing relationship rather
+        than starting over each time. Sessions are available in person in
+        East Fremantle or through{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth psychology sessions
+        </Link>{" "}
+        for clients elsewhere in WA, with fee details set out on the{" "}
+        <Link href="/fees">fees and rebates page</Link>. If you are still
+        working out how CBT works for your own situation, that is exactly
+        the kind of question a first session is for.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, the team at Sage Psychological
+        Services is happy to help. You can read more about{" "}
+        <Link href="/cbt-therapy-perth">CBT therapy in Perth</Link> or{" "}
+        <Link href="/contact">book a session with Jacob</Link> directly.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "How many CBT sessions do I need to see results?",
+            aText:
+              "There is no fixed number that applies to everyone. Many people work within Medicare's allocation of up to 10 sessions a year, though some need more support and others feel ready to finish sooner. Results vary and individual circumstances differ, so it is worth discussing what is likely to suit you with your own psychologist during an early session.",
+            a: (
+              <p>
+                There is no fixed number that applies to everyone. Many
+                people work within Medicare&rsquo;s allocation of up to 10
+                sessions a year, though some need more support and others
+                feel ready to finish sooner. Results vary and individual
+                circumstances differ, so it is worth discussing what is
+                likely to suit you with your own psychologist during an
+                early session.
+              </p>
+            ),
+          },
+          {
+            q: "Does CBT really change your brain, or is that an exaggeration?",
+            aText:
+              "Research suggests that psychological therapies including CBT are associated with changes in brain activity related to emotional regulation, though this is an evolving area of study. This is part of the broader picture, even though brain research in this area is still developing. The more grounded way to think about it is that repeated practice builds new habits of thinking, in the same way that practising any skill changes how automatic it feels over time.",
+            a: (
+              <p>
+                Research suggests that psychological therapies including
+                CBT are associated with changes in brain activity related
+                to emotional regulation, though this is an evolving area
+                of study. This is part of the broader picture, even though
+                brain research in this area is still developing. The more
+                grounded way to think about it is that repeated practice
+                builds new habits of thinking, in the same way that
+                practising any skill changes how automatic it feels over
+                time.
+              </p>
+            ),
+          },
+          {
+            q: "What's the difference between CBT and other types of therapy?",
+            aText:
+              "CBT is structured and focused on current thoughts, feelings and behaviours, using specific techniques like cognitive restructuring and exposure. Other approaches, such as EMDR or psychodynamic therapy, may look further into past experiences or use different techniques. Many psychologists, including at Sage, draw on more than one approach depending on what suits you.",
+            a: (
+              <p>
+                CBT is structured and focused on current thoughts, feelings
+                and behaviours, using specific techniques like cognitive
+                restructuring and exposure. Other approaches, such as EMDR
+                or psychodynamic therapy, may look further into past
+                experiences or use different techniques. Many
+                psychologists, including at Sage, draw on more than one
+                approach depending on what suits you.
+              </p>
+            ),
+          },
+          {
+            q: "Can I do CBT via telehealth?",
+            aText:
+              "Yes, CBT is commonly delivered through telehealth in Australia, and it can be just as accessible as an in-person session for many people. Sage Psychological Services offers telehealth appointments for clients across Western Australia who cannot attend the East Fremantle practice in person.",
+            a: (
+              <p>
+                Yes, CBT is commonly delivered through telehealth in
+                Australia, and it can be just as accessible as an in-person
+                session for many people. Sage Psychological Services offers
+                telehealth appointments for clients across Western
+                Australia who cannot attend the East Fremantle practice in
+                person.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a GP referral to start CBT?",
+            aText:
+              "You do not need a referral to see a psychologist privately, but you do need a GP Mental Health Treatment Plan and referral if you want to claim a Medicare rebate. Speak with your GP about a mental health-focused appointment to arrange this.",
+            a: (
+              <p>
+                You do not need a referral to see a psychologist privately,
+                but you do need a GP Mental Health Treatment Plan and
+                referral if you want to claim a Medicare rebate. Speak with
+                your GP about a mental health-focused appointment to
+                arrange this.
+              </p>
+            ),
+          },
+          {
+            q: "What if CBT doesn't work for me?",
+            aText:
+              "CBT helps many people, but it does not suit everyone equally, and results vary between individuals. If progress feels slow, your psychologist may adjust the approach or draw on another evidence-based method, such as EMDR or Acceptance and Commitment Therapy, depending on what is driving your anxiety.",
+            a: (
+              <p>
+                CBT helps many people, but it does not suit everyone
+                equally, and results vary between individuals. If progress
+                feels slow, your psychologist may adjust the approach or
+                draw on another evidence-based method, such as EMDR or
+                Acceptance and Commitment Therapy, depending on what is
+                driving your anxiety.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "physical-symptoms-of-anxiety-guide": () => (
     <>
       <P>
