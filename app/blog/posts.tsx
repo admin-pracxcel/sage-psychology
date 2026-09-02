@@ -890,7 +890,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         condition within the mental and substance use disorder group,
         according to{" "}
         <a
-          href="https://www.aihw.gov.au/reports/burden-of-disease/abds-2024-key-findings/summary"
+          href="https://www.aihw.gov.au/mental-health/topic-areas/health-wellbeing/burden-of-disease"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -1102,7 +1102,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         <LI>
           <strong>Claim your Medicare rebate.</strong> Under{" "}
           <a
-            href="https://www.aihw.gov.au/mental-health/topic-areas/community-based-services/medicare-mental-health"
+            href="https://www.health.gov.au/our-work/better-access-initiative"
             target="_blank"
             rel="noopener noreferrer"
             className="link"
@@ -1153,7 +1153,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         If you would like to talk through your situation with a registered
         psychologist in East Fremantle, Jacob at Sage Psychological
         Services is happy to help. You can{" "}
-        <Link href="/book">book a time to talk with Jacob</Link> when
+        <Link href="/contact">book a time to talk with Jacob</Link> when
         you&rsquo;re ready. More detail on Jacob&rsquo;s training and
         background is on the <Link href="/about">about page</Link>.
       </P>
