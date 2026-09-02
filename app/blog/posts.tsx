@@ -153,6 +153,49 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "worry-vs-anxiety",
+    title: "Worry vs Anxiety: Is There Actually a Difference?",
+    metaTitle: "Worry vs Anxiety: How to Tell the Difference and What to Do",
+    metaDescription:
+      "Struggling to tell worry vs anxiety apart? Compare the key signs and durations, then find out when it's time to talk to a psychologist in Australia today.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "8 min read",
+    publishedAt: "2026-09-02",
+    publishedLabel: "2 September 2026",
+    image: "/img/worry-vs-anxiety-hero-coastal-dawn.webp",
+    imageAlt:
+      "Misty eucalyptus coastline at dawn with soft golden light and still water",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Worry and anxiety can feel similar, but they're not the same. This article explains the key differences, when ordinary worry may have become an anxiety disorder, and what support looks like in Australia, including Medicare rebates and how to get a referral to a psychologist.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When worry starts to <span className="serif-italic">feel like more</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going on
+        and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "how-cbt-rewires-thinking",
     title: "How CBT Rewires Anxious Thinking, Explained Simply",
     metaTitle: "How Does CBT Work? A Perth Psychologist Explains Simply",
@@ -767,6 +810,471 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "worry-vs-anxiety": () => (
+    <>
+      <P>
+        Something has been sitting heavy in your chest for weeks now, and
+        you can&rsquo;t quite work out if it&rsquo;s just a busy patch or
+        something more. Late at night your mind won&rsquo;t switch off, and
+        by morning you&rsquo;re already dreading the day ahead.
+      </P>
+      <P>
+        If you&rsquo;ve been searching worry vs anxiety, trying to work out
+        where one ends and the other begins, this article will help you
+        tell the two apart and work out what to do next.
+      </P>
+
+      <Callout kicker="Quick answer">
+        <p>
+          Worry usually has a specific trigger and settles once the
+          situation resolves. Anxiety tends to be broader, harder to
+          control, and can stick around for months even when nothing
+          specific is wrong. If it&rsquo;s affecting your sleep, work, or
+          relationships for more than six months, it&rsquo;s worth talking
+          to someone.
+        </p>
+      </Callout>
+
+      <H2>When &ldquo;just worrying&rdquo; starts to feel like something more</H2>
+      <P>
+        Most people worry. You worry about a work deadline, a family
+        member&rsquo;s health, or whether you left the stove on. That kind
+        of worry usually fades once the situation is sorted out.
+      </P>
+      <P>
+        But sometimes the worry doesn&rsquo;t fade. It follows you into the
+        shower, into meetings, into bed at 2am. You start avoiding things
+        that never used to bother you, and you&rsquo;re left wondering
+        whether this is still just worry, or whether it has tipped into
+        something else.
+      </P>
+      <P>
+        That question, worry vs anxiety, is worth taking seriously. Knowing
+        the difference can help you work out what kind of support might
+        actually help.
+      </P>
+
+      <H2>What worry actually is</H2>
+      <P>
+        Worry is a normal mental process. It&rsquo;s your brain trying to
+        solve a problem by turning it over and over.
+      </P>
+      <P>
+        Worry is usually tied to something specific: an upcoming exam, a
+        bill that&rsquo;s due, a difficult conversation you need to have.
+        Once that specific thing is dealt with, the worry tends to settle
+        down on its own.
+      </P>
+      <P>
+        In small doses, worry can even be useful. It nudges you to prepare,
+        plan, and take action. The trouble starts when worry stops being
+        useful and starts taking over instead.
+      </P>
+
+      <H2>What anxiety actually is</H2>
+      <P>
+        Anxiety is broader and harder to switch off than ordinary worry.
+        Rather than being tied to one clear trigger, it can show up as a
+        general sense of dread that doesn&rsquo;t have an obvious cause.
+      </P>
+      <P>
+        Clinically, anxiety is generally considered a disorder when
+        it&rsquo;s persistent, difficult to control, and gets in the way of
+        daily life for six months or more. It often comes with physical
+        symptoms too, things like a racing heart, a tight chest,
+        restlessness, or trouble sleeping, alongside the mental load.
+      </P>
+      <P>
+        Anxiety disorders carry a significant health impact in Australia.
+        Anxiety disorders caused the greatest burden of any single
+        condition within the mental and substance use disorder group,
+        according to{" "}
+        <a
+          href="https://www.aihw.gov.au/reports/burden-of-disease/abds-2024-key-findings/summary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AIHW&rsquo;s 2024 Burden of Disease data
+        </a>
+        . That&rsquo;s a strong signal that this isn&rsquo;t a minor issue.
+        It&rsquo;s one of the more significant health concerns tracked in
+        the country.
+      </P>
+
+      <H2>Worry vs anxiety at a glance</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/worry-vs-anxiety-comparison-illustration.webp"
+            alt="Simple illustrated comparison of two contrasting emotional states in muted colours"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Here&rsquo;s a simple side-by-side comparison to help you place
+        what you&rsquo;re experiencing.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            &nbsp;
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Worry
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Anxiety
+          </div>
+        </div>
+        {[
+          [
+            "Trigger",
+            "Usually a specific situation",
+            "Often no single clear cause",
+          ],
+          [
+            "Duration",
+            "Settles once the situation resolves",
+            "Can persist for six months or more",
+          ],
+          [
+            "Physical symptoms",
+            "Mild, if any",
+            "Racing heart, tight chest, restlessness, poor sleep",
+          ],
+          [
+            "Effect on daily life",
+            "Manageable, doesn't usually stop you doing things",
+            "Can interfere with work, sleep, or relationships",
+          ],
+          [
+            "What helps",
+            "Problem-solving, time",
+            "Often needs a structured approach such as therapy",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <P>
+        If more of the anxiety column matches your day-to-day experience,
+        it may be worth exploring further.
+      </P>
+
+      <H2>Signs it may be more than everyday worry</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/worry-vs-anxiety-notebook-tea-stilllife.webp"
+            alt="Notebook, pen and tea cup on linen, a quiet reflective still-life scene"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        A few signs can help you tell worry vs anxiety apart in your own
+        experience.
+      </P>
+      <UL>
+        <LI>It&rsquo;s been going on for six months or longer</LI>
+        <LI>You find it hard to control or switch off, even when you try</LI>
+        <LI>It&rsquo;s affecting your sleep, concentration, or energy</LI>
+        <LI>It&rsquo;s getting in the way of work, study, or relationships</LI>
+        <LI>
+          You&rsquo;ve started avoiding situations because of how anxious
+          they make you feel
+        </LI>
+        <LI>
+          You notice physical symptoms like a racing heart, tight chest, or
+          restlessness alongside the worry
+        </LI>
+      </UL>
+      <P>
+        None of this means something is wrong with you. Anxiety is common,
+        and support for it is widely used. About 2.8 million Australians,
+        10% of the population, received 13.0 million Medicare-subsidised
+        mental health services in 2024 to 2025, a 7% increase since 2015 to
+        2016. Reaching out is a normal, well-used part of how Australians
+        look after their mental health.
+      </P>
+
+      <Callout kicker="If you're in crisis right now">
+        <p>
+          If you&rsquo;re in immediate distress or thinking about harming
+          yourself, please contact Lifeline on{" "}
+          <a href="tel:131114" className="link">
+            13 11 14
+          </a>
+          , available 24 hours a day, or call{" "}
+          <a href="tel:000" className="link">
+            000
+          </a>{" "}
+          in an emergency.
+        </p>
+      </Callout>
+
+      <H2>Why the distinction matters for treatment</H2>
+      <P>
+        Working out whether you&rsquo;re dealing with worry vs anxiety
+        matters because it shapes what kind of support is likely to help.
+      </P>
+
+      <H3>Talking therapy, usually first</H3>
+      <P>
+        For anxiety, Cognitive Behaviour Therapy (CBT) is generally
+        considered a first-line approach. It works by helping you identify
+        unhelpful thought patterns and gradually change how you respond to
+        them.
+      </P>
+      <P>
+        Where anxiety is connected to a past difficult experience, a
+        psychologist may also use Eye Movement Desensitisation and
+        Reprocessing (EMDR) alongside CBT. You can read more about{" "}
+        <Link href="/anxiety-therapy-perth">
+          Sage&rsquo;s approach to anxiety therapy
+        </Link>{" "}
+        and{" "}
+        <Link href="/cbt-therapy-perth">how CBT works at Sage</Link>{" "}
+        elsewhere on this site.
+      </P>
+      <P>
+        Results vary from person to person, and what helps one person may
+        take longer for another. A registered psychologist can help you
+        work out an approach suited to your own circumstances.
+      </P>
+
+      <H3>Where medication fits</H3>
+      <P>
+        For some people, a GP or psychiatrist may also discuss medication,
+        such as an SSRI or SNRI, as part of managing anxiety. This decision
+        sits with your GP or psychiatrist, not with a psychologist, since
+        psychologists in Australia aren&rsquo;t able to prescribe.
+      </P>
+      <P>
+        If medication comes up as an option worth considering for you, that
+        conversation is best had with your GP, who can refer you on further
+        if needed.
+      </P>
+
+      <H2>How to get support in Australia (and what it costs)</H2>
+      <P>
+        Getting support for anxiety in Australia usually follows a fairly
+        straightforward path.
+      </P>
+      <ol className="mt-6 flex flex-col gap-3 pl-6 list-decimal marker:text-moss body-lede">
+        <LI>
+          <strong>Book a GP appointment.</strong> Let your GP know how
+          things have been going. They may use a screening tool such as the
+          GAD-7 questionnaire to help understand how significant your
+          symptoms are.
+        </LI>
+        <LI>
+          <strong>Ask about a Mental Health Treatment Plan.</strong> If
+          appropriate, your GP can prepare this plan and refer you to a
+          psychologist. From 1 November 2025, this generally needs to be
+          done through your registered MyMedicare practice or your usual
+          GP.
+        </LI>
+        <LI>
+          <strong>Book with a registered psychologist.</strong> With a
+          referral in place, you can book your first session.
+        </LI>
+        <LI>
+          <strong>Claim your Medicare rebate.</strong> Under{" "}
+          <a
+            href="https://www.aihw.gov.au/mental-health/topic-areas/community-based-services/medicare-mental-health"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            Medicare&rsquo;s Better Access initiative
+          </a>
+          , eligible people can claim up to 10 individual psychology
+          sessions per calendar year, generally released in two blocks, an
+          initial block followed by a GP review before the remaining
+          sessions are available.
+        </LI>
+      </ol>
+      <P>
+        Demand for psychology support in Australia currently outpaces
+        supply. The Australian Government&rsquo;s Psychology Supply and
+        Demand Study estimates a current national shortfall of around
+        10,000 psychologists, projected to grow to over 24,000 within 12
+        years without intervention.
+      </P>
+      <P>
+        This is part of why booking early, rather than waiting until things
+        feel unmanageable, tends to make the process smoother.
+      </P>
+      <P>
+        At Sage Psychological Services, the standard consultation fee is
+        $180 per session. With a Medicare rebate of $101.55 under a valid
+        Mental Health Care Plan, the out-of-pocket cost is $78.45 per
+        session. You can find{" "}
+        <Link href="/fees">current fees and rebate details</Link> on the
+        fees page.
+      </P>
+
+      <H2>What working with a psychologist at Sage looks like</H2>
+      <P>
+        Sage Psychological Services is a small psychology practice in East
+        Fremantle, working with adults across Fremantle, Melville,
+        Cockburn, and the wider Perth area, as well as by telehealth across
+        Western Australia.
+      </P>
+      <P>
+        You work directly with Jacob Jones, a registered psychologist,
+        throughout your therapy. There&rsquo;s no rotating list of
+        practitioners. Jacob draws on CBT, EMDR, and other evidence-based
+        approaches, adjusting the approach to suit your history and goals
+        rather than working through a fixed method.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, Jacob at Sage Psychological
+        Services is happy to help. You can{" "}
+        <Link href="/book">book a time to talk with Jacob</Link> when
+        you&rsquo;re ready. More detail on Jacob&rsquo;s training and
+        background is on the <Link href="/about">about page</Link>.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Is worrying a lot the same as having anxiety?",
+            aText:
+              "Not necessarily. Worry is usually tied to a specific situation and settles once that situation is resolved. Anxiety tends to be broader, harder to control, and can persist for six months or longer, often with physical symptoms attached. If your worry feels constant and hard to switch off, it's worth discussing with a GP or psychologist.",
+            a: (
+              <p>
+                Not necessarily. Worry is usually tied to a specific
+                situation and settles once that situation is resolved.
+                Anxiety tends to be broader, harder to control, and can
+                persist for six months or longer, often with physical
+                symptoms attached. If your worry feels constant and hard to
+                switch off, it&rsquo;s worth discussing with a GP or
+                psychologist.
+              </p>
+            ),
+          },
+          {
+            q: "How long does worry have to last before it's considered anxiety?",
+            aText:
+              "Clinically, anxiety is generally considered a disorder when symptoms persist for six months or more and interfere with daily life. This isn't a strict cut-off to self-diagnose against. It's a general guide a GP or psychologist would use as part of a broader assessment of your situation.",
+            a: (
+              <p>
+                Clinically, anxiety is generally considered a disorder when
+                symptoms persist for six months or more and interfere with
+                daily life. This isn&rsquo;t a strict cut-off to
+                self-diagnose against. It&rsquo;s a general guide a GP or
+                psychologist would use as part of a broader assessment of
+                your situation.
+              </p>
+            ),
+          },
+          {
+            q: "Can you have anxiety without constant worrying?",
+            aText:
+              "Yes. Anxiety can show up mainly as physical symptoms, such as a racing heart, a tight chest, or trouble sleeping, without constant conscious worrying. Some people notice the physical symptoms first and only realise later that anxiety is behind them, especially if they haven't connected the two before.",
+            a: (
+              <p>
+                Yes. Anxiety can show up mainly as physical symptoms, such
+                as a racing heart, a tight chest, or trouble sleeping,
+                without constant conscious worrying. Some people notice
+                the physical symptoms first and only realise later that
+                anxiety is behind them, especially if they haven&rsquo;t
+                connected the two before.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a diagnosis before I see a psychologist?",
+            aText:
+              "No. You can see a psychologist without a formal diagnosis. Many people book an initial session simply because things haven't felt right for a while, and a psychologist can help you understand what's going on and what support might help from there.",
+            a: (
+              <p>
+                No. You can see a psychologist without a formal diagnosis.
+                Many people book an initial session simply because things
+                haven&rsquo;t felt right for a while, and a psychologist
+                can help you understand what&rsquo;s going on and what
+                support might help from there.
+              </p>
+            ),
+          },
+          {
+            q: "How much does it cost to see a psychologist in Australia with a Medicare rebate?",
+            aText:
+              "At Sage Psychological Services, the standard consultation fee is $180 per session. With a Medicare rebate of $101.55 under a valid Mental Health Care Plan (effective 1 July 2026), the out-of-pocket cost is $78.45 per session. Fees vary between practices, so it's worth checking directly with your chosen psychologist.",
+            a: (
+              <p>
+                At Sage Psychological Services, the standard consultation
+                fee is $180 per session. With a Medicare rebate of $101.55
+                under a valid Mental Health Care Plan (effective 1 July
+                2026), the out-of-pocket cost is $78.45 per session. Fees
+                vary between practices, so it&rsquo;s worth checking
+                directly with your chosen psychologist.
+              </p>
+            ),
+          },
+          {
+            q: "What's the difference between a psychologist and a GP for anxiety?",
+            aText:
+              "A GP can assess your symptoms, prepare a Mental Health Treatment Plan, and discuss medication if appropriate. A psychologist provides structured talking therapy, such as CBT, to help you manage anxiety day to day. Many people work with both as part of their care, with the GP coordinating the referral and the psychologist providing the ongoing therapy itself.",
+            a: (
+              <p>
+                A GP can assess your symptoms, prepare a Mental Health
+                Treatment Plan, and discuss medication if appropriate. A
+                psychologist provides structured talking therapy, such as
+                CBT, to help you manage anxiety day to day. Many people
+                work with both as part of their care, with the GP
+                coordinating the referral and the psychologist providing
+                the ongoing therapy itself.
+              </p>
+            ),
+          },
+          {
+            q: "Is it normal to feel anxious without knowing why?",
+            aText:
+              "Yes, this is common. Anxiety doesn't always have a clear, identifiable cause, particularly when it's persistent, and that lack of a clear reason is often part of what makes it confusing to deal with. If this is happening regularly, a GP or psychologist can help you explore what might be contributing to it, even when nothing specific stands out to you.",
+            a: (
+              <p>
+                Yes, this is common. Anxiety doesn&rsquo;t always have a
+                clear, identifiable cause, particularly when it&rsquo;s
+                persistent, and that lack of a clear reason is often part
+                of what makes it confusing to deal with. If this is
+                happening regularly, a GP or psychologist can help you
+                explore what might be contributing to it, even when
+                nothing specific stands out to you.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "how-cbt-rewires-thinking": () => (
     <>
       <P>
