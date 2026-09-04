@@ -153,6 +153,49 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "anxiety-cycle-how-to-break-it",
+    title: "The Anxiety Cycle and How to Break It",
+    metaTitle: "The Anxiety Cycle Explained: 5 Stages and How to Break It",
+    metaDescription:
+      "The anxiety cycle can feel endless, but it's a pattern that can be changed. See the 5 stages, why avoidance keeps it going, and how to get support in Perth.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "9 min read",
+    publishedAt: "2026-09-04",
+    publishedLabel: "4 September 2026",
+    image: "/img/anxiety-cycle-coastal-dawn-hero.webp",
+    imageAlt:
+      "Misty eucalyptus coastline at dawn, calm ocean and native trees",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Anxiety often follows a repeating pattern of trigger, worry, and avoidance that brings short-term relief but keeps the cycle going. This article explains the five stages behind it, why avoidance makes anxiety harder to shake, and what evidence-based approaches can help you gradually break the pattern.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When the loop starts <span className="serif-italic">running your day</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going on
+        and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "worry-vs-anxiety",
     title: "Worry vs Anxiety: Is There Actually a Difference?",
     metaTitle: "Worry vs Anxiety: How to Tell the Difference and What to Do",
@@ -810,6 +853,504 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "anxiety-cycle-how-to-break-it": () => (
+    <>
+      <P>
+        Something sets off a wave of worry, you find a way around it, and
+        for a while you feel fine. Then the same trigger comes back, only
+        this time it feels a little harder to face. This looping pattern is
+        what psychologists call the anxiety cycle, and understanding how it
+        works is the first real step toward changing it.
+      </P>
+      <P>
+        Below, this article covers what the cycle looks like stage by
+        stage, why avoidance keeps it running, and what actually helps
+        reverse it, based on a model used across Western Australia&rsquo;s
+        public mental health system.
+      </P>
+
+      <Callout kicker="Quick answer">
+        <p>
+          This pattern is a repeating loop of trigger, anxious thought,
+          physical symptom, avoidance, and short-term relief, which then
+          feeds back into more anxiety over time. It can usually be
+          reversed, most often by gradually facing avoided situations and
+          dropping the small habits that keep the loop going. Results vary
+          between individuals, so it&rsquo;s worth talking to a registered
+          psychologist or your GP about what fits your own situation.
+        </p>
+      </Callout>
+
+      <H2>What this pattern actually means</H2>
+      <P>
+        This pattern is a repeating loop where anxious thoughts, physical
+        symptoms, and avoidance keep reinforcing each other, so the anxiety
+        never really gets the chance to settle.
+      </P>
+      <P>
+        Western Australia&rsquo;s own{" "}
+        <a
+          href="https://www.healthywa.wa.gov.au/Articles/A_E/Anxiety-reversing-the-vicious-cycle"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Anxiety reversing the vicious cycle
+        </a>{" "}
+        resource describes this loop clearly.
+      </P>
+      <P>
+        CCI is a specialist statewide public program that treats adults
+        with complex anxiety, mood, and eating difficulties, and its model
+        underpins much of the evidence-based anxiety treatment used across
+        Australia today.
+      </P>
+      <P>
+        The short version is this. Anxiety itself isn&rsquo;t the problem.
+        It&rsquo;s a normal response that keeps you alert to real threats.
+        It becomes a problem when avoidance becomes the main way you manage
+        it, because avoidance quietly teaches your brain that the feared
+        situation was dangerous after all, even when it wasn&rsquo;t.
+      </P>
+
+      <H2>The 5-stage anxiety cycle, step by step</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-cycle-five-stage-diagram.webp"
+            alt="Illustrated diagram of the five-stage anxiety cycle from trigger to relief"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        The anxiety cycle generally moves through five stages: a trigger,
+        an anxious thought, a physical symptom, an avoidance behaviour, and
+        a short period of relief that resets the whole pattern.
+      </P>
+      <P>
+        Here&rsquo;s how it tends to play out, using a general, everyday
+        example rather than any one person&rsquo;s story.
+      </P>
+      <ol className="mt-6 flex flex-col gap-3 pl-6 list-decimal marker:text-moss body-lede">
+        <LI>
+          <strong>Trigger.</strong> Something happens, such as being asked
+          to speak up in a meeting, that sets off an anxious reaction.
+        </LI>
+        <LI>
+          <strong>Anxious appraisal.</strong> Your mind jumps to the
+          worst-case version of events. &ldquo;I&rsquo;ll freeze. Everyone
+          will notice.&rdquo;
+        </LI>
+        <LI>
+          <strong>Physical symptoms.</strong> Your body responds as if the
+          threat were real. Your heart rate climbs, your chest tightens,
+          your palms sweat.
+        </LI>
+        <LI>
+          <strong>Avoidance or safety behaviour.</strong> You find a way to
+          escape or soften the moment. You stay quiet, leave the room, or
+          over-prepare to the point of exhaustion.
+        </LI>
+        <LI>
+          <strong>Short-term relief, then reset.</strong> The anxiety drops
+          for a while. But your brain has just learned that avoidance kept
+          you safe, so the same trigger feels even more threatening next
+          time.
+        </LI>
+      </ol>
+      <P>
+        None of these stages is unusual on its own. It&rsquo;s the way
+        they feed into each other, again and again, that turns a normal
+        stress response into something that starts running your day.
+      </P>
+
+      <H2>Why avoidance feels like the fix (and isn&rsquo;t)</H2>
+      <P>
+        Avoidance feels like it works because it does, in the short term.
+        That relief is real, which is exactly why this pattern is so hard
+        to break on your own.
+      </P>
+      <P>
+        The trouble is that relief comes at a cost. Every time you avoid
+        something out of anxiety, your brain quietly files that situation
+        under &ldquo;dangerous,&rdquo; even if nothing bad would have
+        actually happened. Over time, the list of things you avoid tends to
+        grow, not shrink.
+      </P>
+      <P>
+        This mechanism, sometimes called negative reinforcement, is also
+        central to how CBT works and why it targets avoidance directly
+        rather than just the anxious thoughts themselves. If you&rsquo;d
+        like to understand that process in more depth, our article on{" "}
+        <Link href="/blog/how-cbt-rewires-thinking">
+          how CBT reshapes anxious thinking
+        </Link>{" "}
+        goes through it step by step.
+      </P>
+
+      <H2>Reversing the cycle: what can help break it</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-cycle-reflection-notebook-tea.webp"
+            alt="Notebook, pen, and tea on linen, a quiet reflective still-life scene"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        This loop is reversed largely the same way it was built, through
+        repeated experience, just running in the other direction. Instead
+        of avoiding a feared situation, you face it gradually, in a way
+        that lets your body and mind learn it can cope.
+      </P>
+      <P>
+        CCI&rsquo;s own model calls this &ldquo;reversing the vicious
+        cycle,&rdquo; and it centres on two things: gradually confronting
+        feared situations without leaning on safety behaviours, and
+        building a bit more confidence each time you get through one.
+      </P>
+      <P>
+        This lines up closely with cognitive behaviour therapy (CBT), which
+        is commonly recommended in Australia for managing anxiety, often as
+        part of a GP Mental Health Treatment Plan.
+      </P>
+      <P>CBT for the anxiety cycle usually works through two main techniques.</P>
+      <UL>
+        <LI>
+          <strong>Cognitive restructuring.</strong> You learn to notice an
+          anxious thought, write it down, and honestly weigh up the
+          evidence for and against it, rather than assuming it&rsquo;s true
+          just because it feels true.
+        </LI>
+        <LI>
+          <strong>Graded exposure.</strong> Instead of avoiding a trigger
+          altogether, you face it in small, manageable steps, at a pace
+          that suits you, rather than all at once.
+        </LI>
+      </UL>
+      <P>
+        Use this checklist to get a sense of whether this pattern might
+        apply to you. This isn&rsquo;t a diagnostic checklist, just a
+        general guide to reflect on.
+      </P>
+      <UL>
+        <LI>You avoid situations you used to manage without a second thought</LI>
+        <LI>Small worries seem to snowball into much bigger ones</LI>
+        <LI>Relief after avoiding something never quite lasts</LI>
+        <LI>You&rsquo;ve noticed yourself avoiding more things over time, not fewer</LI>
+        <LI>
+          Physical symptoms like a racing heart or tight chest show up
+          before you&rsquo;ve registered feeling anxious
+        </LI>
+      </UL>
+      <P>
+        None of this means something is wrong with you. It means the
+        pattern has become familiar to your brain, and familiar patterns
+        can be worked with. Results vary between individuals, and how long
+        this takes depends on your own circumstances, so it&rsquo;s worth
+        discussing timeframes with your own psychologist rather than
+        assuming a general figure applies to you.
+      </P>
+
+      <H2>When the cycle runs deeper: trauma and EMDR</H2>
+      <P>
+        Sometimes this pattern is tied less to a specific, current trigger
+        and more to something further back, such as a difficult or
+        distressing past experience.
+      </P>
+      <P>
+        In those cases, a psychologist may draw on approaches such as Eye
+        Movement Desensitisation and Reprocessing, known as EMDR, or
+        psychodynamic work, sometimes alongside Acceptance and Commitment
+        Therapy (ACT), depending on what&rsquo;s driving the pattern
+        underneath the surface symptoms.
+      </P>
+      <P>
+        You can read more about{" "}
+        <Link href="/emdr-therapy-perth">EMDR therapy in Perth</Link> and
+        how it&rsquo;s used alongside other evidence-based approaches for
+        anxiety and trauma. As with any approach, what helps depends on
+        your own history and goals, and a first conversation with a
+        registered psychologist is the best way to work out what&rsquo;s
+        likely to suit you.
+      </P>
+
+      <H2>Why this matters beyond how you feel day to day</H2>
+      <P>
+        This pattern isn&rsquo;t just an individual experience. It sits
+        inside a much larger picture of mental health in Australia, and
+        the scale of that picture is worth naming.
+      </P>
+      <P>
+        The{" "}
+        <a
+          href="https://www.pc.gov.au/media-speeches/speeches/mental-health/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Productivity Commission&rsquo;s 2020 Mental Health Inquiry
+        </a>{" "}
+        estimated that mental ill-health and suicide cost Australia
+        somewhere between $200 and $220 billion a year, once healthcare,
+        lost productivity, and broader social costs are counted. This
+        remains the most recent estimate of its kind, since no newer
+        Australian inquiry has re-quantified the figure since.
+      </P>
+      <P>
+        That number isn&rsquo;t meant to be alarming. It&rsquo;s a
+        reminder that these patterns, multiplied across millions of
+        people, add up to something the whole country has an interest in
+        addressing properly, not just something to manage quietly on your
+        own.
+      </P>
+
+      <H2>Getting support in Perth: what it actually costs</H2>
+      <P>
+        Getting support usually starts with a conversation with your GP,
+        and from there follows a fairly predictable path, one that most GP
+        Mental Health Treatment Plans are built around.
+      </P>
+      <ol className="mt-6 flex flex-col gap-3 pl-6 list-decimal marker:text-moss body-lede">
+        <LI>
+          <strong>Book a longer GP appointment</strong> and explain
+          what&rsquo;s been going on, including any physical symptoms.
+        </LI>
+        <LI>
+          <strong>Ask about a Mental Health Care Plan.</strong> If
+          appropriate, your GP will prepare this and refer you to a
+          psychologist, usually for an initial six sessions.
+        </LI>
+        <LI>
+          <strong>Attend your sessions with a registered psychologist.</strong>{" "}
+          After the first six, you return to your GP for a review before
+          accessing further sessions.
+        </LI>
+        <LI>
+          <strong>Claim your Medicare rebate</strong>, which is usually
+          processed automatically after each appointment.
+        </LI>
+      </ol>
+      <P>
+        Cost is often the deciding factor in whether people reach out at
+        all, so here&rsquo;s how it breaks down at Sage Psychological
+        Services.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Pathway
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            What you need
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Approximate cost
+          </div>
+        </div>
+        {[
+          [
+            "Medicare (Mental Health Care Plan)",
+            "GP referral, up to 10 sessions per calendar year",
+            "$180 standard fee, $101.55 rebate, $78.45 out-of-pocket",
+          ],
+          [
+            "Private health insurance",
+            "Check your fund and level of cover",
+            "Rebate varies by provider",
+          ],
+          [
+            "DVA (White or Gold Card)",
+            "GP referral, up to 12 initial sessions",
+            "No out-of-pocket cost for eligible veterans",
+          ],
+          [
+            "NDIS, Workers' Compensation, or ICWA",
+            "Confirm eligibility with the relevant scheme",
+            "Set by each scheme's current fee schedule",
+          ],
+          [
+            "Self-funded, no referral needed",
+            "Book directly",
+            "Standard session fee, invoiced after each appointment",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <P>
+        The gap fee at Sage is kept deliberately low, well below the
+        Australian Psychological Society&rsquo;s recommended fee, so
+        consistent support stays within reach. You can see{" "}
+        <Link href="/fees">current fees and Medicare rebate details</Link>{" "}
+        for the most up-to-date figures.
+      </P>
+      <P>
+        Access is also worth thinking about earlier rather than later.{" "}
+        <a
+          href="https://www.aihw.gov.au/mental-health/topic-areas/facilities-resources/workforce"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AIHW&rsquo;s 2024 mental health workforce data
+        </a>{" "}
+        shows that, unlike most other states, Western Australia has
+        proportionally more mental health nurses than psychologists
+        relative to its overall mental health workforce.
+      </P>
+      <P>
+        That&rsquo;s not a reason to worry, but it&rsquo;s a reasonable
+        argument for starting the GP conversation sooner rather than
+        waiting until things feel unmanageable.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, the team at Sage Psychological
+        Services is happy to help.
+      </P>
+      <P>
+        Jacob works with adults across Fremantle, Melville, Cockburn, and
+        the wider Perth area, as well as by telehealth for clients
+        elsewhere in WA. You&rsquo;re welcome to{" "}
+        <Link href="/contact">book a session with Jacob</Link> when it
+        suits you.
+      </P>
+
+      <Callout kicker="If you're in crisis right now">
+        <p>
+          Please contact Lifeline on{" "}
+          <a href="tel:131114" className="link">
+            13 11 14
+          </a>
+          , available 24 hours a day, Beyond Blue on{" "}
+          <a href="tel:1300224636" className="link">
+            1300 22 4636
+          </a>
+          , or emergency services on{" "}
+          <a href="tel:000" className="link">
+            000
+          </a>
+          .
+        </p>
+      </Callout>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "What are the stages of the anxiety cycle?",
+            aText:
+              "It generally moves through five stages: a trigger, an anxious thought, a physical symptom such as a racing heart, an avoidance or safety behaviour, and a period of short-term relief that then resets the pattern. Knowing which stage you tend to get stuck in can help you work out where to start making changes.",
+            a: (
+              <p>
+                It generally moves through five stages: a trigger, an
+                anxious thought, a physical symptom such as a racing heart,
+                an avoidance or safety behaviour, and a period of
+                short-term relief that then resets the pattern. Knowing
+                which stage you tend to get stuck in can help you work out
+                where to start making changes.
+              </p>
+            ),
+          },
+          {
+            q: "Why does avoiding anxiety make it feel worse, not better?",
+            aText:
+              "Avoidance brings short-term relief, but it also teaches your brain that the avoided situation was genuinely dangerous, even when it wasn't. Over time, this tends to grow the list of things that feel threatening, rather than shrinking it, which keeps the pattern going.",
+            a: (
+              <p>
+                Avoidance brings short-term relief, but it also teaches
+                your brain that the avoided situation was genuinely
+                dangerous, even when it wasn&rsquo;t. Over time, this
+                tends to grow the list of things that feel threatening,
+                rather than shrinking it, which keeps the pattern going.
+              </p>
+            ),
+          },
+          {
+            q: "Is this the same as a panic cycle?",
+            aText:
+              "They're closely related. A panic cycle is essentially the same loop playing out more intensely and quickly, often with sudden, strong physical symptoms. The same underlying pattern of trigger, symptom, avoidance, and relief applies to both, and similar approaches are used to address them.",
+            a: (
+              <p>
+                They&rsquo;re closely related. A panic cycle is
+                essentially the same loop playing out more intensely and
+                quickly, often with sudden, strong physical symptoms. The
+                same underlying pattern of trigger, symptom, avoidance,
+                and relief applies to both, and similar approaches are
+                used to address them.
+              </p>
+            ),
+          },
+          {
+            q: "How is this different from generalised anxiety disorder?",
+            aText:
+              "This pattern can show up with any type of anxiety, including generalised anxiety disorder (GAD). GAD refers to a specific, ongoing pattern of hard-to-control worry across many areas of life, most days, for six months or more.",
+            a: (
+              <p>
+                This pattern can show up with any type of anxiety,
+                including generalised anxiety disorder (GAD). GAD refers
+                to a specific, ongoing pattern of hard-to-control worry
+                across many areas of life, most days, for six months or
+                more.
+              </p>
+            ),
+          },
+          {
+            q: "Can you break the cycle without medication?",
+            aText:
+              "Many people work through this pattern using psychological therapy alone, such as CBT, without medication. For some people, a GP or psychiatrist may also discuss medication as part of a broader plan, but that decision sits with them, not with a psychologist, since psychologists in Australia don't prescribe.",
+            a: (
+              <p>
+                Many people work through this pattern using psychological
+                therapy alone, such as CBT, without medication. For some
+                people, a GP or psychiatrist may also discuss medication
+                as part of a broader plan, but that decision sits with
+                them, not with a psychologist, since psychologists in
+                Australia don&rsquo;t prescribe.
+              </p>
+            ),
+          },
+          {
+            q: "How long does it usually take to notice a change?",
+            aText:
+              "There's no fixed timeframe that applies to everyone, and results vary between individuals depending on their own circumstances. Many people notice small shifts within a handful of sessions, though for others it takes longer. A registered psychologist can talk you through what's realistic for your own situation.",
+            a: (
+              <p>
+                There&rsquo;s no fixed timeframe that applies to everyone,
+                and results vary between individuals depending on their
+                own circumstances. Many people notice small shifts within
+                a handful of sessions, though for others it takes longer.
+                A registered psychologist can talk you through what&rsquo;s
+                realistic for your own situation.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "worry-vs-anxiety": () => (
     <>
       <P>
