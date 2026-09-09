@@ -153,6 +153,48 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "cognitive-distortions",
+    title: "Cognitive Distortions: The Thinking Traps That Fuel Anxiety",
+    metaTitle: "Cognitive Distortions: 10 Thinking Traps That Fuel Anxiety",
+    metaDescription:
+      "Cognitive distortions can fuel anxiety and worry. See the 10 most common thinking traps and simple steps to challenge and reframe them for a calmer mind.",
+    category: "Anxiety & CBT",
+    categoryHref: "/cbt-therapy-perth",
+    readTime: "11 min read",
+    publishedAt: "2026-09-09",
+    publishedLabel: "9 September 2026",
+    image: "/img/cognitive-distortions-thinking-traps-anxiety-hero.webp",
+    imageAlt: "Misty eucalyptus coastal path at dawn in Western Australia",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "If your mind keeps jumping to the worst outcome, a cognitive distortion might be behind it. This guide explains ten common thinking traps that fuel anxiety, how to spot them, and simple steps to start questioning them for yourself.",
+    linksUp: [
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When your thinking is <span className="serif-italic">running the show</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/cbt-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          CBT for anxiety
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about the thinking patterns
+        that have been running and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "anxiety-cycle-how-to-break-it",
     title: "The Anxiety Cycle and How to Break It",
     metaTitle: "The Anxiety Cycle Explained: 5 Stages and How to Break It",
@@ -853,6 +895,525 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "cognitive-distortions": () => (
+    <>
+      <P>
+        If your mind keeps looping through worst-case scenarios, replaying
+        conversations, or convincing you that one bad moment means
+        everything is falling apart, you are not imagining it. These
+        patterns have a name. They are called cognitive distortions, and
+        they are one of the main reasons ordinary worry turns into anxiety
+        that will not switch off.
+      </P>
+      <P>
+        This article explains what cognitive distortions are, the 10 most
+        common ones behind anxious thinking, how to start challenging
+        them, and when it might be worth talking to someone about it.
+      </P>
+
+      <Callout kicker="Quick answer">
+        <p>
+          Cognitive distortions are habitual, inaccurate ways of
+          interpreting events that make situations feel more dangerous,
+          more personal, or more hopeless than the evidence supports.
+          They are a normal part of how the brain works under stress, and
+          they are also one of the main targets of cognitive behaviour
+          therapy (CBT) for anxiety.
+        </p>
+      </Callout>
+
+      <H2>What are cognitive distortions?</H2>
+      <P>
+        Cognitive distortions are patterns of thinking that twist how you
+        see a situation, usually towards the worst possible version of
+        events. They are not a character flaw or a sign that something is
+        wrong with you. Every brain uses shortcuts to process information
+        quickly, and sometimes those shortcuts get it wrong.
+      </P>
+      <P>
+        The idea was first described by psychiatrist Aaron Beck, who
+        noticed that his patients&rsquo; distress often came from how they
+        interpreted events, not just the events themselves. Psychologist
+        David Burns later expanded the list in his book on cognitive
+        therapy, and the concept has been central to CBT ever since.
+      </P>
+      <P>
+        These thinking patterns show up in depression, low self-esteem,
+        and anger, but they are especially closely linked to anxiety. When
+        your mind is scanning for threat, it tends to grab onto the most
+        alarming interpretation available, even when a calmer, more
+        accurate one is sitting right next to it.
+      </P>
+
+      <H2>How thinking traps fuel anxiety</H2>
+      <P>
+        Anxious thinking and distorted thoughts feed each other. A
+        distorted thought creates a feeling of danger, and that feeling
+        makes the thought seem more believable, even when it is not
+        accurate.
+      </P>
+      <P>
+        Anxiety disorders are the most common class of mental health
+        condition in Australia, affecting around one in seven adults in
+        any given year. Social anxiety disorder is the most prevalent
+        type, followed by generalised anxiety disorder and panic disorder,
+        according to the{" "}
+        <a
+          href="https://www.ranzcp.org/getcontentasset/5456b019-e2dd-4d7a-91d3-ca0ca8b356e3/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/anxiety-disorders-cpg-ref-only.pdf?language=en-AU"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RANZCP clinical practice guidelines for anxiety disorders
+        </a>{" "}
+        (RANZCP, 2018).
+      </P>
+      <P>
+        These patterns often start early. The typical age of onset is
+        around 13 for social anxiety, 30 for panic disorder, and 33 for
+        generalised anxiety disorder, which means many people carry these
+        thinking habits for years before they look at them closely.
+      </P>
+      <P>
+        CBT works on these patterns directly. One of its core stages
+        involves identifying and gently testing a person&rsquo;s
+        exaggerated sense of danger, then weighing that thought against
+        the actual evidence (RANZCP, 2018).
+      </P>
+      <P>
+        This is not about forcing positive thinking. It is about accuracy.
+        A thought that has been tested against the evidence is usually
+        more balanced, and often less frightening, than the first
+        automatic version that showed up.
+      </P>
+
+      <H2>The most common thinking traps behind anxious thoughts</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/thinking-traps-icon-illustration.webp"
+            alt="Illustrated icons representing different anxious thinking patterns"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Anxious thinking usually draws on a handful of predictable
+        patterns. The table below sets out 10 of the most common, with an
+        example of how each sounds and a question to test it against the
+        evidence.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="overflow-x-auto">
+          <div className="min-w-[760px]">
+            <div className="grid grid-cols-4 bg-paper-soft">
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+                Thinking trap
+              </div>
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+                What it sounds like
+              </div>
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+                Example anxious thought
+              </div>
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                Reframe question
+              </div>
+            </div>
+            {[
+              [
+                "Catastrophising",
+                "Assuming the worst possible outcome",
+                "“I made a mistake in the meeting, I am going to lose my job”",
+                "What is the most likely outcome, not just the worst one?",
+              ],
+              [
+                "Black-and-white thinking",
+                "Seeing things as all good or all bad, with no middle ground",
+                "“If I am not completely calm, I have failed”",
+                "Is there a middle ground I am not letting myself see?",
+              ],
+              [
+                "Mind reading",
+                "Assuming you know what others are thinking, usually something negative",
+                "“They think I am boring”",
+                "What evidence do I actually have for this?",
+              ],
+              [
+                "Fortune telling",
+                "Predicting a negative future as if it is already certain",
+                "“This is going to go badly”",
+                "Am I predicting this or assuming it?",
+              ],
+              [
+                "Emotional reasoning",
+                "Treating a feeling as proof of fact",
+                "“I feel anxious, so something must be wrong”",
+                "Does this feeling match the actual facts of the situation?",
+              ],
+              [
+                "Overgeneralisation",
+                "Turning one event into a permanent pattern",
+                "“I got it wrong once, I always get things wrong”",
+                "Is this really “always”, or just this one time?",
+              ],
+              [
+                "Personalisation",
+                "Assuming responsibility for things outside your control",
+                "“My friend seemed quiet, it must be something I did”",
+                "What other explanations could there be?",
+              ],
+              [
+                "Should statements",
+                "Holding yourself to rigid, unrealistic rules",
+                "“I should never feel anxious about this”",
+                "Would I hold someone else to this same rule?",
+              ],
+              [
+                "Mental filtering",
+                "Focusing only on the negative and ignoring the rest",
+                "“That was a disaster” (after one small hiccup in an otherwise fine day)",
+                "What went okay that I am leaving out?",
+              ],
+              [
+                "Labelling",
+                "Attaching a harsh, fixed label to yourself after one event",
+                "“I am a failure”",
+                "Am I describing an event, or judging my whole self?",
+              ],
+            ].map((row, i) => (
+              <div
+                key={i}
+                className="grid grid-cols-4 border-t border-ink/12 bg-paper"
+              >
+                <div className="p-4 md:p-5 border-r border-ink/12 text-[0.9rem] leading-snug font-medium">
+                  {row[0]}
+                </div>
+                <div className="p-4 md:p-5 border-r border-ink/12 text-[0.9rem] leading-snug">
+                  {row[1]}
+                </div>
+                <div className="p-4 md:p-5 border-r border-ink/12 text-[0.9rem] leading-snug">
+                  {row[2]}
+                </div>
+                <div className="p-4 md:p-5 text-[0.9rem] leading-snug">
+                  {row[3]}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <P>
+        You will probably recognise yourself in a few of these more than
+        others. That is normal. Most people who deal with anxiety lean on
+        two or three particular thinking traps rather than all of them.
+      </P>
+
+      <H2>Signs a thinking trap might be running the show</H2>
+      <P>
+        Watch for these patterns over the next week or two. This list is a
+        reflection tool, not a diagnostic checklist, and it cannot tell
+        you whether you have an anxiety disorder. Only a registered health
+        practitioner can assess that.
+      </P>
+      <UL>
+        <LI>
+          You predict the worst outcome before you have any real evidence
+          for it
+        </LI>
+        <LI>
+          A single mistake feels like proof that you are generally bad at
+          something
+        </LI>
+        <LI>You assume you know what other people are thinking about you</LI>
+        <LI>
+          Your mood is being driven by a feeling rather than the actual
+          facts in front of you
+        </LI>
+        <LI>
+          You notice the one thing that went wrong and forget the five
+          things that went fine
+        </LI>
+        <LI>
+          You talk to yourself in a way you would never accept from someone
+          else
+        </LI>
+      </UL>
+      <P>
+        If several of these feel familiar most days, it may be worth
+        learning more about how CBT approaches this kind of thinking, or
+        speaking with someone about it.
+      </P>
+
+      <H2>How to start challenging a distorted thought</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/thought-record-notebook-still-life.webp"
+            alt="Open notebook and pen for recording and reframing anxious thoughts"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        You do not need special training to begin noticing and questioning
+        your own thinking traps. A simple thought record is a good
+        starting point.
+      </P>
+      <ol className="mt-6 flex flex-col gap-3 pl-6 list-decimal marker:text-moss body-lede">
+        <LI>
+          <strong>Write down the situation.</strong> Keep it factual. What
+          actually happened, without any interpretation added yet.
+        </LI>
+        <LI>
+          <strong>Write down the automatic thought.</strong> What went
+          through your mind in that moment, word for word if you can
+          remember it.
+        </LI>
+        <LI>
+          <strong>Name the pattern.</strong> Use the table above to spot
+          which thinking trap it fits.
+        </LI>
+        <LI>
+          <strong>Ask the reframe question.</strong> Use the matching
+          question from the table to test the thought against the
+          evidence.
+        </LI>
+        <LI>
+          <strong>Write a more balanced version.</strong> Not a falsely
+          positive one, just one that fits the facts more closely.
+        </LI>
+      </ol>
+      <P>
+        Doing this a few times a week builds the habit of catching
+        distorted thoughts before they take over. Some people notice a
+        shift after a few weeks of consistent practice, while for others
+        it takes longer or works better alongside support from a
+        psychologist. Results vary and individual circumstances differ, so
+        if your anxiety feels too strong to work through alone, that is a
+        sign to bring in some outside support rather than a sign that you
+        are doing it wrong.
+      </P>
+
+      <H2>When thinking traps need more than self-help</H2>
+      <P>
+        A thought record can genuinely help with everyday anxious
+        thinking. It is not a substitute for professional care if anxiety
+        is disrupting your work, relationships, or daily functioning.
+      </P>
+      <P>
+        Fewer than half of Australians with an anxiety disorder seek help
+        from a health professional, and among those who do, only around a
+        third receive treatment considered adequate (RANZCP, 2018). Left
+        unaddressed, these thinking patterns tend to keep the same anxious
+        cycles running.
+      </P>
+      <P>
+        In clinical trials, most people who complete a full course of CBT
+        show improvement, and around half recover fully and stay well
+        (RANZCP, 2018).
+      </P>
+      <P>
+        These are population-level trial results, not a promise of any
+        individual outcome, and results vary depending on the person and
+        the situation. If you are considering therapy, it is worth
+        speaking with a registered psychologist or your GP about what is
+        realistic for you.
+      </P>
+      <P>
+        In Australia, a GP can prepare a Mental Health Treatment Plan that
+        gives access to Medicare-subsidised psychology sessions, up to 10
+        individual sessions per calendar year, under the{" "}
+        <a
+          href="https://www.health.gov.au/our-work/better-access-initiative?language=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Better Access initiative
+        </a>{" "}
+        (Australian Government Department of Health, Disability and
+        Ageing).
+      </P>
+      <P>
+        In 2021, more than 1.3 million Australians used at least one
+        Medicare-subsidised session under this scheme, typically attending
+        5 to 6 sessions, with a median out-of-pocket cost of around $74 to
+        $90 per session, according to a 2026 analysis of Medicare Benefits
+        Schedule data.
+      </P>
+      <P>
+        Health fund rebates may also apply depending on your policy. For{" "}
+        <Link href="/fees">current fees and rebate information</Link>, it
+        is worth checking directly with your provider, since rebate
+        amounts are reviewed and updated over time.
+      </P>
+
+      <H2>How CBT at Sage helps with anxious thinking patterns</H2>
+      <P>
+        CBT at Sage focuses on identifying the specific thinking patterns
+        fuelling your anxiety, then testing them against the evidence in
+        one-to-one sessions. Around 85% of people who present with
+        depression also have clinically significant anxiety, according to
+        the{" "}
+        <a
+          href="https://www.racgp.org.au/getattachment/814d8dce-4d5c-47b0-864e-2839dd178cdb/CBT.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Royal Australian College of General Practitioners&rsquo;
+          Australian Family Physician
+        </a>{" "}
+        journal (RACGP, 2013), which is one reason CBT tends to address
+        both together rather than treating them as separate problems.
+      </P>
+      <P>
+        At Sage Psychological Services in East Fremantle,{" "}
+        <Link href="/cbt-therapy-perth">cognitive distortions</Link> are
+        worked through one-to-one with{" "}
+        <Link href="/about">Jacob Jones, a registered psychologist</Link>,
+        AHPRA registration PSY0002462461. Sessions focus on identifying
+        the specific thinking patterns that are keeping anxiety going,
+        then building practical, evidence-based ways to test and shift
+        them. Where anxiety is tied to past experiences, this work is
+        sometimes combined with other approaches such as EMDR.
+      </P>
+      <P>
+        Every person&rsquo;s thinking patterns look a little different,
+        so the pace and focus of therapy depend on what you bring to the
+        first session. Sessions are also available by telehealth for
+        clients elsewhere in Western Australia, through{" "}
+        <Link href="/anxiety-therapy-perth">
+          support for anxiety and panic
+        </Link>{" "}
+        delivered online.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle,{" "}
+        <Link href="/contact">the team at Sage Psychological Services</Link>{" "}
+        is happy to help.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "What are the most common cognitive distortions?",
+            aText:
+              "The most common ones linked to anxiety include catastrophising, black-and-white thinking, mind reading, fortune telling, and emotional reasoning. Most people rely on a small number of these patterns rather than all of them. Learning to recognise your own most frequent thinking traps is usually more useful than memorising the full list.",
+            a: (
+              <p>
+                The most common ones linked to anxiety include
+                catastrophising, black-and-white thinking, mind reading,
+                fortune telling, and emotional reasoning. Most people rely
+                on a small number of these patterns rather than all of
+                them. Learning to recognise your own most frequent
+                thinking traps is usually more useful than memorising the
+                full list.
+              </p>
+            ),
+          },
+          {
+            q: "How do I stop cognitive distortions on my own?",
+            aText:
+              "Start by naming the thought, identifying which pattern it matches, and asking a reframe question to test it against the evidence. A simple thought record, done consistently, helps build this habit over time. For some people, self-help is enough. For others, working through it with a psychologist makes the process easier and more consistent.",
+            a: (
+              <p>
+                Start by naming the thought, identifying which pattern it
+                matches, and asking a reframe question to test it against
+                the evidence. A simple thought record, done consistently,
+                helps build this habit over time. For some people,
+                self-help is enough. For others, working through it with a
+                psychologist makes the process easier and more consistent.
+              </p>
+            ),
+          },
+          {
+            q: "Can cognitive distortions cause anxiety attacks or panic?",
+            aText:
+              "Distorted thoughts, especially catastrophising about physical sensations, can intensify anxiety and contribute to panic symptoms. This is a normal part of how anxiety works, not a sign of weakness. If panic attacks are frequent or distressing, it is worth discussing this with a GP or registered psychologist.",
+            a: (
+              <p>
+                Distorted thoughts, especially catastrophising about
+                physical sensations, can intensify anxiety and contribute
+                to panic symptoms. This is a normal part of how anxiety
+                works, not a sign of weakness. If panic attacks are
+                frequent or distressing, it is worth discussing this with
+                a GP or registered psychologist.
+              </p>
+            ),
+          },
+          {
+            q: "Are cognitive distortions a mental illness?",
+            aText:
+              "No. These are a normal thinking pattern that everyone experiences sometimes. They become more of a concern when they happen frequently, feel very convincing, and start affecting daily life. Only a registered health practitioner can assess whether what you are experiencing meets the criteria for an anxiety disorder.",
+            a: (
+              <p>
+                No. These are a normal thinking pattern that everyone
+                experiences sometimes. They become more of a concern when
+                they happen frequently, feel very convincing, and start
+                affecting daily life. Only a registered health
+                practitioner can assess whether what you are experiencing
+                meets the criteria for an anxiety disorder.
+              </p>
+            ),
+          },
+          {
+            q: "How is CBT used to treat cognitive distortions?",
+            aText:
+              "CBT includes a stage specifically focused on identifying unhelpful thinking patterns and testing them against real evidence, often called cognitive restructuring. This is usually combined with other strategies, such as gradually avoiding situations. A psychologist adjusts the pace and focus to suit the person in the room.",
+            a: (
+              <p>
+                CBT includes a stage specifically focused on identifying
+                unhelpful thinking patterns and testing them against real
+                evidence, often called cognitive restructuring. This is
+                usually combined with other strategies, such as gradually
+                avoiding situations. A psychologist adjusts the pace and
+                focus to suit the person in the room.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a diagnosis to see a psychologist about this?",
+            aText:
+              "No. You do not need a formal diagnosis to book an appointment with a psychologist. A first session usually involves talking through what you are experiencing, and any assessment or diagnosis, if relevant, happens as part of that conversation with a registered practitioner.",
+            a: (
+              <p>
+                No. You do not need a formal diagnosis to book an
+                appointment with a psychologist. A first session usually
+                involves talking through what you are experiencing, and
+                any assessment or diagnosis, if relevant, happens as part
+                of that conversation with a registered practitioner.
+              </p>
+            ),
+          },
+          {
+            q: "Can I use Medicare for this kind of therapy?",
+            aText:
+              "Many people access psychology sessions through a Mental Health Treatment Plan from their GP, which can provide a Medicare rebate for up to 10 individual sessions per calendar year. There is usually still an out-of-pocket cost. It is best to confirm current rebate details with your GP, psychologist, or Medicare directly.",
+            a: (
+              <p>
+                Many people access psychology sessions through a Mental
+                Health Treatment Plan from their GP, which can provide a
+                Medicare rebate for up to 10 individual sessions per
+                calendar year. There is usually still an out-of-pocket
+                cost. It is best to confirm current rebate details with
+                your GP, psychologist, or Medicare directly.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "anxiety-cycle-how-to-break-it": () => (
     <>
       <P>
