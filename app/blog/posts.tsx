@@ -153,6 +153,49 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "what-panic-attacks-feel-like",
+    title: "What a Panic Attack Really Feels Like (and What Helps)",
+    metaTitle: "Panic Attack Symptoms Explained: What Helps",
+    metaDescription:
+      "Panic attack symptoms can feel like a heart attack. Understand what causes them, how to tell the difference, and what helps, from a Perth psychologist.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "12 min read",
+    publishedAt: "2026-09-11",
+    publishedLabel: "11 September 2026",
+    image: "/img/panic-attack-symptoms-hero.webp",
+    imageAlt:
+      "Calm coastal boardwalk through eucalyptus scrub at dawn, Western Australia",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "A panic attack can feel like a heart attack, but it isn't dangerous and it does pass. This guide explains what a panic attack feels like, how it differs from panic disorder, and the grounding techniques and treatment options that genuinely help, including how Medicare rebates work in Australia.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When the wave <span className="serif-italic">keeps coming back</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety and panic therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going on
+        and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "cognitive-distortions",
     title: "Cognitive Distortions: The Thinking Traps That Fuel Anxiety",
     metaTitle: "Cognitive Distortions: 10 Thinking Traps That Fuel Anxiety",
@@ -895,6 +938,576 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "what-panic-attacks-feel-like": () => (
+    <>
+      <P>
+        Your heart is pounding, your chest feels tight, and you cannot get
+        a full breath in. Maybe you are wondering if you are having a
+        heart attack, or if you are losing your mind. If this sounds
+        familiar, you have likely experienced one of the most common and
+        most frightening things the body can do.
+      </P>
+      <P>
+        This article walks through panic attack symptoms in plain terms:
+        what they actually feel like, how to tell a panic attack apart
+        from a medical emergency, what causes them, and what genuinely
+        helps, both in the moment and over the longer term.
+      </P>
+
+      <H2>What a panic attack actually feels like</H2>
+
+      <Callout kicker="Quick answer">
+        <p>
+          A panic attack is a sudden wave of intense fear that peaks
+          within about ten minutes. It brings on physical sensations such
+          as a racing heart, tight chest, and shortness of breath, even
+          though there is no real danger.
+        </p>
+      </Callout>
+
+      <P>
+        One moment you are fine. Next, your chest feels like it is closing
+        in and your heart is hammering against your ribs. Your hands might
+        tingle or go numb. The room can feel unreal, as if you are
+        watching yourself from a distance.
+      </P>
+      <P>
+        This is your body&rsquo;s fight-or-flight response firing at full
+        strength, with adrenaline flooding your system, when there is
+        nothing to actually fight or flee from. It is not a sign of
+        weakness and it is not &ldquo;all in your head.&rdquo; It is a
+        physical event with a physical cause, and it passes.
+      </P>
+      <P>
+        Anxiety disorders, which include panic attacks and panic disorder,
+        are the most common 12-month mental health condition in Australia,
+        affecting around 3.4 million people, or 17.2 per cent of adults,
+        according to the{" "}
+        <a
+          href="https://www.abs.gov.au/statistics/health/mental-health/national-study-mental-health-and-wellbeing/latest-release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Australian Bureau of Statistics
+        </a>
+        .
+      </P>
+      <P>
+        Women are more likely to be affected than men, at 21.1 per cent
+        compared with 13.3 per cent, and almost one in three people aged
+        16 to 24 report a 12-month anxiety disorder (Source: ABS, 2020 to
+        2022).
+      </P>
+
+      <H2>Panic attack symptoms: physical and emotional signs</H2>
+      <P>
+        Panic attack symptoms usually show up in clusters, not as one or
+        two isolated feelings. Most people experience a mix of physical
+        sensations and emotional or cognitive reactions at the same time.
+      </P>
+
+      <H3>Physical symptoms</H3>
+      <UL>
+        <LI>A racing or pounding heart</LI>
+        <LI>Chest tightness or pain</LI>
+        <LI>
+          Shortness of breath, or a feeling that you cannot get enough air
+        </LI>
+        <LI>Sweating, trembling, or shaking</LI>
+        <LI>Dizziness or lightheadedness</LI>
+        <LI>Nausea or stomach discomfort</LI>
+        <LI>Tingling or numbness in the hands, feet, or face</LI>
+        <LI>Hot flushes or chills</LI>
+      </UL>
+
+      <H3>Emotional and cognitive symptoms</H3>
+      <UL>
+        <LI>A sudden, intense sense of fear or dread</LI>
+        <LI>Fear that you are dying or having a heart attack</LI>
+        <LI>
+          Fear of losing control, sometimes described as &ldquo;going
+          crazy&rdquo;
+        </LI>
+        <LI>
+          Derealisation, a sense that the world around you feels unreal
+        </LI>
+        <LI>
+          Depersonalisation, a sense of being detached from your own body
+        </LI>
+        <LI>A strong urge to escape the situation you are in</LI>
+      </UL>
+
+      <P>
+        If several of these arrive together and build quickly, that
+        pattern is what clinicians describe as a panic attack. Having some
+        of these symptoms once does not mean you have a diagnosable
+        condition. Only a GP or registered psychologist can make that
+        assessment, based on your full history.
+      </P>
+
+      <H2>Panic attack vs anxiety attack vs panic disorder</H2>
+      <P>
+        These terms get used interchangeably, but they describe different
+        things. Knowing the difference can help you make sense of what is
+        happening to you.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="overflow-x-auto">
+          <div className="min-w-[760px]">
+            <div className="grid grid-cols-4 bg-paper-soft">
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+                Term
+              </div>
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+                What it means
+              </div>
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+                Typical duration
+              </div>
+              <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+                How often it happens
+              </div>
+            </div>
+            {[
+              [
+                "Panic attack",
+                "A sudden, intense episode with physical and emotional symptoms, often peaking within ten minutes",
+                "Minutes, sometimes up to an hour",
+                "Can be a one-off or recurring",
+              ],
+              [
+                "Anxiety attack (not a clinical term)",
+                "A build-up of worry and tension, usually with a clearer trigger",
+                "Hours, sometimes longer",
+                "Often linked to ongoing stress",
+              ],
+              [
+                "Panic disorder",
+                "Repeated, unexpected panic attacks with ongoing fear of future attacks or changes in behaviour to avoid them",
+                "Ongoing pattern over weeks or months",
+                "Recurrent, sometimes several times a week",
+              ],
+            ].map((row, i) => (
+              <div
+                key={i}
+                className="grid grid-cols-4 border-t border-ink/12 bg-paper"
+              >
+                <div className="p-4 md:p-5 border-r border-ink/12 text-[0.9rem] leading-snug font-medium">
+                  {row[0]}
+                </div>
+                <div className="p-4 md:p-5 border-r border-ink/12 text-[0.9rem] leading-snug">
+                  {row[1]}
+                </div>
+                <div className="p-4 md:p-5 border-r border-ink/12 text-[0.9rem] leading-snug">
+                  {row[2]}
+                </div>
+                <div className="p-4 md:p-5 text-[0.9rem] leading-snug">
+                  {row[3]}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <P>
+        This table is a general guide, not a diagnostic tool. Panic
+        disorder is closely related to other anxiety disorders, including
+        generalised anxiety disorder, social anxiety disorder, and
+        agoraphobia, a fear of situations where escape might feel
+        difficult.
+      </P>
+      <P>
+        Only a GP or registered psychologist can confirm whether panic
+        disorder or agoraphobia is part of the picture, based on a proper
+        assessment, so if avoidance starts creeping into your daily life,
+        such as skipping public transport or crowded places out of fear of
+        another attack, it is worth raising this with one of them
+        directly.
+      </P>
+
+      <H2>Panic attack or heart attack? How to tell the difference</H2>
+      <P>
+        Panic attack symptoms and heart attack symptoms can feel
+        remarkably similar, and that overlap is well documented in
+        Australian research. One study of patients presenting to an{" "}
+        <a
+          href="https://espace.library.uq.edu.au/view/UQ:697054"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Australian emergency department presentations
+        </a>{" "}
+        with chest pain found that panic disorder was diagnosed in 5.6 per
+        cent of cases, most of whom had no underlying cardiac problem
+        (Source: Marshall et al., <em>Emergency Medicine Australasia</em>,
+        2017).
+      </P>
+      <P>
+        Chest pain is one of the most common reasons Australians go to
+        hospital. In 2022 to 2023, chest pain accounted for 427,699
+        emergency department presentations nationally, almost 5 per cent
+        of all presentations (Source: AIHW, 2022 to 2023). Panic disorder
+        itself is thought to affect between 2 and 5 per cent of the
+        Australian population (Source: Marshall et al.,{" "}
+        <em>Emergency Medicine Australasia</em>, 2017).
+      </P>
+
+      <Callout kicker="Seek urgent medical care if you experience">
+        <ul className="flex flex-col gap-2 pl-6 list-disc marker:text-moss">
+          <li>Chest pain that spreads to your arm, jaw, or back</li>
+          <li>Crushing pressure in your chest, rather than tightness</li>
+          <li>Symptoms that do not ease after 20 to 30 minutes</li>
+          <li>A first-ever episode with no clear anxiety trigger</li>
+          <li>Any doubt at all about what is happening</li>
+        </ul>
+        <p className="mt-4">
+          Call{" "}
+          <a href="tel:000" className="link">
+            000
+          </a>{" "}
+          or go to your nearest emergency department. It is always
+          reasonable to have chest pain checked, and hospital staff are
+          used to seeing this.
+        </p>
+      </Callout>
+
+      <P>
+        If your symptoms have already been checked by a doctor and cleared
+        as anxiety-related, that history matters. It does not make the
+        fear any less real, but it does mean you can start focusing on
+        what helps.
+      </P>
+
+      <H2>What causes panic attacks</H2>
+      <P>
+        Panic attack symptoms do not appear from nowhere, even when it
+        feels that way. They happen when your nervous system&rsquo;s
+        alarm system misfires, and there is often no single cause.
+      </P>
+      <P>Common contributors include:</P>
+      <UL>
+        <LI>Ongoing stress at work, home, or in relationships</LI>
+        <LI>A history of trauma or difficult past experiences</LI>
+        <LI>Poor sleep or exhaustion</LI>
+        <LI>High caffeine intake</LI>
+        <LI>Big life changes, even positive ones</LI>
+        <LI>A family history of anxiety or panic disorder</LI>
+        <LI>
+          Underlying health anxiety, where physical sensations get
+          interpreted as dangerous
+        </LI>
+      </UL>
+      <P>
+        According to the national clinical guidelines for panic disorder,
+        anxiety itself is a normal and often useful response (Source:
+        RANZCP, 2018). It becomes a problem when it fires too often, too
+        intensely, or without a real threat present. Understanding this
+        will not stop panic attacks on its own, but it can take away some
+        of the fear that something is fundamentally wrong with you.
+      </P>
+
+      <H2>What helps in the moment</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/panic-attack-grounding-technique.webp"
+            alt="Folded linen, glass of water, and eucalyptus sprig on timber table"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        The fastest way to ease a panic attack is to work with your body,
+        not against it. These steps will not stop the attack instantly,
+        but they can shorten it and make it more manageable.
+      </P>
+      <ol className="mt-6 flex flex-col gap-3 pl-6 list-decimal marker:text-moss body-lede">
+        <LI>
+          <strong>Name what is happening.</strong> Say to yourself,
+          &ldquo;This is a panic attack. It is uncomfortable, but it will
+          pass.&rdquo; Labelling the experience can reduce its intensity.
+        </LI>
+        <LI>
+          <strong>Slow your breathing.</strong> Breathe in through your
+          nose for a count of four, hold for four, then breathe out slowly
+          through your mouth for six. This kind of diaphragmatic, paced
+          breathing helps calm your nervous system.
+        </LI>
+        <LI>
+          <strong>Plant your feet.</strong> Notice the floor under your
+          feet and the surface you are sitting or standing on. This
+          grounding technique keeps your attention in your body, not your
+          thoughts.
+        </LI>
+        <LI>
+          <strong>Use your senses.</strong> Name five things you can see,
+          four you can hear, three you can touch, two you can smell, and
+          one you can taste.
+        </LI>
+        <LI>
+          <strong>Let the wave pass.</strong> Most panic attacks peak
+          within ten minutes. You do not need to fix it, only ride it out.
+        </LI>
+      </ol>
+      <P>
+        Results vary and individual circumstances differ, so what helps
+        one person may not help another straight away. If these steps do
+        not ease your distress, or panic attacks are becoming frequent, it
+        is worth speaking with a GP or registered psychologist.
+      </P>
+
+      <H2>What helps long-term: evidence-based treatment</H2>
+      <P>
+        The most consistently supported long-term treatment for panic
+        attacks and panic disorder is Cognitive Behaviour Therapy (CBT),
+        described in RANZCP guidelines as a first-line, evidence-based
+        approach (Source: RANZCP, 2018). CBT helps you understand the
+        thoughts and behaviours that feed panic, and build practical
+        strategies to interrupt the cycle.
+      </P>
+      <P>
+        Where panic attacks are rooted in past trauma, a psychologist may
+        also use Eye Movement Desensitisation and Reprocessing (EMDR) or
+        Exposure and Response Prevention (ERP), alongside
+        psychoeducation about how the fight-or-flight response works.
+      </P>
+      <P>
+        These approaches sit behind{" "}
+        <Link href="/anxiety-therapy-perth">anxiety therapy in Perth</Link>{" "}
+        as it is practised at Sage, where CBT is the primary approach and
+        EMDR is introduced where trauma is part of the picture. If you
+        would like to know more about how sessions are structured,{" "}
+        <Link href="/cbt-therapy-perth">how CBT works at Sage</Link> is
+        explained in full, alongside{" "}
+        <Link href="/emdr-therapy-perth">EMDR therapy in Perth</Link>.
+      </P>
+      <P>
+        Some people are also prescribed medication, such as
+        benzodiazepines for short-term relief or SSRIs for longer-term
+        management. These are prescription-only medicines, and any
+        decision about whether they are appropriate sits with your GP or
+        psychiatrist, not with a psychologist.
+      </P>
+      <P>
+        Results vary and individual circumstances differ. Therapy is not a
+        guarantee that panic attacks will never happen again, but many
+        people find that with the right support, panic attacks become less
+        frequent and far less frightening to experience.
+      </P>
+
+      <H2>Getting support in Perth: the Medicare pathway</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/medicare-mental-health-care-plan-pathway.webp"
+            alt="Four icons showing the GP to psychologist Medicare rebate pathway"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Reaching out can feel like a big step, especially since only 56
+        per cent of Australians with a mental illness accessed
+        professional support in the past year (Source: AIHW, 2025). If
+        panic attacks are affecting your daily life, a Mental Health Care
+        Plan from your GP is the most common way to access psychology
+        sessions with a Medicare rebate.
+      </P>
+      <P>
+        Your GP will use a longer consultation to build this plan with
+        you. Under the Medicare Better Access initiative, this currently
+        provides a rebate for up to ten individual psychology sessions per
+        calendar year (Source: Medicare Benefits Schedule, effective 1
+        July 2026). Your GP will typically refer you for an initial six
+        sessions, then review your plan before referring you for the
+        remaining four.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-2 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Item
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Cost
+          </div>
+        </div>
+        {[
+          ["Standard session fee", "$180"],
+          ["Medicare rebate (with a Mental Health Care Plan)", "$101.55"],
+          ["Your out-of-pocket cost", "$78.45"],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-2 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <P>
+        This gap fee sits below the Australian Psychological
+        Society&rsquo;s recommended fee of $300 per session, though costs
+        vary between practices. Private health insurance may also offer a
+        rebate depending on your level of cover, and people accessing care
+        through the NDIS, Department of Veterans&rsquo; Affairs, or
+        workers&rsquo; compensation follow separate fee schedules.
+      </P>
+      <P>
+        For clients outside East Fremantle, Melville, or Cockburn,{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth psychology across WA
+        </Link>{" "}
+        is also available. You can read more on the{" "}
+        <Link href="/fees">fees and Medicare rebates</Link> page.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, the team at{" "}
+        <Link href="/contact">Sage Psychological Services</Link> is happy
+        to help, and you can read more about{" "}
+        <Link href="/about">Jacob&rsquo;s approach to therapy</Link> to
+        see if it&rsquo;s the right fit.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "How long does a panic attack usually last?",
+            aText:
+              "Most panic attacks peak within about ten minutes and ease within twenty to thirty minutes, though some residual tiredness or shakiness can linger for hours afterwards. If your symptoms last much longer than this, or keep building rather than easing, it is worth getting checked by a doctor to rule out other causes.",
+            a: (
+              <p>
+                Most panic attacks peak within about ten minutes and ease
+                within twenty to thirty minutes, though some residual
+                tiredness or shakiness can linger for hours afterwards. If
+                your symptoms last much longer than this, or keep building
+                rather than easing, it is worth getting checked by a
+                doctor to rule out other causes.
+              </p>
+            ),
+          },
+          {
+            q: "Can panic attacks happen for no reason?",
+            aText:
+              "Yes. Panic attacks can happen with a clear trigger, such as a stressful situation, or seemingly out of nowhere, including during sleep. The absence of an obvious cause does not make the experience any less real, and it is one of the more distressing features of panic disorder for many people.",
+            a: (
+              <p>
+                Yes. Panic attacks can happen with a clear trigger, such
+                as a stressful situation, or seemingly out of nowhere,
+                including during sleep. The absence of an obvious cause
+                does not make the experience any less real, and it is one
+                of the more distressing features of panic disorder for
+                many people.
+              </p>
+            ),
+          },
+          {
+            q: "Are panic attacks dangerous?",
+            aText:
+              "Panic attacks are frightening and distressing, but they are not a medical emergency in themselves. That said, chest pain should always be taken seriously and checked, especially the first time it happens or if anything about it feels different. If in doubt, seek medical assessment.",
+            a: (
+              <p>
+                Panic attacks are frightening and distressing, but they
+                are not a medical emergency in themselves. That said,
+                chest pain should always be taken seriously and checked,
+                especially the first time it happens or if anything about
+                it feels different. If in doubt, seek medical assessment.
+              </p>
+            ),
+          },
+          {
+            q: "What is the difference between a panic attack and panic disorder?",
+            aText:
+              "A panic attack is a single episode. Panic disorder is a pattern of repeated, unexpected panic attacks along with ongoing fear of future attacks, or changes in behaviour to avoid situations where one might happen. One panic attack does not mean you have panic disorder.",
+            a: (
+              <p>
+                A panic attack is a single episode. Panic disorder is a
+                pattern of repeated, unexpected panic attacks along with
+                ongoing fear of future attacks, or changes in behaviour
+                to avoid situations where one might happen. One panic
+                attack does not mean you have panic disorder.
+              </p>
+            ),
+          },
+          {
+            q: "Can panic attacks happen while sleeping?",
+            aText:
+              "Yes, panic attacks can wake you from sleep, sometimes called nocturnal panic attacks. They tend to involve the same physical and emotional symptoms as daytime episodes, such as a racing heart and shortness of breath, and can be just as disorienting.",
+            a: (
+              <p>
+                Yes, panic attacks can wake you from sleep, sometimes
+                called nocturnal panic attacks. They tend to involve the
+                same physical and emotional symptoms as daytime episodes,
+                such as a racing heart and shortness of breath, and can be
+                just as disorienting.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a referral to see a psychologist for panic attacks?",
+            aText:
+              "You do not need a referral to see a psychologist privately, but a referral and Mental Health Care Plan from your GP lets you access a Medicare rebate for eligible sessions. Speaking with your GP first is also a sensible way to rule out other causes for your symptoms.",
+            a: (
+              <p>
+                You do not need a referral to see a psychologist privately,
+                but a referral and Mental Health Care Plan from your GP
+                lets you access a Medicare rebate for eligible sessions.
+                Speaking with your GP first is also a sensible way to rule
+                out other causes for your symptoms.
+              </p>
+            ),
+          },
+          {
+            q: "When should I see a doctor about panic attacks?",
+            aText:
+              "See a doctor if panic attacks are frequent, getting in the way of work, relationships, or daily activities, or if you are avoiding situations out of fear of having another one. It is also worth seeking support if you are experiencing thoughts of self-harm. Lifeline (13 11 14) and Beyond Blue (1300 22 4636) are available if you need to talk to someone now.",
+            a: (
+              <p>
+                See a doctor if panic attacks are frequent, getting in the
+                way of work, relationships, or daily activities, or if you
+                are avoiding situations out of fear of having another one.
+                It is also worth seeking support if you are experiencing
+                thoughts of self-harm. Lifeline (
+                <a href="tel:131114" className="link">
+                  13 11 14
+                </a>
+                ) and Beyond Blue (
+                <a href="tel:1300224636" className="link">
+                  1300 22 4636
+                </a>
+                ) are available if you need to talk to someone now.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <P>
+        This article is general information only and does not replace
+        personalised advice from a qualified health practitioner. If you
+        are experiencing panic attacks or ongoing anxiety, please speak
+        with your GP or a registered psychologist about your individual
+        circumstances.
+      </P>
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "cognitive-distortions": () => (
     <>
       <P>
