@@ -153,6 +153,49 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "exposure-therapy-explained",
+    title: "Exposure Therapy: Facing Fear Without Being Overwhelmed",
+    metaTitle: "Exposure Therapy: Facing Fear Without Being Overwhelmed",
+    metaDescription:
+      "Exposure therapy helps you face feared situations at a pace you help set, not all at once. Explore how it works, what it treats, and what a session involves.",
+    category: "Anxiety & CBT",
+    categoryHref: "/cbt-therapy-perth",
+    readTime: "10 min read",
+    publishedAt: "2026-09-17",
+    publishedLabel: "17 September 2026",
+    image: "/img/exposure-therapy-facing-fear-hero.webp",
+    imageAlt:
+      "A misty bushland boardwalk curving gently through eucalyptus trees at dawn",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Exposure therapy is a structured, evidence-based treatment that helps you face feared situations gradually rather than avoiding them. This guide explains how a fear hierarchy is built, the different types of exposure used, and what a session actually involves.",
+    linksUp: [
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+      { label: "Trauma Therapy Perth", href: "/trauma-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When you&rsquo;re ready to take <span className="serif-italic">the next step</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/cbt-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          CBT and exposure work
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going
+        on and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "what-panic-attacks-feel-like",
     title: "What a Panic Attack Really Feels Like (and What Helps)",
     metaTitle: "Panic Attack Symptoms Explained: What Helps",
@@ -938,6 +981,514 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "exposure-therapy-explained": () => (
+    <>
+      <P>
+        If the words &ldquo;exposure therapy&rdquo; make you picture being
+        pushed into your worst fear before you&rsquo;re ready,
+        you&rsquo;re not alone. This article explains what it actually
+        involves, how a fear hierarchy is built, and what genuinely
+        happens in a session, so you can judge for yourself whether
+        it&rsquo;s worth raising with a psychologist.
+      </P>
+
+      <Callout kicker="Quick answer">
+        <p>
+          Exposure therapy is a structured psychological treatment that
+          helps you face feared situations gradually, at a pace you help
+          set, rather than avoiding them. It&rsquo;s a well-established
+          treatment used in Australian psychology to help with anxiety
+          disorders, phobias, PTSD and OCD. Results vary and individual
+          circumstances differ, so it&rsquo;s worth discussing whether it
+          suits your situation with a registered psychologist or your GP.
+        </p>
+      </Callout>
+
+      <H2>What is exposure therapy?</H2>
+      <P>
+        Exposure therapy is a treatment that helps you approach the
+        things, situations or memories you&rsquo;ve been avoiding, in
+        small, manageable steps rather than all at once.
+      </P>
+      <P>
+        It sits inside Cognitive Behaviour Therapy (CBT) as one of its
+        core techniques, alongside cognitive restructuring. If you want
+        the fuller picture of how those two pieces fit together session
+        by session,{" "}
+        <Link href="/cbt-therapy-perth">
+          how those two techniques work together at Sage
+        </Link>{" "}
+        covers that in depth.
+      </P>
+      <P>
+        The basic idea is simple, even if putting it into practice takes
+        support. When you avoid something that frightens you, your brain
+        never gets the chance to learn that the situation is more
+        manageable than it feels. Exposure therapy creates that chance,
+        deliberately and gradually, with a psychologist guiding the pace.
+      </P>
+      <P>
+        This is different to simply &ldquo;toughing it out&rdquo; or
+        forcing yourself through something all at once. The structure and
+        pacing are what make it a clinical treatment rather than a piece
+        of general advice.
+      </P>
+
+      <H2>Why facing fear gradually works</H2>
+      <P>
+        Facing a feared situation repeatedly, in a controlled way, allows
+        your nervous system to learn that the danger it expected
+        doesn&rsquo;t actually happen. This process is called habituation,
+        and over time it can reduce the intensity of the fear response.
+      </P>
+      <P>
+        Avoidance feels like relief in the moment, but that relief is
+        short-lived and comes at a cost. Every time you avoid something
+        out of fear, your brain quietly files it under
+        &ldquo;dangerous,&rdquo; even when nothing bad would have
+        happened. This is part of a wider pattern that keeps anxiety
+        going. If you&rsquo;d like the full stage-by-stage breakdown of
+        that pattern,{" "}
+        <Link href="/blog/anxiety-cycle-how-to-break-it">
+          the avoidance loop behind ongoing anxiety
+        </Link>{" "}
+        explains it in detail.
+      </P>
+      <P>
+        This approach works in the opposite direction. Instead of the
+        loop being reinforced by avoidance, it&rsquo;s gradually
+        interrupted by controlled, repeated contact with the feared
+        situation. Each step gives your brain new evidence to weigh
+        against the old fear.
+      </P>
+
+      <H2>Building a fear hierarchy</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/exposure-therapy-fear-hierarchy-steps.webp"
+            alt="Illustration of five ascending steps representing a gradual fear hierarchy"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        A fear hierarchy is a list of feared situations ranked from least
+        to most distressing, built together with your psychologist so the
+        process can progress at a pace that suits you.
+      </P>
+      <P>
+        Rather than starting with the hardest thing on the list, or the
+        easiest, most fear hierarchies work best starting somewhere in
+        the middle. A step that activates noticeable anxiety but still
+        feels achievable tends to teach the brain more than a step
+        that&rsquo;s too easy or too overwhelming to complete.
+      </P>
+      <P>Here&rsquo;s roughly how the process tends to unfold:</P>
+      <ol className="mt-6 flex flex-col gap-3 pl-6 list-decimal marker:text-moss body-lede">
+        <LI>
+          <strong>Assessment first.</strong> Your psychologist spends time
+          understanding your history, your specific fears and what
+          you&rsquo;re hoping therapy will help with. Exposure exercises
+          don&rsquo;t usually start in this first session.
+        </LI>
+        <LI>
+          <strong>Building the hierarchy together.</strong> You and your
+          psychologist list out feared situations and rank them by how
+          distressing each one feels, from mild discomfort through to the
+          most difficult.
+        </LI>
+        <LI>
+          <strong>Starting in the middle.</strong> Exposure typically
+          begins with a moderately difficult step, not the hardest item
+          on the list.
+        </LI>
+        <LI>
+          <strong>Practising and reviewing.</strong> Each step is repeated
+          until the anxiety response settles, then you move to the next
+          step together.
+        </LI>
+        <LI>
+          <strong>Building on progress.</strong> As you complete steps,
+          you and your psychologist adjust the pace and the hierarchy
+          based on how things are going for you.
+        </LI>
+      </ol>
+      <P>
+        Results vary and individual circumstances differ, so how long
+        this process takes depends on what you&rsquo;re working through
+        and your own pace, not a fixed timeline.
+      </P>
+
+      <H2>Types of exposure used in treatment</H2>
+      <P>
+        There are several forms of exposure therapy, and which one is
+        used depends on what you&rsquo;re facing and what tends to work
+        best for that particular fear or condition.
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Type
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            What it involves
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Typical use
+          </div>
+        </div>
+        {[
+          [
+            "In vivo exposure",
+            "Facing the feared situation directly, in real life",
+            "Specific phobias, social anxiety, agoraphobia",
+          ],
+          [
+            "Imaginal exposure",
+            "Vividly recalling or describing a feared memory or scenario",
+            "PTSD and trauma-related fears",
+          ],
+          [
+            "Interoceptive exposure",
+            "Deliberately bringing on physical sensations linked to panic, such as a raised heart rate",
+            "Panic disorder",
+          ],
+          [
+            "Graded exposure",
+            "Working through a fear hierarchy step by step, from easier to harder",
+            "Most anxiety disorders",
+          ],
+          [
+            "Exposure and Response Prevention (ERP)",
+            "Facing obsessive thoughts while resisting the urge to perform a compulsion",
+            "Obsessive-compulsive disorder (OCD)",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <P>
+        A psychologist may use one of these approaches or combine several,
+        depending on what&rsquo;s driving your particular fear or
+        avoidance pattern.
+      </P>
+
+      <H2>What it can help with</H2>
+      <P>
+        Exposure therapy is most commonly used for anxiety-related
+        conditions, including specific phobias, social anxiety disorder,
+        panic disorder, generalised anxiety disorder, PTSD and OCD.
+      </P>
+      <P>
+        The Australian Psychological Society has{" "}
+        <a
+          href="https://psychology.org.au/getmedia/23c6a11b-2600-4e19-9a1d-6ff9c2f26fae/evidence-based-psych-interventions.pdfkuyken"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          described graded and in vivo exposure techniques as a gold
+          standard approach
+        </a>{" "}
+        across many of these presentations, particularly where avoidance
+        is central to the problem (Source: Australian Psychological
+        Society, submission to WorkCover Queensland, 2023).
+      </P>
+      <P>
+        Australian researchers have also{" "}
+        <a
+          href="https://researchers.westernsydney.edu.au/en/publications/barriers-to-the-use-of-exposure-therapy-by-psychologists-treating/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          studied how exposure therapy is used in local clinical practice
+        </a>
+        , finding that while its general use is high among Australian
+        psychologists, use of the more specific, disorder-focused
+        techniques varies (Source: Moses et al.,{" "}
+        <em>Journal of Clinical Psychology</em>, 2023).
+      </P>
+      <P>
+        For trauma and PTSD specifically, Australia&rsquo;s RESTORE
+        trial, the country&rsquo;s largest treatment trial for PTSD,
+        followed military personnel and veterans and found that just over
+        half no longer met the criteria for PTSD twelve weeks after
+        starting a course of prolonged exposure therapy (Source: Phoenix
+        Australia, RESTORE trial, 2022).
+      </P>
+      <P>
+        This trial was conducted with current and ex-serving Australian
+        Defence Force members, so results in a civilian population may
+        differ, and results vary and individual circumstances differ
+        regardless. If PTSD or trauma is part of what you&rsquo;re
+        dealing with,{" "}
+        <Link href="/trauma-therapy-perth">
+          trauma-focused support at Sage
+        </Link>{" "}
+        outlines the approaches used.
+      </P>
+      <P>
+        Panic attacks are another common reason people look into this
+        treatment, particularly interoceptive exposure, using the same
+        fear hierarchy and pacing approach described above.
+      </P>
+      <P>
+        It helps many people, but whether it&rsquo;s the right approach
+        for you depends on your own history and goals, which is exactly
+        what an initial conversation with a psychologist is for.
+      </P>
+
+      <H2>Is exposure therapy safe?</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/exposure-therapy-safety-reflection.webp"
+            alt="A notebook, tea and eucalyptus sprig arranged on linen in soft daylight"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        This treatment is a structured, professionally guided process, not
+        something you&rsquo;re expected to do alone or all at once. That
+        structure, including the fear hierarchy and paced approach, is
+        specifically designed to keep the process manageable rather than
+        overwhelming.
+      </P>
+      <P>
+        It&rsquo;s normal to feel some discomfort during exposure work.
+        That&rsquo;s part of how the brain learns that a feared situation
+        is more manageable than it seemed. What a psychologist works to
+        avoid is distress that&rsquo;s so intense it becomes
+        counterproductive or discouraging, which is why pacing and
+        collaboration matter so much.
+      </P>
+      <P>
+        Trying to face an intense fear or trauma-related memory on your
+        own, without professional guidance, can sometimes make things
+        harder rather than easier, particularly where trauma is involved.
+        A psychologist trained in exposure techniques can adjust the
+        pace, check in on how you&rsquo;re going and step back if
+        something isn&rsquo;t working.
+      </P>
+      <P>
+        It may be worth speaking with your GP or a registered
+        psychologist if:
+      </P>
+      <UL>
+        <LI>
+          Avoidance is affecting your work, relationships or daily routine
+        </LI>
+        <LI>
+          You&rsquo;ve noticed the list of things you avoid growing rather
+          than shrinking
+        </LI>
+        <LI>
+          Past attempts to &ldquo;just push through&rdquo; a fear have
+          made things feel worse
+        </LI>
+        <LI>
+          You&rsquo;re dealing with trauma-related fear alongside anxiety
+          or avoidance
+        </LI>
+        <LI>
+          You&rsquo;re unsure whether your reaction to a situation fits a
+          specific phobia, panic disorder or something else
+        </LI>
+      </UL>
+      <P>
+        This isn&rsquo;t a diagnostic checklist, just a general guide to
+        help you think through whether a conversation with a professional
+        makes sense.
+      </P>
+
+      <H2>What to expect working with a psychologist at Sage</H2>
+      <P>
+        At Sage Psychological Services, exposure work is shaped around
+        your own history and pace, not a fixed program applied the same
+        way to everyone. Jacob Jones draws on CBT as a primary approach,
+        with training that includes Exposure and Response Prevention
+        (ERP) alongside EMDR for trauma-related presentations.
+      </P>
+      <P>
+        You see the same psychologist at every session, so the pace and
+        the hierarchy can be adjusted as you go, rather than starting
+        over with someone new partway through, and progress isn&rsquo;t
+        lost in a handover. If you would like to talk through your
+        situation with a registered psychologist in East Fremantle,{" "}
+        <Link href="/contact">
+          the team at Sage Psychological Services
+        </Link>{" "}
+        is happy to help.
+      </P>
+
+      <H2>Accessing exposure therapy in Australia</H2>
+      <P>
+        This treatment is typically delivered as part of a course of
+        psychology sessions, most often accessed through a Mental Health
+        Care Plan from your GP. This gives eligible clients a Medicare
+        rebate for a set number of sessions each calendar year, though it
+        usually doesn&rsquo;t make sessions free.
+      </P>
+      <P>
+        The exact rebate amount depends on the type of psychologist you
+        see, and{" "}
+        <Link href="/fees">current fees and rebate details</Link> are set
+        out in full elsewhere on this site. You can also ask your GP
+        about a longer appointment to discuss a referral.
+      </P>
+      <P>
+        Private health insurance may offer a rebate depending on your
+        cover, and separate arrangements apply for clients accessing care
+        through the NDIS, DVA or workers&rsquo; compensation schemes.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Does exposure therapy make anxiety worse before it gets better?",
+            aText:
+              "It's common to feel some short-term discomfort as you begin facing avoided situations, since this is part of how the brain unlearns the fear response. A psychologist paces this carefully so it stays manageable rather than overwhelming. Results vary and individual circumstances differ, so it's worth discussing what to expect with your own psychologist.",
+            a: (
+              <p>
+                It&rsquo;s common to feel some short-term discomfort as
+                you begin facing avoided situations, since this is part
+                of how the brain unlearns the fear response. A
+                psychologist paces this carefully so it stays manageable
+                rather than overwhelming. Results vary and individual
+                circumstances differ, so it&rsquo;s worth discussing what
+                to expect with your own psychologist.
+              </p>
+            ),
+          },
+          {
+            q: "How is exposure therapy different from just facing my fears on my own?",
+            aText:
+              "Exposure therapy is structured around a carefully built fear hierarchy, with a trained psychologist adjusting the pace and checking in along the way. Facing a fear alone, without that structure, can sometimes move too fast or too slow to be helpful, and can be harder to manage if things become distressing.",
+            a: (
+              <p>
+                Exposure therapy is structured around a carefully built
+                fear hierarchy, with a trained psychologist adjusting the
+                pace and checking in along the way. Facing a fear alone,
+                without that structure, can sometimes move too fast or
+                too slow to be helpful, and can be harder to manage if
+                things become distressing.
+              </p>
+            ),
+          },
+          {
+            q: "Is exposure therapy the same as ERP?",
+            aText:
+              "Exposure and Response Prevention (ERP) is a specific type of exposure therapy, mainly used for OCD, that involves facing obsessive thoughts while resisting the urge to perform a compulsion. Exposure therapy is the broader category, covering several techniques used across different anxiety-related conditions.",
+            a: (
+              <p>
+                Exposure and Response Prevention (ERP) is a specific type
+                of exposure therapy, mainly used for OCD, that involves
+                facing obsessive thoughts while resisting the urge to
+                perform a compulsion. Exposure therapy is the broader
+                category, covering several techniques used across
+                different anxiety-related conditions.
+              </p>
+            ),
+          },
+          {
+            q: "What's the difference between exposure therapy and CBT?",
+            aText:
+              "Exposure therapy is one of the core techniques used within CBT, alongside cognitive restructuring, which focuses on identifying and questioning unhelpful thought patterns. CBT is the broader treatment framework that both techniques sit inside. Many psychologists, including at Sage, use exposure and cognitive restructuring together rather than relying on just one.",
+            a: (
+              <p>
+                Exposure therapy is one of the core techniques used
+                within CBT, alongside cognitive restructuring, which
+                focuses on identifying and questioning unhelpful thought
+                patterns. CBT is the broader treatment framework that
+                both techniques sit inside. Many psychologists, including
+                at Sage, use exposure and cognitive restructuring
+                together rather than relying on just one.
+              </p>
+            ),
+          },
+          {
+            q: "How long does exposure therapy usually take?",
+            aText:
+              "There's no fixed timeframe that applies to everyone. Some people notice changes within several sessions, while others need longer, depending on what they're working through. Results vary and individual circumstances differ, so it's worth discussing a realistic timeframe with your own psychologist.",
+            a: (
+              <p>
+                There&rsquo;s no fixed timeframe that applies to
+                everyone. Some people notice changes within several
+                sessions, while others need longer, depending on what
+                they&rsquo;re working through. Results vary and
+                individual circumstances differ, so it&rsquo;s worth
+                discussing a realistic timeframe with your own
+                psychologist.
+              </p>
+            ),
+          },
+          {
+            q: "Can exposure therapy help with trauma, not just phobias?",
+            aText:
+              "Yes. Imaginal and in vivo exposure are both used in trauma-focused treatment, often alongside approaches such as EMDR, depending on what suits your history and goals. A psychologist experienced in trauma-related work can help you decide which approach fits your situation.",
+            a: (
+              <p>
+                Yes. Imaginal and in vivo exposure are both used in
+                trauma-focused treatment, often alongside approaches such
+                as EMDR, depending on what suits your history and goals.
+                A psychologist experienced in trauma-related work can
+                help you decide which approach fits your situation.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a GP referral for exposure therapy in Australia?",
+            aText:
+              "You don't need a referral to see a psychologist privately, but a referral and Mental Health Care Plan from your GP lets you access a Medicare rebate for eligible sessions. Speaking with your GP first is also a sensible way to talk through your options.",
+            a: (
+              <p>
+                You don&rsquo;t need a referral to see a psychologist
+                privately, but a referral and Mental Health Care Plan
+                from your GP lets you access a Medicare rebate for
+                eligible sessions. Speaking with your GP first is also a
+                sensible way to talk through your options.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <P>
+        <em>
+          This article is general information only and does not replace
+          personalised advice from a qualified health practitioner. If you
+          are experiencing ongoing anxiety, trauma-related fear or
+          avoidance that&rsquo;s affecting your daily life, please speak
+          with your GP or a registered psychologist about your individual
+          circumstances.
+        </em>
+      </P>
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "what-panic-attacks-feel-like": () => (
     <>
       <P>
