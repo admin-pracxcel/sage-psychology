@@ -153,6 +153,48 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "why-avoidance-makes-anxiety-worse",
+    title: "Why Avoidance Makes Anxiety Worse Over Time",
+    metaTitle: "Anxiety Avoidance: Why It Makes Anxiety Worse Over Time",
+    metaDescription:
+      "Anxiety avoidance brings quick relief but keeps anxiety alive long term. See the Australian data behind it and how therapy can help you break the pattern.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "12 min read",
+    publishedAt: "2026-09-21",
+    publishedLabel: "21 September 2026",
+    image: "/img/anxiety-avoidance-cycle-hero.webp",
+    imageAlt: "A door left slightly ajar, light spilling through the gap",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Avoidance brings fast relief, but it quietly trains your brain to see feared situations as more dangerous, not less. Here's why anxiety avoidance backfires over time, what the Australian data shows, and what genuinely helps.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When avoidance <span className="serif-italic">becomes the plan</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going
+        on and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "exposure-therapy-explained",
     title: "Exposure Therapy: Facing Fear Without Being Overwhelmed",
     metaTitle: "Exposure Therapy: Facing Fear Without Being Overwhelmed",
@@ -981,6 +1023,513 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "why-avoidance-makes-anxiety-worse": () => (
+    <>
+      <P>
+        You cancel the plan. You take the long way so you do not have to
+        walk past the thing that makes your chest tighten. You let the
+        phone ring out. For a moment, it works. The anxiety drops and you
+        feel like you have handled it.
+      </P>
+      <P>
+        This is anxiety avoidance, and it is one of the most common
+        patterns in anxiety of any kind. It also tends to make anxiety
+        bigger over time, not smaller. This article looks at why that
+        happens, what the pattern can look like in daily life, and what
+        tends to help.
+      </P>
+
+      <H2>What anxiety avoidance looks like day to day</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-avoidance-signs-still-life.webp"
+            alt="A phone face down beside an unopened envelope and keys"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Anxiety avoidance is not always dramatic. Most of the time it is
+        small, ordinary choices that quietly protect you from discomfort.
+      </P>
+      <P>
+        It can be active, like leaving a party early or turning down a
+        work trip. It can be passive, like never putting your hand up in a
+        meeting in the first place. It can also be a safe behaviour, where
+        you still do the thing but only with a workaround, such as always
+        sitting near the exit or only calling people back by text.
+      </P>
+      <P>
+        None of this means something is wrong with you. Avoidance is a
+        completely understandable response to fear. The trouble starts
+        when it becomes the main way you manage anxiety, because that is
+        when the pattern starts working against you. This connects closely
+        to{" "}
+        <Link href="/blog/anxiety-cycle-how-to-break-it">
+          how avoidance fits into the wider anxiety cycle
+        </Link>
+        , which we&rsquo;ve covered in more detail elsewhere on the site.
+      </P>
+      <P>
+        <strong>Signs your anxiety avoidance might be growing:</strong>
+      </P>
+      <UL>
+        <LI>
+          You plan your day around what you can avoid, not what you want
+          to do
+        </LI>
+        <LI>
+          Small tasks (calls, emails, appointments) pile up because
+          starting them feels harder than the task itself
+        </LI>
+        <LI>
+          You rely on a &ldquo;safety&rdquo; habit, like needing someone
+          with you, checking your phone constantly, or rehearsing
+          conversations in advance
+        </LI>
+        <LI>You have quietly stopped doing something you used to enjoy</LI>
+        <LI>
+          Saying no to something anxious-making brings relief, but also a
+          flicker of disappointment in yourself afterwards
+        </LI>
+      </UL>
+
+      <H2>Why avoidance feels like it is working</H2>
+      <Callout kicker="Quick answer">
+        <p>
+          Avoidance works in the short term because it removes the anxious
+          feeling straight away. That fast relief is what keeps the
+          pattern going, even though it does not solve the underlying
+          problem.
+        </p>
+      </Callout>
+      <P>
+        This is a basic learning process called negative reinforcement.
+        When you avoid something and your anxiety drops, your brain
+        registers that as a win. Next time a similar situation comes up,
+        avoiding feels like the sensible choice, because it worked before.
+      </P>
+      <P>
+        The catch is that the relief is temporary and the anxiety usually
+        returns, often a little stronger, the next time the situation
+        comes around. You have not actually learned that you can cope
+        with it. You have only learned that avoiding is a way to feel
+        better right now.
+      </P>
+
+      <H2>What avoidance actually teaches your brain</H2>
+      <Callout kicker="Quick answer">
+        <p>
+          Avoidance stops your brain from learning that a feared situation
+          is more manageable than it feels. Without that new information,
+          the fear response stays exactly where it was, or grows.
+        </p>
+      </Callout>
+      <P>
+        Anxiety usually rises, peaks, and settles on its own if you stay
+        with it for long enough. When you avoid or escape a situation,
+        you leave before that settling can happen. Your brain never gets
+        the chance to update its prediction about the situation, so it
+        keeps treating it as a threat.
+      </P>
+      <P>
+        The Centre for Clinical Interventions, a Perth-based service
+        within WA Health, outlines{" "}
+        <a
+          href="https://www.cci.health.wa.gov.au/~/media/CCI/Consumer-Modules/When-Panic-Attacks/When-Panic-Attacks---Module-5---Facing-Feared-Situations.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          an evidence-based approach to reversing avoidance
+        </a>{" "}
+        that lets the brain collect new, calmer evidence about the
+        situations you&rsquo;ve been avoiding.
+      </P>
+      <P>
+        This is the same principle behind exposure-based approaches used
+        in{" "}
+        <Link href="/blog/exposure-therapy-explained">
+          cognitive behaviour therapy for anxiety
+        </Link>
+        .
+      </P>
+      <P>
+        <strong>Short-term relief compared with the long-term cost:</strong>
+      </P>
+
+      <div className="mt-10 rounded-[14px] border border-ink/12 overflow-hidden">
+        <div className="grid grid-cols-3 bg-paper-soft">
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            &nbsp;
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+            Avoiding the situation
+          </div>
+          <div className="p-4 md:p-6 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+            Staying with the situation
+          </div>
+        </div>
+        {[
+          [
+            "How you feel in the moment",
+            "Anxiety drops quickly",
+            "Anxiety usually rises first",
+          ],
+          [
+            "What your brain learns",
+            "“That was dangerous, avoiding worked”",
+            "“I can tolerate this, it settled on its own”",
+          ],
+          [
+            "Effect on confidence",
+            "Confidence in coping slowly weakens",
+            "Confidence in coping slowly builds",
+          ],
+          [
+            "Effect on the fear next time",
+            "Often stays the same or grows",
+            "Tends to gradually reduce",
+          ],
+        ].map((row, i) => (
+          <div
+            key={i}
+            className="grid grid-cols-3 border-t border-ink/12 bg-paper"
+          >
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug font-medium">
+              {row[0]}
+            </div>
+            <div className="p-4 md:p-6 border-r border-ink/12 text-[0.95rem] leading-snug">
+              {row[1]}
+            </div>
+            <div className="p-4 md:p-6 text-[0.95rem] leading-snug">
+              {row[2]}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <P>
+        Results vary and individual circumstances differ, so this table
+        describes a general pattern rather than a guarantee for any
+        individual. If avoidance has become a significant part of your
+        life, it is worth talking to a registered health practitioner
+        about your specific circumstances.
+      </P>
+
+      <H2>How avoidance quietly expands</H2>
+      <P>
+        Avoidance rarely stays in one neat box. It tends to generalise,
+        which means it spreads from the original trigger to situations
+        that are only loosely related.
+      </P>
+      <P>
+        A person who avoids one crowded shopping centre after a stressful
+        visit might start avoiding busy places in general. Someone who
+        cancels one work presentation might start avoiding meetings
+        altogether, then most conversations with senior colleagues.
+      </P>
+      <P>
+        Each step feels like a small, reasonable decision at the time.
+        Looked at together, they can add up to a life that has quietly
+        become smaller.
+      </P>
+      <P>
+        This is often how people end up feeling stuck without knowing
+        exactly when it happened. It was not one big decision. It was a
+        long series of small ones.
+      </P>
+
+      <H2>Why this matters: anxiety avoidance in Western Australia</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/wa-bushland-morning-light.webp"
+            alt="Morning light through eucalyptus leaves on a bushland path"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Anxiety avoidance is not a niche issue. Across Western Australia,{" "}
+        <a
+          href="https://www.health.wa.gov.au/~/media/Corp/Documents/Reports-and-publications/Population-surveys/Health-and-wellbeing-of-adults-in-WA-2022.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          15.9 per cent of adults reported a doctor-diagnosed anxiety
+          condition
+        </a>{" "}
+        in the previous 12 months, with rates significantly higher in
+        women than men, and some variation between regions, such as a
+        lower rate recorded in the Goldfields compared with the state
+        average.
+      </P>
+      <P>
+        This local pattern sits inside a broader national trend of rising
+        anxiety diagnoses over the past decade (Source: ABS, Mental
+        Health, latest release).
+      </P>
+      <P>
+        None of this means anxiety is unusual or something to be ashamed
+        of. If anything, it means the opposite. Avoidance is a common
+        response to a common experience, and it responds well to the
+        right kind of support.
+      </P>
+
+      <H2>The real cost of just pushing through it</H2>
+      <P>
+        Many people treat avoidance as something they should be able to
+        manage alone, through willpower or simply &ldquo;toughening
+        up.&rdquo; The data on what unmanaged anxiety costs, personally
+        and more broadly, suggests that is a heavy ask.
+      </P>
+
+      <H3>The national cost of untreated anxiety</H3>
+      <P>
+        The Productivity Commission&rsquo;s 2020 inquiry into mental
+        health estimated that mental ill health and suicide cost Australia
+        more than 200 billion dollars a year, or roughly 550 to 600
+        million dollars a day, according to{" "}
+        <a
+          href="https://www.pc.gov.au/media-speeches/speeches/mental-health/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          the national mental health inquiry report
+        </a>
+        , which judged that a significant share of this was avoidable
+        with earlier, better-matched support.
+      </P>
+
+      <H3>The gap between needing help and getting it</H3>
+      <P>
+        The same inquiry estimated that only around 40 per cent of people
+        with moderately severe mental illness, and 60 per cent of people
+        with severe mental illness, had used any mental health service in
+        the past year. Avoidance of the problem itself, not just avoidance
+        of specific situations, appears to play a real part in that gap.
+      </P>
+
+      <H3>What it can look like if it reaches the workplace</H3>
+      <P>
+        Psychological injury claims in Australian workplaces have risen
+        161 per cent over the past decade and now make up 12 per cent of
+        all serious workers compensation claims, the fastest growing
+        category on record.
+      </P>
+      <P>
+        Workers with a serious mental health claim lost a median of more
+        than 35 working weeks (Source: Safe Work Australia, Key Work
+        Health and Safety Statistics Australia, 2025). This does not mean
+        avoidance alone causes workplace injury claims. It does show how
+        unaddressed anxiety can compound over time rather than resolve on
+        its own.
+      </P>
+
+      <H2>What actually helps</H2>
+      <Callout kicker="Quick answer">
+        <p>
+          The strongest evidence for anxiety points to therapist-guided
+          approaches like cognitive behaviour therapy, particularly the
+          parts that gradually and carefully reduce avoidance. This is
+          different from being told to simply &ldquo;face your
+          fears&rdquo; alone.
+        </p>
+      </Callout>
+      <P>
+        Cognitive behaviour therapy (CBT) is a first-line, evidence-based
+        treatment for anxiety in Australia. A core part of it involves
+        working with a psychologist to build a gradual, manageable plan
+        for approaching the situations you have been avoiding, rather
+        than confronting everything at once.
+      </P>
+      <P>
+        If you want to understand{" "}
+        <Link href="/blog/how-cbt-rewires-thinking">
+          how CBT helps change unhelpful thinking patterns
+        </Link>
+        , that&rsquo;s covered in more depth in another of our articles.
+      </P>
+      <P>
+        This is not a program to run on yourself from a blog post. It
+        works best when it is paced to you, with a registered
+        practitioner tracking how you are going and adjusting as needed.
+      </P>
+      <P>
+        Results vary and individual circumstances differ, and progress
+        with anxiety is rarely a straight line. If you are dealing with
+        avoidance that is affecting your daily life, it is worth
+        discussing your situation with a registered psychologist, GP, or
+        other qualified health practitioner.
+      </P>
+
+      <H2>Getting support: what it costs and how referral works</H2>
+      <P>
+        You do not need a referral to see a psychologist in Australia,
+        but a referral is what makes you eligible for a Medicare rebate.
+      </P>
+      <P>
+        To access that rebate, you will need a Mental Health Treatment
+        Plan (MHTP) from your GP. Under the Better Access initiative,
+        this generally allows for up to 10 individual psychology sessions
+        per calendar year, usually starting with an initial 6 sessions
+        before your GP reviews your progress and, if appropriate, refers
+        you for the remaining 4.
+      </P>
+      <P>
+        At Sage Psychological Services, the standard session fee is 180
+        dollars, with a Medicare rebate of 101.55 dollars per session for
+        a registered psychologist, bringing the out-of-pocket gap under a
+        Mental Health Care Plan to 78.45 dollars.
+      </P>
+      <P>
+        Full details are on{" "}
+        <Link href="/fees">Sage&rsquo;s current fees and rebate page</Link>
+        . Telehealth is also available for people who are not able to
+        attend in person, including those further out in the wider Perth
+        area.
+      </P>
+      <P>
+        If you would like to talk through your situation with a registered
+        psychologist in East Fremantle, the team at Sage Psychological
+        Services is happy to help. You can read{" "}
+        <Link href="/about">more about Jacob&rsquo;s approach to therapy</Link>{" "}
+        or{" "}
+        <Link href="/contact">reach out to arrange a first session</Link>{" "}
+        when you are ready.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Why does avoiding things make my anxiety worse?",
+            aText:
+              "Avoidance brings quick relief, which teaches your brain that the situation was dangerous and avoiding was the right call. This stops you from learning that anxiety usually settles on its own if you stay with it. Over time, that missed learning can make the same situation feel more threatening, not less, the next time it comes up.",
+            a: (
+              <p>
+                Avoidance brings quick relief, which teaches your brain
+                that the situation was dangerous and avoiding was the
+                right call. This stops you from learning that anxiety
+                usually settles on its own if you stay with it. Over
+                time, that missed learning can make the same situation
+                feel more threatening, not less, the next time it comes
+                up.
+              </p>
+            ),
+          },
+          {
+            q: "How do I know if I am avoiding things because of anxiety?",
+            aText:
+              "Common signs include planning your day around what you can dodge, putting off small tasks because starting them feels harder than the task itself, or relying on habits like needing company or checking your phone constantly to feel safe. If avoidance is shaping your choices more than your actual preferences are, it is worth paying attention to.",
+            a: (
+              <p>
+                Common signs include planning your day around what you
+                can dodge, putting off small tasks because starting them
+                feels harder than the task itself, or relying on habits
+                like needing company or checking your phone constantly to
+                feel safe. If avoidance is shaping your choices more than
+                your actual preferences are, it is worth paying attention
+                to.
+              </p>
+            ),
+          },
+          {
+            q: "Can avoidance turn into something more serious, like depression?",
+            aText:
+              "Avoidance can gradually cut you off from activities, people, and routines that usually support your mood, which is a pattern that can contribute to low mood over time. This varies a great deal between individuals. A GP or registered psychologist can help you understand what is happening in your specific situation.",
+            a: (
+              <p>
+                Avoidance can gradually cut you off from activities,
+                people, and routines that usually support your mood,
+                which is a pattern that can contribute to low mood over
+                time. This varies a great deal between individuals. A GP
+                or registered psychologist can help you understand what
+                is happening in your specific situation.
+              </p>
+            ),
+          },
+          {
+            q: "Is exposure therapy the same as just facing your fears?",
+            aText:
+              "Not quite. Exposure-based approaches used in therapy are planned, gradual, and paced with a registered practitioner, rather than an all-at-once confrontation. The goal is manageable practice that builds evidence you can cope, not forcing yourself into overwhelming situations alone.",
+            a: (
+              <p>
+                Not quite. Exposure-based approaches used in therapy are
+                planned, gradual, and paced with a registered
+                practitioner, rather than an all-at-once confrontation.
+                The goal is manageable practice that builds evidence you
+                can cope, not forcing yourself into overwhelming
+                situations alone.
+              </p>
+            ),
+          },
+          {
+            q: "Do I need a GP referral to see a psychologist?",
+            aText:
+              "No, you can see a psychologist without a referral. A referral and Mental Health Treatment Plan from your GP is what makes you eligible for a Medicare rebate on eligible sessions, so most people choose to get one first.",
+            a: (
+              <p>
+                No, you can see a psychologist without a referral. A
+                referral and Mental Health Treatment Plan from your GP is
+                what makes you eligible for a Medicare rebate on eligible
+                sessions, so most people choose to get one first.
+              </p>
+            ),
+          },
+          {
+            q: "How many therapy sessions does Medicare cover?",
+            aText:
+              "Under the Better Access initiative, eligible people can generally access up to 10 individual psychology sessions per calendar year with a valid Mental Health Treatment Plan, usually starting with 6 sessions before a GP review. Rebate amounts and session numbers can change, so it is worth confirming current details with your GP or Medicare.",
+            a: (
+              <p>
+                Under the Better Access initiative, eligible people can
+                generally access up to 10 individual psychology sessions
+                per calendar year with a valid Mental Health Treatment
+                Plan, usually starting with 6 sessions before a GP
+                review. Rebate amounts and session numbers can change, so
+                it is worth confirming current details with your GP or
+                Medicare.
+              </p>
+            ),
+          },
+          {
+            q: "What if I am not ready to stop avoiding yet?",
+            aText:
+              "That is a completely normal place to be, and readiness is not something you need to force. Therapy can start with understanding the pattern and talking through what feels manageable, at whatever pace works for you, rather than expecting you to change everything at once.",
+            a: (
+              <p>
+                That is a completely normal place to be, and readiness is
+                not something you need to force. Therapy can start with
+                understanding the pattern and talking through what feels
+                manageable, at whatever pace works for you, rather than
+                expecting you to change everything at once.
+              </p>
+            ),
+          },
+        ]}
+      />
+
+      <P>
+        <em>
+          This article is general information only and is not a
+          substitute for individual advice from a registered health
+          practitioner. Results vary and individual circumstances differ.
+          If avoidance or anxiety is affecting your daily life, please
+          speak with your GP or a registered psychologist about your
+          specific circumstances.
+        </em>
+      </P>
+
+      <CrisisFootnote />
+    </>
+  ),
+
   "exposure-therapy-explained": () => (
     <>
       <P>
