@@ -1081,15 +1081,8 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       </P>
       <P>
         You&rsquo;re not imagining it, and you&rsquo;re not alone.
-        Anxiety disorders affect an estimated{" "}
-        <a
-          href="https://www.aihw.gov.au/mental-health/overview/australias-mental-health-system"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          3.4 million Australians, or 17% of the population
-        </a>{" "}
-        (Source: AIHW, 2026).
+        Anxiety disorders affect an estimated 3.4 million Australians,
+        or 17% of the population (Source: AIHW, 2026).
       </P>
 
       <H2>What anxiety at work actually feels like</H2>
@@ -1335,11 +1328,8 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       <P>
         A registered psychologist can draw on a range of evidence-based
         approaches for anxiety, including Cognitive Behaviour Therapy
-        (CBT),{" "}
-        <Link href="/emdr-therapy-perth">
-          Eye Movement Desensitisation and Reprocessing (EMDR)
-        </Link>
-        , Acceptance and Commitment Therapy (ACT) and Schema Therapy.
+        (CBT), Eye Movement Desensitisation and Reprocessing (EMDR),
+        Acceptance and Commitment Therapy (ACT) and Schema Therapy.
         Which approach fits best depends on your history and what&rsquo;s
         driving the anxiety, and a psychologist will usually talk this
         through with you rather than applying a single fixed programme.
@@ -1348,8 +1338,15 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         It&rsquo;s worth knowing that psychologists in Australia
         provided almost half of all Medicare mental-health-specific
         services in 2023 to 2024 (49%), ahead of GPs (27%) and
-        psychiatrists (21%), according to AIHW mental health service
-        data.
+        psychiatrists (21%), according to{" "}
+        <a
+          href="https://www.aihw.gov.au/mental-health/overview/australias-mental-health-system"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AIHW mental health service data
+        </a>
+        .
       </P>
       <P>
         Seeing a psychologist for anxiety at work is a common, well-used
@@ -1455,9 +1452,12 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         roster of practitioners.
       </P>
       <P>
-        Jacob draws on EMDR for trauma and anxiety alongside CBT, ACT
-        and Schema Therapy, shaping sessions around your history and
-        pace rather than a fixed programme. You can{" "}
+        Jacob draws on{" "}
+        <Link href="/emdr-therapy-perth">
+          EMDR for trauma and anxiety
+        </Link>{" "}
+        alongside CBT, ACT and Schema Therapy, shaping sessions around
+        your history and pace rather than a fixed programme. You can{" "}
         <Link href="/about">
           read more about Jacob&rsquo;s approach to therapy
         </Link>{" "}
