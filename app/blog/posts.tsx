@@ -153,6 +153,52 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "managing-anxiety-at-work",
+    title: "Managing Anxiety at Work Without Burning Out",
+    metaTitle: "Anxiety at Work: A Perth Psychologist's Guide to Coping",
+    metaDescription:
+      "Struggling with anxiety at work? Explore practical coping strategies, Medicare rebate details, and when to see a psychologist near East Fremantle.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "12 min read",
+    publishedAt: "2026-09-24",
+    publishedLabel: "24 September 2026",
+    image: "/img/anxiety-at-work-bushland-path-hero.webp",
+    imageAlt:
+      "Misty eucalyptus bushland path with soft morning light and timber boardwalk",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Anxiety at work can build quietly until it affects your sleep, focus and confidence. This guide covers practical coping strategies, how to talk to your manager, and how Australia's Medicare system supports access to a psychologist when you need extra help.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      {
+        label: "Telehealth Psychologist Perth",
+        href: "/telehealth-psychologist-perth",
+      },
+    ],
+    ctaHeading: (
+      <>
+        When work has felt <span className="serif-italic">harder than usual</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been going
+        on at work and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "why-avoidance-makes-anxiety-worse",
     title: "Why Avoidance Makes Anxiety Worse Over Time",
     metaTitle: "Anxiety Avoidance: Why It Makes Anxiety Worse Over Time",
@@ -1023,6 +1069,536 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "managing-anxiety-at-work": () => (
+    <>
+      <P>
+        Your heart races before a meeting that never used to bother you.
+        You reread the same email three times before sending it, still
+        not sure it reads right. If anxiety at work has started to feel
+        like your normal, this article covers why it happens, what you
+        can do about it day to day, and how the support system in
+        Australia works if you decide to get help.
+      </P>
+      <P>
+        You&rsquo;re not imagining it, and you&rsquo;re not alone.
+        Anxiety disorders affect an estimated{" "}
+        <a
+          href="https://www.aihw.gov.au/mental-health/overview/australias-mental-health-system"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          3.4 million Australians, or 17% of the population
+        </a>{" "}
+        (Source: AIHW, 2026).
+      </P>
+
+      <H2>What anxiety at work actually feels like</H2>
+      <Callout kicker="Quick answer">
+        Work anxiety usually shows up as a mix of physical tension,
+        racing thoughts about work tasks or judgement, and a pull to
+        avoid things you used to manage without a second thought.
+      </Callout>
+      <P>
+        It&rsquo;s not always dramatic. Sometimes it&rsquo;s a tight
+        chest before opening your inbox. Sometimes it&rsquo;s lying
+        awake running through tomorrow&rsquo;s meeting instead of
+        sleeping.
+      </P>
+      <P>
+        Anxiety at work can also build slowly. A deadline here, a
+        difficult colleague there, a manager who never quite says
+        you&rsquo;re doing okay. None of it looks like a crisis on its
+        own, but it adds up.
+      </P>
+      <P>
+        This matters because the workplace itself is often part of the
+        picture, not just something happening to you in isolation. In
+        2023 to 2024, the most common causes of serious mental stress
+        claims in Australian workplaces were{" "}
+        <a
+          href="https://data.safeworkaustralia.gov.au/insights/key-whs-statistics-australia/latest-release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          workplace bullying and harassment (33.2%), work pressure
+          (24.2%), and exposure to violence or aggression (15.7%)
+        </a>{" "}
+        (Source: Safe Work Australia, 2025). These are recognised
+        workplace hazards, not just personal struggles you&rsquo;re
+        meant to push through alone.
+      </P>
+
+      <H2>Is it anxiety, stress or burnout?</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-stress-burnout-checklist-illustration.webp"
+            alt="Simple icon checklist illustrating signs of stress, anxiety and burnout"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <Callout kicker="Quick answer">
+        Stress usually has a clear cause and eases once that cause
+        passes. Anxiety often persists even when nothing specific is
+        wrong. Burnout is exhaustion built up over time, usually from a
+        workload or environment that doesn&rsquo;t let up.
+      </Callout>
+      <P>
+        These three overlap, and you don&rsquo;t need a perfect label
+        before you take them seriously. But noticing the pattern can
+        help you work out what kind of support makes sense.
+      </P>
+      <P>
+        <strong>Use this checklist as a starting point, not a diagnosis:</strong>
+      </P>
+      <UL>
+        <LI>
+          You dread work most mornings, not just before one big
+          presentation
+        </LI>
+        <LI>
+          Your sleep, appetite or concentration has changed over several
+          weeks
+        </LI>
+        <LI>You feel tense or on edge even outside work hours</LI>
+        <LI>
+          You&rsquo;ve started avoiding meetings, calls or tasks you used
+          to handle fine
+        </LI>
+        <LI>
+          Physical symptoms (racing heart, tight chest, upset stomach)
+          show up before or during work
+        </LI>
+        <LI>
+          A colleague or family member has mentioned you seem different
+          lately
+        </LI>
+      </UL>
+      <P>
+        If several of these sound familiar, it&rsquo;s worth talking to
+        your GP or a registered psychologist rather than waiting to see
+        if it passes.
+      </P>
+      <Callout kicker="When to get help sooner rather than later">
+        <p>
+          If anxiety is stopping you from functioning day to day, or
+          you&rsquo;re having thoughts of harming yourself, please
+          contact Lifeline on{" "}
+          <a href="tel:131114" className="link">
+            13 11 14
+          </a>
+          , any time, day or night. This article covers general coping
+          strategies, not a substitute for urgent support.
+        </p>
+      </Callout>
+
+      <H2>
+        Why Australian workplaces are seeing more of this right now
+      </H2>
+      <Callout kicker="Quick answer">
+        Psychosocial hazards like excessive workload, poor support and
+        unclear expectations are now recognised and regulated the same
+        way as physical safety risks in Australian workplaces.
+      </Callout>
+      <P>
+        This isn&rsquo;t just a feeling. Safe Work Australia&rsquo;s
+        data on psychosocial hazards at work shows workers with a
+        mental-health-related workers&rsquo; compensation claim
+        experience poorer return-to-work outcomes and face more stigma
+        from colleagues and employers than workers with physical
+        injuries (Source: Safe Work Australia, 2024).
+      </P>
+      <P>
+        The financial cost is significant too. Low psychosocial safety
+        in Australian workplaces is estimated to cost employers around
+        $6 billion a year, with a further $6.3 billion linked to
+        depression-related absenteeism and reduced productivity while
+        still at work (Source: Safe Work Australia, Psychosocial safety
+        climate and better productivity in Australian workplaces, 2016).
+      </P>
+      <P>
+        Under Australia&rsquo;s model work health and safety laws,
+        employers now have a legal duty to identify and manage
+        psychosocial risks, the same way they&rsquo;d manage a trip
+        hazard or faulty equipment. If your workplace feels genuinely
+        unmanageable, that&rsquo;s a legitimate workplace safety issue,
+        not just something to grit your teeth through.
+      </P>
+
+      <H2>Practical strategies you can use today</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-at-work-coping-tools-still-life.webp"
+            alt="Notebook, pen and cup of tea on a linen surface in soft light"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <Callout kicker="Quick answer">
+        Small, consistent changes such as breaking tasks down, taking
+        real breaks and limiting after-hours messages can ease
+        day-to-day anxiety, though they work alongside professional
+        support rather than replacing it when anxiety persists.
+      </Callout>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          <strong>Name what&rsquo;s happening, even just to yourself.</strong>{" "}
+          Noticing &ldquo;this is anxiety, not a real emergency&rdquo;
+          can settle the physical response slightly.
+        </li>
+        <li className="max-w-full">
+          <strong>Break tasks into smaller pieces.</strong> A vague,
+          looming project feeds anxiety more than a specific next step
+          does.
+        </li>
+        <li className="max-w-full">
+          <strong>Build in short breaks.</strong> Even five minutes away
+          from your screen can reset a racing mind before it snowballs.
+        </li>
+        <li className="max-w-full">
+          <strong>Limit checking work messages outside hours.</strong>{" "}
+          Constant availability keeps your nervous system switched on.
+        </li>
+        <li className="max-w-full">
+          <strong>Move your body.</strong> A short walk, even around the
+          block, can lower physical tension in a way that sitting and
+          worrying doesn&rsquo;t.
+        </li>
+      </ol>
+      <P>
+        These strategies help many people manage day-to-day anxiety at
+        work, though results vary. If anxiety keeps returning despite
+        trying them, that&rsquo;s a sign to speak with a GP or
+        registered psychologist, not a sign you&rsquo;re doing something
+        wrong.
+      </P>
+
+      <H2>How to talk to your manager or HR about it</H2>
+      <Callout kicker="Quick answer">
+        You don&rsquo;t need to share a diagnosis or every detail. A
+        short, practical conversation about what would help is usually
+        enough to start.
+      </Callout>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          <strong>Decide what you want to happen, not just what you want to say.</strong>{" "}
+          A quieter workspace, flexible hours, or clearer priorities are
+          easier to ask for than &ldquo;please understand me.&rdquo;
+        </li>
+        <li className="max-w-full">
+          <strong>Choose a private, unhurried time</strong> rather than
+          raising it in passing or at the end of a long meeting.
+        </li>
+        <li className="max-w-full">
+          <strong>Keep the disclosure general.</strong>{" "}
+          &ldquo;I&rsquo;ve been finding my workload harder to manage
+          lately and want to talk through some options&rdquo; is enough.
+        </li>
+        <li className="max-w-full">
+          <strong>Ask whether an Employee Assistance Program (EAP) is available.</strong>{" "}
+          Many Australian employers offer confidential, short-term
+          counselling through an EAP at no cost to you.
+        </li>
+        <li className="max-w-full">
+          <strong>Follow up in writing afterwards,</strong> briefly, so
+          there&rsquo;s a record of what was discussed and agreed.
+        </li>
+      </ol>
+      <P>
+        This is general guidance, not legal advice. If you&rsquo;re
+        unsure of your workplace rights around mental health, your
+        union, HR team, or the Fair Work Ombudsman can give you
+        specifics for your situation.
+      </P>
+
+      <H2>
+        When it&rsquo;s time to see someone, and what that actually
+        involves
+      </H2>
+      <Callout kicker="Quick answer">
+        If anxiety is affecting your sleep, work performance or
+        relationships for more than a few weeks, it&rsquo;s a reasonable
+        time to speak with your GP about a referral to a psychologist.
+      </Callout>
+      <P>
+        Your GP is usually the first step. They can talk through what
+        you&rsquo;re experiencing and, if appropriate, set up a Mental
+        Health Care Plan that gives you access to Medicare-rebated
+        sessions with a psychologist.
+      </P>
+      <P>
+        A registered psychologist can draw on a range of evidence-based
+        approaches for anxiety, including Cognitive Behaviour Therapy
+        (CBT),{" "}
+        <Link href="/emdr-therapy-perth">
+          Eye Movement Desensitisation and Reprocessing (EMDR)
+        </Link>
+        , Acceptance and Commitment Therapy (ACT) and Schema Therapy.
+        Which approach fits best depends on your history and what&rsquo;s
+        driving the anxiety, and a psychologist will usually talk this
+        through with you rather than applying a single fixed programme.
+      </P>
+      <P>
+        It&rsquo;s worth knowing that psychologists in Australia{" "}
+        <a
+          href="https://www.aihw.gov.au/mental-health/overview/australias-mental-health-system"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          provided almost half of all Medicare mental-health-specific
+          services in 2023 to 2024 (49%), ahead of GPs (27%) and
+          psychiatrists (21%)
+        </a>
+        , according to AIHW mental health service data.
+      </P>
+      <P>
+        Seeing a psychologist for anxiety at work is a common, well-used
+        part of the Australian health system, not an unusual step.
+      </P>
+      <P>
+        Therapy timelines and outcomes vary from person to person. A
+        psychologist can only give you a clearer sense of what to expect
+        once they understand your situation, so it&rsquo;s worth asking
+        directly at your first session.
+      </P>
+
+      <H2>What it costs in Australia</H2>
+      <Callout kicker="Quick answer">
+        With a GP Mental Health Care Plan, you can access up to 10
+        Medicare-rebated psychology sessions a year under
+        Medicare&rsquo;s Better Access initiative (Source: Department of
+        Health and Aged Care, Better Access initiative), with the
+        remainder of the fee payable as a gap.
+      </Callout>
+      <P>Here&rsquo;s roughly how the pathway works:</P>
+      <div className="mt-8 rounded-[14px] border border-ink/12 overflow-x-auto">
+        <div className="min-w-[760px]">
+          <div className="grid grid-cols-[1.1fr_1.6fr_1.6fr] bg-paper-soft">
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Step
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              What happens
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              Typical cost to you
+            </div>
+          </div>
+          {[
+            [
+              "1. See your GP",
+              "Talk through how you've been feeling and ask about a Mental Health Care Plan",
+              "Standard GP consultation fee, or bulk-billed depending on your GP",
+            ],
+            [
+              "2. Get a Mental Health Care Plan",
+              "Your GP prepares a plan and refers you to a psychologist",
+              "Included in the GP visit",
+            ],
+            [
+              "3. Book your first session",
+              "Access up to 10 Medicare-rebated individual sessions per calendar year",
+              "Medicare rebate of $101.55 for a general (registered) psychologist or $149.05 for a clinical psychologist per session (Source: Medicare Benefits Schedule, current as at 1 July 2026)",
+            ],
+            [
+              "4. Pay the gap",
+              "The difference between the psychologist's session fee and the Medicare rebate",
+              "Varies by practice, worth asking when you book",
+            ],
+            [
+              "5. Review with your GP",
+              "Usually after your first 6 sessions, to check the plan is working for you",
+              "Included in ongoing GP care",
+            ],
+          ].map((row, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-[1.1fr_1.6fr_1.6fr] border-t border-ink/12 bg-paper"
+            >
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug font-medium">
+                {row[0]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[1]}
+              </div>
+              <div className="p-4 md:p-5 text-[0.98rem] leading-snug">
+                {row[2]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <P>
+        Outside Medicare, some people access psychology support through
+        WorkCover WA, the NDIS, DVA, or a workplace EAP. Eligibility for
+        each of these depends on your individual circumstances, so
+        it&rsquo;s worth checking directly with the relevant scheme or{" "}
+        <Link href="/fees">Sage&rsquo;s fees and rebates page</Link>{" "}
+        rather than assuming what applies to you.
+      </P>
+
+      <H2>Getting started at Sage Psychological Services</H2>
+      <P>
+        You don&rsquo;t need a crisis point to reach out. Many people
+        start seeing a psychologist simply because work has felt harder
+        to manage than usual for a while.
+      </P>
+      <P>
+        Sage Psychological Services is a small, private practice in East
+        Fremantle, working with adults across Fremantle, Melville,
+        Cockburn and greater Perth, with{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth sessions across WA
+        </Link>{" "}
+        also available. You&rsquo;ll see the same registered
+        psychologist, Jacob Jones, each time, rather than a rotating
+        roster of practitioners.
+      </P>
+      <P>
+        Jacob draws on EMDR for trauma and anxiety alongside CBT, ACT
+        and Schema Therapy, shaping sessions around your history and
+        pace rather than a fixed programme. You can{" "}
+        <Link href="/about">
+          read more about Jacob&rsquo;s approach to therapy
+        </Link>{" "}
+        before deciding if it feels like a good fit.
+      </P>
+      <P>
+        If you would like to talk through your situation with a
+        registered psychologist in East Fremantle, the team at Sage
+        Psychological Services is happy to help. You can{" "}
+        <Link href="/contact">book a session with Jacob</Link> when
+        you&rsquo;re ready.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "How do I know if my anxiety is work-related or something else?",
+            a: (
+              <>
+                Work-related anxiety often eases somewhat on weekends or
+                leave and intensifies around specific tasks, people or
+                deadlines. If anxiety persists regardless of whether
+                you&rsquo;re at work, other factors may be involved. A
+                GP or psychologist can help you work through what&rsquo;s
+                contributing, rather than trying to work it out alone.
+              </>
+            ),
+            aText:
+              "Work-related anxiety often eases somewhat on weekends or leave and intensifies around specific tasks, people or deadlines. If anxiety persists regardless of whether you're at work, other factors may be involved. A GP or psychologist can help you work through what's contributing, rather than trying to work it out alone.",
+          },
+          {
+            q: "Can I see a psychologist without a diagnosis?",
+            a: (
+              <>
+                Yes. You don&rsquo;t need a formal diagnosis to see a
+                psychologist. Many people start sessions simply because
+                they&rsquo;re finding things harder to manage than
+                usual. Your GP can discuss a Mental Health Care Plan
+                with you regardless of whether a specific diagnosis has
+                been made.
+              </>
+            ),
+            aText:
+              "Yes. You don't need a formal diagnosis to see a psychologist. Many people start sessions simply because they're finding things harder to manage than usual. Your GP can discuss a Mental Health Care Plan with you regardless of whether a specific diagnosis has been made.",
+          },
+          {
+            q: "How much does a psychologist cost with a Mental Health Care Plan?",
+            a: (
+              <>
+                With a valid plan, Medicare currently rebates $101.55
+                per session for a general (registered) psychologist or
+                $149.05 for a clinical psychologist (Source: Medicare
+                Benefits Schedule, current as at 1 July 2026). You pay
+                the gap between this rebate and the practice&rsquo;s
+                session fee, which varies, so it&rsquo;s worth asking
+                when booking.
+              </>
+            ),
+            aText:
+              "With a valid plan, Medicare currently rebates $101.55 per session for a general (registered) psychologist or $149.05 for a clinical psychologist (Source: Medicare Benefits Schedule, current as at 1 July 2026). You pay the gap between this rebate and the practice's session fee, which varies, so it's worth asking when booking.",
+          },
+          {
+            q: "Is anxiety at work covered by WorkCover?",
+            a: (
+              <>
+                It can be, depending on your circumstances and state
+                scheme. WorkCover WA assesses claims individually, so
+                eligibility isn&rsquo;t automatic. It&rsquo;s best to
+                check directly with WorkCover WA or discuss your
+                situation with your GP or workplace before assuming
+                coverage.
+              </>
+            ),
+            aText:
+              "It can be, depending on your circumstances and state scheme. WorkCover WA assesses claims individually, so eligibility isn't automatic. It's best to check directly with WorkCover WA or discuss your situation with your GP or workplace before assuming coverage.",
+          },
+          {
+            q: "What's the difference between a psychologist and a psychiatrist for anxiety?",
+            a: (
+              <>
+                A psychologist provides talk-based therapy such as CBT
+                or EMDR and cannot prescribe medication. A psychiatrist
+                is a medical doctor who can prescribe medication as well
+                as provide therapy. Some people see both, depending on
+                what their GP recommends for their situation.
+              </>
+            ),
+            aText:
+              "A psychologist provides talk-based therapy such as CBT or EMDR and cannot prescribe medication. A psychiatrist is a medical doctor who can prescribe medication as well as provide therapy. Some people see both, depending on what their GP recommends for their situation.",
+          },
+          {
+            q: "How many sessions will I need?",
+            a: (
+              <>
+                This varies from person to person and depends on what
+                you&rsquo;re working through, so results and timelines
+                differ between individuals. A Mental Health Care Plan
+                provides access to up to 10 Medicare-rebated sessions a
+                year, with a review by your GP partway through.
+                It&rsquo;s worth asking your psychologist directly, as
+                they can give you a clearer sense of pacing once they
+                understand your circumstances.
+              </>
+            ),
+            aText:
+              "This varies from person to person and depends on what you're working through, so results and timelines differ between individuals. A Mental Health Care Plan provides access to up to 10 Medicare-rebated sessions a year, with a review by your GP partway through. It's worth asking your psychologist directly, as they can give you a clearer sense of pacing once they understand your circumstances.",
+          },
+          {
+            q: "Can I do telehealth sessions from work or do I need to take leave?",
+            a: (
+              <>
+                Telehealth sessions can often be scheduled around work
+                commitments, including on a break or before or after
+                hours, depending on your privacy needs. Some people
+                prefer to take a short amount of leave for the first
+                session while they settle into it. Either way works.
+              </>
+            ),
+            aText:
+              "Telehealth sessions can often be scheduled around work commitments, including on a break or before or after hours, depending on your privacy needs. Some people prefer to take a short amount of leave for the first session while they settle into it. Either way works.",
+          },
+        ]}
+      />
+
+      <p className="mt-10 body-lede italic text-ink/70">
+        This article provides general information only and isn&rsquo;t a
+        substitute for individual advice from your GP or a registered
+        psychologist. If you&rsquo;re concerned about your mental
+        health, please speak with a qualified health practitioner.
+      </p>
+
+      <CrisisFootnote />
+    </>
+  ),
   "why-avoidance-makes-anxiety-worse": () => (
     <>
       <P>
