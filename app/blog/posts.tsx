@@ -1209,8 +1209,12 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         in Australian workplaces is estimated to cost employers around
         $6 billion a year, with a further $6.3 billion linked to
         depression-related absenteeism and reduced productivity while
-        still at work (Source: Safe Work Australia, Psychosocial safety
-        climate and better productivity in Australian workplaces, 2016).
+        still at work (Source: Safe Work Australia,{" "}
+        <em>
+          Psychosocial safety climate and better productivity in
+          Australian workplaces
+        </em>
+        , 2016).
       </P>
       <P>
         Under Australia&rsquo;s model work health and safety laws,
@@ -1280,9 +1284,10 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       </Callout>
       <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
         <li className="max-w-full">
-          <strong>Decide what you want to happen, not just what you want to say.</strong>{" "}
-          A quieter workspace, flexible hours, or clearer priorities are
-          easier to ask for than &ldquo;please understand me.&rdquo;
+          <strong>Decide what you want to happen</strong>, not just what
+          you want to say. A quieter workspace, flexible hours, or
+          clearer priorities are easier to ask for than &ldquo;please
+          understand me.&rdquo;
         </li>
         <li className="max-w-full">
           <strong>Choose a private, unhurried time</strong> rather than
@@ -1299,7 +1304,7 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
           counselling through an EAP at no cost to you.
         </li>
         <li className="max-w-full">
-          <strong>Follow up in writing afterwards,</strong> briefly, so
+          <strong>Follow up in writing</strong> afterwards, briefly, so
           there&rsquo;s a record of what was discussed and agreed.
         </li>
       </ol>
