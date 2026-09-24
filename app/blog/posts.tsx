@@ -1114,18 +1114,11 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         This matters because the workplace itself is often part of the
         picture, not just something happening to you in isolation. In
         2023 to 2024, the most common causes of serious mental stress
-        claims in Australian workplaces were{" "}
-        <a
-          href="https://data.safeworkaustralia.gov.au/insights/key-whs-statistics-australia/latest-release"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          workplace bullying and harassment (33.2%), work pressure
-          (24.2%), and exposure to violence or aggression (15.7%)
-        </a>{" "}
-        (Source: Safe Work Australia, 2025). These are recognised
-        workplace hazards, not just personal struggles you&rsquo;re
-        meant to push through alone.
+        claims in Australian workplaces were workplace bullying and
+        harassment (33.2%), work pressure (24.2%), and exposure to
+        violence or aggression (15.7%) (Source: Safe Work Australia,
+        2025). These are recognised workplace hazards, not just
+        personal struggles you&rsquo;re meant to push through alone.
       </P>
 
       <H2>Is it anxiety, stress or burnout?</H2>
@@ -1205,11 +1198,18 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
       </Callout>
       <P>
         This isn&rsquo;t just a feeling. Safe Work Australia&rsquo;s
-        data on psychosocial hazards at work shows workers with a
-        mental-health-related workers&rsquo; compensation claim
-        experience poorer return-to-work outcomes and face more stigma
-        from colleagues and employers than workers with physical
-        injuries (Source: Safe Work Australia, 2024).
+        data on{" "}
+        <a
+          href="https://data.safeworkaustralia.gov.au/insights/key-whs-statistics-australia/latest-release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          psychosocial hazards at work
+        </a>{" "}
+        shows workers with a mental-health-related workers&rsquo;
+        compensation claim experience poorer return-to-work outcomes
+        and face more stigma from colleagues and employers than workers
+        with physical injuries (Source: Safe Work Australia, 2024).
       </P>
       <P>
         The financial cost is significant too. Low psychosocial safety
@@ -1345,17 +1345,11 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
         through with you rather than applying a single fixed programme.
       </P>
       <P>
-        It&rsquo;s worth knowing that psychologists in Australia{" "}
-        <a
-          href="https://www.aihw.gov.au/mental-health/overview/australias-mental-health-system"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          provided almost half of all Medicare mental-health-specific
-          services in 2023 to 2024 (49%), ahead of GPs (27%) and
-          psychiatrists (21%)
-        </a>
-        , according to AIHW mental health service data.
+        It&rsquo;s worth knowing that psychologists in Australia
+        provided almost half of all Medicare mental-health-specific
+        services in 2023 to 2024 (49%), ahead of GPs (27%) and
+        psychiatrists (21%), according to AIHW mental health service
+        data.
       </P>
       <P>
         Seeing a psychologist for anxiety at work is a common, well-used
