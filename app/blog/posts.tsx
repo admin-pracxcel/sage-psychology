@@ -153,6 +153,49 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "perfectionism-and-anxiety",
+    title: "Perfectionism and Anxiety: When High Standards Hurt",
+    metaTitle: "Perfectionism Anxiety: When Standards Turn Into a Problem",
+    metaDescription:
+      "Perfectionism anxiety often hides behind high achievement. See the signs, causes and Australian support options, and find a calmer way to work and live.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "14 min read",
+    publishedAt: "2026-09-30",
+    publishedLabel: "30 September 2026",
+    image: "/img/perfectionism-anxiety-bushland-path.webp",
+    imageAlt:
+      "Sunlit bushland path through eucalyptus trees in Western Australia",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "High standards can quietly turn into anxiety, self-criticism and burnout. This article explains how perfectionism develops, the signs to watch for, and how Australians can access psychologist support through Medicare.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When high standards <span className="serif-italic">start to hurt</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about the pattern that
+        has been running and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "managing-anxiety-at-work",
     title: "Managing Anxiety at Work Without Burning Out",
     metaTitle: "Anxiety at Work: A Perth Psychologist's Guide to Coping",
@@ -1069,6 +1112,560 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "perfectionism-and-anxiety": () => (
+    <>
+      <P>
+        You finish a piece of work and instead of feeling proud, you
+        feel flat, already scanning for what you got wrong. You reread
+        an email four times before sending it. You have started saying
+        no to things you would normally enjoy, because doing them
+        properly feels like too much effort right now.
+      </P>
+      <P>
+        If this sounds familiar, you may be dealing with perfectionism
+        anxiety, the anxious, self-critical state that builds when high
+        standards stop feeling like ambition and start feeling like
+        pressure. This article looks at what perfectionism anxiety
+        actually is, how it develops, the signs to watch for, and what
+        support looks like here in Australia, including how Medicare
+        can help with the cost.
+      </P>
+      <Callout kicker="Quick answer">
+        Perfectionism anxiety happens when your standards for yourself
+        become so high, and so tied to your sense of worth, that
+        ordinary tasks start to feel threatening. It is not a diagnosis
+        on its own, but it is strongly linked to generalised anxiety,
+        rumination and burnout.
+      </Callout>
+
+      <H2>What perfectionism actually is (and where it comes from)</H2>
+      <P>
+        Perfectionism is a personality pattern, not a mental illness.
+        It involves setting extremely high standards for yourself, then
+        judging your own worth by whether you meet them.
+      </P>
+      <P>
+        Psychologists usually describe three types. Self-oriented
+        perfectionism is the pressure you put on yourself.
+        Other-oriented perfectionism is the pressure you put on the
+        people around you. Socially prescribed perfectionism is the
+        belief that other people expect you to be perfect, and will
+        judge you if you are not.
+      </P>
+      <P>
+        This pattern often has an origin story. It may have started as
+        a way to feel safe, to earn approval, or to keep some sense of
+        control during a stressful time. Psychodynamic and
+        schema-informed approaches to therapy tend to look at these
+        origins directly, rather than only focusing on the current
+        behaviour.
+      </P>
+      <P>
+        The table below shows the difference between healthy striving
+        and the kind of perfectionism that starts to hurt you.
+      </P>
+      <div className="mt-8 rounded-[14px] border border-ink/12 overflow-x-auto">
+        <div className="min-w-[760px]">
+          <div className="grid grid-cols-[1.2fr_1.4fr_1.4fr] bg-paper-soft">
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              What you&rsquo;re looking at
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Healthy striving
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              Perfectionism that hurts you
+            </div>
+          </div>
+          {[
+            [
+              "How failure feels",
+              "Disappointing, but you move on",
+              "Threatening to your sense of self",
+            ],
+            [
+              "Where self-worth comes from",
+              "Effort and values, not just results",
+              "Almost entirely from meeting the standard",
+            ],
+            [
+              "Flexibility",
+              "Standards can bend depending on context",
+              "Standards feel fixed and all-or-nothing",
+            ],
+            [
+              "What happens after success",
+              "Satisfaction, even if brief",
+              "Relief, quickly followed by a higher bar",
+            ],
+            [
+              "Cost over time",
+              "Motivation and growth",
+              "Anxiety, exhaustion and self-criticism",
+            ],
+          ].map((row, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-[1.2fr_1.4fr_1.4fr] border-t border-ink/12 bg-paper"
+            >
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug font-medium">
+                {row[0]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[1]}
+              </div>
+              <div className="p-4 md:p-5 text-[0.98rem] leading-snug">
+                {row[2]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <H2>
+        How perfectionism anxiety develops: the &ldquo;unrelenting
+        standards&rdquo; pattern
+      </H2>
+      <P>
+        Perfectionism turns into anxiety when your mind starts treating
+        an ordinary task, like sending an email or finishing a report,
+        as a genuine threat. In schema therapy, this pattern is
+        sometimes described using the term Unrelenting Standards, a
+        belief that you must always strive to meet extremely high
+        expectations, no matter the cost.
+      </P>
+      <P>
+        Once this belief is in place, a familiar cycle tends to follow.
+        You set a very high standard, worry about whether you will meet
+        it, feel your anxiety rise, then either overwork the task or
+        avoid starting it altogether.
+      </P>
+      <P>
+        Research backs this up. A 2025{" "}
+        <a
+          href="https://research.unsw.edu.au/people/dr-christine-therese-shiner/publications"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          study from UNSW Sydney and St Vincent&rsquo;s Hospital
+        </a>{" "}
+        found that perfectionism is significantly associated with
+        anxiety severity, and that both the striving and self-critical
+        sides of perfectionism are uniquely linked to generalised
+        anxiety disorder (Source: UNSW Sydney and St Vincent&rsquo;s
+        Hospital, 2025). The same study found that CBT reduced
+        perfectionism even when perfectionism was not the direct focus
+        of treatment, which is a useful thing to know if you are
+        weighing up whether therapy could help.
+      </P>
+
+      <H2>Signs your standards have tipped into perfectionism</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/perfectionism-anxiety-signs-checklist-illustration.webp"
+            alt="Flat icon illustration representing signs of perfectionism and self-reflection"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Perfectionism can be hard to notice in yourself, because from
+        the outside it often looks like diligence or care. These signs
+        point to standards that have become rigid rather than helpful.
+      </P>
+      <UL>
+        <LI>
+          You rewrite or recheck work long after it is already good
+          enough
+        </LI>
+        <LI>You feel relief rather than pride when you finish something</LI>
+        <LI>
+          Small mistakes feel like proof that you are not good enough
+        </LI>
+        <LI>
+          You put off starting tasks you are worried about getting wrong
+        </LI>
+        <LI>
+          You brush off compliments or move straight to what could have
+          been better
+        </LI>
+        <LI>
+          You hold yourself to standards you would never expect from a
+          friend
+        </LI>
+        <LI>You feel tense, anxious or flat without an obvious cause</LI>
+      </UL>
+      <P>
+        You do not need every item on this list for the pattern to be
+        worth paying attention to. Even a few of these, if they are
+        frequent, are worth noticing.
+      </P>
+
+      <H2>Who this shows up in most, and why it&rsquo;s easy to miss</H2>
+      <P>
+        Perfectionism anxiety is common among high achievers, carers
+        and students, partly because the underlying behaviour is often
+        praised rather than questioned. A colleague who reworks a
+        report five times is called thorough. A parent who cannot sit
+        down until the house is spotless is called on top of things.
+      </P>
+      <P>
+        Anxiety itself is widespread in Australia.{" "}
+        <a
+          href="https://www.abs.gov.au/statistics/health/mental-health/national-study-mental-health-and-wellbeing/latest-release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          According to the ABS National Study of Mental Health and
+          Wellbeing
+        </a>
+        , 17.2 per cent of Australians aged 16 to 85, around 3.4
+        million people, had a 12-month anxiety disorder, and 28.8 per
+        cent will experience one at some point in their life (Source:
+        ABS, 2020 to 2022).
+      </P>
+      <P>
+        Anxiety remains the most common mental health condition in the
+        country, affecting around 17 per cent of the population
+        (Source: AIHW, 2025).
+      </P>
+      <P>
+        Perfectionism appears to affect women in particular. Data from
+        Australia&rsquo;s Biggest Mental Health Check-in, a national
+        corporate mental health program, found that one in three women
+        scored in the high range for perfectionism, compared with 21
+        per cent of men (Source: MediBio&rsquo;s Australia&rsquo;s
+        Biggest Mental Health Check-in).
+      </P>
+      <P>
+        Separately, the Jean Hailes for Women&rsquo;s Health national
+        survey found that 66.9 per cent of women had felt nervous,
+        anxious or on edge for several days or more in the past four
+        weeks (Source: Jean Hailes for Women&rsquo;s Health Survey,
+        2018).
+      </P>
+      <P>
+        Students are not immune either. A Curtin University study
+        found that perfectionistic concerns were directly linked to all
+        three elements of academic burnout: exhaustion, feelings of
+        inadequacy and cynicism (Source: Curtin University, 2018).
+      </P>
+
+      <H2>
+        The hidden cost: burnout, relationships and never feeling done
+      </H2>
+      <P>
+        Perfectionism anxiety rarely stays contained to one part of
+        your life. Over time, it tends to spread into how you work,
+        how you rest and how you relate to the people around you.
+      </P>
+      <P>
+        At work, it can look like burnout: exhaustion that does not
+        lift with a weekend off, a creeping sense that nothing you do
+        is quite enough, and less patience for tasks that used to feel
+        manageable. In relationships, it can mean struggling to ask
+        for help, or feeling irritated when other people do not hold
+        themselves to the same standard.
+      </P>
+      <P>
+        Perhaps the hardest part is the lack of an endpoint. Because
+        the standard keeps moving, there is rarely a moment where you
+        get to feel genuinely finished, or genuinely proud.
+      </P>
+
+      <H2>
+        How therapy actually helps: CBT, EMDR and understanding where
+        it started
+      </H2>
+      <P>
+        If you decide to work with a psychologist on perfectionism,
+        therapy usually looks different depending on what is driving
+        the pattern for you.
+      </P>
+      <P>
+        CBT can help you notice and gradually shift the thinking that
+        keeps your standards so high and so rigid. EMDR may be useful
+        where the pattern seems tied to an earlier experience, such as
+        growing up feeling that approval depended on performance.
+      </P>
+      <P>
+        Psychodynamic and schema-informed work looks at where the
+        belief that you must not fail first took hold, rather than
+        only addressing today&rsquo;s behaviour. You can read more
+        about{" "}
+        <Link href="/about">how we work with you in sessions</Link>{" "}
+        if you want a sense of how these are used together.
+      </P>
+      <P>
+        These approaches are not mutually exclusive, and a
+        psychologist may use them together or move between them over
+        time, depending on what feels right for you. Results vary and
+        individual circumstances differ, so it is worth talking to a
+        registered psychologist or your GP about what might suit your
+        situation.
+      </P>
+
+      <H2>
+        Getting support in Australia: Medicare, referrals and what it
+        costs
+      </H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/perfectionism-anxiety-support-pathway-illustration.webp"
+            alt="Four-step icon diagram illustrating a general psychology support pathway"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        In Australia, support for perfectionism-related anxiety
+        usually starts with your GP, not directly with a psychologist.
+        The table below outlines the general process.
+      </P>
+      <div className="mt-8 rounded-[14px] border border-ink/12 overflow-x-auto">
+        <div className="min-w-[760px]">
+          <div className="grid grid-cols-[1.1fr_1.6fr_1.6fr] bg-paper-soft">
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Step
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              What happens
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              Typical cost
+            </div>
+          </div>
+          {[
+            [
+              "1. See your GP",
+              "You talk through what you have been noticing and ask about a Mental Health Treatment Plan",
+              "Standard consultation fee, or bulk-billed depending on your GP",
+            ],
+            [
+              "2. Get a Mental Health Treatment Plan",
+              "Your GP assesses whether a plan is appropriate and refers you to a psychologist",
+              "Included as part of the GP consultation",
+            ],
+            [
+              "3. Book sessions with a psychologist",
+              "You attend therapy sessions under your plan, in person or online",
+              "Practice fee, minus your Medicare rebate",
+            ],
+            [
+              "4. Claim your Medicare rebate",
+              "Medicare contributes toward each eligible session",
+              "Rebate reduces your out-of-pocket cost",
+            ],
+          ].map((row, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-[1.1fr_1.6fr_1.6fr] border-t border-ink/12 bg-paper"
+            >
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug font-medium">
+                {row[0]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[1]}
+              </div>
+              <div className="p-4 md:p-5 text-[0.98rem] leading-snug">
+                {row[2]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <P>
+        Sessions can be booked in person or through{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth appointments
+        </Link>
+        , depending on what suits you.{" "}
+        <a
+          href="https://www.health.gov.au/our-work/better-access-initiative?language=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          This process runs through the Better Access initiative
+        </a>
+        , which allows eligible clients to access up to 10
+        Medicare-rebated psychology sessions per calendar year with a
+        valid Mental Health Treatment Plan (Source: Medicare, Better
+        Access initiative, 2025).
+      </P>
+      <P>
+        Your out-of-pocket cost will depend on the practice&rsquo;s
+        fee and which type of psychologist you see, so it is worth
+        asking about this upfront.
+      </P>
+
+      <H2>When to reach out for support</H2>
+      <P>
+        There is no perfect moment to address perfectionism anxiety,
+        and you do not need to be in crisis to ask for help. Many
+        people wait until things feel urgent, when reaching out
+        earlier often means a smaller, more manageable problem to work
+        with.
+      </P>
+      <P>
+        It is worth speaking with a GP or registered psychologist if
+        perfectionism anxiety is starting to affect your sleep, your
+        relationships, your ability to start tasks at all, or your
+        general sense of wellbeing.
+      </P>
+      <P>
+        If you are having thoughts of self-harm or are worried about
+        your immediate safety, contact Lifeline on{" "}
+        <a href="tel:131114">13 11 14</a>, available 24 hours a day,
+        or Beyond Blue on <a href="tel:1300224636">1300 22 4636</a>.
+      </P>
+      <P>
+        If you would like to talk through your situation with a
+        registered psychologist in East Fremantle, the team at Sage
+        Psychological Services is happy to help. You can{" "}
+        <Link href="/contact">book a consultation</Link> or read more
+        about{" "}
+        <Link href="/anxiety-therapy-perth">
+          our approach to anxiety therapy
+        </Link>{" "}
+        on our website.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Is perfectionism a mental illness or a personality trait?",
+            a: (
+              <>
+                Perfectionism itself is not a mental illness. It is a
+                personality trait involving very high personal
+                standards. It becomes a concern when it is linked to
+                ongoing anxiety, low mood or burnout that affects your
+                daily life. If this pattern is meaningfully affecting
+                your wellbeing, it is worth checking in with a GP or
+                registered psychologist.
+              </>
+            ),
+            aText:
+              "Perfectionism itself is not a mental illness. It is a personality trait involving very high personal standards. It becomes a concern when it is linked to ongoing anxiety, low mood or burnout that affects your daily life. If this pattern is meaningfully affecting your wellbeing, it is worth checking in with a GP or registered psychologist.",
+          },
+          {
+            q: "What's the difference between high standards and perfectionism?",
+            a: (
+              <>
+                High standards are flexible and tied to effort and
+                values, not just results. Perfectionism is more rigid:
+                falling short of the standard feels like a reflection
+                of your worth, rather than a disappointing outcome.
+                Healthy striving leaves room for mistakes. Perfectionism
+                often does not.
+              </>
+            ),
+            aText:
+              "High standards are flexible and tied to effort and values, not just results. Perfectionism is more rigid: falling short of the standard feels like a reflection of your worth, rather than a disappointing outcome. Healthy striving leaves room for mistakes. Perfectionism often does not.",
+          },
+          {
+            q: "Can perfectionism cause anxiety or panic attacks?",
+            a: (
+              <>
+                Perfectionism anxiety is well documented, and research
+                shows both the striving and self-critical dimensions of
+                perfectionism are linked to anxiety severity, including
+                generalised anxiety disorder (Source: UNSW Sydney and
+                St Vincent&rsquo;s Hospital, 2025). Some people also
+                notice panic-like symptoms when facing tasks tied to
+                their standards. A registered psychologist can help you
+                understand and work with this pattern.
+              </>
+            ),
+            aText:
+              "Perfectionism anxiety is well documented, and research shows both the striving and self-critical dimensions of perfectionism are linked to anxiety severity, including generalised anxiety disorder (Source: UNSW Sydney and St Vincent's Hospital, 2025). Some people also notice panic-like symptoms when facing tasks tied to their standards. A registered psychologist can help you understand and work with this pattern.",
+          },
+          {
+            q: "Where does perfectionism actually come from?",
+            a: (
+              <>
+                Perfectionism often develops through early experiences,
+                such as feeling that love or approval depended on
+                performance, or growing up in an environment with very
+                high expectations. Psychodynamic and schema-informed
+                therapy looks at these origins directly, rather than
+                only addressing the current behaviour. Understanding
+                where the pattern started can make it easier to work
+                with.
+              </>
+            ),
+            aText:
+              "Perfectionism often develops through early experiences, such as feeling that love or approval depended on performance, or growing up in an environment with very high expectations. Psychodynamic and schema-informed therapy looks at these origins directly, rather than only addressing the current behaviour. Understanding where the pattern started can make it easier to work with.",
+          },
+          {
+            q: "How many sessions does it take to work on perfectionism?",
+            a: (
+              <>
+                There is no fixed number, because it depends on your
+                history, circumstances and what you are hoping to work
+                through. Some people notice shifts within a handful of
+                sessions, while others need longer-term support.
+                Results vary and individual circumstances differ, so it
+                is best to discuss a realistic timeframe with your
+                psychologist once you have started working together.
+              </>
+            ),
+            aText:
+              "There is no fixed number, because it depends on your history, circumstances and what you are hoping to work through. Some people notice shifts within a handful of sessions, while others need longer-term support. Results vary and individual circumstances differ, so it is best to discuss a realistic timeframe with your psychologist once you have started working together.",
+          },
+          {
+            q: "Does Medicare cover therapy for perfectionism?",
+            a: (
+              <>
+                Medicare does not fund therapy for a specific behaviour
+                like perfectionism on its own. However, if your GP
+                assesses that related anxiety or mood symptoms meet the
+                criteria for a Mental Health Treatment Plan, you may
+                access sessions under the Better Access initiative,
+                which allows up to 10 rebated sessions per calendar
+                year (Source: Medicare, Better Access initiative,
+                2025).
+              </>
+            ),
+            aText:
+              "Medicare does not fund therapy for a specific behaviour like perfectionism on its own. However, if your GP assesses that related anxiety or mood symptoms meet the criteria for a Mental Health Treatment Plan, you may access sessions under the Better Access initiative, which allows up to 10 rebated sessions per calendar year (Source: Medicare, Better Access initiative, 2025).",
+          },
+          {
+            q: "Can you work on this and still be high-achieving?",
+            a: (
+              <>
+                Yes. Therapy for perfectionism is not about lowering
+                your ambition. It is about easing the anxiety and
+                self-criticism that make achieving feel exhausting
+                rather than satisfying. Many people find they can hold
+                high standards without the constant fear of falling
+                short, once the underlying pattern has been addressed.
+                Results vary and individual circumstances differ.
+              </>
+            ),
+            aText:
+              "Yes. Therapy for perfectionism is not about lowering your ambition. It is about easing the anxiety and self-criticism that make achieving feel exhausting rather than satisfying. Many people find they can hold high standards without the constant fear of falling short, once the underlying pattern has been addressed. Results vary and individual circumstances differ.",
+          },
+        ]}
+      />
+
+      <p className="mt-10 body-lede italic text-ink/70">
+        This article is general information only and is not a
+        substitute for individual advice from a registered health
+        practitioner. If you are concerned about your mental health,
+        please speak with your GP or a registered psychologist.
+      </p>
+
+      <CrisisFootnote />
+    </>
+  ),
   "managing-anxiety-at-work": () => (
     <>
       <P>
