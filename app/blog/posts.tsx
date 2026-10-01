@@ -153,6 +153,48 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "anxiety-and-overthinking",
+    title: "The Link Between Anxiety and Overthinking",
+    metaTitle: "How to Stop Overthinking: 5 Skills and the Anxiety Link",
+    metaDescription:
+      "How to stop overthinking when anxiety keeps the loop going. Find five practical skills, the signs it may be time for support, and how to start in Australia.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "13 min read",
+    publishedAt: "2026-10-01",
+    publishedLabel: "1 October 2026",
+    image: "/img/how-to-stop-overthinking-anxiety-notebook-tea.webp",
+    imageAlt: "Blank open notebook and pen beside a cup of tea on linen",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Overthinking is not a diagnosis, but it often goes hand in hand with anxiety. This guide explains how the two feed each other, five skills that may help, and when to talk to a GP or psychologist in Australia.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When the loop <span className="serif-italic">keeps running</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about the thinking that
+        has been looping and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "perfectionism-and-anxiety",
     title: "Perfectionism and Anxiety: When High Standards Hurt",
     metaTitle: "Perfectionism Anxiety: When Standards Turn Into a Problem",
@@ -1112,6 +1154,574 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "anxiety-and-overthinking": () => (
+    <>
+      <P>
+        It is 2am, and your mind is replaying a conversation from
+        earlier in the week. You know the loop is not helping, but you
+        cannot make it stop. If you are searching for how to stop
+        overthinking, this article explains how overthinking and
+        anxiety feed each other, which skills may help, and when it is
+        worth talking to a professional.
+      </P>
+      <Callout kicker="Quick answer">
+        Overthinking is not a diagnosis. It is a pattern of repetitive
+        thinking about the past or the future, and it often sits
+        alongside anxiety. If it affects your sleep, mood or daily
+        life, a GP or registered psychologist can help you work out
+        the next step.
+      </Callout>
+
+      <H2>What overthinking is, and what it isn&rsquo;t</H2>
+      <P>
+        Overthinking is repetitive thinking about a situation that
+        goes on longer than it is useful. It is not a medical
+        diagnosis, and it is very common.
+      </P>
+      <P>
+        Psychologists often split it into two parts. Rumination is
+        going over the past, such as a mistake or an awkward
+        conversation. Worry is going over the future, with a stream of
+        &ldquo;what ifs&rdquo;.
+      </P>
+      <P>
+        Some thinking is helpful, because it can lead to a plan, a
+        decision or a lesson. The difference is where it ends up. If
+        it heads toward the next step, it is doing its job. If it just
+        loops, it has stopped being useful.
+      </P>
+      <div className="mt-8 rounded-[14px] border border-ink/12 overflow-x-auto">
+        <div className="min-w-[960px]">
+          <div className="grid grid-cols-[1.1fr_1.3fr_1.1fr_1.3fr_1.3fr] bg-paper-soft">
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Type of thinking
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Focus
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              How it feels
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Does it help?
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              When to seek support
+            </div>
+          </div>
+          {[
+            [
+              "Problem-solving",
+              "One issue, usually with a next step",
+              "Purposeful, then finished",
+              "Yes, it ends in a plan or decision",
+              "Not usually needed",
+            ],
+            [
+              "Worry",
+              "Future “what ifs”",
+              "Tense and restless",
+              "Sometimes, if it leads to planning",
+              "If it runs on most days",
+            ],
+            [
+              "Rumination",
+              "Past events and mistakes",
+              "Heavy, stuck, self-critical",
+              "Rarely, unless it leads to a lesson",
+              "If it lingers and lowers your mood",
+            ],
+            [
+              "Diagnosable anxiety (such as GAD)",
+              "Many topics at once",
+              "Constant and hard to control",
+              "It often affects sleep, work and relationships",
+              "Worry on most days for six months or more",
+            ],
+          ].map((row, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-[1.1fr_1.3fr_1.1fr_1.3fr_1.3fr] border-t border-ink/12 bg-paper"
+            >
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug font-medium">
+                {row[0]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[1]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[2]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[3]}
+              </div>
+              <div className="p-4 md:p-5 text-[0.98rem] leading-snug">
+                {row[4]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <P>
+        Learning how to stop overthinking starts with spotting which
+        of these you are doing.
+      </P>
+
+      <H2>Is overthinking a sign of anxiety?</H2>
+      <P>
+        Often, but not always. Overthinking is common in anxiety, and
+        plenty of people overthink during stress, grief or big life
+        changes without having an anxiety disorder.
+      </P>
+      <P>
+        Anxiety is common in Australia. The{" "}
+        <a
+          href="https://www.abs.gov.au/statistics/health/mental-health/national-study-mental-health-and-wellbeing/latest-release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ABS National Study of Mental Health and Wellbeing
+        </a>{" "}
+        found that 17.2 per cent of Australians aged 16 to 85 had an
+        anxiety disorder in the previous 12 months (Source: ABS,
+        2020-22). Among people aged 16 to 24, 38.8 per cent had
+        experienced any mental disorder in that time (Source: ABS,
+        2020-22).
+      </P>
+      <P>
+        Anxiety and overthinking are not the same thing, though.
+        Anxiety disorders include generalised anxiety disorder (GAD),
+        panic disorder and social anxiety disorder.
+      </P>
+      <P>
+        GAD involves excessive worry on more days than not for at
+        least six months, and it affects about 5 per cent of the
+        population (Source: Better Health Channel, Victorian
+        Government). The{" "}
+        <a
+          href="https://www.betterhealth.vic.gov.au/health/healthyliving/Generalised-anxiety-disorder"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Better Health Channel&rsquo;s guide to generalised anxiety
+          disorder
+        </a>{" "}
+        covers the symptoms in more detail.
+      </P>
+      <P>
+        Only a GP, psychologist or psychiatrist can assess whether you
+        have an anxiety disorder. This article cannot do that for you.
+      </P>
+
+      <H2>Why anxiety and overthinking feed each other</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-overthinking-loop-illustration.webp"
+            alt="Illustrated four-step loop showing how anxiety and overthinking feed each other"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Anxiety pushes your mind to search for certainty, and
+        overthinking rarely finds it. The two often build on each
+        other in a loop:
+      </P>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          Something triggers a worry, such as an unanswered message or
+          a big decision.
+        </li>
+        <li className="max-w-full">
+          Your mind starts analysing, hoping to feel certain or
+          prepared.
+        </li>
+        <li className="max-w-full">
+          The analysis brings more &ldquo;what ifs&rdquo;, not answers.
+        </li>
+        <li className="max-w-full">
+          Anxiety rises, and so does the urge to think it through
+          again.
+        </li>
+      </ol>
+
+      <H3>How anxiety drives overthinking</H3>
+      <P>
+        When you feel anxious, your mind looks for danger. Overthinking
+        can feel like a way to stay ready. Many people also find
+        uncertainty hard to sit with, so they replay events, rehearse
+        conversations or ask others for reassurance. Perfectionism can
+        add fuel.
+      </P>
+
+      <H3>How overthinking keeps anxiety going</H3>
+      <P>
+        The relief from thinking it through rarely lasts. Each round
+        of dwelling can make a worry feel bigger and more urgent.
+        Avoiding tasks or seeking reassurance may bring short-term
+        relief, but it can stop you from learning that you can cope
+        with uncertainty. Sleep that overthinking disrupts can then
+        make everything feel harder.
+      </P>
+
+      <H2>
+        How to stop overthinking: practical strategies to try
+      </H2>
+      <P>
+        You cannot force your mind to go blank, but you can change how
+        you respond to the loop. The five ideas below are naming the
+        loop, setting a worry window, grounding, taking one small step
+        and looking after sleep. They draw on CBT and mindfulness-based
+        approaches. They may help some people, but results vary and
+        individual circumstances differ.
+      </P>
+
+      <H3>Name the loop</H3>
+      <P>
+        When you notice yourself spiralling, tell yourself,
+        &ldquo;I&rsquo;m overthinking again.&rdquo; Then note what it
+        is about. Spotting the pattern early makes it easier to step
+        back. A short note on your phone can show you your triggers
+        over time.
+      </P>
+
+      <H3>Set aside a worry window</H3>
+      <P>
+        Choose about 10 minutes each day to think through your worries
+        on purpose. When a worry pops up at other times, jot it on a
+        &ldquo;parking list&rdquo; and tell yourself it has its time
+        later. Postponing worry is a technique used in CBT-based
+        approaches.
+      </P>
+
+      <H3>Ground yourself in the present</H3>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/how-to-stop-overthinking-grounding-eucalyptus.webp"
+            alt="Sunlight filtering through eucalyptus leaves in quiet Australian bushland"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Try the 3-3-3 exercise. Name three things you can see, listen
+        for three sounds, and touch or move three things around you.
+        It can give your attention somewhere to go. It is a coping
+        skill, not a treatment.
+      </P>
+
+      <H3>Turn thinking into one small next step</H3>
+      <P>
+        Ask yourself, &ldquo;Can I do something about this
+        today?&rdquo; If yes, pick one small action, such as sending
+        the email or making the call. If not, remind yourself that
+        some things are out of your hands.
+      </P>
+
+      <H3>Look after sleep, caffeine, alcohol and movement</H3>
+      <P>
+        A tired mind tends to loop more. Caffeine and alcohol can
+        affect both anxiety and sleep, so it can help to ease off,
+        especially in the evening. A short walk can help too.
+      </P>
+      <P>
+        If these ideas do not help, or things are getting worse,
+        please speak with a registered health practitioner.
+      </P>
+
+      <H2>What therapy can offer for overthinking and anxiety</H2>
+      <P>
+        A registered psychologist can help you understand why the loop
+        keeps going and practise skills to change it. Cognitive
+        behavioural therapy (CBT) and acceptance and commitment
+        therapy (ACT) are commonly used approaches.
+      </P>
+      <P>
+        The RANZCP clinical practice guidelines list CBT as a
+        first-line treatment for anxiety disorders (Source: RANZCP
+        guideline 2018). Healthdirect also lists CBT, narrative
+        therapy and ACT among the psychological therapies for GAD
+        (Source: Healthdirect). Some people also talk with a GP or
+        psychiatrist about medicine options. Psychologists do not
+        prescribe medicines.
+      </P>
+      <P>
+        Online programs are another option. MindSpot is a free,
+        government-funded service for Australians with worry, stress
+        or low mood.
+      </P>
+      <P>
+        At Sage Psychological Services, therapy starts with a
+        conversation about confidentiality and moves at a pace that
+        feels right for you. You see the same psychologist each time.
+        You can read about{" "}
+        <Link href="/about">Jacob&rsquo;s approach to therapy</Link>{" "}
+        or see the{" "}
+        <Link href="/anxiety-therapy-perth">
+          anxiety therapy at Sage
+        </Link>
+        .
+      </P>
+      <P>
+        Reading about how to stop overthinking is a fine start, but
+        you do not have to sort it out alone. Results vary, and
+        individual circumstances differ, so talk with a registered
+        health practitioner about what may suit you.
+      </P>
+
+      <H2>When it is time to talk to someone</H2>
+      <P>
+        If overthinking is affecting your sleep, work, relationships
+        or mood on most days, it is worth speaking to a GP or
+        psychologist.
+      </P>
+      <P>
+        If you have tried the ideas on how to stop overthinking above
+        and the loop keeps returning, check whether any of these sound
+        familiar:
+      </P>
+      <UL>
+        <LI>
+          Worrying or replaying thoughts on most days for several
+          weeks or longer
+        </LI>
+        <LI>
+          Trouble falling or staying asleep because your mind will not
+          settle
+        </LI>
+        <LI>
+          Avoiding people, tasks or decisions because thinking about
+          them feels too hard
+        </LI>
+        <LI>
+          Often asking others for reassurance, or checking things
+          again and again
+        </LI>
+        <LI>
+          Physical signs with worry, such as muscle tension, a racing
+          heart or a tight chest
+        </LI>
+        <LI>Feeling low, flat or hopeless as well as anxious</LI>
+        <LI>Friends, family or colleagues noticing a change in you</LI>
+      </UL>
+      <P>
+        This list is not a diagnosis. Beyond Blue&rsquo;s anonymous
+        anxiety and depression test is one way to check in before you
+        see your GP. Chest tightness can have medical causes, so see
+        your GP promptly if it worries you.
+      </P>
+      <Callout kicker="If you need urgent help">
+        <p>
+          If you are in immediate danger, call{" "}
+          <a href="tel:000" className="link">
+            000
+          </a>
+          . For 24/7 crisis support, call Lifeline on{" "}
+          <a href="tel:131114" className="link">
+            13 11 14
+          </a>{" "}
+          or Beyond Blue on{" "}
+          <a href="tel:1300224636" className="link">
+            1300 22 4636
+          </a>
+          . If you are having thoughts of harming yourself or ending
+          your life, contact one of these services now or go to your
+          nearest emergency department.
+        </p>
+      </Callout>
+
+      <H2>How to get started in Australia</H2>
+      <P>
+        Start with your GP. They can talk through how you are going
+        and, if suitable, prepare a Mental Health Treatment Plan so
+        you can claim Medicare rebates for psychology sessions.
+      </P>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          <strong>Book a GP appointment.</strong> Describe what you
+          are noticing, including sleep and mood.
+        </li>
+        <li className="max-w-full">
+          <strong>Ask about a Mental Health Treatment Plan.</strong>{" "}
+          If your GP thinks it suits you, they will prepare one and
+          refer you to a psychologist.
+        </li>
+        <li className="max-w-full">
+          <strong>Choose a psychologist.</strong> Look for someone
+          registered with AHPRA whose approach and location suit you.
+          Some practices, including Sage, offer a short phone call
+          first to check the fit.
+        </li>
+        <li className="max-w-full">
+          <strong>Attend your first session.</strong> You will talk
+          about what brought you in and what you would like to change.
+        </li>
+      </ol>
+      <P>
+        Under Better Access, eligible people can claim Medicare
+        rebates for up to 10 individual sessions each calendar year
+        (Source: Department of Health, Disability and Ageing, 2026).
+        The{" "}
+        <a
+          href="https://www.health.gov.au/our-work/better-access-initiative?language=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Department of Health&rsquo;s Better Access page
+        </a>{" "}
+        explains who is eligible. A rebate is not always the full
+        fee, so ask about costs first.
+      </P>
+      <P>
+        You can see{" "}
+        <Link href="/fees">how fees and rebates work at Sage</Link>.
+        Other funding pathways include DVA, the NDIS, workers&rsquo;
+        compensation (WorkCover WA) and the Insurance Commission of
+        Western Australia (ICWA).
+      </P>
+      <P>
+        Sage sees adults in person in East Fremantle, for people
+        across Fremantle, Melville and Cockburn, and offers{" "}
+        <Link href="/telehealth-psychologist-perth">
+          telehealth sessions across Western Australia
+        </Link>
+        . If you are under 25, headspace is another place to start.
+      </P>
+      <P>
+        If you would like to talk through your situation with a{" "}
+        <Link href="/">registered psychologist in East Fremantle</Link>
+        , Jacob at Sage Psychological Services is happy to help.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Is overthinking a sign of anxiety?",
+            a: (
+              <>
+                It can be. Overthinking is common in anxiety,
+                especially the constant worry seen in generalised
+                anxiety disorder. But people also overthink during
+                stress, grief, low mood or big life changes, so it is
+                not proof of an anxiety disorder. A GP or psychologist
+                can help you work out what is behind it.
+              </>
+            ),
+            aText:
+              "It can be. Overthinking is common in anxiety, especially the constant worry seen in generalised anxiety disorder. But people also overthink during stress, grief, low mood or big life changes, so it is not proof of an anxiety disorder. A GP or psychologist can help you work out what is behind it.",
+          },
+          {
+            q: "Is overthinking a mental illness?",
+            a: (
+              <>
+                No. Overthinking is not a diagnosis on its own. It is
+                a thinking pattern that can appear alongside conditions
+                such as anxiety and depression. If it affects your
+                sleep, mood or daily life, speak to a GP or registered
+                psychologist, who can assess what is happening and
+                talk through your options.
+              </>
+            ),
+            aText:
+              "No. Overthinking is not a diagnosis on its own. It is a thinking pattern that can appear alongside conditions such as anxiety and depression. If it affects your sleep, mood or daily life, speak to a GP or registered psychologist, who can assess what is happening and talk through your options.",
+          },
+          {
+            q: "What is the difference between overthinking and anxiety?",
+            a: (
+              <>
+                Overthinking describes what your mind is doing:
+                looping over the past or the future. Anxiety is
+                broader. It includes fear, tension and physical
+                symptoms, and it can be diagnosed when it is
+                persistent and hard to control. The two often overlap,
+                but you can overthink without having an anxiety
+                disorder.
+              </>
+            ),
+            aText:
+              "Overthinking describes what your mind is doing: looping over the past or the future. Anxiety is broader. It includes fear, tension and physical symptoms, and it can be diagnosed when it is persistent and hard to control. The two often overlap, but you can overthink without having an anxiety disorder.",
+          },
+          {
+            q: "What is the 3-3-3 rule for anxiety?",
+            a: (
+              <>
+                It is a simple grounding exercise. You name three
+                things you can see, listen for three sounds, and touch
+                or move three things around you. It can help bring
+                your attention back to the present. It is a coping
+                skill, not a treatment, and it may not suit everyone.
+              </>
+            ),
+            aText:
+              "It is a simple grounding exercise. You name three things you can see, listen for three sounds, and touch or move three things around you. It can help bring your attention back to the present. It is a coping skill, not a treatment, and it may not suit everyone.",
+          },
+          {
+            q: "Why do I overthink at night?",
+            a: (
+              <>
+                Quiet, still moments give your mind space to loop, and
+                tiredness can make worries feel bigger. You could
+                write your thoughts down before bed and go easy on
+                caffeine and alcohol in the evening. If poor sleep
+                continues, speak to your GP. Results vary between
+                people.
+              </>
+            ),
+            aText:
+              "Quiet, still moments give your mind space to loop, and tiredness can make worries feel bigger. You could write your thoughts down before bed and go easy on caffeine and alcohol in the evening. If poor sleep continues, speak to your GP. Results vary between people.",
+          },
+          {
+            q: "How can a psychologist help with overthinking?",
+            a: (
+              <>
+                A registered psychologist can help you spot the
+                patterns that keep your thinking looping and practise
+                skills from approaches such as CBT and ACT. Sessions
+                are collaborative and move at your pace. Results vary,
+                and individual circumstances differ, so speak with a
+                registered health practitioner about what may suit
+                you.
+              </>
+            ),
+            aText:
+              "A registered psychologist can help you spot the patterns that keep your thinking looping and practise skills from approaches such as CBT and ACT. Sessions are collaborative and move at your pace. Results vary, and individual circumstances differ, so speak with a registered health practitioner about what may suit you.",
+          },
+          {
+            q: "Do I need a referral to see a psychologist in Australia?",
+            a: (
+              <>
+                You do not need a referral to see a psychologist
+                privately. To claim Medicare rebates under Better
+                Access, you need a Mental Health Treatment Plan from
+                your GP, and rebates cover up to 10 individual
+                sessions per calendar year (Source: Department of
+                Health, Disability and Ageing, 2026). A rebate may not
+                cover the full fee.
+              </>
+            ),
+            aText:
+              "You do not need a referral to see a psychologist privately. To claim Medicare rebates under Better Access, you need a Mental Health Treatment Plan from your GP, and rebates cover up to 10 individual sessions per calendar year (Source: Department of Health, Disability and Ageing, 2026). A rebate may not cover the full fee.",
+          },
+        ]}
+      />
+
+      <p className="mt-10 body-lede italic text-ink/70">
+        This article is general information only. It is not a
+        diagnosis or a substitute for advice from a registered health
+        practitioner. If you are worried about your mental health,
+        speak with your GP or a registered psychologist.
+      </p>
+
+      <CrisisFootnote />
+    </>
+  ),
   "perfectionism-and-anxiety": () => (
     <>
       <P>
