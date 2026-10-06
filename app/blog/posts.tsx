@@ -153,6 +153,49 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "grounding-techniques-anxiety",
+    title: "Grounding Techniques for When Anxiety Peaks",
+    metaTitle: "Grounding Techniques for Anxiety: 5 Simple Ways to Try Now",
+    metaDescription:
+      "Try five grounding techniques for anxiety to use at your desk, in the car or in bed, and see when it is time to talk to a GP or registered psychologist.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "12 min read",
+    publishedAt: "2026-10-06",
+    publishedLabel: "6 October 2026",
+    image: "/img/grounding-techniques-for-anxiety-hero.webp",
+    imageAlt:
+      "Five smooth stones and a glass of water on a pale concrete surface",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Anxiety can peak fast, and it is hard to think clearly when it does. This guide shares five simple grounding techniques you can try, explains which suit different moments, covers when grounding does not help, and outlines when to talk to a GP or psychologist.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "Trauma Therapy Perth", href: "/trauma-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When anxiety <span className="serif-italic">peaks</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about what has been
+        happening and what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "anxiety-and-overthinking",
     title: "The Link Between Anxiety and Overthinking",
     metaTitle: "How to Stop Overthinking: 5 Skills and the Anxiety Link",
@@ -1154,6 +1197,567 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "grounding-techniques-anxiety": () => (
+    <>
+      <P>
+        Your heart is thumping, your thoughts are racing, and you
+        cannot think your way out of it. Grounding techniques for
+        anxiety give you something simple to do in that moment, using
+        your body and senses to bring your attention back to where you
+        are. This article explains what grounding is, gives you five
+        techniques to try, and covers when it is time to talk to a
+        professional.
+      </P>
+      <Callout kicker="Quick answer">
+        Grounding techniques for anxiety are short, practical skills
+        that shift your attention from anxious thoughts to what is
+        happening around you and in your body right now. They are
+        coping skills, not a treatment. If anxiety is frequent or
+        affecting your daily life, a GP or registered psychologist can
+        help you work out the next step.
+      </Callout>
+
+      <H2>
+        What happens in your body when anxiety peaks, and what does
+        grounding do?
+      </H2>
+      <P>
+        When anxiety peaks, your body reacts as if it is under threat,
+        even when nothing dangerous is in front of you. This is the
+        fight-or-flight response. It can bring a pounding heart, fast
+        breathing, tight muscles and a sense of dread. Grounding is a
+        set of simple skills that bring your attention back to the
+        present moment through your senses, your body or your thinking.
+      </P>
+      <P>
+        Anxiety shows up in different ways. Over a 12-month period in
+        2020-22, 3.7% of Australians had panic disorder and 7.3% had
+        social phobia (Source: ABS, 2020-22).
+      </P>
+      <P>
+        Others live with generalised anxiety or health anxiety, and
+        many people have spikes that do not fit a neat label. The{" "}
+        <a
+          href="https://www.abs.gov.au/statistics/health/mental-health/national-study-mental-health-and-wellbeing/latest-release"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ABS National Study of Mental Health and Wellbeing
+        </a>{" "}
+        has the full figures.
+      </P>
+      <P>
+        <a
+          href="https://www.lifeline.org.au/get-help/support-toolkit/techniques-and-guides/finding-relief-through-grounding-techniques"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lifeline Australia lists box breathing
+        </a>
+        , reciting something in order and using your five senses as
+        ways to ease the physical feelings of panic. Grounding will
+        not remove anxiety, and it does not replace treatment. Some
+        people find it gives them steadier footing while the feeling
+        is strong.
+      </P>
+
+      <H2>A quick check before you start</H2>
+      <P>
+        Grounding is for anxiety, not for medical emergencies. Chest
+        tightness and a racing heart can have a medical cause, so it
+        helps to know when to get urgent help.
+      </P>
+      <Callout kicker="Call 000 or go to your nearest emergency department if you have:">
+        <ul className="mt-2 flex flex-col gap-3 pl-6 list-disc marker:text-moss">
+          <li>chest pain that spreads to your arm, jaw or back</li>
+          <li>crushing pressure in your chest</li>
+          <li>symptoms that keep building or do not ease</li>
+          <li>a first-ever episode with no clear trigger</li>
+          <li>any doubt about what is happening</li>
+        </ul>
+      </Callout>
+      <Callout kicker="If you are thinking about harming yourself or ending your life">
+        <p>
+          Call Lifeline on{" "}
+          <a href="tel:131114" className="link">
+            13 11 14
+          </a>
+          , Beyond Blue on{" "}
+          <a href="tel:1300224636" className="link">
+            1300 22 4636
+          </a>
+          , or{" "}
+          <a href="tel:000" className="link">
+            000
+          </a>
+          .
+        </p>
+      </Callout>
+      <P>
+        Healthdirect advises talking to your doctor after one or more
+        panic attacks. You can also call Healthdirect on{" "}
+        <a href="tel:1800022222" className="link">
+          1800 022 222
+        </a>
+        . To learn more about telling the two apart, read our post on{" "}
+        <Link href="/blog/what-panic-attacks-feel-like">
+          how to tell a panic attack from a heart attack
+        </Link>
+        .
+      </P>
+
+      <H2>
+        Five grounding techniques for anxiety to try while it is
+        peaking
+      </H2>
+      <P>
+        Physical grounding techniques use your body and senses, while
+        mental ones give your thinking something steady to do. Try
+        each one when you are calm first, then keep the ones that suit
+        you.
+      </P>
+
+      <H3>1. The 5-4-3-2-1 senses check</H3>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/five-senses-grounding-icons.webp"
+            alt="Five sense icons: eye, hand, ear, eucalyptus sprig and lemon wedge"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        This well-known grounding exercise for anxiety uses all five
+        senses. Go slowly through these steps:
+      </P>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          <strong>Look:</strong> name five things you can see.
+        </li>
+        <li className="max-w-full">
+          <strong>Touch:</strong> notice four things you can feel,
+          such as your clothes or the chair beneath you.
+        </li>
+        <li className="max-w-full">
+          <strong>Listen:</strong> pick out three sounds.
+        </li>
+        <li className="max-w-full">
+          <strong>Smell:</strong> notice two smells. If you cannot
+          find any, think of two smells you like.
+        </li>
+        <li className="max-w-full">
+          <strong>Taste:</strong> notice one taste, or take a sip of
+          water.
+        </li>
+      </ol>
+
+      <H3>2. Box breathing</H3>
+      <P>
+        Breathe in for a count of four, hold for four, breathe out for
+        four, then hold for four. Repeat a few times. If holding your
+        breath feels uncomfortable, skip the holds and make your
+        out-breath a little longer than your in-breath.
+      </P>
+
+      <H3>3. Feet and body anchoring</H3>
+      <P>
+        Press your feet into the floor and notice the pressure. Push
+        your palms together for a few seconds, then let go. Hold a
+        cool glass of water and notice how it feels in your hands.
+      </P>
+
+      <H3>4. Describe an object</H3>
+      <P>
+        Pick something nearby, like a mug or a pen. Describe it to
+        yourself in detail: its colour, shape, weight and texture.
+        This gives your mind a small task that is not about the worry.
+      </P>
+
+      <H3>5. A steady phrase or counting back</H3>
+      <P>
+        Count backwards from 100 in threes, or repeat a short phrase
+        such as &ldquo;I am here, and I am breathing.&rdquo; If your
+        mind wanders, start again without judging yourself.
+      </P>
+      <P>
+        Some people find these skills help during a spike. Results
+        vary and individual circumstances differ, so talk with a
+        registered health practitioner about what may suit you.
+      </P>
+
+      <H2>Which grounding technique suits which moment?</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/grounding-technique-situations-icons.webp"
+            alt="Icons of a desk, steering wheel, bed, park bench and glass of water"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        Different grounding techniques for anxiety suit different
+        moments, so match the skill to where you are and how much
+        attention you can spare. Use this table as a starting point.
+      </P>
+      <div className="mt-8 rounded-[14px] border border-ink/12 overflow-x-auto">
+        <div className="min-w-[760px]">
+          <div className="grid grid-cols-[1.3fr_1.6fr_1fr_0.9fr] bg-paper-soft">
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Situation
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Technique to try
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Time needed
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              Discreet?
+            </div>
+          </div>
+          {[
+            [
+              "At your desk or in a meeting",
+              "Feet anchoring or describing an object",
+              "1 to 2 minutes",
+              "Yes",
+            ],
+            [
+              "Driving",
+              "Slow breathing, with your eyes on the road",
+              "A few breaths",
+              "Yes",
+            ],
+            [
+              "In bed at night",
+              "Counting back or the 5-4-3-2-1 check",
+              "3 to 5 minutes",
+              "Yes",
+            ],
+            [
+              "In a queue or crowd",
+              "A steady phrase or counting back",
+              "About 1 minute",
+              "Yes",
+            ],
+            [
+              "At home after a stressful moment",
+              "Full 5-4-3-2-1 and a drink of water",
+              "3 to 5 minutes",
+              "Not needed",
+            ],
+          ].map((row, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-[1.3fr_1.6fr_1fr_0.9fr] border-t border-ink/12 bg-paper"
+            >
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug font-medium">
+                {row[0]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[1]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[2]}
+              </div>
+              <div className="p-4 md:p-5 text-[0.98rem] leading-snug">
+                {row[3]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <P>
+        If you are driving and anxiety makes it hard to concentrate,
+        pull over when you can before you try anything else.
+      </P>
+
+      <H2>Is grounding the same as avoidance?</H2>
+      <P>
+        No. Grounding helps you stay present with a hard moment, while
+        avoidance means leaving or putting off the thing that worries
+        you.
+      </P>
+      <P>
+        Avoidance can bring quick comfort, but it often keeps anxiety
+        going over time. Our post on{" "}
+        <Link href="/blog/why-avoidance-makes-anxiety-worse">
+          how avoidance keeps anxiety going
+        </Link>{" "}
+        explains why this happens. Used well, grounding helps you stay
+        in the room, finish the task or have the conversation with
+        steadier footing.
+      </P>
+      <P>
+        The line can blur. If you only use grounding to get out of
+        situations, or your world is getting smaller, that is worth
+        talking through with a psychologist. Approaches such as
+        cognitive behaviour therapy (CBT) look at the thoughts and
+        habits that keep anxiety going.
+      </P>
+
+      <H2>When does grounding not help, or feel worse?</H2>
+      <P>
+        Grounding does not suit everyone. If focusing on your body or
+        senses leaves you more distressed, numb or detached, stop and
+        choose something gentler.
+      </P>
+      <P>
+        This can happen with a history of trauma or post-traumatic
+        stress, or when you tend to feel disconnected from yourself
+        (dissociation). A few adjustments may help:
+      </P>
+      <UL>
+        <LI>Keep your eyes open and look around the room.</LI>
+        <LI>
+          Choose neutral objects, not ones linked to difficult
+          memories.
+        </LI>
+        <LI>Keep it short, and stop if it feels worse.</LI>
+        <LI>
+          Focus on something outside you, such as a sound, rather than
+          your breathing or heartbeat.
+        </LI>
+      </UL>
+      <P>
+        Blue Knot Foundation, Australia&rsquo;s national centre of
+        excellence for complex trauma, offers a general-public guide
+        that includes grounding exercises. Where trauma is part of the
+        picture, a psychologist can work at your pace and may use
+        approaches such as EMDR. You can read about{" "}
+        <Link href="/trauma-therapy-perth">
+          support for trauma and post-traumatic stress
+        </Link>
+        .
+      </P>
+
+      <H2>How do you build a grounding habit before the next peak?</H2>
+      <P>
+        Practise grounding when you are calm, so the skills feel
+        familiar when anxiety rises. Two minutes a day is enough to
+        start.
+      </P>
+      <P>
+        Pick one technique and do it at the same time each day, such
+        as while the kettle boils. Rate your distress from 0 to 10
+        before and after, and jot it down. Over a few weeks you can
+        see which techniques suit you.
+      </P>
+      <P>
+        Practising grounding techniques for anxiety also helps you
+        spot early signs, like a tight jaw or shallow breathing.
+        Naming the pattern when you notice it, such as &ldquo;here is
+        that tight jaw again&rdquo;, can help you step back before the
+        feeling builds.
+      </P>
+
+      <H2>When is it time to talk to a GP or psychologist?</H2>
+      <P>
+        It is worth talking to a GP or registered psychologist if
+        anxiety is frequent, affects your sleep, work or
+        relationships, or leads you to avoid things. You do not need
+        to wait for a crisis.
+      </P>
+      <P>
+        Many people do reach out. In 2020-22, 45.1% of Australians
+        with a mental disorder in the previous 12 months saw a health
+        professional for their mental health (Source: ABS, 2020-22).
+        AIHW data shows 102 patients per 1,000 people received
+        Medicare mental health services in 2024-25, up from 94 a
+        decade earlier (Source: AIHW, 2024-25).
+      </P>
+      <P>Check whether any of these sound familiar:</P>
+      <UL>
+        <LI>Anxiety on most days for several weeks</LI>
+        <LI>
+          Trouble sleeping because your mind will not settle
+        </LI>
+        <LI>Avoiding people, places or tasks</LI>
+        <LI>
+          Panic attacks that keep returning, or fear of the next one
+        </LI>
+        <LI>
+          Physical symptoms such as a racing heart or tight chest (see
+          your GP promptly if these worry you)
+        </LI>
+        <LI>Feeling low or flat as well as anxious</LI>
+      </UL>
+      <P>
+        This list is not a diagnosis. Here is how getting started
+        works in Australia:
+      </P>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          <strong>See your GP.</strong> Book a longer appointment and
+          describe what you notice, including sleep and mood.
+        </li>
+        <li className="max-w-full">
+          <strong>Ask about a Mental Health Treatment Plan</strong>{" "}
+          (often called a Mental Health Care Plan). If your GP thinks
+          it suits you, they prepare it and refer you to a
+          psychologist.
+        </li>
+        <li className="max-w-full">
+          <strong>Choose a psychologist.</strong> Look for someone
+          registered with AHPRA. A Medicare rebate may apply under the
+          Better Access initiative, and you pay the difference between
+          the fee and the rebate. Check{" "}
+          <Link href="/fees">fees and rebates</Link> before you book.
+        </li>
+        <li className="max-w-full">
+          <strong>Attend your first session.</strong> You talk about
+          what brought you in and what you would like to change.
+        </li>
+      </ol>
+      <P>
+        At Sage, you do not need a referral to book, but you need a
+        GP plan to claim a rebate. Healthdirect also points to online
+        programs for panic, such as Panic Stop! and THIS WAY UP.
+      </P>
+      <P>
+        Jacob Jones is a registered psychologist who sees adults in
+        East Fremantle, for people across Fremantle, Melville and
+        Cockburn, and offers telehealth across Western Australia.
+      </P>
+      <P>
+        He supports adults with anxiety and panic through approaches
+        that include CBT, and you can read about{" "}
+        <Link href="/anxiety-therapy-perth">
+          anxiety therapy in Perth
+        </Link>
+        . If you would like to talk through your situation with a
+        registered psychologist in East Fremantle, the team at Sage
+        Psychological Services is happy to help.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "What is the 5-4-3-2-1 grounding technique for anxiety?",
+            a: (
+              <>
+                It is a sensory exercise that moves your attention
+                away from anxious thoughts and into the room. You name
+                five things you can see, four you can feel, three you
+                can hear, two you can smell and one you can taste. Go
+                slowly with each sense. Some people find it a useful
+                starting point, and results vary.
+              </>
+            ),
+            aText:
+              "It is a sensory exercise that moves your attention away from anxious thoughts and into the room. You name five things you can see, four you can feel, three you can hear, two you can smell and one you can taste. Go slowly with each sense. Some people find it a useful starting point, and results vary.",
+          },
+          {
+            q: "How do you ground yourself during an anxiety attack?",
+            a: (
+              <>
+                Start with one simple technique, such as slow
+                breathing, pressing your feet into the floor or the
+                5-4-3-2-1 check. Keep your eyes open and your
+                attention on something in the room. If you have chest
+                pain or any doubt about your symptoms, call 000. If
+                attacks keep coming back, speak with your GP.
+              </>
+            ),
+            aText:
+              "Start with one simple technique, such as slow breathing, pressing your feet into the floor or the 5-4-3-2-1 check. Keep your eyes open and your attention on something in the room. If you have chest pain or any doubt about your symptoms, call 000. If attacks keep coming back, speak with your GP.",
+          },
+          {
+            q: "What is the 3-3-3 rule for anxiety?",
+            a: (
+              <>
+                It is a quick grounding exercise. Name three things
+                you can see, listen for three sounds, and touch or
+                move three things around you, such as your hands, a
+                pen or your feet. It gives your attention somewhere to
+                go. It is a coping skill, not a treatment.
+              </>
+            ),
+            aText:
+              "It is a quick grounding exercise. Name three things you can see, listen for three sounds, and touch or move three things around you, such as your hands, a pen or your feet. It gives your attention somewhere to go. It is a coping skill, not a treatment.",
+          },
+          {
+            q: "How long do grounding techniques for anxiety take to work?",
+            a: (
+              <>
+                There is no set time. Some people notice a change
+                within minutes, while others need more practice or
+                find a different technique suits them better. Results
+                vary and individual circumstances differ. If anxiety
+                keeps coming back or is affecting your daily life,
+                talk with a GP or registered psychologist about what
+                may suit you.
+              </>
+            ),
+            aText:
+              "There is no set time. Some people notice a change within minutes, while others need more practice or find a different technique suits them better. Results vary and individual circumstances differ. If anxiety keeps coming back or is affecting your daily life, talk with a GP or registered psychologist about what may suit you.",
+          },
+          {
+            q: "Can grounding techniques make anxiety worse?",
+            a: (
+              <>
+                They can for some people, especially those with a
+                history of trauma or a tendency to feel detached from
+                themselves. If a technique increases your distress,
+                stop and try something gentler, like looking around
+                the room or holding a cool glass of water. A
+                psychologist can help you find an approach that suits
+                you.
+              </>
+            ),
+            aText:
+              "They can for some people, especially those with a history of trauma or a tendency to feel detached from themselves. If a technique increases your distress, stop and try something gentler, like looking around the room or holding a cool glass of water. A psychologist can help you find an approach that suits you.",
+          },
+          {
+            q: "Is grounding a substitute for seeing a psychologist?",
+            a: (
+              <>
+                No. Grounding is a coping skill for hard moments, and
+                it does not address why anxiety keeps showing up. A
+                registered psychologist can help you understand your
+                patterns and work on them with approaches such as CBT.
+                If anxiety is frequent or affecting your life, speak
+                with your GP or a registered psychologist.
+              </>
+            ),
+            aText:
+              "No. Grounding is a coping skill for hard moments, and it does not address why anxiety keeps showing up. A registered psychologist can help you understand your patterns and work on them with approaches such as CBT. If anxiety is frequent or affecting your life, speak with your GP or a registered psychologist.",
+          },
+          {
+            q: "Do I need a referral to see a psychologist in Australia?",
+            a: (
+              <>
+                You do not need a referral to see a psychologist
+                privately, but you need a GP-prepared Mental Health
+                Treatment Plan to claim a Medicare rebate. A rebate
+                does not always cover the full fee, so ask about
+                costs before you book. Your GP can explain whether a
+                plan suits you.
+              </>
+            ),
+            aText:
+              "You do not need a referral to see a psychologist privately, but you need a GP-prepared Mental Health Treatment Plan to claim a Medicare rebate. A rebate does not always cover the full fee, so ask about costs before you book. Your GP can explain whether a plan suits you.",
+          },
+        ]}
+      />
+
+      <p className="mt-10 body-lede italic text-ink/70">
+        This article is general information only and is not a
+        substitute for advice from a registered health practitioner.
+        If you need support right now, call Lifeline on 13 11 14,
+        Beyond Blue on 1300 22 4636 or emergency services on 000.
+      </p>
+
+      <CrisisFootnote />
+    </>
+  ),
   "anxiety-and-overthinking": () => (
     <>
       <P>
