@@ -153,6 +153,50 @@ export function ComparisonTable({
 
 export const POSTS: PostMeta[] = [
   {
+    slug: "is-anxiety-genetic",
+    title: "Is Anxiety Genetic, Learned, or Both?",
+    metaTitle: "Is Anxiety Genetic? What Australian Research Says (2026)",
+    metaDescription:
+      "Is anxiety genetic or learned? See what Australian research says about genes, family habits and life events, and how to start with a registered psychologist.",
+    category: "Anxiety & CBT",
+    categoryHref: "/anxiety-therapy-perth",
+    readTime: "10 min read",
+    publishedAt: "2026-10-09",
+    publishedLabel: "9 October 2026",
+    image: "/img/is-anxiety-genetic-or-learned-hero.webp",
+    imageAlt:
+      "Eucalyptus branch with older leaves and new shoots in soft morning light",
+    ctaImage: "/img/cbt-anxiety-cta-walking-fremantle-morning.webp",
+    ctaAlt: "Walking a quiet Fremantle street on a clear morning",
+    excerpt:
+      "Anxiety often runs in families, but that does not mean it is written in your genes. This article explains what Australian research says about genetics, learned habits and life events, why they usually work together, and how to start with a registered psychologist.",
+    linksUp: [
+      { label: "Anxiety Therapy Perth", href: "/anxiety-therapy-perth" },
+      { label: "CBT Therapy Perth", href: "/cbt-therapy-perth" },
+    ],
+    ctaHeading: (
+      <>
+        When family patterns show up in{" "}
+        <span className="serif-italic">your own worry</span>.
+      </>
+    ),
+    ctaBody: (
+      <>
+        Sage Psychological Services offers{" "}
+        <Link
+          href="/anxiety-therapy-perth"
+          style={{ color: "var(--paper)" }}
+          className="font-medium"
+        >
+          anxiety therapy
+        </Link>{" "}
+        in East Fremantle and by telehealth across Western Australia. A
+        first session is simply a conversation about your history and
+        what kind of support might suit you.
+      </>
+    ),
+  },
+  {
     slug: "grounding-techniques-anxiety",
     title: "Grounding Techniques for When Anxiety Peaks",
     metaTitle: "Grounding Techniques for Anxiety: 5 Simple Ways to Try Now",
@@ -1197,6 +1241,496 @@ export function getRelated(slug: string, count = 3): PostMeta[] {
 /* ── Bodies for each post ───────────────────────────────────── */
 
 export const POST_BODIES: Record<string, () => ReactNode> = {
+  "is-anxiety-genetic": () => (
+    <>
+      <P>
+        You catch yourself dreading a phone call, and the worry sounds
+        exactly like your mum&rsquo;s. You start to wonder: is anxiety
+        genetic, or did you learn it by watching? This article explains
+        what Australian research says about genes, learning and how the
+        two work together, and what that means for you.
+      </P>
+      <Callout kicker="Quick answer">
+        Research suggests anxiety usually comes from a mix of inherited
+        tendencies and life experience. A family history can raise your
+        likelihood of anxiety, but it does not decide what happens for
+        you. Many learned patterns can be worked on with a registered
+        psychologist, though results vary and individual circumstances
+        differ.
+      </Callout>
+
+      <H2>Does anxiety run in families?</H2>
+      <P>
+        Yes, anxiety often runs in families, but that pattern alone
+        does not tell you why. Shared genes, shared habits and shared
+        stress can all play a part.
+      </P>
+      <P>
+        A Western Australian study followed mothers and their children
+        from pregnancy into young adulthood. It found that maternal
+        anxiety (relative risk 1.60) and paternal emotional problems
+        (1.32) were each linked to higher anxiety in their children at
+        age 20, while maternal depressive symptoms were not (Source:
+        Raine Study, Psychiatry Research, 2021).
+      </P>
+      <P>
+        A relative risk above 1 means a higher likelihood, not a
+        certainty. You can read the{" "}
+        <a
+          href="https://rainestudy.org.au/research-paper/maternal-and-paternal-mental-health-problems-and-the-risk-of-anxiety-symptoms-in-the-offspring-at-age-20-years/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Raine Study findings
+        </a>{" "}
+        for the full detail.
+      </P>
+      <P>
+        This is why people ask whether anxiety is hereditary, and why
+        the honest answer is &ldquo;partly, and not in a simple
+        way&rdquo;.
+      </P>
+
+      <H2>Is anxiety genetic? What research says about genes</H2>
+      <P>
+        Genes play a real but partial role. So, is anxiety genetic?
+        Partly. Inherited factors help explain why some people are
+        more prone to it, and no single gene decides who develops it.
+      </P>
+
+      <H3>
+        Heritability is a population number, not your personal odds
+      </H3>
+      <P>
+        Heritability describes how much of the difference between
+        people in a large group links to genes. It does not tell you
+        your own chance.
+      </P>
+      <P>
+        An older study of 2,287 Australian and 1,185 Dutch twins and
+        siblings gave upper heritability estimates from 36% for major
+        depression to 50% for social phobia (Source: Twin Research
+        and Human Genetics, 2005).
+      </P>
+
+      <H3>Why there is no single &ldquo;anxiety gene&rdquo;</H3>
+      <P>
+        Researchers currently know of about 60 genetic variants that
+        influence anxiety, and hundreds of thousands are likely to
+        contribute in total (Source: QIMR Berghofer, 2025). Scientists
+        call this a polygenic pattern: many tiny effects that add up.
+        Each one nudges the odds only slightly.
+      </P>
+      <P>
+        QIMR Berghofer invited 5,000 Australians to take part in its{" "}
+        <a
+          href="https://www.qimrb.edu.au/twinfamstudies/living-with-anxiety-study"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Living With Anxiety research
+        </a>{" "}
+        to learn more.
+      </P>
+
+      <H2>How can anxiety be learned?</H2>
+      <P>
+        Anxiety can be learned through what you watch, what you avoid
+        and what you live through, especially early in life. The
+        Australian Psychological Society lists anxious thinking
+        patterns, avoidance and stressful events among the factors
+        involved (Source: Australian Psychological Society).
+      </P>
+
+      <H3>Watching and absorbing</H3>
+      <P>
+        Growing up with an anxious parent or family member can teach
+        anxious thinking patterns and behaviours, much like any other
+        habit you pick up at home (Source: Lifeline). If you saw
+        someone treat every small risk as a threat, you may have
+        learned to do the same. Psychologists call this modelling.
+      </P>
+      <P>
+        This is not about blame. Parents usually pass on what they
+        learned themselves.
+      </P>
+
+      <H3>Avoidance and reassurance</H3>
+      <P>
+        Avoiding what scares you brings quick relief. Over time,
+        though, the fear can grow, because you never find out that
+        you could cope. Asking others to reassure you works the same
+        way. This post on{" "}
+        <Link href="/blog/why-avoidance-makes-anxiety-worse">
+          how avoidance keeps anxiety going
+        </Link>{" "}
+        explains the cycle in more detail.
+      </P>
+
+      <H3>Early experiences and stress</H3>
+      <P>
+        Childhood instability, such as moving schools or family
+        upheaval, and trauma can contribute to anxiety (Source:
+        Lifeline). Early-life stress can also raise the likelihood of
+        anxiety later on (Source: Australian Psychological Society).
+        Where anxiety links to past trauma, a registered psychologist
+        may consider trauma-focused therapy such as EMDR.
+      </P>
+
+      <H2>How genes and learning work together</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/genes-and-learning-intertwined-ribbons-illustration.webp"
+            alt="Illustration of two intertwined ribbons representing genes and life experience"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        So, is anxiety genetic or learned? Both work as a pair.
+        Inherited traits can make you more sensitive to stress, and
+        life experience then shapes how that sensitivity shows up. The
+        old nature versus nurture debate is better described as nature
+        and nurture.
+      </P>
+      <P>
+        Researchers call this gene-environment interaction, or the
+        diathesis-stress idea: a tendency plus a stressor. Some
+        children are naturally more cautious, a trait known as
+        behavioural inhibition. How the adults around them respond to
+        that caution can matter.
+      </P>
+      <P>
+        A Macquarie University program for parents of preschoolers at
+        higher risk of anxiety found fewer anxiety symptoms and fewer
+        internalising disorders in the children about 11 years later
+        (Source: Macquarie University Centre for Emotional Health,
+        2013).
+      </P>
+      <P>
+        That is a group result, and results vary between families. If
+        you worry about passing anxiety on to your children, it
+        suggests that what happens at home matters as well as genes.
+        Your GP or a registered psychologist can talk through your
+        situation.
+      </P>
+      <div className="mt-8 rounded-[14px] border border-ink/12 overflow-x-auto">
+        <div className="min-w-[860px]">
+          <div className="grid grid-cols-[0.9fr_1.4fr_1.3fr_1.3fr] bg-paper-soft">
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              Factor
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              What it means
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss border-r border-ink/12">
+              How researchers study it
+            </div>
+            <div className="p-4 md:p-5 text-[0.72rem] tracking-[0.24em] uppercase text-moss">
+              What it cannot tell you
+            </div>
+          </div>
+          {[
+            [
+              "Genes",
+              "Inherited tendencies, such as a more sensitive stress response",
+              "Twin and sibling studies, genome research",
+              "Your personal odds",
+            ],
+            [
+              "Learning",
+              "Habits picked up by watching others or avoiding fear",
+              "Family studies and psychological research",
+              "Exactly where a pattern began",
+            ],
+            [
+              "Life events",
+              "Stress or early experiences, such as instability or trauma",
+              "Long-term cohort studies, such as the Raine Study",
+              "Whether anxiety will follow",
+            ],
+          ].map((row, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-[0.9fr_1.4fr_1.3fr_1.3fr] border-t border-ink/12 bg-paper"
+            >
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug font-medium">
+                {row[0]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[1]}
+              </div>
+              <div className="p-4 md:p-5 border-r border-ink/12 text-[0.98rem] leading-snug">
+                {row[2]}
+              </div>
+              <div className="p-4 md:p-5 text-[0.98rem] leading-snug">
+                {row[3]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <H2>What a family history does and doesn&rsquo;t mean for you</H2>
+      <P>
+        A family history can raise your likelihood of anxiety, but it
+        is not a prediction or a diagnosis. Many people with anxious
+        relatives never develop an anxiety disorder, and many people
+        with anxiety have no family history.
+      </P>
+      <P>
+        Three ideas come up often. The first is that there is one
+        anxiety gene. The second is that &ldquo;it&rsquo;s in my DNA,
+        so nothing will help&rdquo;. The third is that anxiety is a
+        habit you should just snap out of. None of them matches the
+        research above.
+      </P>
+      <P>
+        Use this list to think about your own patterns. It is not a
+        test, and it cannot diagnose anything.
+      </P>
+      <P>
+        <strong>Family patterns worth noticing</strong>
+      </P>
+      <UL>
+        <LI>You and a close relative worry about similar things.</LI>
+        <LI>
+          You learned to avoid certain places or situations by
+          watching someone close to you.
+        </LI>
+        <LI>
+          Reassurance from family helps for a moment, then the worry
+          returns.
+        </LI>
+        <LI>
+          You grew up in a home with a lot of change or stress.
+        </LI>
+        <LI>
+          Your body reacts quickly to stress, and it always has.
+        </LI>
+      </UL>
+      <P>
+        If several of these ring true, a GP or registered psychologist
+        can talk them through with you.
+      </P>
+
+      <H2>Does the cause change how anxiety is treated?</H2>
+      <P>
+        Usually not by much. A psychologist focuses mainly on the
+        patterns that keep anxiety going today, whatever started them.
+        A genetic tendency does not rule out therapy.
+      </P>
+      <P>
+        Cognitive Behaviour Therapy (CBT) helps you spot anxious
+        thoughts and behaviours, test the fears behind them and build
+        practical coping skills. It is a well-researched approach and
+        features in the 2018 RANZCP clinical practice guidelines (now
+        archived) for panic disorder, social anxiety disorder and
+        generalised anxiety disorder (Source: RANZCP, 2018).
+      </P>
+      <P>
+        At Sage,{" "}
+        <Link href="/anxiety-therapy-perth">
+          anxiety therapy in Perth
+        </Link>{" "}
+        most often draws on{" "}
+        <Link href="/cbt-therapy-perth">
+          Cognitive Behaviour Therapy
+        </Link>
+        , with other approaches added where they fit. If patterns
+        began early, schema therapy or psychodynamic work may be
+        considered to explore where they came from. Some people also
+        talk with their GP or psychiatrist about medication, and that
+        decision belongs in a medical conversation.
+      </P>
+      <P>
+        Results vary, and individual circumstances differ. A
+        registered health practitioner can talk you through what may
+        suit you.
+      </P>
+
+      <H2>How to get started in Australia</H2>
+      <figure className="mt-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[14px]">
+          <Image
+            src="/img/anxiety-first-steps-notebook-tea.webp"
+            alt="Open notebook, pen and cup of tea on a linen surface"
+            fill
+            sizes="(max-width: 768px) 100vw, 52rem"
+            className="object-cover"
+          />
+        </div>
+      </figure>
+      <P>
+        You can start with your GP or book a psychologist directly. A
+        GP Mental Health Treatment Plan (often called a Mental Health
+        Care Plan) lets you claim a Medicare rebate.
+      </P>
+      <ol className="mt-8 flex flex-col gap-4 pl-6 list-decimal marker:text-moss body-lede">
+        <li className="max-w-full">
+          <strong>See your GP.</strong> Mention your anxiety and any
+          family history, and ask about a Mental Health Treatment
+          Plan.
+        </li>
+        <li className="max-w-full">
+          <strong>Choose a registered psychologist.</strong> Check
+          that they are registered with AHPRA, the Australian Health
+          Practitioner Regulation Agency.
+        </li>
+        <li className="max-w-full">
+          <strong>Book a session.</strong> You do not need a referral
+          to see Jacob Jones at Sage Psychological Services, but you
+          do need the GP plan to claim a rebate. Sage bills privately,
+          and the{" "}
+          <Link href="/fees">fees and rebates page</Link> explains
+          the details.
+        </li>
+        <li className="max-w-full">
+          <strong>Attend your first session.</strong> You talk
+          through your history and goals, and your psychologist
+          explains the approach. Telehealth is available across
+          Western Australia if you prefer to talk from home.
+        </li>
+      </ol>
+      <P>
+        If you would like to talk through your situation with a
+        registered psychologist in East Fremantle,{" "}
+        <Link href="/contact">Sage Psychological Services</Link> is
+        happy to help.
+      </P>
+
+      <H2>Frequently asked questions</H2>
+      <FaqAccordion
+        items={[
+          {
+            q: "Is anxiety genetic or learned?",
+            a: (
+              <>
+                It is usually both. Research suggests inherited
+                tendencies raise the likelihood of anxiety for some
+                people, while learning and life experience shape how
+                those tendencies show up. No single gene decides the
+                outcome. About 60 genetic variants are known so far,
+                and many more probably contribute (Source: QIMR
+                Berghofer, 2025). A psychologist can help you make
+                sense of your own patterns.
+              </>
+            ),
+            aText:
+              "It is usually both. Research suggests inherited tendencies raise the likelihood of anxiety for some people, while learning and life experience shape how those tendencies show up. No single gene decides the outcome. About 60 genetic variants are known so far, and many more probably contribute (Source: QIMR Berghofer, 2025). A psychologist can help you make sense of your own patterns.",
+          },
+          {
+            q: "Can you inherit anxiety from your parents?",
+            a: (
+              <>
+                You can inherit tendencies that make you more
+                sensitive to stress, but you do not inherit anxiety
+                itself. In a Western Australian study, maternal
+                anxiety and paternal emotional problems were each
+                linked to higher anxiety in young adult children
+                (Source: Raine Study, Psychiatry Research, 2021).
+                Linked means more likely, not certain. Many other
+                factors play a part.
+              </>
+            ),
+            aText:
+              "You can inherit tendencies that make you more sensitive to stress, but you do not inherit anxiety itself. In a Western Australian study, maternal anxiety and paternal emotional problems were each linked to higher anxiety in young adult children (Source: Raine Study, Psychiatry Research, 2021). Linked means more likely, not certain. Many other factors play a part.",
+          },
+          {
+            q: "Are you born with anxiety or does it develop?",
+            a: (
+              <>
+                Some people are born with a more cautious or sensitive
+                temperament, which can raise the likelihood of
+                anxiety. Whether anxiety develops usually depends on
+                experiences too, such as stress, early-life events
+                and the habits you learn. So it is rarely one or the
+                other. If you are worried about your own situation,
+                a GP or registered psychologist can help.
+              </>
+            ),
+            aText:
+              "Some people are born with a more cautious or sensitive temperament, which can raise the likelihood of anxiety. Whether anxiety develops usually depends on experiences too, such as stress, early-life events and the habits you learn. So it is rarely one or the other. If you are worried about your own situation, a GP or registered psychologist can help.",
+          },
+          {
+            q: "If my parents have anxiety, will I get it too?",
+            a: (
+              <>
+                Not necessarily. A parent&rsquo;s anxiety can raise
+                your likelihood, but it does not mean you will develop
+                an anxiety disorder. Genes, learned habits and life
+                events all contribute, and the mix differs for
+                everyone. If anxiety is affecting your daily life, it
+                is worth talking to your GP or a registered
+                psychologist, whatever your family history.
+              </>
+            ),
+            aText:
+              "Not necessarily. A parent's anxiety can raise your likelihood, but it does not mean you will develop an anxiety disorder. Genes, learned habits and life events all contribute, and the mix differs for everyone. If anxiety is affecting your daily life, it is worth talking to your GP or a registered psychologist, whatever your family history.",
+          },
+          {
+            q: "Can anxiety learned from family be unlearned?",
+            a: (
+              <>
+                Many learned patterns, such as avoidance and anxious
+                thinking, can be worked on in therapy. A Macquarie
+                University program for parents also found fewer
+                anxiety symptoms in children years later (Source:
+                Macquarie University Centre for Emotional Health).
+                Results vary, and individual circumstances differ, so
+                speak with a registered psychologist about what may
+                suit you.
+              </>
+            ),
+            aText:
+              "Many learned patterns, such as avoidance and anxious thinking, can be worked on in therapy. A Macquarie University program for parents also found fewer anxiety symptoms in children years later (Source: Macquarie University Centre for Emotional Health). Results vary, and individual circumstances differ, so speak with a registered psychologist about what may suit you.",
+          },
+          {
+            q: "Is there a genetic test for anxiety?",
+            a: (
+              <>
+                Genetic research is active, but a gene test cannot
+                diagnose anxiety or tell you whether you will develop
+                it. A health professional diagnoses anxiety based on
+                your symptoms and how they affect your life. If you
+                see a test advertised that claims otherwise, ask your
+                GP before you pay for it.
+              </>
+            ),
+            aText:
+              "Genetic research is active, but a gene test cannot diagnose anxiety or tell you whether you will develop it. A health professional diagnoses anxiety based on your symptoms and how they affect your life. If you see a test advertised that claims otherwise, ask your GP before you pay for it.",
+          },
+          {
+            q: "Do I need a GP referral to see a psychologist in Australia?",
+            a: (
+              <>
+                You do not usually need a referral. You can book a
+                psychologist directly, including Jacob Jones at Sage
+                Psychological Services. You do need a GP Mental Health
+                Treatment Plan if you want to claim a Medicare rebate.
+                Sage bills privately, so ask about fees before you
+                book.
+              </>
+            ),
+            aText:
+              "You do not usually need a referral. You can book a psychologist directly, including Jacob Jones at Sage Psychological Services. You do need a GP Mental Health Treatment Plan if you want to claim a Medicare rebate. Sage bills privately, so ask about fees before you book.",
+          },
+        ]}
+      />
+
+      <p className="mt-10 body-lede italic text-ink/70">
+        This article is general information only and is not a
+        substitute for advice from a registered health practitioner.
+        Anxiety looks different for everyone, so speak with your GP or
+        a registered psychologist about your situation.
+      </p>
+
+      <CrisisFootnote />
+    </>
+  ),
   "grounding-techniques-anxiety": () => (
     <>
       <P>
