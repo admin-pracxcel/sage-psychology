@@ -1585,8 +1585,10 @@ export const POST_BODIES: Record<string, () => ReactNode> = {
           to see Jacob Jones at Sage Psychological Services, but you
           do need the GP plan to claim a rebate. Sage bills privately,
           and the{" "}
-          <Link href="/fees">fees and rebates page</Link> explains
-          the details.
+          <Link href="/fees" className="link">
+            fees and rebates page
+          </Link>{" "}
+          explains the details.
         </li>
         <li className="max-w-full">
           <strong>Attend your first session.</strong> You talk
